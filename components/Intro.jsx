@@ -1,49 +1,75 @@
 import { Button, Flex, Image, Text, Link } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight, FaCloudDownloadAlt, FaHandshake } from 'react-icons/fa';
 
 const Intro = () => {
+
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+
     return (
         <Flex
             justifyContent="center"
             alignItems="center"
-            height="85vh"
-            gap="2rem"
+            height={{ base: "55vh", md: "60vh", lg: "85vh" }}
+            gap={{ base: "1rem", md: "2rem", lg: "2rem" }}
+            direction={isNotSmallerScreen ? "row" : "column"}
         >
             <Image
                 src="/images/img.jpg"
                 alt="Jiten Image"
-                sx={{
-                    borderRadius: "50%",
-                    boxShadow: "0.125rem 0.188rem 0.625rem black",
-                }}
+                borderRadius="50%"
+                boxShadow="0px 0px 10px rgba(0,0,0,0.5)"
+                width={{ base: "8rem", md: "12rem", lg: "17rem" }}
             />
-            <Flex flexDirection="column">
-                <Text textTransform="uppercase" fontSize="1.5rem">
+            <Flex
+                flexDirection="column"
+                textAlign={{ base: "center", md: "start" }}
+            >
+                <Text
+                    textTransform="uppercase"
+                    fontSize={{ base: "1rem", md: "1.5rem" }}
+                >
                     Hi!
                 </Text>
                 <Text
                     textTransform="uppercase"
-                    fontSize="2rem"
+                    fontSize={{ base: "1.5rem", md: "2rem" }}
                     fontWeight="bold"
                 >
-                    <Flex>
+                    <Flex justifyContent={{ base: "center", md: "start" }}>
                         I&apos;m
                         <FaQuoteLeft
-                            style={{ marginLeft: "0.8rem", fontSize: "1rem" }}
+                            style={
+                                isNotSmallerScreen
+                                    ? {
+                                          marginLeft: "0.8rem",
+                                          fontSize: "1rem",
+                                      }
+                                    : { marginLeft: "0.5rem", fontSize: "0.8rem" }
+                            }
                         />
                         <Text
                             color="#3C415C"
-                            fontSize="3.5rem"
+                            fontSize={{ base: "2.5rem", md: "3rem" }}
                             fontWeight="bold"
                         >
                             Jiten
                         </Text>
-                        <FaQuoteRight style={{ fontSize: "1rem" }} />
+                        <FaQuoteRight 
+                            style={
+                                isNotSmallerScreen
+                                    ? {
+                                          marginLeft: "0.8rem",
+                                          fontSize: "1rem",
+                                      }
+                                    : { marginLeft: "0.5rem", fontSize: "0.8rem" }
+                            }
+                        />
                     </Flex>
                 </Text>
                 <Text
                     textTransform="uppercase"
-                    fontSize="4.5rem"
+                    fontSize={{ base: "3rem", md: "4.5rem" }}
                     fontWeight="bold"
                     lineHeight="1"
                 >
