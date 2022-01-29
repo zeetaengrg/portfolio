@@ -4,8 +4,8 @@ export const theme = extendTheme({
     styles: {
         global: {
             'html, body' : {
-                backgroundColor: '#111827',
-                color: '#9ca3b0',
+                backgroundColor: '#1a1a2e',
+                color: '#B4A5A5',
                 fontFamily: '"Roboto Mono", monospace',
             },
             
@@ -14,9 +14,9 @@ export const theme = extendTheme({
                 fontSize: '0.9rem',
                 fontWeight: '500',
                 position: 'relative',
-
-                '&:hover' : {
-                    color: 'white',
+                _hover: {
+                    textDecoration: 'none',
+                    color: '#fff',
                 },
 
                 '&::after' : {
@@ -29,7 +29,7 @@ export const theme = extendTheme({
                     background: 'white',
                     transform: 'scaleX(0)',
                     transformOrigin: 'center',
-                    transition: 'transform 0.3s ease-in-out',
+                    transition: 'transform 0.2s ease-in-out',
                 },
 
                 '&:hover::after' : {
