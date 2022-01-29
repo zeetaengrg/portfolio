@@ -1,6 +1,20 @@
 import { Heading, TabList, Tabs, Tab, TabPanels, TabPanel, Image, Flex, Divider, Center } from "@chakra-ui/react";
 
 const Skills = () => {
+
+    const tabStyle = {
+        fontSize: { base: "1rem", md: "1.2rem" },
+        color: "#b4a5a5",
+        _focus: { outline: "none" },
+        _active: { bg: "none" },
+        _selected: { bg: "#0F3460"}
+    };
+
+    const imageStyle = {
+        height: { base: "4rem", md: "5.625rem" },
+        width: { base: "4rem", md: "5.625rem" }
+    };
+
     return (
         <>
             <Heading
@@ -26,47 +40,27 @@ const Skills = () => {
             >
                 <TabList>
                     <Tab
-                        fontSize={{ base: "1rem", md: "1.2rem" }}
-                        color="#b4a5a5"
-                        _focus={{ outline: "none" }}
-                        _active={{ bg: "none" }}
-                        _selected={{ bg: "#0F3460" }}
+                        sx={tabStyle}
                     >
                         Front-End
                     </Tab>
                     <Tab
-                        fontSize={{ base: "1rem", md: "1.2rem" }}
-                        color="#b4a5a5"
-                        _focus={{ outline: "none" }}
-                        _active={{ bg: "none" }}
-                        _selected={{ bg: "#0F3460" }}
+                        sx={tabStyle}
                     >
                         Back-End
                     </Tab>
                     <Tab
-                        fontSize={{ base: "1rem", md: "1.2rem" }}
-                        color="#b4a5a5"
-                        _focus={{ outline: "none" }}
-                        _active={{ bg: "none" }}
-                        _selected={{ bg: "#0F3460" }}
+                        sx={tabStyle}
                     >
                         Database
                     </Tab>
                     <Tab
-                        fontSize={{ base: "1rem", md: "1.2rem" }}
-                        color="#b4a5a5"
-                        _focus={{ outline: "none" }}
-                        _active={{ bg: "none" }}
-                        _selected={{ bg: "#0F3460" }}
+                        sx={tabStyle}
                     >
                         Tools
                     </Tab>
                     <Tab
-                        fontSize={{ base: "1rem", md: "1.2rem" }}
-                        color="#b4a5a5"
-                        _focus={{ outline: "none" }}
-                        _active={{ bg: "none" }}
-                        _selected={{ bg: "#0F3460" }}
+                        sx={tabStyle}
                     >
                         UI
                     </Tab>
@@ -81,32 +75,27 @@ const Skills = () => {
                             <Image
                                 src="/images/html.png"
                                 alt="HTML5"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/css.png"
                                 alt="CSS3"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/javascript.png"
                                 alt="JavaScript"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/reactjs.png"
                                 alt="ReactJS"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/nextjs.png"
                                 alt="NextJS"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                         </Flex>
                     </TabPanel>
@@ -119,14 +108,12 @@ const Skills = () => {
                             <Image
                                 src="/images/nodejs.png"
                                 alt="NodeJS"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/expressjs.png"
                                 alt="ExpressJS"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                         </Flex>
                     </TabPanel>
@@ -139,8 +126,7 @@ const Skills = () => {
                             <Image
                                 src="/images/mongodb.png"
                                 alt="MongoDB"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                         </Flex>
                     </TabPanel>
@@ -153,56 +139,47 @@ const Skills = () => {
                             <Image
                                 src="/images/sass.png"
                                 alt="Sass"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/styled-components.png"
                                 alt="Styled Components"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/materialui.png"
                                 alt="Material UI"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             {/* <Image
                                 src="/images/chakraui.png"
                                 alt="Chakra UI"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             /> */}
                             <Image
                                 src="/images/bootstrap.png"
                                 alt="Bootstrap"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/tailwind.png"
                                 alt="Tailwind"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/git.png"
                                 alt="Git"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/github.png"
                                 alt="GitHub"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                             <Image
                                 src="/images/gitlab.png"
                                 alt="GitLab"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                         </Flex>
                     </TabPanel>
@@ -215,8 +192,7 @@ const Skills = () => {
                             <Image
                                 src="/images/figma.png"
                                 alt="Figma"
-                                height={{ base: "4rem", md: "5.625rem" }}
-                                width={{ base: "4rem", md: "5.625rem" }}
+                                sx={imageStyle}
                             />
                         </Flex>
                     </TabPanel>
