@@ -42,8 +42,8 @@ const Intro = () => {
                             style={
                                 isNotSmallerScreen
                                     ? {
-                                          marginLeft: "0.8rem",
-                                          fontSize: "1rem",
+                                        marginLeft: "0.8rem",
+                                        fontSize: "1rem",
                                       }
                                     : { marginLeft: "0.5rem", fontSize: "0.8rem" }
                             }
@@ -59,8 +59,8 @@ const Intro = () => {
                             style={
                                 isNotSmallerScreen
                                     ? {
-                                          marginLeft: "0.8rem",
-                                          fontSize: "1rem",
+                                        marginLeft: "0.8rem",
+                                        fontSize: "1rem",
                                       }
                                     : { marginLeft: "0.5rem", fontSize: "0.8rem" }
                             }
