@@ -1,5 +1,4 @@
-import { Button, Flex, Image, Text, Link } from "@chakra-ui/react";
-import { useMediaQuery } from "@chakra-ui/react";
+import { Button, Flex, Image, Text, Link, useMediaQuery } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight, FaCloudDownloadAlt, FaHandshake } from 'react-icons/fa';
 
 const Intro = () => {
