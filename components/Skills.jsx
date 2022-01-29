@@ -25,14 +25,14 @@ const Skills = () => {
                 bgGradient="linear(to-r, #fff, #B4A5A5, #3C415C, #0F3460, #16213E)"
                 bgClip="text"
                 fontSize={{ base: "3rem", md: "4rem" }}
+                fontFamily="inherit"
             >
                 Tools and Technologies
             </Heading>
             <Center>
-                <Divider width="60%" />
+                <Divider width="50%" />
             </Center>
             <Tabs
-                // size={{ base: "sm", md: "md", lg: "lg" }}
                 mt="1rem"
                 variant="solid-rounded"
                 align="center"
