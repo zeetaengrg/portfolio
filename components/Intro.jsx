@@ -10,7 +10,7 @@ const Intro = () => {
         <Flex
             justifyContent="center"
             alignItems="center"
-            height={{ base: "55vh", md: "60vh", lg: "85vh" }}
+            height={{ base: "55vh", md: "60vh", lg: "87vh" }}
             gap={{ base: "1rem", md: "2rem", lg: "2rem" }}
             direction={isNotSmallerScreen ? "row" : "column"}
         >
