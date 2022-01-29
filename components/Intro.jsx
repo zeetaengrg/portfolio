@@ -5,6 +5,13 @@ const Intro = () => {
 
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
+    const btnStyle = {
+        fontSize: "1.2rem",
+        _focus: { boxShadow: "none" },
+        _hover: { bg: "none", color: "#0F3460", borderColor: "#0F3460" },
+        _active: { bg: "none", color: "#0F3460", transform: "scale(0.98)" },
+    };
+
     return (
         <Flex
             justifyContent="center"
@@ -82,19 +89,8 @@ const Intro = () => {
                     >
                         <Button
                             variant="outline"
-                            fontSize="1.2rem"
                             size="lg"
-                            _focus={{ boxShadow: "none" }}
-                            _hover={{
-                                bg: "none",
-                                color: "#0F3460",
-                                borderColor: "#0F3460",
-                            }}
-                            _active={{
-                                bg: "none",
-                                color: "#0F3460",
-                                transform: "scale(0.98)",
-                            }}
+                            sx={btnStyle}
                             rightIcon={
                                 <FaCloudDownloadAlt
                                     style={{ fontSize: "1.5rem" }}
@@ -110,19 +106,8 @@ const Intro = () => {
                     >
                         <Button
                             variant="outline"
-                            fontSize="1.2rem"
                             size="lg"
-                            _focus={{ boxShadow: "none" }}
-                            _hover={{
-                                bg: "none",
-                                color: "#0F3460",
-                                borderColor: "#0F3460",
-                            }}
-                            _active={{
-                                bg: "none",
-                                color: "#0F3460",
-                                transform: "scale(0.98)",
-                            }}
+                            sx={btnStyle}
                             rightIcon={
                                 <FaHandshake style={{ fontSize: "1.5rem" }} />
                             }
