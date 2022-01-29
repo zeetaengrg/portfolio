@@ -49,7 +49,7 @@ const Intro = () => {
                             }
                         />
                         <Text
-                            color="#3C415C"
+                            color="#0F3460"
                             fontSize={{ base: "2.5rem", md: "3rem" }}
                             fontWeight="bold"
                         >
@@ -88,12 +88,12 @@ const Intro = () => {
                             _focus={{ boxShadow: "none" }}
                             _hover={{
                                 bg: "none",
-                                color: "#3C415C",
-                                borderColor: "#3C415C",
+                                color: "#0F3460",
+                                borderColor: "#0F3460",
                             }}
                             _active={{
                                 bg: "none",
-                                color: "#3C415C",
+                                color: "#0F3460",
                                 transform: "scale(0.98)",
                             }}
                             rightIcon={
@@ -116,12 +116,12 @@ const Intro = () => {
                             _focus={{ boxShadow: "none" }}
                             _hover={{
                                 bg: "none",
-                                color: "#3C415C",
-                                borderColor: "#3C415C",
+                                color: "#0F3460",
+                                borderColor: "#0F3460",
                             }}
                             _active={{
                                 bg: "none",
-                                color: "#3C415C",
+                                color: "#0F3460",
                                 transform: "scale(0.98)",
                             }}
                             rightIcon={
