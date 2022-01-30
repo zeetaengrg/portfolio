@@ -11,13 +11,26 @@ const Contacts = () => {
         setInput(e.target.value);
     }
 
-    const isError = input === ""; 
+    const isError = input === "";
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setInput("");
+    }
+
+    const btnStyle = {
+        fontSize: "1.1rem",
+        textTransform: "uppercase",
+        _focus: { boxShadow: "none" },
+        _hover: { bg: "#0F3460", color: "#B4A5A5", borderColor: "#0F3460" },
+        _active: { bg: "none", transform: "scale(0.98)" },
+    }
 
     return (
         <>
             <Heading
                 mt={{ base: "2rem", md: "4rem" }}
-                id="projects"
+                id="contact"
                 textAlign="center"
                 textTransform="uppercase"
                 bgGradient="linear(to-r, #fff, #B4A5A5, #3C415C, #0F3460, #16213E)"
