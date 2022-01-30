@@ -74,7 +74,7 @@ const Contacts = () => {
             <Center>
                 <Divider width="25%" />
             </Center>
-            <Flex p="1rem 6rem" gap="2rem" justifyContent="center">
+            <Flex p="1rem 6rem" mb="2rem" gap="2rem" justifyContent="center">
                 <FormControl mt="2rem">
                     <Stack spacing="4">
                         <Input
