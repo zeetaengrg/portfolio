@@ -21,8 +21,13 @@ const Projects = () => {
         },
         borderRadius: "0.5rem",
         boxShadow: "0 0.5rem 1.5rem 1rem rgba(0,0,0,0.5)",
-        objectFit: "contain"
     };
+
+    const techTextStyle = {
+        color: "#E94560",
+        mt: "0.5rem",
+        textTransform: "uppercase",
+    }
 
     return (
         <>
