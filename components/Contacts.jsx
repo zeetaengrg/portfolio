@@ -26,6 +26,37 @@ const Contacts = () => {
         _active: { bg: "none", transform: "scale(0.98)" },
     }
 
+    const iconStyle = {
+        fontSize: "2rem",
+    }
+
+    const textStyle = {
+        fontSize: "1.2rem",
+    }
+
+    const flexStyle = {
+        gap: "1rem",
+        alignItems: "center",
+    }
+
+    const linkStyle = {
+        _hover:{
+            "&::after": { content: "none" },
+            color: "#B4A5A5",
+        },
+        textTransform:"none",
+        _focus: { boxShadow: "none" },
+    }
+
+    const socialLinkStyle = {
+        textTransform:"none",
+        _focus: { boxShadow: "none" },
+        fontSize: "2rem",
+        cursor: "pointer",
+        transition: "all 0.2s ease-out",
+        _hover: { transform: "translateY(5px)", color: "#fff", "&::after": { content: "none" }},
+    }
+
     return (
         <>
             <Heading
@@ -80,32 +111,57 @@ const Contacts = () => {
                         width="25rem"
                         variant="outline"
                         sx={btnStyle}
+                        onClick={handleSubmit}
                     >
                         Send
                     </Button>
                 </FormControl>
-                <Flex flexDirection="column">
-                    <Flex>
-                        <ImLocation />
-                        <Text>Pokhara, Nepal</Text>
+                <Flex flexDirection="column" justifyContent="center" gap="2rem">
+                    <Flex sx={flexStyle}>
+                        <ImLocation style={iconStyle} />
+                        <Text sx={textStyle}>Pokhara, Nepal</Text>
                     </Flex>
-                    <Flex>
-                        <FaMobileAlt />
-                        <Text>+977 9814010101</Text>
+                    <Flex sx={flexStyle}>
+                        <FaMobileAlt style={iconStyle} />
+                        <Text sx={textStyle}>+977 9814010101</Text>
                     </Flex>
-                    <Flex>
-                        <HiMail />
+                    <Flex sx={flexStyle}>
+                        <HiMail style={iconStyle} />
                         <Link
                             href="mailto:zeetaen.gurung@gmail.com"
-                            _hover={{
-                                "&::after": { content: "none" },
-                                color: "#B4A5A5",
-                            }}
-                            textTransform="none"
+                            sx={linkStyle}
                         >
-                            <Text>zeetaen.gurung@gmail.com</Text>
+                            <Text sx={textStyle}>zeetaen.gurung@gmail.com</Text>
                         </Link>
                     </Flex>
+                    <Divider />
+                    <Flex gap="5rem" justifyContent="center">
+                        <Link
+                            sx={socialLinkStyle}
+                            href="https://www.linkedin.com/in/zeetaen"
+                            target="_blank"
+                            rel="noreferrer noopener nofollow"
+                        >
+                            <FaLinkedinIn />
+                        </Link>
+                        <Link
+                            sx={socialLinkStyle}
+                            href="https://github.com/zeetaen1989"
+                            target="_blank"
+                            rel="noreferrer noopener nofollow"
+                        >
+                            <FaGithub />
+                        </Link>
+                        <Link
+                            sx={socialLinkStyle}
+                            href="https://codepen.io/zeetaen1989"
+                            target="_blank"
+                            rel="noreferrer noopener nofollow"
+                        >
+                            <FaCodepen />
+                        </Link>
+                    </Flex>
+                    <Divider />
                 </Flex>
             </Flex>
         </>
