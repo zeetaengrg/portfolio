@@ -75,7 +75,7 @@ const Intro = () => {
                 </Text>
                 <Text
                     textTransform="uppercase"
-                    fontSize={{ base: "3rem", md: "4.5rem" }}
+                    fontSize={{ base: "3rem", md: "4rem" }}
                     fontWeight="bold"
                     lineHeight="1"
                 >
