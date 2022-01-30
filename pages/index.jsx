@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Intro from "../components/Intro";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
@@ -8,6 +9,9 @@ import Footer from "../components/Footer";
 const Home = () => {
 	return (
 		<div>
+			<Head>
+				<title>Jiten Gurung</title>
+			</Head>
 			<Navbar />
 			<Intro />
 			<Skills />
