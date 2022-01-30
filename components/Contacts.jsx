@@ -1,4 +1,4 @@
-import { Heading, Divider, Center, FormControl, Input, Textarea, FormHelperText, FormErrorMessage, Flex, FormLabel, Button, Text, Stack, Link } from "@chakra-ui/react";
+import { Heading, Divider, Center, FormControl, Input, Textarea, FormHelperText, FormErrorMessage, Flex, FormLabel, Button, Text, Stack, Link, Image, Wrap } from "@chakra-ui/react";
 import { useState } from "react";
 import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
