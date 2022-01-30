@@ -1,8 +1,10 @@
 import NextLink from "next/link";
-import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
+import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box, useMediaQuery } from "@chakra-ui/react";
 import { projects } from "../data/data";
 
 const Projects = () => {
+
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     const linkStyle = {
         _hover: {
@@ -42,11 +44,16 @@ const Projects = () => {
                 Projects
             </Heading>
             <Center>
-                <Divider width="15%" />
+                <Divider width={{ base: "40%", md: "15%" }} />
             </Center>
             {projects.map((project) => (
                 <>
-                    <Flex p="2rem 6rem" gap="2rem" justifyContent="center">
+                    <Flex
+                        p={{ base: "1.5rem", md: "2rem 6rem" }}
+                        gap={{ base: "1.5rem", md: "2rem" }}
+                        justifyContent="center"
+                        direction={isNotSmallerScreen ? "row" : "column"}
+                    >
                         <Box flex="2">
                             <NextLink href="#">
                                 <Link sx={linkStyle}>
@@ -59,7 +66,7 @@ const Projects = () => {
                             </NextLink>
                         </Box>
                         <Grid placeContent="center" flex="1">
-                            <Text>
+                            <Text textAlign={isNotSmallerScreen ? "left" : "center"} >
                                 <Heading
                                     as="h3"
                                     fontSize="2rem"
@@ -69,8 +76,8 @@ const Projects = () => {
                                 </Heading>
                                 {project.descriptionOne}
                             </Text>
-                            <Text sx={techTextStyle}>Tech Stacks</Text>
-                            <Flex mt="0.5rem" gap="2rem">
+                            <Text sx={techTextStyle} textAlign={isNotSmallerScreen ? "left" : "center"}>Tech Stacks</Text>
+                            <Flex mt="0.5rem" gap="2rem" justifyContent={isNotSmallerScreen ? "left" : "center"}>
                                 {project.technologyOne.map((tech) => (
                                     <Image
                                         src={tech.image}
@@ -82,9 +89,14 @@ const Projects = () => {
                             </Flex>
                         </Grid>
                     </Flex>
-                    <Flex p="2rem 6rem" gap="2rem" justifyContent="center">
+                    <Flex
+                        p={{ base: "1.5rem", md: "2rem 6rem" }}
+                        gap={{ base: "1.5rem", md: "2rem" }}
+                        justifyContent="center"
+                        direction={isNotSmallerScreen ? "row" : "column-reverse"}
+                    >
                         <Grid placeContent="center" flex="1">
-                            <Text>
+                            <Text textAlign={isNotSmallerScreen ? "left" : "center"}>
                                 <Heading
                                     as="h3"
                                     fontSize="2rem"
@@ -94,8 +106,8 @@ const Projects = () => {
                                 </Heading>
                                 {project.descriptionTwo}
                             </Text>
-                            <Text sx={techTextStyle}>Tech Stacks</Text>
-                            <Flex mt="0.5rem" gap="2rem">
+                            <Text sx={techTextStyle} textAlign={isNotSmallerScreen ? "left" : "center"}>Tech Stacks</Text>
+                            <Flex mt="0.5rem" gap="2rem" justifyContent={isNotSmallerScreen ? "left" : "center"}>
                                 {project.technologyTwo.map((tech) => (
                                     <Image
                                         src={tech.image}
