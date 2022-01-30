@@ -1,10 +1,13 @@
-import { Heading, Divider, Center, FormControl, Input, Textarea, FormHelperText, FormErrorMessage, Flex, FormLabel, Button, Text, Stack, Link, Image, Wrap } from "@chakra-ui/react";
+import { Heading, Divider, Center, FormControl, Input, Textarea, FormErrorMessage, Flex, Button, Text, Stack, Link, Image, useMediaQuery} from "@chakra-ui/react";
 import { useState } from "react";
 import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const Contacts = () => {
+
+    const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
+
     const [input, setInput] = useState("");
 
     const handleInputChange = (e) => {
@@ -72,10 +75,13 @@ const Contacts = () => {
                 Get In Touch
             </Heading>
             <Center>
-                <Divider width="25%" />
+                <Divider width={{ base: "60%", md: "25%" }} />
             </Center>
             <Center>
                 <Image
+                    {...(isNotSmallerScreen
+                        ? { display: "block" }
+                        : { display: "none" })}
                     src="/images/contact.svg"
                     alt="Contact Me"
                     sx={{
@@ -86,25 +92,32 @@ const Contacts = () => {
                     }}
                 />
             </Center>
-            <Flex p="1rem 6rem" mb="2rem" gap="2rem" justifyContent="center">
+            <Flex
+                p={{ base: "0 1.5rem", md: "1rem 6rem" }}
+                mb="2rem"
+                gap={{ base: "2rem", md: "2rem" }}
+                justifyContent="center"
+                direction={isNotSmallerScreen ? "row" : "column"}
+            >
                 <FormControl mt="2rem">
-                    <Stack spacing="4">
+                    <Stack spacing="4" alignItems={isNotSmallerScreen ? "left" : "center"}>
                         <Input
                             placeholder="NAME"
                             type="name"
                             id="name"
-                            width="25rem"
+                            width={{ base: "23rem", md: "25rem" }}
                             bgColor="#16213E"
                             color="#B4A5A5"
                             isRequired
-                        />tools
+                        />
+                        tools
                         <Input
                             placeholder="EMAIL"
                             id="email"
                             type="email"
                             value={input}
                             onChange={handleInputChange}
-                            width="25rem"
+                            width={{ base: "23rem", md: "25rem" }}
                             bgColor="#16213E"
                             color="#B4A5A5"
                             isRequired
@@ -117,26 +130,33 @@ const Contacts = () => {
                         <Textarea
                             placeholder="MESSAGE"
                             id="message"
-                            width="25rem"
+                            width={{ base: "23rem", md: "25rem" }}
                             height="10rem"
                             bgColor="#16213E"
                             color="#B4A5A5"
                             isRequired
                         />
                     </Stack>
-                    <Button
-                        mt="1rem"
-                        width="25rem"
-                        bgColor="#16213E"
-                        color="#B4A5A5"
-                        variant="outline"
-                        sx={btnStyle}
-                        onClick={handleSubmit}
-                    >
-                        Send
-                    </Button>
+                    <Stack alignItems={isNotSmallerScreen ? "left" : "center"}>
+                        <Button
+                            mt="1rem"
+                            width={{ base: "23rem", md: "25rem" }}
+                            bgColor="#16213E"
+                            color="#B4A5A5"
+                            variant="outline"
+                            sx={btnStyle}
+                            onClick={handleSubmit}
+                        >
+                            Send
+                        </Button>
+                    </Stack>
                 </FormControl>
-                <Flex flexDirection="column" justifyContent="center" gap="2rem">
+                <Flex
+                    flexDirection="column"
+                    justifyContent="center"
+                    gap={{ base: "1rem", md: "2rem" }}
+                    alignItems={isNotSmallerScreen ? "left" : "center"}
+                >
                     <Flex sx={flexStyle}>
                         <ImLocation style={iconStyle} />
                         <Text sx={textStyle}>Pokhara, Nepal</Text>
