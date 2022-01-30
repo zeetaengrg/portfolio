@@ -25,8 +25,8 @@ const Contacts = () => {
         fontSize: "1.1rem",
         textTransform: "uppercase",
         _focus: { boxShadow: "none" },
-        _hover: { bg: "#0F3460", color: "#B4A5A5", borderColor: "#0F3460" },
-        _active: { bg: "none", transform: "scale(0.98)" },
+        _hover: { bg: "#B4A5A5", color: "#0F3460", borderColor: "#0F3460" },
+        _active: { bg: "#B4A5A5", color: "#0F3460", transform: "scale(0.98)" },
     }
 
     const iconStyle = {
