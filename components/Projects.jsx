@@ -14,7 +14,6 @@ const Projects = () => {
     };
 
     const imgStyle = {
-        width: "250rem",
         transition: "all 0.3s ease-in-out",
         _hover: {
             transform: "scale(1.05)",
@@ -45,52 +44,76 @@ const Projects = () => {
             {projects.map((project) => (
                 <>
                     <Flex p="2rem 6rem" gap="2rem" justifyContent="center">
-                        <NextLink href="#">
-                            <Link sx={linkStyle}>
-                                <Image
-                                    src={project.imageOne}
-                                    alt="Hulu Movie Streaming App"
-                                    sx={imgStyle}
-                                />
-                            </Link>
-                        </NextLink>
-                        <Grid placeContent="center">
+                        <Box flex="2">
+                            <NextLink href="#">
+                                <Link sx={linkStyle}>
+                                    <Image
+                                        src={project.imageOne}
+                                        alt="Hulu Movie Streaming App"
+                                        sx={imgStyle}
+                                    />
+                                </Link>
+                            </NextLink>
+                        </Box>
+                        <Grid placeContent="center" flex="1">
                             <Text>
-                                <Heading as="h3" fontSize="2rem">
+                                <Heading
+                                    as="h3"
+                                    fontSize="2rem"
+                                    color="#0F3460"
+                                >
                                     {project.titleOne}
                                 </Heading>
                                 {project.descriptionOne}
                             </Text>
+                            <Text sx={techTextStyle}>Tech Stacks</Text>
                             <Flex mt="0.5rem" gap="2rem">
                                 {project.technologyOne.map((tech) => (
-                                    <Image src={tech.image} alt={tech.name} key={tech.id} height="48px" />
+                                    <Image
+                                        src={tech.image}
+                                        alt={tech.name}
+                                        key={tech.id}
+                                        height="48px"
+                                    />
                                 ))}
                             </Flex>
                         </Grid>
                     </Flex>
                     <Flex p="2rem 6rem" gap="2rem" justifyContent="center">
-                        <Grid placeContent="center">
+                        <Grid placeContent="center" flex="1">
                             <Text>
-                                <Heading as="h3" fontSize="2rem">
+                                <Heading
+                                    as="h3"
+                                    fontSize="2rem"
+                                    color="#0F3460"
+                                >
                                     {project.titleTwo}
                                 </Heading>
                                 {project.descriptionTwo}
                             </Text>
+                            <Text sx={techTextStyle}>Tech Stacks</Text>
                             <Flex mt="0.5rem" gap="2rem">
                                 {project.technologyTwo.map((tech) => (
-                                    <Image src={tech.image} alt={tech.name} key={tech.id} height="48px" />
+                                    <Image
+                                        src={tech.image}
+                                        alt={tech.name}
+                                        key={tech.id}
+                                        height="48px"
+                                    />
                                 ))}
                             </Flex>
                         </Grid>
-                        <NextLink href="#">
-                            <Link sx={linkStyle}>
-                                <Image
-                                    src={project.imageTwo}
-                                    alt="Hulu Movie Streaming App"
-                                    sx={imgStyle}
-                                />
-                            </Link>
-                        </NextLink>
+                        <Box flex="2">
+                            <NextLink href="#">
+                                <Link sx={linkStyle}>
+                                    <Image
+                                        src={project.imageTwo}
+                                        alt="Hulu Movie Streaming App"
+                                        sx={imgStyle}
+                                    />
+                                </Link>
+                            </NextLink>
+                        </Box>
                     </Flex>
                 </>
             ))}
