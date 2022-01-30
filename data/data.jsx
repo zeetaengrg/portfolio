@@ -42,13 +42,17 @@ export const projects = [
     {
         id: 2,
         titleOne: "E-Commerce Website",
-        titleTwo: "Form Validation",
+        // titleTwo: "Form Validation",
+        titleTwo: "Breaking Bad API",
         descriptionOne:
             "This is a clothing store e-commerce website which provides functionalities to sell clothing products.",
+        // descriptionTwo:
+            // "This is a form validation which validates the form fields and shows the error messages if the form is not valid.",
         descriptionTwo:
-            "This is a form validation which validates the form fields and shows the error messages if the form is not valid.",
+            `This project shows a simple demonstration of how to fetch the data from the external API and display it on the page. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
         imageOne: "/images/clothingstore.png",
-        imageTwo: "/images/form-validation.png",
+        // imageTwo: "/images/form-validation.png",
+        imageTwo: "/images/breakingbad.png",
         technologyOne: [
             {
                 id: 1,
