@@ -7,6 +7,7 @@ export const theme = extendTheme({
                 backgroundColor: '#1a1a2e',
                 color: '#B4A5A5',
                 fontFamily: '"Roboto Mono", monospace',
+                scrollBehavior: 'smooth',
             },
             
             a : {
