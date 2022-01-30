@@ -73,19 +73,14 @@ export const projects = [
         technologyTwo: [
             {
                 id: 1,
-                name: "HTML",
-                image: "/images/html.png",
+                name: "React",
+                image: "/images/reactjs.png",
             },
             {
                 id: 2,
-                name: "CSS",
-                image: "/images/css.png",
+                name: "Sass",
+                image: "/images/sass.png",
             },
-            {
-                id: 3,
-                name: "JavaScript",
-                image: "/images/javascript.png",
-            }
         ]
     },
 ];
