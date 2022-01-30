@@ -83,7 +83,7 @@ const Contacts = () => {
                         ? { display: "block" }
                         : { display: "none" })}
                     src="/images/contact.svg"
-                    alt="Contact Me"
+                    alt="Contact Me SVG"
                     sx={{
                         position: "absolute",
                         bottom: "3rem",
