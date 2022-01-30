@@ -74,23 +74,39 @@ const Contacts = () => {
             <Center>
                 <Divider width="25%" />
             </Center>
+            <Center>
+                <Image
+                    src="/images/contact.svg"
+                    alt="Contact Me"
+                    sx={{
+                        position: "absolute",
+                        bottom: "3rem",
+                        width: "50rem",
+                        opacity: "0.2",
+                    }}
+                />
+            </Center>
             <Flex p="1rem 6rem" mb="2rem" gap="2rem" justifyContent="center">
                 <FormControl mt="2rem">
                     <Stack spacing="4">
                         <Input
-                            placeholder="Name"
+                            placeholder="NAME"
                             type="name"
                             id="name"
                             width="25rem"
+                            bgColor="#16213E"
+                            color="#B4A5A5"
                             isRequired
-                        />
+                        />tools
                         <Input
-                            placeholder="Email"
+                            placeholder="EMAIL"
                             id="email"
                             type="email"
                             value={input}
                             onChange={handleInputChange}
                             width="25rem"
+                            bgColor="#16213E"
+                            color="#B4A5A5"
                             isRequired
                         />
                         {isError && (
@@ -99,16 +115,20 @@ const Contacts = () => {
                             </FormErrorMessage>
                         )}
                         <Textarea
-                            placeholder="Message"
+                            placeholder="MESSAGE"
                             id="message"
                             width="25rem"
                             height="10rem"
+                            bgColor="#16213E"
+                            color="#B4A5A5"
                             isRequired
                         />
                     </Stack>
                     <Button
                         mt="1rem"
                         width="25rem"
+                        bgColor="#16213E"
+                        color="#B4A5A5"
                         variant="outline"
                         sx={btnStyle}
                         onClick={handleSubmit}
