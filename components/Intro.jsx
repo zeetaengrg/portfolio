@@ -6,10 +6,12 @@ const Intro = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     const btnStyle = {
+        padding: "0 0.8rem",
+        backgroundColor: "#16213E",
         fontSize: "1.2rem",
         _focus: { boxShadow: "none" },
-        _hover: { bg: "none", color: "#0F3460", borderColor: "#0F3460" },
-        _active: { bg: "none", color: "#0F3460", transform: "scale(0.98)" },
+        _hover: { bg: "#B4A5A5", color: "#0F3460", borderColor: "#0F3460" },
+        _active: { bg: "#B4A5A5", color: "#0F3460", transform: "scale(0.98)" },
     };
 
     return (
