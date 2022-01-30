@@ -1,7 +1,7 @@
 import { Heading, Divider, Center, FormControl, Input, Textarea, FormHelperText, FormErrorMessage, Flex, FormLabel, Button, Text, Stack, Link } from "@chakra-ui/react";
 import { useState } from "react";
 import { ImLocation } from "react-icons/im";
-import { FaMobileAlt } from "react-icons/fa";
+import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const Contacts = () => {
