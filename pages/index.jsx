@@ -6,7 +6,7 @@ import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const Layout = () => {
 	return (
 		<div>
 			<Head>
@@ -22,4 +22,4 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default Layout;
