@@ -12,7 +12,8 @@ const Skills = () => {
 
     const imageStyle = {
         height: { base: "4rem", md: "5.625rem" },
-        width: { base: "4rem", md: "5.625rem" }
+        width: { base: "4rem", md: "5.625rem" },
+        objectFit: "contain"
     };
 
     return (
