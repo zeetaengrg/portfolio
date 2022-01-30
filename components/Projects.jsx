@@ -1,10 +1,8 @@
 import NextLink from "next/link";
-import { Center, Divider, Flex, Grid, Heading, Image, Text, Link } from "@chakra-ui/react";
+import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
 import { projects } from "../data/data";
 
 const Projects = () => {
-
-    const n = projects.length;
 
     const linkStyle = {
         _hover: {
