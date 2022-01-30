@@ -152,11 +152,11 @@ const Skills = () => {
                                 alt="Material UI"
                                 sx={imageStyle}
                             />
-                            {/* <Image
+                            <Image
                                 src="/images/chakraui.png"
                                 alt="Chakra UI"
                                 sx={imageStyle}
-                            /> */}
+                            />
                             <Image
                                 src="/images/bootstrap.png"
                                 alt="Bootstrap"
