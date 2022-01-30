@@ -123,7 +123,7 @@ const Contacts = () => {
                     </Flex>
                     <Flex sx={flexStyle}>
                         <FaMobileAlt style={iconStyle} />
-                        <Text sx={textStyle}>+977 9814010101</Text>
+                        <Text sx={textStyle}>+977 9803709974</Text>
                     </Flex>
                     <Flex sx={flexStyle}>
                         <HiMail style={iconStyle} />
