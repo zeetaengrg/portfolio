@@ -99,7 +99,7 @@ const Contacts = () => {
                 justifyContent="center"
                 direction={isNotSmallerScreen ? "row" : "column"}
             >
-                <FormControl mt="2rem">
+                <FormControl mt="2rem" action="https://formsubmit.co/zeetaen.gurung@gmail.com" method="POST">
                     <Stack spacing="4" alignItems={isNotSmallerScreen ? "left" : "center"}>
                         <Input
                             placeholder="NAME"
@@ -145,6 +145,7 @@ const Contacts = () => {
                             color="#B4A5A5"
                             variant="outline"
                             sx={btnStyle}
+                            type="submit"
                             onClick={handleSubmit}
                         >
                             Send
