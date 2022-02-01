@@ -10,6 +10,23 @@ const Contacts = () => {
 
     const [input, setInput] = useState("");
 
+    // const [values, setValues] = useState({
+    //     name: "",
+    //     email: "",
+    //     message: "",
+    // });
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    // const handleChange = e => {
+    //     setValues({
+    //         ...values,
+    //         [e.target.name]: e.target.value,
+    //     });
+    // }
+
     const handleInputChange = (e) => {
         setInput(e.target.value);
     }
@@ -18,7 +35,6 @@ const Contacts = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setInput("");
     }
 
     const btnStyle = {
@@ -99,24 +115,35 @@ const Contacts = () => {
                 justifyContent="center"
                 direction={isNotSmallerScreen ? "row" : "column"}
             >
-                <FormControl mt="2rem" action="https://formsubmit.co/zeetaen.gurung@gmail.com" method="POST">
-                    <Stack spacing="4" alignItems={isNotSmallerScreen ? "left" : "center"}>
+                <FormControl
+                    mt="2rem"
+                    action="https://formsubmit.co/zeetaen.gurung@gmail.com"
+                    method="POST"
+                    onSubmit={handleSubmit}
+                >
+                    <Stack
+                        spacing="4"
+                        alignItems={isNotSmallerScreen ? "left" : "center"}
+                    >
                         <Input
                             placeholder="NAME"
+                            name="name"
                             type="name"
                             id="name"
                             width={{ base: "23rem", md: "25rem" }}
                             bgColor="#16213E"
                             color="#B4A5A5"
+                            value={values[input.name]}
+                            onChange={handleChange}
                             isRequired
                         />
-                        tools
                         <Input
                             placeholder="EMAIL"
+                            name="email"
                             id="email"
                             type="email"
-                            value={input}
-                            onChange={handleInputChange}
+                            value={values[input.name]}
+                            onChange={handleChange}
                             width={{ base: "23rem", md: "25rem" }}
                             bgColor="#16213E"
                             color="#B4A5A5"
@@ -124,16 +151,19 @@ const Contacts = () => {
                         />
                         {isError && (
                             <FormErrorMessage>
-                                Please enter your email
+                                Please enter your email!
                             </FormErrorMessage>
                         )}
                         <Textarea
                             placeholder="MESSAGE"
+                            name="message"
                             id="message"
                             width={{ base: "23rem", md: "25rem" }}
                             height="10rem"
                             bgColor="#16213E"
                             color="#B4A5A5"
+                            value={values[input.name]}
+                            onChange={handleChange}
                             isRequired
                         />
                     </Stack>
@@ -146,7 +176,6 @@ const Contacts = () => {
                             variant="outline"
                             sx={btnStyle}
                             type="submit"
-                            onClick={handleSubmit}
                         >
                             Send
                         </Button>
