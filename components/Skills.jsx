@@ -31,7 +31,7 @@ const Skills = () => {
                 Tools and Technologies
             </Heading>
             <Center>
-                <Divider width="50%" />
+                <Divider width="50%" mb="0.5rem" />
             </Center>
             <Center>
                 <Text>My Tools and Technologies</Text>
