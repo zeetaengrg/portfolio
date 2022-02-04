@@ -5,8 +5,6 @@ import {
     FormControl,
     Input,
     Textarea,
-    FormErrorMessage,
-    FormHelperText,
     Flex,
     Button,
     Text,
@@ -35,8 +33,6 @@ const Contacts = () => {
     const handleMessageChange = e => {
         setMessage(e.target.value);
     }
-
-    // const isError = input === "";
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -115,7 +111,7 @@ const Contacts = () => {
                     alt="Contact Me SVG"
                     sx={{
                         position: "absolute",
-                        bottom: "3rem",
+                        bottom: "12rem",
                         width: "50rem",
                         opacity: "0.2",
                     }}
@@ -127,6 +123,7 @@ const Contacts = () => {
                 gap={{ base: "2rem", md: "2rem" }}
                 justifyContent="center"
                 direction={{ base: "column", md: "row" }}
+                position="relative"
             >
                 <FormControl mt="2rem">
                     <Stack
