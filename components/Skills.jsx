@@ -1,13 +1,13 @@
-import { Heading, TabList, Tabs, Tab, TabPanels, TabPanel, Image, Flex, Divider, Center } from "@chakra-ui/react";
+import { Heading, Text, TabList, Tabs, Tab, TabPanels, TabPanel, Image, Flex, Divider, Center } from "@chakra-ui/react";
 
 const Skills = () => {
 
     const tabStyle = {
         fontSize: { base: "1rem", md: "1.2rem" },
-        color: "#b4a5a5",
+        color: "#a5abbd",
         _focus: { outline: "none" },
         _active: { bg: "none" },
-        _selected: { bg: "#0F3460"}
+        _selected: { bg: "#384765"}
     };
 
     const imageStyle = {
@@ -23,7 +23,7 @@ const Skills = () => {
                 id="skills"
                 textAlign="center"
                 textTransform="uppercase"
-                bgGradient="linear(to-r, #fff, #B4A5A5, #3C415C, #0F3460, #16213E)"
+                bgGradient="linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)"
                 bgClip="text"
                 fontSize={{ base: "3rem", md: "4rem" }}
                 fontFamily="inherit"
@@ -32,6 +32,9 @@ const Skills = () => {
             </Heading>
             <Center>
                 <Divider width="50%" />
+            </Center>
+            <Center>
+                <Text>My Tools and Technologies</Text>
             </Center>
             <Tabs
                 mt="1rem"
