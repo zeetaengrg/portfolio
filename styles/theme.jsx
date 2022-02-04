@@ -4,9 +4,10 @@ export const theme = extendTheme({
     styles: {
         global: {
             'html, body' : {
-                backgroundColor: '#1a1a2e',
-                color: '#B4A5A5',
-                fontFamily: '"Roboto Mono", monospace',
+                backgroundColor: '#0B111E',
+                color: '#a5abbd',
+                // fontFamily: '"Roboto Mono", monospace',
+                fontFamily: '"Poppins", sans-serif',
                 scrollBehavior: 'smooth',
             },
             
