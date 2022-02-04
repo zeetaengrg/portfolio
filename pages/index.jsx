@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Intro from "../components/Intro";
 import Navbar from "../components/Navbar";
+import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
@@ -14,6 +15,7 @@ const Layout = () => {
 			</Head>
 			<Navbar />
 			<Intro />
+			<AboutMe />
 			<Skills />
 			<Projects />
 			<Contacts />
