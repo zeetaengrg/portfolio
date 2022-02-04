@@ -1,39 +1,58 @@
-import { Heading, Divider, Center, FormControl, Input, Textarea, FormErrorMessage, Flex, Button, Text, Stack, Link, Image, useMediaQuery} from "@chakra-ui/react";
+import {
+    Heading,
+    Divider,
+    Center,
+    FormControl,
+    Input,
+    Textarea,
+    FormErrorMessage,
+    FormHelperText,
+    Flex,
+    Button,
+    Text,
+    Stack,
+    Link,
+    Image
+} from "@chakra-ui/react";
 import { useState } from "react";
 import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const Contacts = () => {
-
     const [input, setInput] = useState("");
-
-    // const [values, setValues] = useState({
-    //     name: "",
-    //     email: "",
-    //     message: "",
-    // });
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-
-    // const handleChange = e => {
-    //     setValues({
-    //         ...values,
-    //         [e.target.name]: e.target.value,
-    //     });
-    // }
+    const [error, setError] = useState("");
 
     const handleInputChange = (e) => {
         setInput(e.target.value);
+    };
+    
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+    }
+    
+    const handleEmailChange = e => {
+        setEmail(e.target.value);
+    }
+    
+    const handleMessageChange = e => {
+        setMessage(e.target.value);
     }
 
     const isError = input === "";
 
     const handleSubmit = (e) => {
         e.preventDefault();
-    }
+        setInput("");
+        setName("");
+        setEmail("");
+        setMessage("");
+        setError(isError);
+    };
 
     const btnStyle = {
         fontSize: "1.1rem",
@@ -118,14 +137,12 @@ const Contacts = () => {
                 justifyContent="center"
                 direction={{ base: "column", md: "row" }}
             >
-                <FormControl
-                    mt="2rem"
-                    onSubmit={handleSubmit}
-                >
+                <FormControl mt="2rem" isInvalid={isError}>
                     <Stack
                         spacing="4"
                         alignItems={{ base: "center", md: "flex-start" }}
                     >
+                        
                         <Input
                             placeholder="NAME"
                             name="name"
@@ -134,8 +151,7 @@ const Contacts = () => {
                             width={{ base: "23rem", md: "25rem" }}
                             bgColor="#384765"
                             color="#a5abbd"
-                            // value={values[input.name]}
-                            // onChange={handleChange}
+                            onChange={handleNameChange}
                             isRequired
                         />
                         <Input
@@ -143,16 +159,21 @@ const Contacts = () => {
                             name="email"
                             id="email"
                             type="email"
-                            // value={values[input.name]}
-                            // onChange={handleChange}
+                            // value={input}
+                            onChange={handleEmailChange}
                             width={{ base: "23rem", md: "25rem" }}
                             bgColor="#384765"
                             color="#a5abbd"
                             isRequired
                         />
-                        {isError && (
+                        {!isError ? (
+                            <FormHelperText>
+                                Please enter your email so that I can contact
+                                you!
+                            </FormHelperText>
+                        ) : (
                             <FormErrorMessage>
-                                Please enter your email!
+                                Email is Required!
                             </FormErrorMessage>
                         )}
                         <Textarea
@@ -163,8 +184,7 @@ const Contacts = () => {
                             height="10rem"
                             bgColor="#384765"
                             color="#a5abbd"
-                            // value={values[input.name]}
-                            // onChange={handleChange}
+                            onChange={handleMessageChange}
                             isRequired
                         />
                     </Stack>
@@ -177,6 +197,7 @@ const Contacts = () => {
                             variant="outline"
                             sx={btnStyle}
                             type="submit"
+                            onClick={handleSubmit}
                         >
                             Send
                         </Button>
