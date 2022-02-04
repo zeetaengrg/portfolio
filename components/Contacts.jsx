@@ -6,8 +6,6 @@ import { HiMail } from "react-icons/hi";
 
 const Contacts = () => {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width: 600px)");
-
     const [input, setInput] = useState("");
 
     // const [values, setValues] = useState({
@@ -95,9 +93,7 @@ const Contacts = () => {
             </Center>
             <Center>
                 <Image
-                    {...(isNotSmallerScreen
-                        ? { display: "block" }
-                        : { display: "none" })}
+                    display={{ base: "none", md: "block" }}
                     src="/images/contact.svg"
                     alt="Contact Me SVG"
                     sx={{
@@ -113,17 +109,15 @@ const Contacts = () => {
                 mb="2rem"
                 gap={{ base: "2rem", md: "2rem" }}
                 justifyContent="center"
-                direction={isNotSmallerScreen ? "row" : "column"}
+                direction={{ base: "column", md: "row" }}
             >
                 <FormControl
                     mt="2rem"
-                    action="https://formsubmit.co/zeetaen.gurung@gmail.com"
-                    method="POST"
                     onSubmit={handleSubmit}
                 >
                     <Stack
                         spacing="4"
-                        alignItems={isNotSmallerScreen ? "left" : "center"}
+                        alignItems={{ base: "center", md: "flex-start" }}
                     >
                         <Input
                             placeholder="NAME"
@@ -160,19 +154,19 @@ const Contacts = () => {
                             id="message"
                             width={{ base: "23rem", md: "25rem" }}
                             height="10rem"
-                            bgColor="#16213E"
-                            color="#B4A5A5"
-                            value={values[input.name]}
-                            onChange={handleChange}
+                            bgColor="#384765"
+                            color="#a5abbd"
+                            // value={values[input.name]}
+                            // onChange={handleChange}
                             isRequired
                         />
                     </Stack>
-                    <Stack alignItems={isNotSmallerScreen ? "left" : "center"}>
+                    <Stack alignItems={{ base: "center", md: "flex-start" }}>
                         <Button
                             mt="1rem"
                             width={{ base: "23rem", md: "25rem" }}
-                            bgColor="#16213E"
-                            color="#B4A5A5"
+                            bgColor="#384765"
+                            color="#a5abbd"
                             variant="outline"
                             sx={btnStyle}
                             type="submit"
@@ -185,7 +179,7 @@ const Contacts = () => {
                     flexDirection="column"
                     justifyContent="center"
                     gap={{ base: "1rem", md: "2rem" }}
-                    alignItems={isNotSmallerScreen ? "left" : "center"}
+                    alignItems={{ base: "center", md: "flex-start" }}
                 >
                     <Flex sx={flexStyle}>
                         <ImLocation style={iconStyle} />
