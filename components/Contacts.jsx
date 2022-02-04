@@ -202,7 +202,7 @@ const Contacts = () => {
                     <Flex gap="5rem" justifyContent="center">
                         <Link
                             sx={socialLinkStyle}
-                            href="https://www.linkedin.com/in/zeetaen"
+                            href="https://www.linkedin.com/in/jitengrg"
                             target="_blank"
                             rel="noreferrer noopener nofollow"
                         >
