@@ -4,8 +4,6 @@ import { projects } from "../data/data";
 
 const Projects = () => {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
-
     const linkStyle = {
         _hover: {
             textDecoration: "none",
@@ -46,13 +44,16 @@ const Projects = () => {
             <Center>
                 <Divider width={{ base: "40%", md: "15%" }} />
             </Center>
+            <Center>
+                <Text>My Recent Works</Text>
+            </Center>
             {projects.map((project) => (
                 <>
                     <Flex
                         p={{ base: "1.5rem", md: "2rem 6rem" }}
                         gap={{ base: "1.5rem", md: "2rem" }}
                         justifyContent="center"
-                        direction={isNotSmallerScreen ? "row" : "column"}
+                        direction={{ base: "column", md: "row" }}
                     >
                         <Box flex="2">
                             <NextLink href="#">
@@ -66,18 +67,19 @@ const Projects = () => {
                             </NextLink>
                         </Box>
                         <Grid placeContent="center" flex="1">
-                            <Text textAlign={isNotSmallerScreen ? "left" : "center"} >
+                            <Text textAlign={{ base: "center", md: "left" }}>
                                 <Heading
                                     as="h3"
                                     fontSize="2rem"
-                                    color="#0F3460"
+                                    color="#3892f9"
                                 >
                                     {project.titleOne}
                                 </Heading>
+                                <Divider mb="0.5rem" />
                                 {project.descriptionOne}
                             </Text>
-                            <Text sx={techTextStyle} textAlign={isNotSmallerScreen ? "left" : "center"}>Tech Stacks</Text>
-                            <Flex mt="0.5rem" gap="2rem" justifyContent={isNotSmallerScreen ? "left" : "center"}>
+                            <Text sx={techTextStyle} textAlign={{ base: "center", md: "left" }}>Tech Stacks</Text>
+                            <Flex mt="0.5rem" gap="2rem" justifyContent={{ base: "center", md: "left" }}>
                                 {project.technologyOne.map((tech) => (
                                     <Image
                                         src={tech.image}
@@ -93,21 +95,22 @@ const Projects = () => {
                         p={{ base: "1.5rem", md: "2rem 6rem" }}
                         gap={{ base: "1.5rem", md: "2rem" }}
                         justifyContent="center"
-                        direction={isNotSmallerScreen ? "row" : "column-reverse"}
+                        direction={{ base: "column-reverse", md: "row" }}
                     >
                         <Grid placeContent="center" flex="1">
-                            <Text textAlign={isNotSmallerScreen ? "left" : "center"}>
+                            <Text textAlign={{ base: "center", md: "left" }}>
                                 <Heading
                                     as="h3"
                                     fontSize="2rem"
-                                    color="#0F3460"
+                                    color="#3892f9"
                                 >
                                     {project.titleTwo}
                                 </Heading>
+                                <Divider mb="0.5rem" />
                                 {project.descriptionTwo}
                             </Text>
-                            <Text sx={techTextStyle} textAlign={isNotSmallerScreen ? "left" : "center"}>Tech Stacks</Text>
-                            <Flex mt="0.5rem" gap="2rem" justifyContent={isNotSmallerScreen ? "left" : "center"}>
+                            <Text sx={techTextStyle} textAlign={{ base: "center", md: "left" }}>Tech Stacks</Text>
+                            <Flex mt="0.5rem" gap="2rem" justifyContent={{ base: "center", md: "left" }}>
                                 {project.technologyTwo.map((tech) => (
                                     <Image
                                         src={tech.image}
