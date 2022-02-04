@@ -22,7 +22,7 @@ const Projects = () => {
     };
 
     const techTextStyle = {
-        color: "#E94560",
+        color: "#384765",
         mt: "0.5rem",
         textTransform: "uppercase",
     }
@@ -33,8 +33,8 @@ const Projects = () => {
                 mt={{ base: "2rem", md: "4rem" }}
                 id="projects"
                 textAlign="center"
+                bgGradient="linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)"
                 textTransform="uppercase"
-                bgGradient="linear(to-r, #fff, #B4A5A5, #3C415C, #0F3460, #16213E)"
                 bgClip="text"
                 fontSize={{ base: "3rem", md: "4rem" }}
                 fontFamily="inherit"
