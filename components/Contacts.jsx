@@ -89,7 +89,10 @@ const Contacts = () => {
                 Get In Touch
             </Heading>
             <Center>
-                <Divider width={{ base: "60%", md: "25%" }} />
+                <Divider width={{ base: "60%", md: "25%" }} mb="0.5rem" />
+            </Center>
+            <Center>
+                <Text>Contact Me</Text>
             </Center>
             <Center>
                 <Image
