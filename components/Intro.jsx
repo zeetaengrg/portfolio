@@ -1,17 +1,17 @@
-import { Button, Flex, Image, Text, Link, useMediaQuery } from "@chakra-ui/react";
+import { Button, Flex, Image, Text, Link } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight, FaCloudDownloadAlt, FaHandshake } from 'react-icons/fa';
 
 const Intro = () => {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    // const [isNotSmallerScreen] = useMediaQuery("(min-width:500px)");
 
     const btnStyle = {
         padding: "0 0.8rem",
         backgroundColor: "#16213E",
         fontSize: "1.2rem",
         _focus: { boxShadow: "none" },
-        _hover: { bg: "#B4A5A5", color: "#0F3460", borderColor: "#0F3460" },
-        _active: { bg: "#B4A5A5", color: "#0F3460", transform: "scale(0.98)" },
+        _hover: { bg: "#a5abbd", color: "#384765", borderColor: "#0F3460" },
+        _active: { bg: "#a5abbd", color: "#384765", transform: "scale(0.98)" },
     };
 
     return (
@@ -20,13 +20,13 @@ const Intro = () => {
             alignItems="center"
             height={{ base: "55vh", md: "60vh", lg: "87vh" }}
             gap={{ base: "1rem", md: "2rem", lg: "2rem" }}
-            direction={isNotSmallerScreen ? "row" : "column"}
+            direction={{ base: "column", md: "row" }}
         >
             <Image
-                src="/images/img.jpg"
+                src="/images/jiten.jpg"
                 alt="Jiten Image"
                 borderRadius="50%"
-                boxShadow="0px 0px 10px rgba(0,0,0,0.5)"
+                boxShadow="0px 0px 10px 10px rgba(0,0,0,0.5)"
                 width={{ base: "8rem", md: "12rem", lg: "17rem" }}
             />
             <Flex
@@ -47,41 +47,27 @@ const Intro = () => {
                     <Flex justifyContent={{ base: "center", md: "start" }}>
                         I&apos;m
                         <FaQuoteLeft
-                            style={
-                                isNotSmallerScreen
-                                    ? {
-                                        marginLeft: "0.8rem",
-                                        fontSize: "1rem",
-                                      }
-                                    : { marginLeft: "0.5rem", fontSize: "0.8rem" }
-                            }
+                            style={{ marginLeft: "0.5rem", fontSize: "0.8rem" }}
                         />
                         <Text
-                            color="#0F3460"
+                            color="#384765"
                             fontSize={{ base: "2.5rem", md: "3rem" }}
                             fontWeight="bold"
                         >
                             Jiten
                         </Text>
-                        <FaQuoteRight 
-                            style={
-                                isNotSmallerScreen
-                                    ? {
-                                        marginLeft: "0.8rem",
-                                        fontSize: "1rem",
-                                      }
-                                    : { marginLeft: "0.5rem", fontSize: "0.8rem" }
-                            }
+                        <FaQuoteRight
+                            style={{ marginLeft: "0.5rem", fontSize: "0.8rem" }}
                         />
                     </Flex>
                 </Text>
                 <Text
                     textTransform="uppercase"
                     fontSize={{ base: "3rem", md: "4rem" }}
-                    fontWeight="bold"
+                    fontWeight="extrabold"
                     lineHeight="1"
                 >
-                    Front End Dev
+                    FRONT END DEV
                 </Text>
                 <Flex gap="1rem" mt="1rem">
                     <Link
@@ -92,6 +78,7 @@ const Intro = () => {
                         <Button
                             variant="outline"
                             size="lg"
+                            justifyContent={{ base: "center", md: "start" }}
                             sx={btnStyle}
                             rightIcon={
                                 <FaCloudDownloadAlt
