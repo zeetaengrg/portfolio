@@ -28,17 +28,17 @@ const Intro = () => {
                 width={{ base: "8rem", md: "12rem", lg: "17rem" }}
             />
             <Flex
-                flexDirection="column"
+                direction="column"
                 textAlign={{ base: "center", md: "start" }}
             >
                 <Text
-                    textTransform="uppercase"
+                    casing="uppercase"
                     fontSize={{ base: "1rem", md: "1.5rem" }}
                 >
                     Hi!
                 </Text>
                 <Text
-                    textTransform="uppercase"
+                    casing="uppercase"
                     fontSize={{ base: "1.5rem", md: "2rem" }}
                     fontWeight="bold"
                 >
@@ -60,7 +60,7 @@ const Intro = () => {
                     </Flex>
                 </Text>
                 <Text
-                    textTransform="uppercase"
+                    casing="uppercase"
                     fontSize={{ base: "3rem", md: "4rem" }}
                     fontWeight="extrabold"
                     lineHeight="1"
