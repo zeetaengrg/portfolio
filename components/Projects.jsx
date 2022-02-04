@@ -42,7 +42,7 @@ const Projects = () => {
                 Projects
             </Heading>
             <Center>
-                <Divider width={{ base: "40%", md: "15%" }} />
+                <Divider width={{ base: "40%", md: "15%" }} mb="0.5rem" />
             </Center>
             <Center>
                 <Text>My Recent Works</Text>
