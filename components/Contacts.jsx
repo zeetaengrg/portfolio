@@ -20,17 +20,10 @@ import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const Contacts = () => {
-    const [input, setInput] = useState("");
-
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [error, setError] = useState("");
 
-    const handleInputChange = (e) => {
-        setInput(e.target.value);
-    };
-    
     const handleNameChange = (e) => {
         setName(e.target.value);
     }
@@ -43,15 +36,13 @@ const Contacts = () => {
         setMessage(e.target.value);
     }
 
-    const isError = input === "";
+    // const isError = input === "";
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setInput("");
         setName("");
         setEmail("");
         setMessage("");
-        setError(isError);
     };
 
     const btnStyle = {
@@ -137,7 +128,7 @@ const Contacts = () => {
                 justifyContent="center"
                 direction={{ base: "column", md: "row" }}
             >
-                <FormControl mt="2rem" isInvalid={isError}>
+                <FormControl mt="2rem">
                     <Stack
                         spacing="4"
                         alignItems={{ base: "center", md: "flex-start" }}
@@ -148,6 +139,7 @@ const Contacts = () => {
                             name="name"
                             type="name"
                             id="name"
+                            value={name}
                             width={{ base: "23rem", md: "25rem" }}
                             bgColor="#384765"
                             color="#a5abbd"
@@ -159,14 +151,14 @@ const Contacts = () => {
                             name="email"
                             id="email"
                             type="email"
-                            // value={input}
+                            value={email}
                             onChange={handleEmailChange}
                             width={{ base: "23rem", md: "25rem" }}
                             bgColor="#384765"
                             color="#a5abbd"
                             isRequired
                         />
-                        {!isError ? (
+                        {/* {!isError ? (
                             <FormHelperText>
                                 Please enter your email so that I can contact
                                 you!
@@ -175,11 +167,12 @@ const Contacts = () => {
                             <FormErrorMessage>
                                 Email is Required!
                             </FormErrorMessage>
-                        )}
+                        )} */}
                         <Textarea
                             placeholder="MESSAGE"
                             name="message"
                             id="message"
+                            value={message}
                             width={{ base: "23rem", md: "25rem" }}
                             height="10rem"
                             bgColor="#384765"
