@@ -3,8 +3,6 @@ import { FaQuoteLeft, FaQuoteRight, FaCloudDownloadAlt, FaHandshake } from 'reac
 
 const Intro = () => {
 
-    // const [isNotSmallerScreen] = useMediaQuery("(min-width:500px)");
-
     const btnStyle = {
         padding: "0 0.8rem",
         backgroundColor: "#16213E",
