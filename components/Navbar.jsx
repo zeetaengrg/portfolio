@@ -20,7 +20,7 @@ const Navbar = () => {
             </Box>
             <Spacer />
             <Flex gap={{ base: "1.2rem", md: "2rem", lg: "4rem" }} alignItems="center">
-                <NextLink href="/about-me/about">
+                <NextLink href="/#about">
                     <Link sx={linkStyle}>About Me</Link>
                 </NextLink>
                 <NextLink href="/#skills">
