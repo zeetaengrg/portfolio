@@ -32,6 +32,33 @@ const AboutMe = () => {
         },
     }
 
+    const wrapperStyle = {
+        bgColor: "#141E39",
+        borderRadius: "0.3rem",
+    }
+
+    const aboutMeFlexStyle = {
+        gap: "0.3rem",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: "1rem",
+    }
+
+    const iconStyle = {
+        color: "#0B111E",
+        fontSize: "1.5rem"
+    }
+
+    const titleStyle = {
+        color: "#a5abbd",
+        fontSize: "0.9rem"
+    }
+
+    const subTitleStyle = {
+        color: "#384765",
+        fontSize: "0.7rem"
+    }
+
     return (
         <Flex direction="column">
             <Heading
