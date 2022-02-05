@@ -86,7 +86,7 @@ const Contacts = () => {
     };
 
     return (
-        <>
+        <Box position="relative">
             <Heading
                 mt={{ base: "2rem", md: "4rem" }}
                 id="contact"
@@ -112,7 +112,7 @@ const Contacts = () => {
                     alt="Contact Me SVG"
                     sx={{
                         position: "absolute",
-                        bottom: "12rem",
+                        bottom: "1rem",
                         width: "50rem",
                         opacity: "0.2",
                     }}
