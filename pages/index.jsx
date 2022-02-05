@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const Layout = () => {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Jiten Gurung</title>
 			</Head>
@@ -20,7 +20,7 @@ const Layout = () => {
 			<Projects />
 			<Contacts />
 			<Footer />
-		</div>
+		</>
 	);
 };
 
