@@ -10,12 +10,14 @@ import {
     Flex,
     Divider,
     Center,
+    Box,
 } from "@chakra-ui/react";
 
 const Skills = () => {
     const tabStyle = {
         fontSize: { base: "1rem", md: "1.2rem" },
         color: "#a5abbd",
+        margin: { base: "0.5rem", md: "1rem" },
         _focus: { outline: "none" },
         _active: { bg: "none" },
         _selected: { bg: "#141E39" },
@@ -28,9 +30,8 @@ const Skills = () => {
     };
 
     return (
-        <>
+        <Box>
             <Heading
-                mt={{ base: "2rem", md: "0" }}
                 id="skills"
                 textAlign="center"
                 textTransform="uppercase"
@@ -47,9 +48,14 @@ const Skills = () => {
             <Center>
                 <Text>My Tools and Technologies</Text>
             </Center>
-            <Tabs m={{ base: "1.5rem 0", md: "3rem 0" }} variant="solid-rounded" align="center" isLazy>
+            <Tabs
+                m={{ base: "1.5rem 0", md: "3rem 0" }}
+                variant="solid-rounded"
+                align="center"
+                isLazy
+            >
                 <TabList>
-                    <Tab sx={tabStyle}>Front-End</Tab>
+                    <Tab sx={tabStyle}>Frontend</Tab>
                     {/* <Tab sx={tabStyle}>Back-End</Tab> */}
                     {/* <Tab sx={tabStyle}>Database</Tab> */}
                     <Tab sx={tabStyle}>Tools</Tab>
@@ -59,7 +65,7 @@ const Skills = () => {
                     <TabPanel>
                         <Flex
                             justifyContent="center"
-                            gap="3rem"
+                            gap="2rem"
                             flexWrap={{ base: "wrap", md: "nowrap" }}
                         >
                             <Image
@@ -92,7 +98,7 @@ const Skills = () => {
                     {/* <TabPanel>
                         <Flex
                             justifyContent="center"
-                            gap="3rem"
+                            gap="2rem"
                             flexWrap={{ base: "wrap", md: "nowrap" }}
                         >
                             <Image
@@ -110,7 +116,7 @@ const Skills = () => {
                     <TabPanel>
                         <Flex
                             justifyContent="center"
-                            gap="3rem"
+                            gap="2rem"
                             flexWrap={{ base: "wrap", md: "nowrap" }}
                         >
                             <Image
@@ -123,7 +129,7 @@ const Skills = () => {
                     <TabPanel>
                         <Flex
                             justifyContent="center"
-                            gap="3rem"
+                            gap="2rem"
                             flexWrap={{ base: "wrap", md: "nowrap" }}
                         >
                             <Image
@@ -176,7 +182,7 @@ const Skills = () => {
                     <TabPanel>
                         <Flex
                             justifyContent="center"
-                            gap="3rem"
+                            gap="2rem"
                             flexWrap={{ base: "wrap", md: "nowrap" }}
                         >
                             <Image
@@ -188,7 +194,7 @@ const Skills = () => {
                     </TabPanel>
                 </TabPanels>
             </Tabs>
-        </>
+        </Box>
     );
 };
 
