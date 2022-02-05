@@ -1,19 +1,30 @@
-import { Heading, Text, TabList, Tabs, Tab, TabPanels, TabPanel, Image, Flex, Divider, Center } from "@chakra-ui/react";
+import {
+    Heading,
+    Text,
+    TabList,
+    Tabs,
+    Tab,
+    TabPanels,
+    TabPanel,
+    Image,
+    Flex,
+    Divider,
+    Center,
+} from "@chakra-ui/react";
 
 const Skills = () => {
-
     const tabStyle = {
         fontSize: { base: "1rem", md: "1.2rem" },
         color: "#a5abbd",
         _focus: { outline: "none" },
         _active: { bg: "none" },
-        _selected: { bg: "#384765"}
+        _selected: { bg: "#384765" },
     };
 
     const imageStyle = {
         height: { base: "4rem", md: "5.625rem" },
         width: { base: "4rem", md: "5.625rem" },
-        objectFit: "contain"
+        objectFit: "contain",
     };
 
     return (
@@ -36,38 +47,13 @@ const Skills = () => {
             <Center>
                 <Text>My Tools and Technologies</Text>
             </Center>
-            <Tabs
-                mt="1rem"
-                variant="solid-rounded"
-                align="center"
-                isLazy
-            >
+            <Tabs m="3rem 0" variant="solid-rounded" align="center" isLazy>
                 <TabList>
-                    <Tab
-                        sx={tabStyle}
-                    >
-                        Front-End
-                    </Tab>
-                    <Tab
-                        sx={tabStyle}
-                    >
-                        Back-End
-                    </Tab>
-                    <Tab
-                        sx={tabStyle}
-                    >
-                        Database
-                    </Tab>
-                    <Tab
-                        sx={tabStyle}
-                    >
-                        Tools
-                    </Tab>
-                    <Tab
-                        sx={tabStyle}
-                    >
-                        UI
-                    </Tab>
+                    <Tab sx={tabStyle}>Front-End</Tab>
+                    <Tab sx={tabStyle}>Back-End</Tab>
+                    <Tab sx={tabStyle}>Database</Tab>
+                    <Tab sx={tabStyle}>Tools</Tab>
+                    <Tab sx={tabStyle}>UI</Tab>
                 </TabList>
                 <TabPanels>
                     <TabPanel>
