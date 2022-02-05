@@ -1,6 +1,6 @@
-import NextLink from "next/link";
-import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box, useMediaQuery } from "@chakra-ui/react";
+import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box, List } from "@chakra-ui/react";
 import { projects } from "../data/data";
+import NextLink from "next/link";
 
 const Projects = () => {
 
