@@ -82,8 +82,8 @@ const AboutMe = () => {
             <Box m="3rem 15rem">
                 <Flex gap="4rem" justifyContent="center" alignItems="center" >
                     <Box flex="1">
-                        <Image 
-                            src="/images/jiten.jpg" 
+                        <Image
+                            src="/images/jiten.jpg"
                             alt="Jiten Image"
                             borderRadius="50%"
                             boxShadow="0px 0px 10px 10px rgba(0,0,0,0.5)"
