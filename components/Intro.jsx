@@ -1,8 +1,12 @@
 import { Button, Flex, Image, Text, Link, Box } from "@chakra-ui/react";
-import { FaQuoteLeft, FaQuoteRight, FaCloudDownloadAlt, FaHandshake } from 'react-icons/fa';
+import {
+    FaQuoteLeft,
+    FaQuoteRight,
+    FaCloudDownloadAlt,
+    FaHandshake,
+} from "react-icons/fa";
 
 const Intro = () => {
-
     const btnStyle = {
         padding: "0 0.8rem",
         backgroundColor: "#141E39",
@@ -44,10 +48,15 @@ const Intro = () => {
                             fontSize={{ base: "1.5rem", md: "2rem" }}
                             fontWeight="bold"
                         >
-                            <Flex justifyContent={{ base: "center", md: "start" }}>
+                            <Flex
+                                justifyContent={{ base: "center", md: "start" }}
+                            >
                                 I&apos;m
                                 <FaQuoteLeft
-                                    style={{ marginLeft: "0.5rem", fontSize: "0.8rem" }}
+                                    style={{
+                                        marginLeft: "0.5rem",
+                                        fontSize: "0.8rem",
+                                    }}
                                 />
                                 <Text
                                     color="#fff"
@@ -57,7 +66,10 @@ const Intro = () => {
                                     Jiten
                                 </Text>
                                 <FaQuoteRight
-                                    style={{ marginLeft: "0.5rem", fontSize: "0.8rem" }}
+                                    style={{
+                                        marginLeft: "0.5rem",
+                                        fontSize: "0.8rem",
+                                    }}
                                 />
                             </Flex>
                         </Text>
@@ -72,7 +84,11 @@ const Intro = () => {
                             </Text>
                         </Box>
                         <Box>
-                            <Flex gap="1rem" mt="1rem" justifyContent={{ base: "center", md: "left" }}>
+                            <Flex
+                                gap="1rem"
+                                mt="1rem"
+                                justifyContent={{ base: "center", md: "left" }}
+                            >
                                 <Link
                                     href="/cv/Resume.pdf"
                                     download
@@ -81,7 +97,10 @@ const Intro = () => {
                                     <Button
                                         variant="outline"
                                         size="lg"
-                                        justifyContent={{ base: "center", md: "start" }}
+                                        justifyContent={{
+                                            base: "center",
+                                            md: "start",
+                                        }}
                                         sx={btnStyle}
                                         rightIcon={
                                             <FaCloudDownloadAlt
@@ -101,7 +120,9 @@ const Intro = () => {
                                         size="lg"
                                         sx={btnStyle}
                                         rightIcon={
-                                            <FaHandshake style={{ fontSize: "1.5rem" }} />
+                                            <FaHandshake
+                                                style={{ fontSize: "1.5rem" }}
+                                            />
                                         }
                                     >
                                         Hire Me
