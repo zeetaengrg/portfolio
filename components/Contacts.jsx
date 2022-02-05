@@ -10,7 +10,8 @@ import {
     Text,
     Stack,
     Link,
-    Image
+    Image,
+    Box
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ImLocation } from "react-icons/im";
