@@ -18,7 +18,7 @@ const Skills = () => {
         color: "#a5abbd",
         _focus: { outline: "none" },
         _active: { bg: "none" },
-        _selected: { bg: "#384765" },
+        _selected: { bg: "#141E39" },
     };
 
     const imageStyle = {
