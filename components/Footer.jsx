@@ -1,4 +1,4 @@
-import { Center, Text, Flex, Image, Grid, Link } from '@chakra-ui/react';
+import { Center, Text, Flex, Image, Link, Box } from '@chakra-ui/react';
 import { FaCopyright, FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from 'react-icons/fa';
 
 const Footer = () => {
@@ -15,8 +15,8 @@ const Footer = () => {
     }
 
     return (
-        <>
-            <Grid bgColor="#141E39" placeContent="center">
+        <Box>
+            <Flex bgColor="#141E39" justifyContent="center" direction="column">
                 <Center>
                     <Image src="/images/logo.png" alt="logo" m="2rem 0" />
                 </Center>
