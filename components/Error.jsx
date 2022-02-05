@@ -5,9 +5,9 @@ import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react';
 const Error = () => {
 
     const textStyle = {
+        textAlign: "center",
         color: "#fff",
         fontWeight: 'bold',
-        fontSize: "1.3rem",
         textTransform: "uppercase",
     }
 
