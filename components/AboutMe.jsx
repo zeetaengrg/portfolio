@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { GiAchievement } from "react-icons/gi";
 import { FaGraduationCap } from "react-icons/fa";
+import { IoMdContact } from "react-icons/io";
 import { RiSuitcaseFill } from "react-icons/ri";
 import NextLink from "next/link";
 
