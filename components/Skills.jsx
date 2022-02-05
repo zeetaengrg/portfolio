@@ -47,11 +47,11 @@ const Skills = () => {
             <Center>
                 <Text>My Tools and Technologies</Text>
             </Center>
-            <Tabs m="3rem 0" variant="solid-rounded" align="center" isLazy>
+            <Tabs m={{ base: "1.5rem 0", md: "3rem 0" }} variant="solid-rounded" align="center" isLazy>
                 <TabList>
                     <Tab sx={tabStyle}>Front-End</Tab>
-                    <Tab sx={tabStyle}>Back-End</Tab>
-                    <Tab sx={tabStyle}>Database</Tab>
+                    {/* <Tab sx={tabStyle}>Back-End</Tab> */}
+                    {/* <Tab sx={tabStyle}>Database</Tab> */}
                     <Tab sx={tabStyle}>Tools</Tab>
                     <Tab sx={tabStyle}>UI</Tab>
                 </TabList>
