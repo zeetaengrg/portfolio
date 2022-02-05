@@ -81,86 +81,72 @@ const AboutMe = () => {
                 <Text>My Introduction</Text>
             </Center>
             <Box m="3rem 15rem">
-                <Flex gap="4rem" justifyContent="center" alignItems="center" >
-                    <Box flex="1">
-                        <Image
-                            src="/images/jiten.jpg"
-                            alt="Jiten Image"
-                            borderRadius="50%"
-                            boxShadow="0px 0px 10px 10px rgba(0,0,0,0.5)"
-                            width={{ base: "8rem", md: "12rem", lg: "17rem" }}
-                        />
-                    </Box>
-                    <Box flex="2">
-                        <Flex direction="column">
-                            <Flex gap="1rem" mb="2rem">
-                                <Wrap sx={ wrapperStyle }>
-                                    <Flex sx={ aboutMeFlexStyle } >
-                                        <FaGraduationCap style={ iconStyle }/>
-                                        <Text sx={ titleStyle }>
-                                            Education
-                                        </Text>
-                                        <Text sx={ subTitleStyle }>
-                                            BSc Hons
-                                        </Text>
-                                    </Flex>
-                                </Wrap>
-                                <Wrap sx={ wrapperStyle }>
-                                    <Flex sx={ aboutMeFlexStyle } >
-                                        <GiAchievement style={ iconStyle } />
-                                        <Text sx={ titleStyle }>
-                                            Experience
-                                        </Text>
-                                        <Text sx={ subTitleStyle }>
-                                            1+ years
-                                        </Text>
-                                    </Flex>
-                                </Wrap>
-                                <Wrap sx={ wrapperStyle } >
-                                    <Flex sx={ aboutMeFlexStyle }>
-                                        <RiSuitcaseFill style={ iconStyle }/>
-                                        <Text sx={ titleStyle }>
-                                            Completed
-                                        </Text>
-                                        <Text sx={ subTitleStyle }>
-                                            10+ projects
-                                        </Text>
-                                    </Flex>
-                                </Wrap>
+                <Flex direction="column" alignItems="center">
+                    <Flex gap="1rem" mb="2rem">
+                        <Wrap sx={wrapperStyle}>
+                            <Flex sx={aboutMeFlexStyle}>
+                                <FaGraduationCap style={iconStyle} />
+                                <Text sx={titleStyle}>Education</Text>
+                                <Text sx={subTitleStyle}>BSc Hons</Text>
                             </Flex>
-                            <Text
-                                fontSize={{ base: "1.2rem", md: "1.2rem" }}
-                                mb="1rem"
-                            >
-                                A Front-End developing aficionado from{" "}
-                                <Link
-                                    href="https://en.wikipedia.org/wiki/Nepal"
-                                    target="_blank"
-                                    rel="noreferrer noopener nofollow"
-                                    sx={linkStyle}
-                                    fontSize={{ base: "1.2rem", md: "1.5rem" }}
+                        </Wrap>
+                        <Wrap sx={wrapperStyle}>
+                            <Flex sx={aboutMeFlexStyle}>
+                                <GiAchievement style={iconStyle} />
+                                <Text sx={titleStyle}>Experience</Text>
+                                <Text sx={subTitleStyle}>1+ years</Text>
+                            </Flex>
+                        </Wrap>
+                        <Wrap sx={wrapperStyle}>
+                            <Flex sx={aboutMeFlexStyle}>
+                                <RiSuitcaseFill style={iconStyle} />
+                                <Text sx={titleStyle}>Completed</Text>
+                                <Text sx={subTitleStyle}>10+ projects</Text>
+                            </Flex>
+                        </Wrap>
+                    </Flex>
+                    <Text
+                        fontSize={{ base: "1.2rem", md: "1.2rem" }}
+                        mb="1rem"
+                        textAlign="center"
+                    >
+                        A Front-End developing aficionado from{" "}
+                        <Link
+                            href="https://en.wikipedia.org/wiki/Nepal"
+                            target="_blank"
+                            rel="noreferrer noopener nofollow"
+                            sx={linkStyle}
+                            fontSize={{ base: "1.2rem", md: "1.5rem" }}
+                        >
+                            🇳🇵
+                        </Link>{" "}
+                        with an acute detail to hone the skills as required by
+                        the project requirements. A web technology ethusiast
+                        with a modest experience of UI designing proficiency and
+                        immense interest to build elegant as well as fully
+                        functioning applications.
+                    </Text>
+                    <Box mt="1rem">
+                        <NextLink href="/#contact">
+                            <Link _hover={{ "&::after": { content: "none" } }}>
+                                <Button
+                                    sx={btnStyle}
+                                    variant="outline"
+                                    size="lg"
+                                    rightIcon={
+                                        <IoMdContact
+                                            style={{ fontSize: "1.5rem" }}
+                                        />
+                                    }
                                 >
-                                    🇳🇵
-                                </Link>{" "}
-                                with an acute detail to hone the skills as required by the
-                                project requirements. A web technology ethusiast with a modest
-                                experience of UI designing proficiency and immense interest to
-                                build elegant as well as fully functioning applications.
-                            </Text>
-                            <Box mt="1rem">
-                                <NextLink href="/#contact">
-                                    <Link _hover={{ "&::after": { content: "none" } }}>
-                                        <Button sx={btnStyle} variant="outline" size="lg">
-                                            Contact Me
-                                        </Button>
-                                    </Link>
-                                </NextLink>
-                            </Box>
-                        </Flex>
+                                    Contact Me
+                                </Button>
+                            </Link>
+                        </NextLink>
                     </Box>
                 </Flex>
             </Box>
-        </Flex>                                                                                                                                                                                                                                 
+        </Flex>
     );
 };
 
