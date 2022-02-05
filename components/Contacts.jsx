@@ -123,6 +123,7 @@ const Contacts = () => {
                 mb="2rem"
                 gap={{ base: "2rem", md: "2rem" }}
                 justifyContent="center"
+                alignItems="center"
                 direction={{ base: "column", md: "row" }}
                 position="relative"
             >
