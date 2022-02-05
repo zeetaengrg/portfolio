@@ -63,7 +63,6 @@ const AboutMe = () => {
     return (
         <Flex direction="column">
             <Heading
-                mt={{ base: "1rem", md: "2rem" }}
                 id="about"
                 textAlign="center"
                 textTransform="uppercase"
@@ -80,11 +79,10 @@ const AboutMe = () => {
             <Center>
                 <Text>My Introduction</Text>
             </Center>
-            <Box m={{ base: "1.5rem 2rem", md: "3rem 15rem" }}>
+            <Box m={{ base: "1.5rem 2rem", md: "3rem 20rem" }}>
                 <Flex direction="column" alignItems="center">
                     <Flex
                         gap={{ base: "0.5rem", md: "1rem" }}
-                        mb={{ base: "1.5rem", md: "2rem" }}
                     >
                         <Wrap sx={wrapperStyle}>
                             <Flex sx={aboutMeFlexStyle}>
@@ -109,8 +107,8 @@ const AboutMe = () => {
                         </Wrap>
                     </Flex>
                     <Text
+                        m={{ base: "1rem", md: "2rem" }}
                         fontSize={{ base: "1.1rem", md: "1.3rem" }}
-                        mb="1rem"
                         textAlign="center"
                     >
                         A Front-End developing aficionado from{" "}
@@ -129,7 +127,7 @@ const AboutMe = () => {
                         immense interest to build elegant as well as fully
                         functioning applications.
                     </Text>
-                    <Box mt="1rem">
+                    <Box>
                         <NextLink href="/#contact">
                             <Link _hover={{ "&::after": { content: "none" } }}>
                                 <Button
