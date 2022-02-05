@@ -89,7 +89,7 @@ const Skills = () => {
                             />
                         </Flex>
                     </TabPanel>
-                    <TabPanel>
+                    {/* <TabPanel>
                         <Flex
                             justifyContent="center"
                             gap="3rem"
@@ -119,7 +119,7 @@ const Skills = () => {
                                 sx={imageStyle}
                             />
                         </Flex>
-                    </TabPanel>
+                    </TabPanel> */}
                     <TabPanel>
                         <Flex
                             justifyContent="center"
