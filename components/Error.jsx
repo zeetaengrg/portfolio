@@ -31,30 +31,37 @@ const Error = () => {
 
     return (
         <>
-            <Box m="2rem 0">
+            <Box m={{ base: "1.5rem", md: "2.5rem" }} >
                 <Flex
                     direction="column"
                     justifyContent="center"
                     alignItems="center"
-                    gap="1rem"
+                    gap={{ base: "0rem", md: "1rem" }}
                 >
-                    <Text sx={textStyle}>Oops!!! Page Not Found</Text>
+                    <Text
+                        fontSize={{ base: "1.1rem", md: "1.3rem" }}
+                        sx={textStyle}
+                    >
+                        Oops!!! Page Not Found
+                    </Text>
                     <Image
                         src="/images/error.svg"
                         alt="404 Error"
-                        width="50%"
+                        width={{ base: "80%", md: "50%" }}
                         m="2.5rem 0"
                     />
-                    <Text sx={textStyle}>
+                    <Text
+                        sx={textStyle}
+                        fontSize={{ base: "1.2rem", md: "1.3rem" }}
+                    >
                         Sorry, but the page you requested was not found!
                     </Text>
-                    <Link sx={ linkStyle } href="/" >
+                    <Link sx={linkStyle} href="/">
                         <Button
+                            m={{ base: "2.69rem 0", md: "0.5rem 0" }}
                             variant="outline"
-                            sx={ btnStyle }
-                            rightIcon={ 
-                                <RiArrowGoBackLine /> 
-                            }
+                            sx={btnStyle}
+                            rightIcon={<RiArrowGoBackLine />}
                         >
                             Go Back
                         </Button>
