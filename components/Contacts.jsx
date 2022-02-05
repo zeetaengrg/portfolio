@@ -88,7 +88,6 @@ const Contacts = () => {
     return (
         <Box position="relative">
             <Heading
-                mt={{ base: "2rem", md: "4rem" }}
                 id="contact"
                 textAlign="center"
                 textTransform="uppercase"
@@ -119,15 +118,14 @@ const Contacts = () => {
                 />
             </Center>
             <Flex
-                p={{ base: "0 1.5rem", md: "1rem 6rem" }}
-                mb="2rem"
+                m={{ base: "2rem 1.5rem", md: "5rem 6rem" }}
                 gap={{ base: "2rem", md: "2rem" }}
                 justifyContent="center"
                 alignItems="center"
                 direction={{ base: "column", md: "row" }}
                 position="relative"
             >
-                <FormControl mt="2rem">
+                <FormControl>
                     <Stack
                         spacing="4"
                         alignItems={{ base: "center", md: "flex-start" }}
@@ -193,7 +191,7 @@ const Contacts = () => {
                         alignItems={{ base: "center" }}
                     >
                         <Box>
-                            <Flex direction="column" justifyContent="center" gap="2rem" alignItems={{ base: "center", md: "flex-start" }}>
+                            <Flex direction="column" justifyContent="center" gap={{ base: "1rem", md: "2rem" }} alignItems={{ base: "center", md: "flex-start" }}>
                                 <Flex sx={flexStyle}>
                                     <ImLocation style={iconStyle} />
                                     <Text sx={textStyle}>Pokhara, Nepal</Text>
