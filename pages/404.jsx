@@ -8,7 +8,7 @@ const ErrorPage = () => {
     return (
         <>
             <Head>
-                <title>404 Error Page Not Found</title>
+                <title>404 Error: Page Not Found</title>
             </Head>
             <Navbar />
             <NextLink href="/404">
