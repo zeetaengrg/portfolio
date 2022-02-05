@@ -80,9 +80,12 @@ const AboutMe = () => {
             <Center>
                 <Text>My Introduction</Text>
             </Center>
-            <Box m="3rem 15rem">
+            <Box m={{ base: "1.5rem 2rem", md: "3rem 15rem" }}>
                 <Flex direction="column" alignItems="center">
-                    <Flex gap="1rem" mb="2rem">
+                    <Flex
+                        gap={{ base: "0.5rem", md: "1rem" }}
+                        mb={{ base: "1.5rem", md: "2rem" }}
+                    >
                         <Wrap sx={wrapperStyle}>
                             <Flex sx={aboutMeFlexStyle}>
                                 <FaGraduationCap style={iconStyle} />
@@ -106,7 +109,7 @@ const AboutMe = () => {
                         </Wrap>
                     </Flex>
                     <Text
-                        fontSize={{ base: "1.2rem", md: "1.2rem" }}
+                        fontSize={{ base: "1.1rem", md: "1.3rem" }}
                         mb="1rem"
                         textAlign="center"
                     >
@@ -116,7 +119,7 @@ const AboutMe = () => {
                             target="_blank"
                             rel="noreferrer noopener nofollow"
                             sx={linkStyle}
-                            fontSize={{ base: "1.2rem", md: "1.5rem" }}
+                            fontSize={{ base: "1.1rem", md: "1.5rem" }}
                         >
                             🇳🇵
                         </Link>{" "}
