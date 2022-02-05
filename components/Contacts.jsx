@@ -185,60 +185,68 @@ const Contacts = () => {
                         </Button>
                     </Stack>
                 </FormControl>
-                <Flex
-                    flexDirection="column"
-                    justifyContent="center"
-                    gap={{ base: "1rem", md: "2rem" }}
-                    alignItems={{ base: "center", md: "flex-start" }}
-                >
-                    <Flex sx={flexStyle}>
-                        <ImLocation style={iconStyle} />
-                        <Text sx={textStyle}>Pokhara, Nepal</Text>
+                <Box>
+                    <Flex
+                        flexDirection="column"
+                        justifyContent="center"
+                        gap={{ base: "1rem", md: "2rem" }}
+                        alignItems={{ base: "center" }}
+                    >
+                        <Box>
+                            <Flex direction="column" justifyContent="center" gap="2rem" alignItems={{ base: "center", md: "flex-start" }}>
+                                <Flex sx={flexStyle}>
+                                    <ImLocation style={iconStyle} />
+                                    <Text sx={textStyle}>Pokhara, Nepal</Text>
+                                </Flex>
+                                <Flex sx={flexStyle}>
+                                    <FaMobileAlt style={iconStyle} />
+                                    <Text sx={textStyle}>+977 9803709974</Text>
+                                </Flex>
+                                <Flex sx={flexStyle}>
+                                    <HiMail style={iconStyle} />
+                                    <Link
+                                        href="mailto:zeetaen.gurung@gmail.com"
+                                        sx={linkStyle}
+                                    >
+                                        <Text sx={textStyle}>zeetaen.gurung@gmail.com</Text>
+                                    </Link>
+                                </Flex>
+                            </Flex>
+                        </Box>
+                        <Divider />
+                        <Box>
+                            <Flex gap="5rem">
+                                <Link
+                                    sx={socialLinkStyle}
+                                    href="https://www.linkedin.com/in/zeetaen1878/"
+                                    target="_blank"
+                                    rel="noreferrer noopener nofollow"
+                                >
+                                    <FaLinkedinIn />
+                                </Link>
+                                <Link
+                                    sx={socialLinkStyle}
+                                    href="https://github.com/zeetaen1989"
+                                    target="_blank"
+                                    rel="noreferrer noopener nofollow"
+                                >
+                                    <FaGithub />
+                                </Link>
+                                <Link
+                                    sx={socialLinkStyle}
+                                    href="https://codepen.io/zeetaen1989"
+                                    target="_blank"
+                                    rel="noreferrer noopener nofollow"
+                                >
+                                    <FaCodepen />
+                                </Link>
+                            </Flex>
+                        </Box>
+                        <Divider />
                     </Flex>
-                    <Flex sx={flexStyle}>
-                        <FaMobileAlt style={iconStyle} />
-                        <Text sx={textStyle}>+977 9803709974</Text>
-                    </Flex>
-                    <Flex sx={flexStyle}>
-                        <HiMail style={iconStyle} />
-                        <Link
-                            href="mailto:zeetaen.gurung@gmail.com"
-                            sx={linkStyle}
-                        >
-                            <Text sx={textStyle}>zeetaen.gurung@gmail.com</Text>
-                        </Link>
-                    </Flex>
-                    <Divider />
-                    <Flex gap="7rem">
-                        <Link
-                            sx={socialLinkStyle}
-                            href="https://www.linkedin.com/in/jitengrg"
-                            target="_blank"
-                            rel="noreferrer noopener nofollow"
-                        >
-                            <FaLinkedinIn />
-                        </Link>
-                        <Link
-                            sx={socialLinkStyle}
-                            href="https://github.com/zeetaen1989"
-                            target="_blank"
-                            rel="noreferrer noopener nofollow"
-                        >
-                            <FaGithub />
-                        </Link>
-                        <Link
-                            sx={socialLinkStyle}
-                            href="https://codepen.io/zeetaen1989"
-                            target="_blank"
-                            rel="noreferrer noopener nofollow"
-                        >
-                            <FaCodepen />
-                        </Link>
-                    </Flex>
-                    <Divider />
-                </Flex>
+                </Box>
             </Flex>
-        </>
+        </Box>
     );
 };
 
