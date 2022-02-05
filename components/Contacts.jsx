@@ -140,7 +140,7 @@ const Contacts = () => {
                             id="name"
                             value={name}
                             width={{ base: "23rem", md: "25rem" }}
-                            bgColor="#384765"
+                            bgColor="#141E39"
                             color="#a5abbd"
                             onChange={handleNameChange}
                             isRequired
@@ -153,20 +153,10 @@ const Contacts = () => {
                             value={email}
                             onChange={handleEmailChange}
                             width={{ base: "23rem", md: "25rem" }}
-                            bgColor="#384765"
+                            bgColor="#141E39"
                             color="#a5abbd"
                             isRequired
                         />
-                        {/* {!isError ? (
-                            <FormHelperText>
-                                Please enter your email so that I can contact
-                                you!
-                            </FormHelperText>
-                        ) : (
-                            <FormErrorMessage>
-                                Email is Required!
-                            </FormErrorMessage>
-                        )} */}
                         <Textarea
                             placeholder="MESSAGE"
                             name="message"
@@ -174,7 +164,7 @@ const Contacts = () => {
                             value={message}
                             width={{ base: "23rem", md: "25rem" }}
                             height="10rem"
-                            bgColor="#384765"
+                            bgColor="#141E39"
                             color="#a5abbd"
                             onChange={handleMessageChange}
                             isRequired
@@ -184,7 +174,7 @@ const Contacts = () => {
                         <Button
                             mt="1rem"
                             width={{ base: "23rem", md: "25rem" }}
-                            bgColor="#384765"
+                            bgColor="#141E39"
                             color="#a5abbd"
                             variant="outline"
                             sx={btnStyle}
