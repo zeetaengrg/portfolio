@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Intro from "../components/Intro";
 import Navbar from "../components/Navbar";
+import Intro from "../components/Intro";
 import AboutMe from "../components/AboutMe";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
