@@ -18,9 +18,9 @@ const Footer = () => {
         <Box>
             <Flex bgColor="#141E39" justifyContent="center" direction="column">
                 <Center>
-                    <Image src="/images/logo.png" alt="logo" m="2rem 0" />
+                    <Image src="/images/logo.png" alt="logo" m={{ base: "1rem 0", md: "2rem 0" }} />
                 </Center>
-                <Flex mb="1rem" gap="2rem" justifyContent="center">
+                <Flex m={{ base: "1rem 0", md: "0.5rem 0" }} gap="2rem" justifyContent="center">
                     <Link href="https://www.facebook.com/zeetaen/" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
                         <FaFacebookSquare style={iconStyle} />
                     </Link>
@@ -31,7 +31,7 @@ const Footer = () => {
                         <FaYoutubeSquare style={iconStyle} />
                     </Link>
                 </Flex>
-                <Text fontSize="0.8rem" m="0.5rem" mb="1rem">
+                <Text fontSize="0.8rem" m={{ base: "0.5rem", md: "1rem" }} >
                     <Flex justifyContent="center" alignItems="center">
                         2022 <FaCopyright style={{margin: "0 0.5rem"}} /> Jiten Gurung. All Rights Reserved.
                     </Flex>
