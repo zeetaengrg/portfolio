@@ -1,11 +1,11 @@
-import { Button, Flex, Image, Text, Link } from "@chakra-ui/react";
+import { Button, Flex, Image, Text, Link, Box } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight, FaCloudDownloadAlt, FaHandshake } from 'react-icons/fa';
 
 const Intro = () => {
 
     const btnStyle = {
         padding: "0 0.8rem",
-        backgroundColor: "#16213E",
+        backgroundColor: "#141E39",
         fontSize: "1.2rem",
         _focus: { boxShadow: "none" },
         _hover: { bg: "#a5abbd", color: "#384765", borderColor: "#384765" },
