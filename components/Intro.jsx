@@ -17,7 +17,7 @@ const Intro = () => {
     };
 
     return (
-        <>
+        <Box>
             <Flex
                 justifyContent="center"
                 alignItems="center"
@@ -60,8 +60,9 @@ const Intro = () => {
                                 />
                                 <Text
                                     color="#fff"
-                                    fontSize={{ base: "2.5rem", md: "3rem" }}
-                                    fontWeight="bold"
+                                    fontSize={{ base: "3rem", md: "4rem" }}
+                                    fontWeight="extrabold"
+                                    lineHeight="1.4"
                                 >
                                     Jiten
                                 </Text>
@@ -76,9 +77,10 @@ const Intro = () => {
                         <Box>
                             <Text
                                 casing="uppercase"
-                                fontSize={{ base: "3rem", md: "4rem" }}
-                                fontWeight="extrabold"
+                                fontSize={{ base: "2.5rem", md: "3rem" }}
+                                fontWeight="bold"
                                 lineHeight="1"
+                                color="#384765"
                             >
                                 Front End Dev
                             </Text>
@@ -133,7 +135,7 @@ const Intro = () => {
                     </Flex>
                 </Box>
             </Flex>
-        </>
+        </Box>
     );
 };
 
