@@ -11,9 +11,9 @@ import {
     Center,
     Box,
 } from "@chakra-ui/react";
+import FrontendTab from "./FrontendTab";
 import BackendTab from "./BackendTab";
 import DatabaseTab from "./DatabaseTab";
-import FrontendTab from "./FrontendTab";
 import ToolsTab from "./ToolsTab";
 import UITab from "./UITab";
 
