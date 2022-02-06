@@ -1,5 +1,6 @@
 import { Box, Flex, Image, Link, Spacer } from "@chakra-ui/react";
 import NextLink from "next/link";
+import LogoImage from "./LogoImage";
 
 const Navbar = () => {
 
@@ -12,11 +13,7 @@ const Navbar = () => {
     return (
         <Flex p={{ base: "1rem 0.5rem", md: "1rem 4rem", lg: "1rem 8rem" }}>
             <Box>
-                <NextLink href="/">
-                    <Link>
-                        <Image src="/images/logo.png" alt="Logo" />
-                    </Link>
-                </NextLink>
+                <LogoImage />
             </Box>
             <Spacer />
             <Flex gap={{ base: "1.2rem", md: "2rem", lg: "4rem" }} alignItems="center">
