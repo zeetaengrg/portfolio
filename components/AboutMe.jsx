@@ -2,7 +2,6 @@ import {
     Divider,
     Heading,
     Center,
-    Image,
     Text,
     Link,
     Flex,
