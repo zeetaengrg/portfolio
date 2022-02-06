@@ -11,7 +11,7 @@ const Layout = () => {
 	return (
 		<>
 			<Head>
-				<title>Jiten Gurung</title>
+				<title>Jiten Gurung | Portfolio Website</title>
 			</Head>
 			<Navbar />
 			<Intro />
