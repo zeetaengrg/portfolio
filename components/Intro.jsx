@@ -104,6 +104,9 @@ const Intro = () => {
                                             md: "start",
                                         }}
                                         sx={btnStyle}
+                                        isLoading={false}
+                                        loadingText="Downloading"
+                                        spinnerPlacement="end"
                                         rightIcon={
                                             <FaCloudDownloadAlt
                                                 style={{ fontSize: "1.5rem" }}
