@@ -1,36 +1,50 @@
-import { Button, Flex, Image, Text, Link, Box } from "@chakra-ui/react";
+import { Flex, Image, Text, Link, Box } from "@chakra-ui/react";
 import {
     FaQuoteLeft,
-    FaQuoteRight,
-    FaCloudDownloadAlt,
-    FaHandshake,
+    FaQuoteRight
 } from "react-icons/fa";
+import DownloadBtn from "./DownloadBtn";
+import HireMeBtn from "./HireMeBtn";
 
 const Intro = () => {
-    const btnStyle = {
-        padding: "0 0.8rem",
-        backgroundColor: "#141E39",
-        fontSize: "1.2rem",
-        _focus: { boxShadow: "none" },
-        _hover: { bg: "#a5abbd", color: "#384765", borderColor: "#384765" },
-        _active: { bg: "#a5abbd", color: "#384765", transform: "scale(0.98)" },
-    };
+    
+    const flexStyle = {
+        justifyContent: "center",
+        alignItems: "center",
+        height: {
+            base: "55vh",
+            md: "60vh",
+            lg: "87vh",
+        },
+        gap: {
+            base: "1rem",
+            md: "2rem",
+        },
+        direction: {
+            base: "column",
+            md: "row",
+        }
+    }
+
+    const imgStyle = {
+        borderRadius: "50%",
+        boxShadow: "0px 0px 10px 10px rgba(0,0,0,0.5)",
+        width: {
+            base: "8rem",
+            md: "12rem",
+            lg: "17rem",
+        }
+    }
 
     return (
         <Box>
             <Flex
-                justifyContent="center"
-                alignItems="center"
-                height={{ base: "55vh", md: "60vh", lg: "87vh" }}
-                gap={{ base: "1rem", md: "2rem", lg: "2rem" }}
-                direction={{ base: "column", md: "row" }}
+                sx={flexStyle}
             >
                 <Image
-                    src="/images/jiten.jpg"
-                    alt="Jiten Image"
-                    borderRadius="50%"
-                    boxShadow="0px 0px 10px 10px rgba(0,0,0,0.5)"
-                    width={{ base: "8rem", md: "12rem", lg: "17rem" }}
+                    sx={imgStyle}
+                    src= "/images/jiten.jpg"
+                    alt= "Jiten Image"
                 />
                 <Box>
                     <Flex
@@ -96,42 +110,13 @@ const Intro = () => {
                                     download
                                     _hover={{ "&::after": { content: "none" } }}
                                 >
-                                    <Button
-                                        variant="outline"
-                                        size="lg"
-                                        justifyContent={{
-                                            base: "center",
-                                            md: "start",
-                                        }}
-                                        sx={btnStyle}
-                                        isLoading={false}
-                                        loadingText="Downloading"
-                                        spinnerPlacement="end"
-                                        rightIcon={
-                                            <FaCloudDownloadAlt
-                                                style={{ fontSize: "1.5rem" }}
-                                            />
-                                        }
-                                    >
-                                        Download CV
-                                    </Button>
+                                    <DownloadBtn />
                                 </Link>
                                 <Link
                                     href="#contact"
                                     _hover={{ "&::after": { content: "none" } }}
                                 >
-                                    <Button
-                                        variant="outline"
-                                        size="lg"
-                                        sx={btnStyle}
-                                        rightIcon={
-                                            <FaHandshake
-                                                style={{ fontSize: "1.5rem" }}
-                                            />
-                                        }
-                                    >
-                                        Hire Me
-                                    </Button>
+                                    <HireMeBtn />
                                 </Link>
                             </Flex>
                         </Box>
