@@ -83,71 +83,14 @@ const Contacts = () => {
                 />
             </Center>
             <Flex
-                m={{ base: "2rem 1.5rem", md: "5rem 6rem" }}
-                gap={{ base: "2rem", md: "2rem" }}
+                m={{ base: "2rem 1.5rem", md: "3rem 6rem" }}
+                gap={{ base: "2rem", md: "4rem" }}
                 justifyContent="center"
                 alignItems="center"
                 direction={{ base: "column", md: "row" }}
                 position="relative"
             >
-                <FormControl>
-                    <Stack
-                        spacing="4"
-                        alignItems={{ base: "center", md: "flex-start" }}
-                    >
-                        
-                        <Input
-                            placeholder="NAME"
-                            name="name"
-                            type="name"
-                            id="name"
-                            value={name}
-                            width={{ base: "23rem", md: "25rem" }}
-                            bgColor="#141E39"
-                            color="#a5abbd"
-                            onChange={handleNameChange}
-                            isRequired
-                        />
-                        <Input
-                            placeholder="EMAIL"
-                            name="email"
-                            id="email"
-                            type="email"
-                            value={email}
-                            onChange={handleEmailChange}
-                            width={{ base: "23rem", md: "25rem" }}
-                            bgColor="#141E39"
-                            color="#a5abbd"
-                            isRequired
-                        />
-                        <Textarea
-                            placeholder="MESSAGE"
-                            name="message"
-                            id="message"
-                            value={message}
-                            width={{ base: "23rem", md: "25rem" }}
-                            height="10rem"
-                            bgColor="#141E39"
-                            color="#a5abbd"
-                            onChange={handleMessageChange}
-                            isRequired
-                        />
-                    </Stack>
-                    <Stack alignItems={{ base: "center", md: "flex-start" }}>
-                        <Button
-                            mt="1rem"
-                            width={{ base: "23rem", md: "25rem" }}
-                            bgColor="#141E39"
-                            color="#a5abbd"
-                            variant="outline"
-                            sx={btnStyle}
-                            type="submit"
-                            onClick={handleSubmit}
-                        >
-                            Send
-                        </Button>
-                    </Stack>
-                </FormControl>
+                <Form />
                 <Box>
                     <Flex
                         flexDirection="column"
