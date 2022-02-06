@@ -49,11 +49,10 @@ const Projects = () => {
             {projects.map((project) => (
                 <>
                     <Flex
-                        m={{ base: "1.5rem 2rem", md: "3rem 6rem" }}
+                        m={{ base: "1.5rem 2rem", md: "2rem 6rem" }}
                         gap={{ base: "1.5rem", md: "2rem" }}
                         justifyContent="center"
                         direction={{ base: "column", md: "row" }}
-                        key={project.id}
                     >
                         <Box flex="2">
                             <NextLink href="#">
@@ -98,7 +97,6 @@ const Projects = () => {
                         gap={{ base: "1.5rem", md: "2rem" }}
                         justifyContent="center"
                         direction={{ base: "column-reverse", md: "row" }}
-                        key={project.id}
                     >
                         <Grid placeContent="center" flex="1">
                             <Text textAlign={{ base: "center", md: "left" }}>
