@@ -2,53 +2,18 @@ import {
     Heading,
     Divider,
     Center,
-    FormControl,
-    Input,
-    Textarea,
     Flex,
-    Button,
     Text,
-    Stack,
     Link,
     Image,
     Box
 } from "@chakra-ui/react";
-import { useState } from "react";
 import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import Form from "./Form";
 
 const Contacts = () => {
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-    }
-    
-    const handleEmailChange = e => {
-        setEmail(e.target.value);
-    }
-    
-    const handleMessageChange = e => {
-        setMessage(e.target.value);
-    }
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setName("");
-        setEmail("");
-        setMessage("");
-    };
-
-    const btnStyle = {
-        fontSize: "1.1rem",
-        textTransform: "uppercase",
-        _focus: { boxShadow: "none" },
-        _hover: { bg: "#a5abbd", color: "#384765", borderColor: "#0F3460" },
-        _active: { bg: "#a5abbd", color: "#384765", transform: "scale(0.98)" },
-    };
 
     const iconStyle = {
         fontSize: "2rem",
