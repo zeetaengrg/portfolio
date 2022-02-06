@@ -36,7 +36,16 @@ const Form = () => {
             .required("Required!")
     });
 
+    const inputStyle = {
+        width: { base: "20rem", md: "22rem" },
+        bgColor: "#141E39",
+        color: "#a5abbd",
+    }
+
     const btnStyle = {
+        width: { base: "20rem", md: "22rem" },
+        bgColor: "#141E39",
+        color: "#a5abbd",
         fontSize: "1.1rem",
         textTransform: "uppercase",
         _focus: { boxShadow: "none" },
@@ -53,58 +62,43 @@ const Form = () => {
             {props => (
                 <VStack
                     spacing={2}
-                    alignItems={{ base: "center", md: "flex-start" }}
+                    alignItems="flex-start"
                     onSubmit={props.handleSubmit}
                 >
                     <FormLabel mb="0rem">First Name</FormLabel>
                     <Input
+                        sx={inputStyle}
+                        type="text"
                         placeholder="Insert Your First Name..."
                         name="firstName"
-                        type="text"
-                        width={{ base: "23rem", md: "25rem" }}
-                        bgColor="#141E39"
-                        color="#a5abbd"
-                        helperText={<ErrorMessage name='firstName' />}
                         required
                     />
                     <FormLabel>Last Name</FormLabel>
                     <Input
+                        sx={inputStyle}
+                        type="text"
                         placeholder="Insert Your Last Name..."
                         name="lastName"
-                        type="text"
-                        width={{ base: "23rem", md: "25rem" }}
-                        bgColor="#141E39"
-                        color="#a5abbd"
-                        helperText={<ErrorMessage name='lastName' />}
                         required
                     />
                     <FormLabel>Email Address</FormLabel>
                     <Input
+                        sx={inputStyle}
                         placeholder="Insert Your Email..."
                         name="email"
                         type="email"
-                        width={{ base: "23rem", md: "25rem" }}
-                        bgColor="#141E39"
-                        color="#a5abbd"
-                        helperText={<ErrorMessage name='email' />}
                         required
                     />
                     <FormLabel>Message</FormLabel>
                     <Textarea
+                        sx={inputStyle}
                         placeholder="Insert Your Message..."
                         name="message"
-                        width={{ base: "23rem", md: "25rem" }}
                         height="10rem"
-                        bgColor="#141E39"
-                        color="#a5abbd"
                         required
-                        helperText={<ErrorMessage name='message' />}
                     />
                     <Button
                         mt="1rem"
-                        width={{ base: "23rem", md: "25rem" }}
-                        bgColor="#141E39"
-                        color="#a5abbd"
                         variant="outline"
                         sx={btnStyle}
                         type="submit"
