@@ -78,7 +78,7 @@ const AboutMe = () => {
             <Center>
                 <Text>My Introduction</Text>
             </Center>
-            <Box m={{ base: "1.5rem 2rem", md: "3rem 20rem" }}>
+            <Box m={{ base: "1.5rem 2rem", md: "3rem 5rem", lg: "3rem 10rem" }}>
                 <Flex direction="column" alignItems="center">
                     <Flex
                         gap={{ base: "0.5rem", md: "1rem" }}
