@@ -20,7 +20,7 @@ const Intro = () => {
             base: "1rem",
             md: "2rem",
         },
-        direction: {
+        flexDirection: {
             base: "column",
             md: "row",
         }
