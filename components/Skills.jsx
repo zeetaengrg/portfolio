@@ -6,28 +6,36 @@ import {
     Tab,
     TabPanels,
     TabPanel,
-    Image,
     Flex,
     Divider,
     Center,
     Box,
 } from "@chakra-ui/react";
+import BackendTab from "./BackendTab";
+import DatabaseTab from "./DatabaseTab";
+import FrontendTab from "./FrontendTab";
+import ToolsTab from "./ToolsTab";
+import UITab from "./UITab";
 
 const Skills = () => {
+
     const tabStyle = {
         fontSize: { base: "1rem", md: "1.2rem" },
         color: "#a5abbd",
         margin: { base: "0.5rem", md: "1rem" },
         _focus: { outline: "none" },
         _active: { bg: "none" },
-        _selected: { bg: "#141E39" },
+        _selected: { bg: "#141E39", border: "1px solid #a5abbd" },
     };
 
-    const imageStyle = {
-        height: { base: "4rem", md: "5.625rem" },
-        width: { base: "4rem", md: "5.625rem" },
-        objectFit: "contain",
-    };
+    const flexStyle = {
+        justifyContent: "center",
+        gap: "2rem",
+        flexWrap: {
+            base: "wrap",
+            md: "nowrap",
+        }
+    }
 
     return (
         <Box>
@@ -63,133 +71,28 @@ const Skills = () => {
                 </TabList>
                 <TabPanels>
                     <TabPanel>
-                        <Flex
-                            justifyContent="center"
-                            gap="2rem"
-                            flexWrap={{ base: "wrap", md: "nowrap" }}
-                        >
-                            <Image
-                                src="/images/html.png"
-                                alt="HTML5"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/css.png"
-                                alt="CSS3"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/javascript.png"
-                                alt="JavaScript"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/reactjs.png"
-                                alt="ReactJS"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/nextjs.png"
-                                alt="NextJS"
-                                sx={imageStyle}
-                            />
+                        <Flex sx={flexStyle} >
+                            <FrontendTab />
                         </Flex>
                     </TabPanel>
                     {/* <TabPanel>
-                        <Flex
-                            justifyContent="center"
-                            gap="2rem"
-                            flexWrap={{ base: "wrap", md: "nowrap" }}
-                        >
-                            <Image
-                                src="/images/nodejs.png"
-                                alt="NodeJS"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/expressjs.png"
-                                alt="ExpressJS"
-                                sx={imageStyle}
-                            />
+                        <Flex sx={flexStyle} >
+                            <BackendTab />
                         </Flex>
                     </TabPanel>
                     <TabPanel>
-                        <Flex
-                            justifyContent="center"
-                            gap="2rem"
-                            flexWrap={{ base: "wrap", md: "nowrap" }}
-                        >
-                            <Image
-                                src="/images/mongodb.png"
-                                alt="MongoDB"
-                                sx={imageStyle}
-                            />
+                        <Flex sx={flexStyle} >
+                            <DatabaseTab />
                         </Flex>
                     </TabPanel> */}
                     <TabPanel>
-                        <Flex
-                            justifyContent="center"
-                            gap="2rem"
-                            flexWrap={{ base: "wrap", md: "nowrap" }}
-                        >
-                            <Image
-                                src="/images/sass.png"
-                                alt="Sass"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/styled-components.png"
-                                alt="Styled Components"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/materialui.png"
-                                alt="Material UI"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/chakraui.png"
-                                alt="Chakra UI"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/bootstrap.png"
-                                alt="Bootstrap"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/tailwind.png"
-                                alt="Tailwind"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/git.png"
-                                alt="Git"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/github.png"
-                                alt="GitHub"
-                                sx={imageStyle}
-                            />
-                            <Image
-                                src="/images/gitlab.png"
-                                alt="GitLab"
-                                sx={imageStyle}
-                            />
+                        <Flex sx={flexStyle} >
+                            <ToolsTab />
                         </Flex>
                     </TabPanel>
                     <TabPanel>
-                        <Flex
-                            justifyContent="center"
-                            gap="2rem"
-                            flexWrap={{ base: "wrap", md: "nowrap" }}
-                        >
-                            <Image
-                                src="/images/figma.png"
-                                alt="Figma"
-                                sx={imageStyle}
-                            />
+                        <Flex sx={flexStyle} >
+                            <UITab />
                         </Flex>
                     </TabPanel>
                 </TabPanels>
