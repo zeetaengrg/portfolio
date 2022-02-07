@@ -43,11 +43,13 @@ const Intro = () => {
             <Flex
                 sx={flexStyle}
             >
-                <Image
-                    sx={imgStyle}
-                    src= "/images/jiten.webp"
-                    alt= "Jiten Image"
-                />
+                <Box>
+                    <Image
+                        sx={imgStyle}
+                        src= "/images/jiten.webp"
+                        alt= "Jiten Image"
+                    />
+                </Box>
                 <Box>
                     <Flex
                         direction="column"
