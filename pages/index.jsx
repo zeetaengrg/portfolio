@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Intro from "../components/Intro";
-import AboutMe from "../components/AboutMe";
-import Skills from "../components/Skills";
-import Projects from "../components/Projects";
-import Contacts from "../components/Contacts";
-import Footer from "../components/Footer";
+import Navbar from "../components/layouts/Navbar/Navbar";
+import Intro from "../components/layouts/Intro/Intro";
+import AboutMe from "../components/layouts/AboutMe/AboutMe";
+import Skills from "../components/layouts/Skills/Skills";
+import Projects from "../components/layouts/Projects/Projects";
+import Contacts from "../components/layouts/Contacts/Contacts";
+import Footer from "../components/layouts/Footer/Footer";
 
 const Layout = () => {
 	return (
