@@ -65,7 +65,7 @@ const Intro = () => {
                             <Flex
                                 justifyContent={{ base: "center", md: "start" }}
                             >
-                                <Text 
+                                <Text
                                     fontWeight="bold"
                                     casing="uppercase"
                                 >
