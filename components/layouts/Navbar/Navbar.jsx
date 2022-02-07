@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Link, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Link, Spacer } from "@chakra-ui/react";
 import NextLink from "next/link";
 import LogoImage from "../../elements/LogoImage/LogoImage";
 
