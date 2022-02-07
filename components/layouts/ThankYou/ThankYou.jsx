@@ -25,9 +25,15 @@ const ThankYou = () => {
 
     const boxStyle = {
         background: "#384765",
-        padding: "1.5rem",
+        padding: {
+            base: "0.5rem",
+            md: "1.5rem"
+        },
         borderRadius: "0.5rem",
-        margin: "1.5rem 0"
+        margin: {
+            base: "1rem 0",
+            md: "1.5rem 0"
+        }
     }
 
     const textStyle = {
