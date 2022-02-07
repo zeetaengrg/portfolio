@@ -10,7 +10,8 @@ const Navbar = () => {
         fontSize: {
             base: "0.72rem",
             md: "0.9rem",
-        }
+        },
+        _focus: { boxShadow: "none" },
     };
 
     return (

@@ -2,13 +2,18 @@ import NextLink from "next/link";
 import { Link, Image } from "@chakra-ui/react";
 
 const LogoImage = () => {
+
+    const linkStyle = {
+        _focus: { boxShadow: "none" },
+    }
+
     return (
         <>
-            <NextLink href="/">
-                    <Link>
-                        <Image src="/images/logo.png" alt="Logo" />
-                    </Link>
-                </NextLink>
+            <NextLink href="/" passHref>
+                <Link sx={linkStyle}>
+                    <Image src="/images/logo.png" alt="Logo" />
+                </Link>
+            </NextLink>
         </>
     );
 };
