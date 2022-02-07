@@ -8,7 +8,7 @@ import {
     Box
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import ContactMeBtn from "../../elements/ContactMeBtn/ContactMeBtn";
+import ContactMeBtn from "../../elements/Btn/ContactMeBtn/ContactMeBtn";
 import AboutMeWrapper from "../../elements/AboutMeWrapper/AboutMeWrapper";
 import AboutMeText from "../../elements/AboutMeText/AboutMeText";
 

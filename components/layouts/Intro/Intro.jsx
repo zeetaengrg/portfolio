@@ -3,8 +3,8 @@ import {
     FaQuoteLeft,
     FaQuoteRight
 } from "react-icons/fa";
-import DownloadBtn from "../../elements/DownloadBtn/DownloadBtn";
-import HireMeBtn from "../../elements/HireMeBtn/HireMeBtn";
+import DownloadBtn from "../../elements/Btn/DownloadBtn/DownloadBtn";
+import HireMeBtn from "../../elements/Btn/HireMeBtn/HireMeBtn";
 
 const Intro = () => {
     

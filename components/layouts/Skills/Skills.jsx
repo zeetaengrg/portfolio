@@ -11,11 +11,11 @@ import {
     Center,
     Box,
 } from "@chakra-ui/react";
-import FrontendTab from "../../elements/FrontendTab/FrontendTab";
-import BackendTab from "../../elements/BackendTab/BackendTab";
-import DatabaseTab from "../../elements/DatabaseTab/DatabaseTab";
-import ToolsTab from "../../elements/ToolTab/ToolsTab";
-import UITab from "../../elements/UITab/UITab";
+import FrontendTab from "../../elements/Tab/FrontendTab/FrontendTab";
+import BackendTab from "../../elements/Tab/BackendTab/BackendTab";
+import DatabaseTab from "../../elements/Tab/DatabaseTab/DatabaseTab";
+import ToolsTab from "../../elements/Tab/ToolTab/ToolsTab";
+import UITab from "../../elements/Tab/UITab/UITab";
 
 const Skills = () => {
 
