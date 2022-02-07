@@ -22,7 +22,7 @@ const Contacts = () => {
                 bgClip="text"
                 fontSize={{ base: "3rem", md: "4rem" }}
                 fontFamily="inherit"
-                mt="5rem"
+                mt={{ base: "3rem", md: "5rem" }}
             >
                 Get In Touch
             </Heading>
@@ -46,7 +46,7 @@ const Contacts = () => {
                 />
             </Center>
             <Flex
-                m={{ base: "2rem 1.5rem", md: "3rem 0rem" }}
+                m={{ base: "1.5rem", md: "3rem 0rem" }}
                 gap={{ base: "2rem" }}
                 justifyContent="space-around"
                 alignItems="center"
