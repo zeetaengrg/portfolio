@@ -53,9 +53,7 @@ const ThankYou = () => {
                         <Divider width="40%" />
                     </Center>
                     <Text sx={textStyle}>
-                        Your message has been sent successfully.
-                        <br />
-                        I will get back to you shortly.
+                        Your message has been sent successfully. I will get back to you shortly.
                     </Text>
                     <Center>
                         <FaPrayingHands style={{ fontSize: "2rem" }} />
