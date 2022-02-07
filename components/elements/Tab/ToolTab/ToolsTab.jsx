@@ -26,7 +26,7 @@ const ToolsTab = () => {
                 sx={imageStyle}
             />
             <Image
-                src="/images/chakraui.png"
+                src="/images/chakraui.webp"
                 alt="Chakra UI"
                 sx={imageStyle}
             />
