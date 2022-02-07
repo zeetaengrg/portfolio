@@ -1,5 +1,5 @@
-import { Center, Text, Flex, Image, Link, Box } from '@chakra-ui/react';
-import { FaCopyright, FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from 'react-icons/fa';
+import { Center, Text, Flex, Image, Box } from '@chakra-ui/react';
+import { FaCopyright } from 'react-icons/fa';
 import SocialIconLinks from '../../elements/SocialIconLinks/SocialIconLinks';
 
 const Footer = () => {
