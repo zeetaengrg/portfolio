@@ -49,15 +49,6 @@ const Intro = () => {
                     src= "/images/jiten.webp"
                     alt= "Jiten Image"
                 />
-                {/* <NextImage
-                    src= {profileImg}
-                    alt= "Image of the owner of this website"
-                    className= {styles.img}
-                    layout= "responsive"
-                    width= {1000}
-                    height= {750}
-                    sizes= "100vw"
-                /> */}
                 <Box>
                     <Flex
                         direction="column"
