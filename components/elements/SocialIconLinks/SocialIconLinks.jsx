@@ -11,7 +11,8 @@ const SocialIconLinks = () => {
         _hover: {
             "&::after": { content: "none" },
             color: "#a5abbd",
-        }
+        },
+        _focus: { boxShadow: "none" },
     }
 
     return (
