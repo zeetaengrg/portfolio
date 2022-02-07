@@ -7,11 +7,15 @@ const Navbar = () => {
     const linkStyle = {
         _hover: {
             textDecoration: "none",
+        },
+        fontSize: {
+            base: "0.72rem",
+            md: "0.9rem",
         }
     };
 
     return (
-        <Flex p={{ base: "1rem 0.5rem", md: "1rem 4rem", lg: "1rem 8rem" }}>
+        <Flex p={{ base: "0.9rem 1.2rem", md: "1rem 4rem", lg: "1rem 6rem" }}>
             <Box>
                 <LogoImage />
             </Box>
