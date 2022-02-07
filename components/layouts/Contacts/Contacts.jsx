@@ -35,7 +35,7 @@ const Contacts = () => {
             <Center>
                 <Image
                     display={{ base: "none", md: "block" }}
-                    src="/images/contact.svg"
+                    src="/images/contact.webp"
                     alt="Contact Me SVG"
                     sx={{
                         position: "absolute",
