@@ -3,6 +3,9 @@ import {
     FaQuoteLeft,
     FaQuoteRight
 } from "react-icons/fa";
+import NextImage from "next/image";
+import styles from "./Intro.module.css";
+import profileImg from "../../../public/images/jiten.jpg";
 import DownloadBtn from "../../elements/Btn/DownloadBtn/DownloadBtn";
 import HireMeBtn from "../../elements/Btn/HireMeBtn/HireMeBtn";
 
@@ -41,10 +44,19 @@ const Intro = () => {
             <Flex
                 sx={flexStyle}
             >
-                <Image
+                {/* <Image
                     sx={imgStyle}
                     src= "/images/jiten.jpg"
                     alt= "Jiten Image"
+                /> */}
+                <NextImage
+                    src= {profileImg}
+                    alt= "Image of the owner of this website"
+                    className= {styles.img}
+                    layout= "responsive"
+                    width= {1000}
+                    height= {750}
+                    sizes= "100vw"
                 />
                 <Box>
                     <Flex
