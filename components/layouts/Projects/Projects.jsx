@@ -37,7 +37,7 @@ const Projects = () => {
                 bgClip="text"
                 fontSize={{ base: "3rem", md: "4rem" }}
                 fontFamily="inherit"
-                mt="5rem"
+                mt={{ base: "1rem", md: "5rem" }}
             >
                 Projects
             </Heading>
