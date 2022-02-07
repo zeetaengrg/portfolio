@@ -8,7 +8,8 @@ const Projects = () => {
         _hover: {
             textDecoration: "none",
             "&::after": { content: "none" }
-        }
+        },
+        _focus: { outline: "none" },
     };
 
     const imgStyle = {
