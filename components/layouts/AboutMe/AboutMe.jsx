@@ -7,7 +7,6 @@ import {
     Flex,
     Box
 } from "@chakra-ui/react";
-import NextLink from "next/link";
 import ContactMeBtn from "../../elements/Btn/ContactMeBtn/ContactMeBtn";
 import AboutMeWrapper from "../../elements/AboutMeWrapper/AboutMeWrapper";
 import AboutMeText from "../../elements/AboutMeText/AboutMeText";
@@ -43,11 +42,9 @@ const AboutMe = () => {
                     </Flex>
                     <AboutMeText />
                     <Box>
-                        <NextLink href="/#contact">
-                            <Link _hover={{ "&::after": { content: "none" } }}>
-                                <ContactMeBtn />
-                            </Link>
-                        </NextLink>
+                        <Link href="#contact" _hover={{ "&::after": { content: "none" } }}>
+                            <ContactMeBtn />
+                        </Link>
                     </Box>
                 </Flex>
             </Box>
