@@ -8,7 +8,11 @@ export const projects = [
         descriptionTwo:
             "This is a portfolio website which provides a simple way to showcase the tools and technologies I use, projects I have worked or been working as well as simple way to contact me. This is a fully responsive page. Chakra UI framework has been used for the front-end design.",
         imageOne: "/images/hulu.webp",
+        altOne: "Hulu Landing Page",
+        linkOne: "https://hulu-landing-page-clone.vercel.app/",
         imageTwo: "/images/portfolio.webp",
+        altTwo: "Portfolio Website",
+        linkTwo: "https://zeetaen.vercel.app/",
         technologyOne: [
             {
                 id: 1,
@@ -42,17 +46,17 @@ export const projects = [
     {
         id: 2,
         titleOne: "E-Commerce Website",
-        // titleTwo: "Form Validation",
         titleTwo: "Breaking Bad API",
         descriptionOne:
             "This is a clothing store e-commerce website which provides functionalities to sell clothing products.",
-        // descriptionTwo:
-            // "This is a form validation which validates the form fields and shows the error messages if the form is not valid.",
         descriptionTwo:
             `This project shows a simple demonstration of how to fetch the data from the external API and display it on the page. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
         imageOne: "/images/clothingstore.webp",
-        // imageTwo: "/images/form-validation.png",
+        altOne: "E-Commerce Website",
+        linkOne: "#",
         imageTwo: "/images/breakingbad.webp",
+        altTwo: "Breaking Bad API",
+        linkTwo: "https://reverent-morse-0a844d.netlify.app/",
         technologyOne: [
             {
                 id: 1,
