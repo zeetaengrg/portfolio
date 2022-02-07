@@ -15,7 +15,7 @@ const Footer = () => {
                 </Flex>
                 <Text fontSize="0.8rem" m={{ base: "0.5rem", md: "1rem" }} >
                     <Flex justifyContent="center" alignItems="center">
-                        2022 <FaCopyright style={{margin: "0 0.5rem"}} /> Jiten Gurung. All Rights Reserved.
+                        2022 <FaCopyright style={{margin: "0 0.5rem"}} />Jiten Gurung. All Rights Reserved.
                     </Flex>
                 </Text>
             </Flex>
