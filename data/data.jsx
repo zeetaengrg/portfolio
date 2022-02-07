@@ -7,8 +7,8 @@ export const projects = [
             "This is a simple clone of Hulu's landing page. Built from scratch with pixel perfect design similar to Hulu's Website. This is a fully responsive page. A little bit of Javascript has been implemented for 'Login' modal functionality.",
         descriptionTwo:
             "This is a portfolio website which provides a simple way to showcase the tools and technologies I use, projects I have worked or been working as well as simple way to contact me. This is a fully responsive page. Chakra UI framework has been used for the front-end design.",
-        imageOne: "/images/hulu.png",
-        imageTwo: "/images/portfolio.png",
+        imageOne: "/images/hulu.webp",
+        imageTwo: "/images/portfolio.webp",
         technologyOne: [
             {
                 id: 1,
@@ -35,7 +35,7 @@ export const projects = [
             {
                 id: 2,
                 name: "Chakra-UI",
-                image: "/images/chakraui.png",
+                image: "/images/chakraui.webp",
             }
         ]
     },
@@ -50,9 +50,9 @@ export const projects = [
             // "This is a form validation which validates the form fields and shows the error messages if the form is not valid.",
         descriptionTwo:
             `This project shows a simple demonstration of how to fetch the data from the external API and display it on the page. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
-        imageOne: "/images/clothingstore.png",
+        imageOne: "/images/clothingstore.webp",
         // imageTwo: "/images/form-validation.png",
-        imageTwo: "/images/breakingbad.png",
+        imageTwo: "/images/breakingbad.webp",
         technologyOne: [
             {
                 id: 1,
