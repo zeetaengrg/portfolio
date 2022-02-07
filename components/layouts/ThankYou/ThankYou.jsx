@@ -8,9 +8,13 @@ const ThankYou = () => {
         placeContent: "center",
         textAlign: "center",
         height: {
-            base: "50vh",
-            md: "55vh"
+            base: "65.5vh",
+            md: "60.6vh",
         },
+        padding: {
+            base: "1.5rem",
+            md: "0rem 3rem"
+        }
     }
     
     const headingStyle = {
