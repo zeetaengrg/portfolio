@@ -69,22 +69,26 @@ const Intro = () => {
                         >
                             Hi!
                         </Text>
-                        <Text
-                            casing="uppercase"
+                        <Box
                             fontSize={{ base: "1.5rem", md: "2rem" }}
-                            fontWeight="bold"
                         >
                             <Flex
                                 justifyContent={{ base: "center", md: "start" }}
                             >
-                                I&apos;m
+                                <Text 
+                                    fontWeight="bold"
+                                    casing="uppercase"
+                                >
+                                    I&apos;m
+                                </Text>
                                 <FaQuoteLeft
-                                    style={{
-                                        marginLeft: "0.5rem",
-                                        fontSize: "0.8rem",
-                                    }}
-                                />
+                                        style={{
+                                            marginLeft: "0.5rem",
+                                            fontSize: "0.8rem",
+                                        }}
+                                    />
                                 <Text
+                                    casing="uppercase"
                                     color="#fff"
                                     fontSize={{ base: "3rem", md: "4rem" }}
                                     fontWeight="extrabold"
@@ -99,7 +103,7 @@ const Intro = () => {
                                     }}
                                 />
                             </Flex>
-                        </Text>
+                        </Box>
                         <Box>
                             <Text
                                 casing="uppercase"
