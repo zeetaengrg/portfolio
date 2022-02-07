@@ -57,16 +57,14 @@ const Projects = () => {
                         direction={{ base: "column", md: "row" }}
                     >
                         <Box flex="2">
-                            <NextLink href="#">
-                                <Link sx={linkStyle}>
-                                    <Image
-                                        key={project.id}
-                                        src={project.imageOne}
-                                        alt="Hulu Movie Streaming App"
-                                        sx={imgStyle}
-                                    />
-                                </Link>
-                            </NextLink>
+                            <Link sx={linkStyle} href={project.linkOne} target="_blank" rel="noreferrer noopener nofollow" >
+                                <Image
+                                    key={project.id}
+                                    src={project.imageOne}
+                                    alt={project.altOne}
+                                    sx={imgStyle}
+                                />
+                            </Link>
                         </Box>
                         <Grid placeContent="center" flex="1">
                             <Text textAlign={{ base: "center", md: "left" }}>
@@ -126,16 +124,14 @@ const Projects = () => {
                             </Flex>
                         </Grid>
                         <Box flex="2">
-                            <NextLink href="#">
-                                <Link sx={linkStyle}>
-                                    <Image
-                                        key={project.id}
-                                        src={project.imageTwo}
-                                        alt="Hulu Movie Streaming App"
-                                        sx={imgStyle}
-                                    />
-                                </Link>
-                            </NextLink>
+                            <Link sx={linkStyle} href={project.linkTwo} target="_blank" rel="noreferrer noopener nofollow" >
+                                <Image
+                                    key={project.id}
+                                    src={project.imageTwo}
+                                    alt={project.altTwo}
+                                    sx={imgStyle}
+                                />
+                            </Link>
                         </Box>
                     </Flex>
                 </>
