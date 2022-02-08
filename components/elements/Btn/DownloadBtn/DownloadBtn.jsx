@@ -22,6 +22,7 @@ const DownloadBtn = () => {
                 variant="outline"
                 size="lg"
                 sx={btnStyle}
+                onClick={(isLoading) => {}}
                 isLoading={false}
                 loadingText="Downloading"
                 spinnerPlacement="end"
@@ -31,6 +32,7 @@ const DownloadBtn = () => {
                     />
                 }
             >
+                {/* {isLoading ? "Downloading..." : "Download CV"} */}
                 Download CV
             </Button>
         </>
