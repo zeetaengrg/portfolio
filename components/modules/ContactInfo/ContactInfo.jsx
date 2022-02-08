@@ -78,6 +78,7 @@ const ContactInfo = () => {
                                 href="https://www.linkedin.com/in/zeetaen1878/"
                                 target="_blank"
                                 rel="noreferrer noopener nofollow"
+                                aria-label="Linkedin Icon"
                             >
                                 <FaLinkedinIn />
                             </Link>
@@ -86,6 +87,7 @@ const ContactInfo = () => {
                                 href="https://github.com/zeetaen1989"
                                 target="_blank"
                                 rel="noreferrer noopener nofollow"
+                                aria-label="Github Icon"
                             >
                                 <FaGithub />
                             </Link>
@@ -94,6 +96,7 @@ const ContactInfo = () => {
                                 href="https://codepen.io/zeetaen1989"
                                 target="_blank"
                                 rel="noreferrer noopener nofollow"
+                                aria-label="Codepen Icon"
                             >
                                 <FaCodepen />
                             </Link>

@@ -17,13 +17,13 @@ const SocialIconLinks = () => {
 
     return (
         <>
-            <Link href="https://www.facebook.com/zeetaen/" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
+            <Link href="https://www.facebook.com/zeetaen/" aria-label="Facebook Icon" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
                 <FaFacebookSquare style={iconStyle} />
             </Link>
-            <Link href="https://www.instagram.com/zeetaen/" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
+            <Link href="https://www.instagram.com/zeetaen/" aria-label="Instagram Icon" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
                 <FaInstagramSquare style={iconStyle} />
             </Link>
-            <Link href="https://www.youtube.com/c/ZeetaenGurung" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
+            <Link href="https://www.youtube.com/c/ZeetaenGurung" aria-label="Youtube Icon" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
                 <FaYoutubeSquare style={iconStyle} />
             </Link>
         </>
