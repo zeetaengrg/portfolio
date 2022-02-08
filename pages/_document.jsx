@@ -9,7 +9,7 @@ export default class Document extends NextDocument {
           <meta name='description' content='Portfolio Website of Jiten Gurung' />
           <meta name='author' content='Jiten Gurung, zeetaen.gurung@gmail.com' />
           <meta name='copyright' content='Jiten Gurung' />
-          <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@1,100&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
         </Head>
         <body>
           <Main />
