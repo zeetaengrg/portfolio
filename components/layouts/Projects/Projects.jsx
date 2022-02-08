@@ -46,7 +46,7 @@ const Projects = () => {
                 <Divider width={{ base: "40%", md: "15%" }} mb="0.5rem" />
             </Center>
             <Center>
-                <Text>My Recent Works</Text>
+                <Text fontWeight="bold" fontSize="1.1rem">My Recent Works</Text>
             </Center>
             {projects.map((project) => (
                 <>

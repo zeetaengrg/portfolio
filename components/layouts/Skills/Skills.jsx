@@ -55,10 +55,10 @@ const Skills = () => {
                 <Divider width="50%" mb="0.5rem" />
             </Center>
             <Center>
-                <Text>My Tools and Technologies</Text>
+                <Text fontWeight="bold" fontSize="1.1rem">My Tools and Technologies</Text>
             </Center>
             <Tabs
-                m={{ base: "1.5rem 0", md: "2rem 0" }}
+                m={{ base: "1.5rem 0", md: "1.5rem 0" }}
                 variant="solid-rounded"
                 align="center"
                 isLazy

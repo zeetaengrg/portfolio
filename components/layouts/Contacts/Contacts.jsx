@@ -30,7 +30,7 @@ const Contacts = () => {
                 <Divider width={{ base: "60%", md: "25%" }} mb="0.5rem" />
             </Center>
             <Center>
-                <Text>Contact Me</Text>
+                <Text fontWeight="bold" fontSize="1.1rem">Contact Me</Text>
             </Center>
             <Center>
                 <Image
