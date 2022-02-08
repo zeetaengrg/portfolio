@@ -31,7 +31,7 @@ const AboutMe = () => {
                 <Divider width={{ base: "40%", md: "18%" }} mb="0.5rem" />
             </Center>
             <Center>
-                <Text>My Introduction</Text>
+                <Text>My Intro</Text>
             </Center>
             <Box m={{ base: "1.5rem 2rem", md: "3rem 5rem", lg: "3rem 10rem" }}>
                 <Flex direction="column" alignItems="center">
