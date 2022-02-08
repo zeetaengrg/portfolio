@@ -15,6 +15,11 @@ const UITab = () => {
                 alt="Figma"
                 sx={imageStyle}
             />
+            <Image 
+                src="/images/framer-motion.png"
+                alt="Framer Motion"
+                sx={imageStyle}
+            />
         </>
     );
 };
