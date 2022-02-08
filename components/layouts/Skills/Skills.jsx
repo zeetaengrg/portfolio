@@ -68,7 +68,7 @@ const Skills = () => {
                     {/* <Tab sx={tabStyle}>Back-End</Tab> */}
                     {/* <Tab sx={tabStyle}>Database</Tab> */}
                     <Tab sx={tabStyle}>Tools</Tab>
-                    <Tab sx={tabStyle}>UI</Tab>
+                    <Tab sx={tabStyle}>UI/UX</Tab>
                 </TabList>
                 <TabPanels>
                     <TabPanel>
