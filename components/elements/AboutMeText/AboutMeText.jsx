@@ -27,7 +27,7 @@ const AboutMeText = () => {
                 </Link>{" "}
                 with an acute detail to hone the skills as required by
                 the project requirements. A web technology ethusiast
-                with a modest experience of UI designing proficiency and
+                with a modest experience of UI/UX designing proficiency and
                 immense interest to build elegant as well as fully
                 functioning applications.
             </Text>
