@@ -7,7 +7,7 @@ import {
     Image,
     Box
 } from "@chakra-ui/react";
-import Form from "../../modules/Form/Form";
+import ContactForm from "../../modules/ContactForm/ContactForm";
 import ContactInfo from "../../modules/ContactInfo/ContactInfo";
 
 const Contacts = () => {
@@ -53,7 +53,7 @@ const Contacts = () => {
                 direction={{ base: "column", md: "row" }}
                 position="relative"
             >
-                <Form />
+                <ContactForm />
                 <ContactInfo />
             </Flex>
         </Box>
