@@ -29,7 +29,7 @@ const AboutMeWrapper = () => {
     }
 
     const subTitleStyle = {
-        color: "#384765",
+        color: "#3892f9",
         fontSize: "0.7rem"
     }
 
