@@ -102,7 +102,6 @@ const Intro = () => {
                                 fontSize={{ base: "2.5rem", md: "3rem" }}
                                 fontWeight="bold"
                                 lineHeight="1"
-                                color="#384765"
                             >
                                 Front End Dev
                             </Text>
