@@ -35,25 +35,29 @@ const AboutMeWrapper = () => {
 
     return (
         <>
-            <List>
-                <Flex gap="1rem">
+            <Flex gap="1rem">
+                <List>
                     <ListItem sx={listItemStyle} >
                         <ListIcon as={FaGraduationCap} sx={iconStyle} />
                         <Text sx={titleStyle}>Education</Text>
                         <Text sx={subTitleStyle}>BSc Hons</Text>
                     </ListItem>
+                </List>
+                <List>
                     <ListItem sx={listItemStyle}>
                         <ListIcon as={GiAchievement} sx={iconStyle} />
                         <Text sx={titleStyle}>Experience</Text>
                         <Text sx={subTitleStyle}>1+ Years</Text>
                     </ListItem>
+                </List>
+                <List>
                     <ListItem sx={listItemStyle}>
                         <ListIcon as={RiSuitcaseFill} sx={iconStyle} />
                         <Text sx={titleStyle}>Completed</Text>
                         <Text sx={subTitleStyle}>10+ Projects</Text>
                     </ListItem>
-                </Flex>
-            </List>
+                </List>
+            </Flex>
         </>
     );
 };
