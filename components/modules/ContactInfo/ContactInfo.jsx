@@ -79,7 +79,7 @@ const ContactInfo = () => {
                                 target="_blank"
                                 rel="noreferrer noopener nofollow"
                             >
-                                <FaLinkedinIn />
+                                <FaLinkedinIn name="LinkedIn Icon" />
                             </Link>
                             <Link
                                 sx={socialLinkStyle}
@@ -87,7 +87,7 @@ const ContactInfo = () => {
                                 target="_blank"
                                 rel="noreferrer noopener nofollow"
                             >
-                                <FaGithub />
+                                <FaGithub name="GitHub Icon" />
                             </Link>
                             <Link
                                 sx={socialLinkStyle}
@@ -95,7 +95,7 @@ const ContactInfo = () => {
                                 target="_blank"
                                 rel="noreferrer noopener nofollow"
                             >
-                                <FaCodepen />
+                                <FaCodepen name="Codepen Icon" />
                             </Link>
                         </Flex>
                     </Box>
