@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+import { Image, Tooltip } from "@chakra-ui/react";
 
 const UITab = () => {
 
@@ -10,16 +10,20 @@ const UITab = () => {
 
     return (
         <>
-            <Image
-                src="/images/figma.png"
-                alt="Figma"
-                sx={imageStyle}
-            />
-            <Image 
-                src="/images/framer-motion.png"
-                alt="Framer Motion"
-                sx={imageStyle}
-            />
+            <Tooltip label="Figma" placement="top">
+                <Image
+                    src="/images/figma.png"
+                    alt="Figma"
+                    sx={imageStyle}
+                />
+            </Tooltip>
+            <Tooltip label="Framer Motion" placement="top">
+                <Image
+                    src="/images/framer-motion.png"
+                    alt="Framer Motion"
+                    sx={imageStyle}
+                />
+            </Tooltip>
         </>
     );
 };
