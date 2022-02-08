@@ -23,7 +23,7 @@ const Projects = () => {
     };
 
     const techTextStyle = {
-        color: "#384765",
+        color: "#ecb7d4",
         mt: "0.5rem",
         textTransform: "uppercase",
     }
