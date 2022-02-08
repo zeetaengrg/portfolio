@@ -1,26 +1,26 @@
-import { Wrap, Flex, Text } from "@chakra-ui/react";
+import { Flex, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import { FaGraduationCap } from "react-icons/fa";
 import { GiAchievement } from "react-icons/gi";
 import { RiSuitcaseFill } from "react-icons/ri";
 
 const AboutMeWrapper = () => {
 
-    const wrapperStyle = {
+    const listItemStyle = {
         bgColor: "#141E39",
         borderRadius: "0.3rem",
         border: "1px solid #a5abbd",
-    }
-
-    const aboutMeFlexStyle = {
-        gap: "0.3rem",
+        padding: "0.8rem",
+        display: "flex",
+        gap: "0.5rem",
         flexDirection: "column",
         alignItems: "center",
-        padding: "1rem",
+        justifyContent: "center",
     }
 
     const iconStyle = {
         color: "#0B111E",
-        fontSize: "1.5rem"
+        fontSize: "1.5rem",
+        marginInlineEnd: "0rem"
     }
 
     const titleStyle = {
@@ -35,27 +35,25 @@ const AboutMeWrapper = () => {
 
     return (
         <>
-            <Wrap sx={wrapperStyle}>
-                <Flex sx={aboutMeFlexStyle}>
-                    <FaGraduationCap style={iconStyle} />
-                    <Text sx={titleStyle}>Education</Text>
-                    <Text sx={subTitleStyle}>BSc Hons</Text>
+            <List>
+                <Flex gap="1rem">
+                    <ListItem sx={listItemStyle} >
+                        <ListIcon as={FaGraduationCap} sx={iconStyle} />
+                        <Text sx={titleStyle}>Education</Text>
+                        <Text sx={subTitleStyle}>BSc Hons</Text>
+                    </ListItem>
+                    <ListItem sx={listItemStyle}>
+                        <ListIcon as={GiAchievement} sx={iconStyle} />
+                        <Text sx={titleStyle}>Experience</Text>
+                        <Text sx={subTitleStyle}>1+ Years</Text>
+                    </ListItem>
+                    <ListItem sx={listItemStyle}>
+                        <ListIcon as={RiSuitcaseFill} sx={iconStyle} />
+                        <Text sx={titleStyle}>Completed</Text>
+                        <Text sx={subTitleStyle}>10+ Projects</Text>
+                    </ListItem>
                 </Flex>
-            </Wrap>
-            <Wrap sx={wrapperStyle}>
-                <Flex sx={aboutMeFlexStyle}>
-                    <GiAchievement style={iconStyle} />
-                    <Text sx={titleStyle}>Experience</Text>
-                    <Text sx={subTitleStyle}>1+ years</Text>
-                </Flex>
-            </Wrap>
-            <Wrap sx={wrapperStyle}>
-                <Flex sx={aboutMeFlexStyle}>
-                    <RiSuitcaseFill style={iconStyle} />
-                    <Text sx={titleStyle}>Completed</Text>
-                    <Text sx={subTitleStyle}>10+ projects</Text>
-                </Flex>
-            </Wrap>
+            </List>
         </>
     );
 };
