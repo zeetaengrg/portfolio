@@ -22,7 +22,7 @@ const Skills = () => {
     const tabStyle = {
         fontSize: { base: "1rem", md: "1.2rem" },
         color: "#a5abbd",
-        margin: { base: "0.5rem", md: "1rem" },
+        margin: { base: "0.5rem", md: "1.3rem" },
         _focus: { outline: "none" },
         _active: { bg: "none" },
         _selected: { bg: "#141E39", border: "1px solid #a5abbd" },
