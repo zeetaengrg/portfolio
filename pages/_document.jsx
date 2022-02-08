@@ -5,7 +5,6 @@ export default class Document extends NextDocument {
       <Html lang='en'>
         <Head>
           <meta charSet='utf-8' />
-          <meta httpEquiv="Content-Security-Policy" content="script-src 'none'" />
           <meta name='keywords' content='Portfolio, Portfolio Website, Jiten, zeetaen, Jiten Gurung' />
           <meta name='description' content='Portfolio Website of Jiten Gurung' />
           <meta name='author' content='Jiten Gurung, zeetaen.gurung@gmail.com' />
