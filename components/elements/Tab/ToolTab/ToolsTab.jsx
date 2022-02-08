@@ -50,11 +50,6 @@ const ToolsTab = () => {
                 alt="GitHub"
                 sx={imageStyle}
             />
-            <Image
-                src="/images/gitlab.png"
-                alt="GitLab"
-                sx={imageStyle}
-            />
         </>
     );
 };
