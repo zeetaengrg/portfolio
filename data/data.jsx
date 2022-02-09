@@ -48,16 +48,28 @@ export const projects = [
         titleOne: "E-Commerce Website",
         titleTwo: "Breaking Bad API",
         descriptionOne:
-            "This is a clothing store e-commerce website which provides functionalities to sell clothing products.",
-        descriptionTwo:
             `This project shows a simple demonstration of how to fetch the data from the external API and display it on the page. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
-        imageOne: "/images/clothingstore.webp",
-        altOne: "E-Commerce Website",
-        linkOne: "#",
-        imageTwo: "/images/breakingbad.webp",
-        altTwo: "Breaking Bad API",
-        linkTwo: "https://reverent-morse-0a844d.netlify.app/",
+        descriptionTwo:
+            "This is a clothing store e-commerce website which provides a platform to sell clothing products. This project is under construction.",
+        imageOne: "/images/breakingbad.webp",
+        altOne: "Breaking Bad API",
+        linkOne: "https://reverent-morse-0a844d.netlify.app/",
+        imageTwo: "/images/clothingstore.webp",
+        altTwo: "E-Commerce Website",
+        linkTwo: "#",
         technologyOne: [
+            {
+                id: 1,
+                name: "React",
+                image: "/images/reactjs.png",
+            },
+            {
+                id: 2,
+                name: "Sass",
+                image: "/images/sass.png",
+            },
+        ],
+        technologyTwo: [
             {
                 id: 1,
                 name: "ReactJS",
@@ -73,18 +85,6 @@ export const projects = [
                 name: "Materail-UI",
                 image: "/images/materialui.png",
             }
-        ],
-        technologyTwo: [
-            {
-                id: 1,
-                name: "React",
-                image: "/images/reactjs.png",
-            },
-            {
-                id: 2,
-                name: "Sass",
-                image: "/images/sass.png",
-            },
         ]
     },
 ];
