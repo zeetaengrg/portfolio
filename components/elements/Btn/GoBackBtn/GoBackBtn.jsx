@@ -25,7 +25,7 @@ const GoBackBtn = () => {
         <>
             <Link sx={linkStyle} href="/">
                 <Button
-                    m={{ base: "2.69rem 0", md: "0.5rem 0" }}
+                    m={{ base: "2.69rem 0", md: "1.5rem 0" }}
                     variant="outline"
                     sx={btnStyle}
                     rightIcon={<RiArrowGoBackLine />}

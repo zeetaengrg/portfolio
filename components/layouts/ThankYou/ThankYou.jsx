@@ -9,7 +9,7 @@ const ThankYou = () => {
         textAlign: "center",
         height: {
             base: "65.5vh",
-            md: "60.6vh",
+            md: "59.9vh",
         },
         padding: {
             base: "1.5rem",
