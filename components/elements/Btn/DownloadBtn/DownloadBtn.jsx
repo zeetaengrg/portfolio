@@ -17,22 +17,21 @@ const DownloadBtn = () => {
     };
 
     return (
+
         <>
             <Button
                 variant="outline"
                 size="lg"
                 sx={btnStyle}
-                onClick={(isLoading) => {}}
-                isLoading={false}
-                loadingText="Downloading"
-                spinnerPlacement="end"
+                // isLoading
+                // loadingText="Downloading"
+                // spinnerPlacement="end"
                 rightIcon={
                     <FaCloudDownloadAlt
                         style={{ fontSize: "1.5rem" }}
                     />
                 }
             >
-                {/* {isLoading ? "Downloading..." : "Download CV"} */}
                 Download CV
             </Button>
         </>
