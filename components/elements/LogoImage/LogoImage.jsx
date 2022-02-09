@@ -11,7 +11,7 @@ const LogoImage = () => {
         <>
             <NextLink href="/" passHref>
                 <Link sx={linkStyle}>
-                    <Image src="/images/logo.png" alt="Logo" width="69px" height="45px" />
+                    <Image src="/images/logo.webp" alt="Logo" width="69px" height="45px" />
                 </Link>
             </NextLink>
         </>

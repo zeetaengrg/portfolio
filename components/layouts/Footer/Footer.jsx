@@ -8,7 +8,7 @@ const Footer = () => {
         <Box>
             <Flex bgColor="#141E39" justifyContent="center" direction="column">
                 <Center>
-                    <Image src="/images/logo.png" width="69px" height="45px" alt="Logo" m={{ base: "1rem 0", md: "2rem 0" }} />
+                    <Image src="/images/logo.webp" width="69px" height="45px" alt="Logo" m={{ base: "1rem 0", md: "2rem 0" }} />
                 </Center>
                 <Flex m={{ base: "1rem 0", md: "0rem 0" }} gap="2rem" justifyContent="center">
                     <SocialIconLinks />
