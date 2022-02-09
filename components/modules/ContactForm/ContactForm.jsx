@@ -63,57 +63,63 @@ const ContactForm = () => {
         >
             {(props) => (
                 <Form>
-                    <VStack spacing={2} alignItems="flex-start">
-                        <FormLabel htmlFor="firstName" mb="0rem">First Name</FormLabel>
-                        <Input
-                            sx={inputStyle}
-                            type="text"
-                            placeholder="Insert Your First Name..."
-                            id="firstName"
-                            name="firstName"
-                            required
-                        />
-                        <FormLabel htmlFor="lastName">Last Name</FormLabel>
-                        <Input
-                            sx={inputStyle}
-                            type="text"
-                            placeholder="Insert Your Last Name..."
-                            id="lastName"
-                            name="lastName"
-                            required
-                        />
-                        <FormLabel htmlFor="email">Email Address</FormLabel>
-                        <Input
-                            sx={inputStyle}
-                            placeholder="Insert Your Email..."
-                            name="email"
-                            id="email"
-                            type="email"
-                            required
-                        />
-                        <FormLabel htmlFor="message">Message</FormLabel>
-                        <Textarea
-                            sx={inputStyle}
-                            placeholder="Insert Your Message..."
-                            name="message"
-                            id="message"
-                            height="10rem"
-                            required
-                        />
-                        <Button
-                            mt="1rem"
-                            variant="outline"
-                            sx={btnStyle}
-                            type="submit"
-                            isLoading={props.isSubmitting}
-                            loadingText="Sending..."
-                            rightIcon={
-                                <RiSendPlaneFill style={{ fontSize: "1.5rem" }} />
-                            }
-                        >
-                            Send
-                        </Button>
-                    </VStack>
+                    {/* <form action="https://formsubmit.co/69c115d95dc7b2b56652acc2a86de33b" method="POST"> */}
+                        <VStack spacing={2} alignItems="flex-start">
+                            {/* <input type="hidden" name="_next" value="https://zeetaen.vercel.app/thankyou" />
+                            <input type="hidden" name="_template" value="table" />
+                            <input type="hidden" name="_autoresponse" value="Thank you for reaching out. I will get back to you shortly!!!" />
+                            <input type="hidden" name="_subject" value="New submission!" /> */}
+                            <FormLabel htmlFor="firstName" mb="0rem">First Name</FormLabel>
+                            <Input
+                                sx={inputStyle}
+                                type="text"
+                                placeholder="Insert Your First Name..."
+                                id="firstName"
+                                name="firstName"
+                                required
+                            />
+                            <FormLabel htmlFor="lastName">Last Name</FormLabel>
+                            <Input
+                                sx={inputStyle}
+                                type="text"
+                                placeholder="Insert Your Last Name..."
+                                id="lastName"
+                                name="lastName"
+                                required
+                            />
+                            <FormLabel htmlFor="email">Email Address</FormLabel>
+                            <Input
+                                sx={inputStyle}
+                                placeholder="Insert Your Email..."
+                                name="email"
+                                id="email"
+                                type="email"
+                                required
+                            />
+                            <FormLabel htmlFor="message">Message</FormLabel>
+                            <Textarea
+                                sx={inputStyle}
+                                placeholder="Insert Your Message..."
+                                name="message"
+                                id="message"
+                                height="10rem"
+                                required
+                            />
+                            <Button
+                                mt="1rem"
+                                variant="outline"
+                                sx={btnStyle}
+                                type="submit"
+                                isLoading={props.isSubmitting}
+                                loadingText="Sending..."
+                                rightIcon={
+                                    <RiSendPlaneFill style={{ fontSize: "1.5rem" }} />
+                                }
+                            >
+                                Send
+                            </Button>
+                        </VStack>
+                    {/* </form> */}
                 </Form>
             )}
         </Formik>
