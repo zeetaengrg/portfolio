@@ -63,7 +63,7 @@ const ContactForm = () => {
         >
             {(props) => (
                 <Form>
-                    <form action="https://formsubmit.co/zeetaen.gurung@gmail.com" method="POST">
+                    <form action="https://formsubmit.co/69c115d95dc7b2b56652acc2a86de33b" method="POST">
                         <VStack spacing={2} alignItems="flex-start">
                             <input type="hidden" name="_next" value="https://zeetaen.vercel.app/thankyou" />
                             <input type="hidden" name="_template" value="table" />
