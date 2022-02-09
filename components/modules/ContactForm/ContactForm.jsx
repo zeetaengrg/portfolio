@@ -64,7 +64,7 @@ const ContactForm = () => {
             {(props) => (
                 <Form>
                     <VStack spacing={2} alignItems="flex-start">
-                        <FormLabel htmlFor="firstName">First Name</FormLabel>
+                        <FormLabel htmlFor="firstName" mb="0rem">First Name</FormLabel>
                         <Input
                             sx={inputStyle}
                             type="text"
