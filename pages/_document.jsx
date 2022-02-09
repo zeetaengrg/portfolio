@@ -10,6 +10,8 @@ export default class Document extends NextDocument {
           <meta name='author' content='Jiten Gurung, zeetaen.gurung@gmail.com' />
           <meta name='copyright' content='Jiten Gurung' />
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></link>
+          <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
+          <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
         </Head>
         <body>
           <Main />
