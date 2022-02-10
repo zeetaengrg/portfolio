@@ -46,6 +46,7 @@ export const projects = [
     {
         id: 2,
         titleOne: "Breaking Bad API",
+        titleThree: "Lorem ipsum",
         titleTwo: "E-Commerce Website",
         descriptionOne:
             `This project shows a simple demonstration of how to fetch the data from the external API and display it on the page. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
