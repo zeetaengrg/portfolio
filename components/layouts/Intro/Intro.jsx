@@ -3,8 +3,6 @@ import {
     FaQuoteLeft,
     FaQuoteRight
 } from "react-icons/fa";
-// import NextImage from "next/image";
-// import profileImg from "../../../public/images/jiten.jpg";
 import DownloadBtn from "../../elements/Btn/DownloadBtn/DownloadBtn";
 import HireMeBtn from "../../elements/Btn/HireMeBtn/HireMeBtn";
 
