@@ -24,20 +24,6 @@ const ToolsTab = () => {
                     sx={imageStyle}
                 />
             </Tooltip>
-            <Tooltip label="Material-UI" placement="top">
-                <Image
-                    src="/images/materialui.png"
-                    alt="Material UI"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Chakra-UI" placement="top">
-                <Image
-                    src="/images/chakraui.webp"
-                    alt="Chakra UI"
-                    sx={imageStyle}
-                />
-            </Tooltip>
             <Tooltip label="Bootstrap" placement="top">
                 <Image
                     src="/images/bootstrap.png"
@@ -49,6 +35,20 @@ const ToolsTab = () => {
                 <Image
                     src="/images/tailwind.png"
                     alt="Tailwind"
+                    sx={imageStyle}
+                />
+            </Tooltip>
+            <Tooltip label="Material-UI" placement="top">
+                <Image
+                    src="/images/materialui.png"
+                    alt="Material UI"
+                    sx={imageStyle}
+                />
+            </Tooltip>
+            <Tooltip label="Chakra-UI" placement="top">
+                <Image
+                    src="/images/chakraui.webp"
+                    alt="Chakra UI"
                     sx={imageStyle}
                 />
             </Tooltip>
