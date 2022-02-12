@@ -6,6 +6,7 @@ import { RiSuitcaseFill } from "react-icons/ri";
 const AboutMeWrapper = () => {
 
     const listItemStyle = {
+        width: "7rem",
         bgColor: "#141E39",
         borderRadius: "0.3rem",
         border: "1px solid #a5abbd",
@@ -46,8 +47,8 @@ const AboutMeWrapper = () => {
                 <List>
                     <ListItem sx={listItemStyle}>
                         <ListIcon as={GiAchievement} sx={iconStyle} />
-                        <Text sx={titleStyle}>Experience</Text>
-                        <Text sx={subTitleStyle}>1+ Years</Text>
+                        <Text sx={titleStyle}>Certifications</Text>
+                        <Text sx={subTitleStyle}>3+ Certs</Text>
                     </ListItem>
                 </List>
                 <List>
