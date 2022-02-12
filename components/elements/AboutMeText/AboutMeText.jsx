@@ -125,8 +125,7 @@ const AboutMeText = () => {
                 >
                     Nepal Telecommunication Authority
                 </Link>
-                (NTA) for building Class Routine Management System using Genetic
-                Algorithm.
+                (NTA) for building Class Routine Management System.
                 <br />
                 <br />
                 Right now I am upskilling myself by learning ReactJS and NextJS
