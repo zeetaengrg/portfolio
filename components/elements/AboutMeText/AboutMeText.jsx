@@ -8,6 +8,18 @@ const AboutMeText = () => {
         },
     }
 
+    const specialLinkStyle = {
+        _hover:{
+            "&::after": { content: "none" },
+        },
+        _focus: { outline: "none" },
+        _active: { outline: "none" },
+        textTransform: "none",
+        fontFamily: "inherit",
+        fontSize: { base: "1.1rem", md: "1.3rem" },
+        textDecoration: "underline",
+    }
+
     return (
         <>
             <Text
@@ -25,11 +37,116 @@ const AboutMeText = () => {
                 >
                     🇳🇵
                 </Link>{" "}
-                with an acute detail to hone the skills as required by
-                the project requirements. A web technology ethusiast
-                with a modest experience of UI/UX designing proficiency and
-                immense interest to build elegant as well as fully
-                functioning applications.
+                with an acute detail to hone the skills as required by the
+                project as well as modest experience of UI/UX designing
+                proficiency and immense interest to build elegant as well as
+                fully functioning applications.
+                <br />
+                <br />
+                In the past, I have worked as a network technician
+                and system engineer. However, I always had secret affair with
+                building interactive web applications. During COVID19, I had an
+                epiphany to learn web development seriously. I took few courses
+                from{" "}
+                <Link
+                    sx={specialLinkStyle}
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    href="https://freecodecamp.org"
+                >
+                    freeCodeCamp
+                </Link>
+                , and followed many Youtube guru&apos;s like{" "}
+                <Link
+                    sx={specialLinkStyle}
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    href="https://bit.ly/3sHIVhU"
+                >
+                    Kevin Powell
+                </Link>
+                ,{" "}
+                <Link
+                    sx={specialLinkStyle}
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    href="https://bit.ly/3oJld3t"
+                >
+                    Traversy Media
+                </Link>
+                ,{" "}
+                <Link
+                    sx={specialLinkStyle}
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    href="https://bit.ly/3HPiehA"
+                >
+                    Web Dev Simplified
+                </Link>
+                ,{" "}
+                <Link
+                    sx={specialLinkStyle}
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    href="https://bit.ly/3rHHHUs"
+                >
+                    TheNetNinja
+                </Link>
+                , and many more.
+                <br />
+                <br />
+                Without being ostentacious, I am a hard worker and a learner as I
+                have completed few certifications like{" "}
+                <Link
+                    href="https://bit.ly/34z9OfC"
+                    sx={specialLinkStyle}
+                    rel="noreferrer noopener nofollow"
+                    target="_blank"
+                >
+                    Responsive Web Design Certification
+                </Link>{" "}
+                and{" "}
+                <Link
+                    href="https://bit.ly/3Bjjg2Y"
+                    sx={specialLinkStyle}
+                    rel="noreferrer noopener nofollow"
+                    target="_blank"
+                >
+                    JavaScript Algorithms and Data Structures Certification
+                </Link>{" "}
+                from freeCodeCamp. To further prove my hardworking habtitude,
+                during my university days, I was awarded with the Best Software
+                Project Award by{" "}
+                <Link
+                    href="https://nta.gov.np"
+                    sx={specialLinkStyle}
+                    rel="noreferrer noopener nofollow"
+                    target="_blank"
+                >
+                    Nepal Telecommunication Authority
+                </Link>
+                (NTA) for building Class Routine Management System using Genetic Algorithm.
+                <br />
+                <br />
+                Right now I am upskilling myself by learning ReactJS and NextJS
+                frameworks and have completed few projects using them which can
+                be found in my{" "}
+                <Link
+                    href="https://bit.ly/3LmRDue"
+                    sx={specialLinkStyle}
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                >
+                    GitHub
+                </Link>{" "}
+                profile and {" "}
+                <Link href="#projects" sx={specialLinkStyle}>
+                    Projects
+                </Link>{" "}
+                section.
+                <br />
+                <br />
+                As per my hobby, I am a football fanatic and secretly dream about being a Rock &apos;n&apos; Roll guitar player.
             </Text>
         </>
     );
