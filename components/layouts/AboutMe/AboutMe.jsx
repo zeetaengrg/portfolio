@@ -23,7 +23,7 @@ const AboutMe = () => {
                 bgClip="text"
                 fontSize={{ base: "3rem", md: "4rem" }}
                 fontFamily="inherit"
-                mt={{ base: "3rem", md: "0rem" }}
+                mt={{ base: "2rem", md: "0rem" }}
             >
                 About Me
             </Heading>
