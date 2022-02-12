@@ -16,7 +16,8 @@ const AboutMeText = () => {
         _active: { outline: "none" },
         textTransform: "none",
         fontFamily: "inherit",
-        fontSize: { base: "1.1rem", md: "1.3rem" },
+        fontSize: { base: "1.1rem", md: "1.2rem" },
+        fontWeight: "normal",
         textDecoration: "underline",
     }
 
@@ -24,7 +25,7 @@ const AboutMeText = () => {
         <>
             <Text
                 m={{ base: "1.5rem", md: "2rem" }}
-                fontSize={{ base: "1.1rem", md: "1.3rem" }}
+                fontSize={{ base: "1.1rem", md: "1.2rem" }}
                 textAlign="center"
             >
                 A Front-End developing aficionado from{" "}
@@ -43,11 +44,10 @@ const AboutMeText = () => {
                 fully functioning applications.
                 <br />
                 <br />
-                In the past, I have worked as a network technician
-                and system engineer. However, I always had secret affair with
-                building interactive web applications. During COVID19, I had an
-                epiphany to learn web development seriously. I took few courses
-                from{" "}
+                In the past, I have worked as a network technician and system
+                engineer. However, I always had secret affair with building
+                interactive web applications. During COVID19, I had an epiphany
+                to learn web development seriously. I took few courses from{" "}
                 <Link
                     sx={specialLinkStyle}
                     target="_blank"
@@ -95,8 +95,8 @@ const AboutMeText = () => {
                 , and many more.
                 <br />
                 <br />
-                Without being ostentacious, I am a hard worker and a learner as I
-                have completed few certifications like{" "}
+                Without being ostentacious, I am a hard worker and a learner as
+                I have completed few certifications like{" "}
                 <Link
                     href="https://bit.ly/34z9OfC"
                     sx={specialLinkStyle}
@@ -125,7 +125,8 @@ const AboutMeText = () => {
                 >
                     Nepal Telecommunication Authority
                 </Link>
-                (NTA) for building Class Routine Management System using Genetic Algorithm.
+                (NTA) for building Class Routine Management System using Genetic
+                Algorithm.
                 <br />
                 <br />
                 Right now I am upskilling myself by learning ReactJS and NextJS
@@ -139,14 +140,15 @@ const AboutMeText = () => {
                 >
                     GitHub
                 </Link>{" "}
-                profile and {" "}
+                profile and{" "}
                 <Link href="#projects" sx={specialLinkStyle}>
                     Projects
                 </Link>{" "}
                 section.
                 <br />
                 <br />
-                As per my hobby, I am a football fanatic and secretly dream about being a Rock &apos;n&apos; Roll guitar player.
+                As per my hobby, I am a football fanatic and secretly dream
+                about being a Rock &apos;n&apos; Roll guitarist.
             </Text>
         </>
     );
