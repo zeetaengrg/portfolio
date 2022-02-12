@@ -4,9 +4,9 @@ export const projects = [
         titleOne: "Hulu Landing Page",
         titleTwo: "Portfolio Website",
         descriptionOne:
-            "This is a simple clone of Hulu's landing page. Built from scratch with pixel perfect design similar to Hulu's Website. This is a fully responsive page. A little bit of Javascript has been implemented for 'Login' modal functionality.",
+            "A fully responsive design clone of Hulu's Landing Page with a little bit of Javascript for 'Login' modal functionality. One of my early learning phase project and having learned how to build Netflix clone from Traversy Media, I put my skills to test and built it from scratch with pixel perfect design of Hulu's Website. Here, I learned Media Queries and JavaScript DOM manipulation techniques.",
         descriptionTwo:
-            "This is a portfolio website which provides a simple way to showcase the tools and technologies I use, projects I have worked or been working as well as simple way to contact me. This is a fully responsive page. Chakra UI framework has been used for the front-end design.",
+            "My portfolio website which showcases my skills, the tools and technologies I use, projects I have worked or been working and a simple way to contact me. Having learned how to build Portfolio website from Kevin Powell using HTML, CSS and JavaScript, to test myself and also to build my own Portfolio Website, I built it from scratch to implement my NextJS skills.",
         imageOne: "/images/hulu.webp",
         altOne: "Hulu Landing Page",
         linkOne: "https://hulu-landing-page-clone.vercel.app/",
@@ -48,7 +48,7 @@ export const projects = [
         titleOne: "Breaking Bad API",
         titleTwo: "E-Commerce Website",
         descriptionOne:
-            `This project shows a simple demonstration of how to fetch the data from the external API and display it on the page. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
+            `This project shows a simple demonstration of how to fetch the data from the external API. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
         descriptionTwo:
             "This is a clothing store e-commerce website which provides a platform to sell clothing products. This project is under construction.",
         imageOne: "/images/breakingbad.webp",
