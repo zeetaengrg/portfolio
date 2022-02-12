@@ -24,7 +24,7 @@ const AboutMeText = () => {
     return (
         <>
             <Text
-                m={{ base: "1.5rem", md: "2rem" }}
+                p={{ base: "1.5rem 0rem", md: "2rem" }}
                 fontSize={{ base: "1.1rem", md: "1.2rem" }}
                 textAlign="center"
             >
