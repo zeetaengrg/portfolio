@@ -46,7 +46,7 @@ const Contacts = () => {
                 />
             </Center>
             <Flex
-                m={{ base: "1.5rem", md: "3rem 0rem" }}
+                p={{ base: "1.5rem", md: "2rem 0rem" }}
                 gap={{ base: "2rem" }}
                 justifyContent="space-around"
                 alignItems="center"
