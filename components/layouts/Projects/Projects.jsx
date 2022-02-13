@@ -45,7 +45,9 @@ const Projects = () => {
                 <Divider width={{ base: "40%", md: "15%" }} mb="0.5rem" />
             </Center>
             <Center>
-                <Text fontWeight="bold" fontSize="1.1rem">My Recent Works</Text>
+                <Text fontWeight="bold" fontSize="1.1rem">
+                    My Recent Works
+                </Text>
             </Center>
             {projects.map((project) => (
                 <>
@@ -56,7 +58,12 @@ const Projects = () => {
                         direction={{ base: "column", md: "row" }}
                     >
                         <Box flex="2">
-                            <Link sx={linkStyle} href={project.linkOne} target="_blank" rel="noreferrer noopener nofollow" >
+                            <Link
+                                sx={linkStyle}
+                                href={project.linkOne}
+                                target="_blank"
+                                rel="noreferrer noopener nofollow"
+                            >
                                 <Image
                                     key={project.id}
                                     src={project.imageOne}
@@ -78,8 +85,17 @@ const Projects = () => {
                                 <Divider mb="0.5rem" />
                                 {project.descriptionOne}
                             </Text>
-                            <Text sx={techTextStyle} textAlign={{ base: "center", md: "left" }}>Tech Stacks</Text>
-                            <Flex mt="0.5rem" gap="2rem" justifyContent={{ base: "center", md: "left" }}>
+                            <Text
+                                sx={techTextStyle}
+                                textAlign={{ base: "center", md: "left" }}
+                            >
+                                Tech Stacks
+                            </Text>
+                            <Flex
+                                mt="0.5rem"
+                                gap="2rem"
+                                justifyContent={{ base: "center", md: "left" }}
+                            >
                                 {project.technologyOne.map((tech) => (
                                     <Image
                                         src={tech.image}
@@ -110,8 +126,17 @@ const Projects = () => {
                                 <Divider mb="0.5rem" />
                                 {project.descriptionTwo}
                             </Text>
-                            <Text sx={techTextStyle} textAlign={{ base: "center", md: "left" }}>Tech Stacks</Text>
-                            <Flex mt="0.5rem" gap="2rem" justifyContent={{ base: "center", md: "left" }}>
+                            <Text
+                                sx={techTextStyle}
+                                textAlign={{ base: "center", md: "left" }}
+                            >
+                                Tech Stacks
+                            </Text>
+                            <Flex
+                                mt="0.5rem"
+                                gap="2rem"
+                                justifyContent={{ base: "center", md: "left" }}
+                            >
                                 {project.technologyTwo.map((tech) => (
                                     <Image
                                         src={tech.image}
@@ -123,7 +148,12 @@ const Projects = () => {
                             </Flex>
                         </Grid>
                         <Box flex="2">
-                            <Link sx={linkStyle} href={project.linkTwo} target="_blank" rel="noreferrer noopener nofollow" >
+                            <Link
+                                sx={linkStyle}
+                                href={project.linkTwo}
+                                target="_blank"
+                                rel="noreferrer noopener nofollow"
+                            >
                                 <Image
                                     key={project.id}
                                     src={project.imageTwo}
