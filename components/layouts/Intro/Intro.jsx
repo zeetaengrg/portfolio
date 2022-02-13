@@ -181,14 +181,11 @@ const Intro = () => {
                                 <Link
                                     href="/cv/Resume.pdf"
                                     download
-                                    _hover={{ "&::after": { content: "none" } }}
+                                    sx={linkStyle}
                                 >
                                     <DownloadBtn />
                                 </Link>
-                                <Link
-                                    href="#contact"
-                                    _hover={{ "&::after": { content: "none" } }}
-                                >
+                                <Link href="#contact" sx={linkStyle}>
                                     <HireMeBtn />
                                 </Link>
                             </Flex>
