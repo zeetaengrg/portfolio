@@ -96,7 +96,7 @@ const AboutMeText = () => {
                 <br />
                 <br />
                 Without being ostentacious, I am a hard worker and a learner as
-                I have completed few certifications like{" "}
+                I have completed few certifications namely{" "}
                 <Link
                     href="https://bit.ly/34z9OfC"
                     sx={specialLinkStyle}
