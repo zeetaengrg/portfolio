@@ -14,7 +14,7 @@ const btnVariants = {
         x: 0,
         transition: {
             delay: 0.8,
-            duration: 1.5,
+            duration: 1.2,
             ease: "easeInOut",
             type: "tween",
         }

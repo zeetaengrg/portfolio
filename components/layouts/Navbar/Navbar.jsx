@@ -7,7 +7,7 @@ const MotionLink = motion(Link);
 const linkVariants = {
     hidden: {
         opacity: 0,
-        y: -80,
+        y: -20,
     },
     visible: i => ({
         opacity: 1,
@@ -16,7 +16,7 @@ const linkVariants = {
             delay: i * 0.2,
             duration: 1,
             type: "spring",
-            stiffness: 120,
+            stiffness: 110,
         }
     })
 }

@@ -13,8 +13,8 @@ const btnVariants = {
         opacity: 1,
         x: 0,
         transition: {
-            delay: 0.8,
-            duration: 1.5,
+            delay: 1,
+            duration: 1.2,
             ease: "easeInOut",
             type: "tween",
         }

@@ -20,7 +20,7 @@ const imgVariants = {
         x: 0,
         transition: {
             delay: 0.8,
-            duration: 1.5,
+            duration: 1.2,
             ease: "easeInOut",
             type: "tween",
         }
@@ -37,7 +37,7 @@ const commonVariants = {
         x: 0,
         transition: {
             delay: 0.8,
-            duration: 1.5,
+            duration: 1.2,
             ease: "easeInOut",
             type: "tween",
         }
