@@ -1,13 +1,50 @@
 import { Flex, Image, Text, Link, Box } from "@chakra-ui/react";
-import {
-    FaQuoteLeft,
-    FaQuoteRight
-} from "react-icons/fa";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 import DownloadBtn from "../../elements/Btn/DownloadBtn/DownloadBtn";
 import HireMeBtn from "../../elements/Btn/HireMeBtn/HireMeBtn";
 
+const MotionImage = motion(Image)
+
+const MotionText = motion(Text)
+
+const MotionIcon = motion(Box)
+
+const imgVariants = {
+    hidden: {
+        opacity: 0,
+        x: "-10vh",
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            delay: 0.8,
+            duration: 2,
+            ease: "easeInOut",
+            type: "tween",
+        }
+    }
+}
+
+const commonVariants = {
+    hidden: {
+        opacity: 0,
+        x: "10vh",
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            delay: 0.8,
+            duration: 2,
+            ease: "easeInOut",
+            type: "tween",
+        }
+    }
+}
+
 const Intro = () => {
-    
     const flexStyle = {
         justifyContent: "center",
         alignItems: "center",
@@ -23,8 +60,8 @@ const Intro = () => {
         flexDirection: {
             base: "column",
             md: "row",
-        }
-    }
+        },
+    };
 
     const imgStyle = {
         borderRadius: "50%",
@@ -33,19 +70,28 @@ const Intro = () => {
             base: "8rem",
             md: "12rem",
             lg: "17rem",
+        },
+    };
+
+    const linkStyle = {
+        _hover: {
+            "&::after": {
+                content: "none"
+            }
         }
     }
 
     return (
         <Box>
-            <Flex
-                sx={flexStyle}
-            >
+            <Flex sx={flexStyle}>
                 <Box>
-                    <Image
+                    <MotionImage
                         sx={imgStyle}
-                        src= "/images/jiten.webp"
-                        alt= "Jiten Image"
+                        src="/images/jiten.webp"
+                        alt="Jiten Image"
+                        variants={imgVariants}
+                        initial="hidden"
+                        animate="visible"
                     />
                 </Box>
                 <Box>
@@ -53,56 +99,78 @@ const Intro = () => {
                         direction="column"
                         textAlign={{ base: "center", md: "start" }}
                     >
-                        <Text
+                        <MotionText
                             casing="uppercase"
                             fontSize={{ base: "1rem", md: "1.5rem" }}
+                            variants={commonVariants}
+                            initial="hidden"
+                            animate="visible"
                         >
                             Hi!
-                        </Text>
-                        <Box
-                            fontSize={{ base: "1.5rem", md: "2rem" }}
-                        >
+                        </MotionText>
+                        <Box fontSize={{ base: "1.5rem", md: "2rem" }}>
                             <Flex
                                 justifyContent={{ base: "center", md: "start" }}
                             >
-                                <Text
+                                <MotionText
                                     fontWeight="bold"
                                     casing="uppercase"
+                                    variants={commonVariants}
+                                    initial="hidden"
+                                    animate="visible"
                                 >
                                     I&apos;m
-                                </Text>
-                                <FaQuoteLeft
+                                </MotionText>
+                                <MotionIcon
+                                    variants={commonVariants}
+                                    initial="hidden"
+                                    animate="visible"
+                                >
+                                    <FaQuoteLeft
                                         style={{
                                             marginLeft: "0.5rem",
                                             fontSize: "0.8rem",
                                         }}
                                     />
-                                <Text
+                                </MotionIcon>
+                                <MotionText
                                     casing="uppercase"
                                     color="#fff"
                                     fontSize={{ base: "3rem", md: "4rem" }}
                                     fontWeight="extrabold"
                                     lineHeight="1.4"
+                                    variants={commonVariants}
+                                    initial="hidden"
+                                    animate="visible"
                                 >
                                     Jiten
-                                </Text>
-                                <FaQuoteRight
-                                    style={{
-                                        marginLeft: "0.5rem",
-                                        fontSize: "0.8rem",
-                                    }}
-                                />
+                                </MotionText>
+                                <MotionIcon
+                                    variants={commonVariants}
+                                    initial="hidden"
+                                    animate="visible"
+                                >
+                                    <FaQuoteRight
+                                        style={{
+                                            marginLeft: "0.5rem",
+                                            fontSize: "0.8rem",
+                                        }}
+                                    />
+                                </MotionIcon>
                             </Flex>
                         </Box>
                         <Box>
-                            <Text
+                            <MotionText
                                 casing="uppercase"
                                 fontSize={{ base: "2.5rem", md: "3rem" }}
                                 fontWeight="bold"
                                 lineHeight="1"
+                                variants={commonVariants}
+                                initial="hidden"
+                                animate="visible"
                             >
                                 Front End Dev
-                            </Text>
+                            </MotionText>
                         </Box>
                         <Box>
                             <Flex
