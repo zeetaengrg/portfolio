@@ -36,16 +36,30 @@ const Navbar = () => {
     };
 
     return (
-        <Flex p={{ base: "0.9rem 1.2rem", md: "1rem 4rem", lg: "1rem 6rem" }}>
+        <Flex
+            p={{ base: "0.9rem 1.2rem", md: "0.8rem 4rem", lg: "0.8rem 6rem" }}
+        >
             <Box>
                 <LogoImage />
             </Box>
             <Spacer />
-            <Flex gap={{ base: "1.2rem", md: "2rem", lg: "4rem" }} alignItems="center">
-                <Link sx={linkStyle} href="#about">About Me</Link>
-                <Link sx={linkStyle} href="#skills">Skills</Link>
-                <Link sx={linkStyle} href="#projects">Projects</Link>
-                <Link sx={linkStyle} href="#contact">Contact</Link>
+            <Flex
+                gap={{ base: "1.2rem", md: "2rem", lg: "4rem" }}
+                alignItems="center"
+            >
+                {linkItem.map((item, i) => (
+                    <MotionLink
+                        key={item}
+                        sx={linkStyle}
+                        href={`/#${item.replace(/\s+/g, "").toLowerCase()}`}
+                        variants={linkVariants}
+                        custom={i}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        {item}
+                    </MotionLink>
+                ))}
             </Flex>
         </Flex>
     );
