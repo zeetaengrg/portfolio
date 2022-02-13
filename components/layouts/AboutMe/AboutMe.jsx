@@ -16,14 +16,14 @@ const AboutMe = () => {
     return (
         <Flex direction="column">
             <Heading
-                id="about"
+                id="aboutme"
                 textAlign="center"
                 textTransform="uppercase"
                 bgGradient="linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)"
                 bgClip="text"
                 fontSize={{ base: "3rem", md: "4rem" }}
                 fontFamily="inherit"
-                mt={{ base: "2rem", md: "0rem" }}
+                mt={{ base: "2rem", md: "0.2rem" }}
             >
                 About Me
             </Heading>
