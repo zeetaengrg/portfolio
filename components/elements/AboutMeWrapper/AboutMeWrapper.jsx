@@ -5,6 +5,24 @@ import { RiSuitcaseFill } from "react-icons/ri";
 
 const AboutMeWrapper = () => {
 
+    const wrapperList = [
+        {
+            icon: <FaGraduationCap />,
+            title: "Education",
+            subtitle: "B.Sc. Hons"
+        },
+        {
+            icon: <GiAchievement />,
+            title: "Certifications",
+            subtitle: "3+ Certs"
+        },
+        {
+            icon: <RiSuitcaseFill />,
+            title: "Completed",
+            subtitle: "10+ Projects"
+        }
+    ]
+
     const listItemStyle = {
         width: "7rem",
         bgColor: "#141E39",
@@ -36,29 +54,17 @@ const AboutMeWrapper = () => {
 
     return (
         <>
-            <Flex gap="1rem">
-                <List>
-                    <ListItem sx={listItemStyle} >
-                        <ListIcon as={FaGraduationCap} sx={iconStyle} />
-                        <Text sx={titleStyle}>Education</Text>
-                        <Text sx={subTitleStyle}>BSc Hons</Text>
-                    </ListItem>
-                </List>
-                <List>
-                    <ListItem sx={listItemStyle}>
-                        <ListIcon as={GiAchievement} sx={iconStyle} />
-                        <Text sx={titleStyle}>Certifications</Text>
-                        <Text sx={subTitleStyle}>3+ Certs</Text>
-                    </ListItem>
-                </List>
-                <List>
-                    <ListItem sx={listItemStyle}>
-                        <ListIcon as={RiSuitcaseFill} sx={iconStyle} />
-                        <Text sx={titleStyle}>Completed</Text>
-                        <Text sx={subTitleStyle}>10+ Projects</Text>
-                    </ListItem>
-                </List>
-            </Flex>
+            <List>
+                <Flex gap="1rem">
+                    {wrapperList.map((wrapper) => (
+                        <ListItem sx={listItemStyle} key={wrapper}>
+                            <ListIcon sx={iconStyle}>{wrapper.icon}</ListIcon>
+                            <Text {...titleStyle}>{wrapper.title}</Text>
+                            <Text {...subTitleStyle}>{wrapper.subtitle}</Text>
+                        </ListItem>
+                    ))}
+                </Flex>
+            </List>
         </>
     );
 };
