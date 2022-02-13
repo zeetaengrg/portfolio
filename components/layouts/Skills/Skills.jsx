@@ -68,12 +68,18 @@ const Skills = () => {
                     {tabList.map((tab) => (
                         <Tab sx={tabStyle} key={tab}>
                             {tab}
-                            <Box sx={iconStyle}>
-                                {tab === "Frontend" && <BsFront />}
-                                {tab === "Backend" && <BsBack />}
-                                {tab === "Database" && <FaDatabase />}
-                                {tab === "Tools" && <FaTools />}
-                                {tab === "UI/UX" && <MdDesignServices />}
+                            <Box {...iconStyle}>
+                                {tab === "Frontend" ? (
+                                    <BsFront />
+                                ) : tab === "Backend" ? (
+                                    <BsBack />
+                                ) : tab === "Database" ? (
+                                    <FaDatabase />
+                                ) : tab === "Tools" ? (
+                                    <FaTools />
+                                ) : (
+                                    <MdDesignServices />
+                                )}
                             </Box>
                         </Tab>
                     ))}
