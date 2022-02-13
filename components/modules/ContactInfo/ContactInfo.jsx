@@ -53,6 +53,8 @@ const ContactInfo = () => {
             color: "#fff",
             "&::after": { content: "none" },
         },
+        target: "_blank",
+        rel: "noopener noreferrer nofollow",
     };
 
     return (
