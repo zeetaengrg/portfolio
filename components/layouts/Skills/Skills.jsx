@@ -11,8 +11,8 @@ import {
     Center,
     Box,
 } from "@chakra-ui/react";
-import { BsFront } from "react-icons/bs";
-import { FaTools } from "react-icons/fa";
+import { BsFront, BsBack } from "react-icons/bs";
+import { FaTools, FaDatabase } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
 import FrontendTab from "../../elements/Tab/FrontendTab/FrontendTab";
 import BackendTab from "../../elements/Tab/BackendTab/BackendTab";
