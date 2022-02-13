@@ -63,13 +63,34 @@ const ContactForm = () => {
         >
             {(props) => (
                 <Form>
-                    <form action="https://formsubmit.co/69c115d95dc7b2b56652acc2a86de33b" method="POST">
+                    <form
+                        action="https://formsubmit.co/69c115d95dc7b2b56652acc2a86de33b"
+                        method="POST"
+                    >
                         <VStack spacing={2} alignItems="flex-start">
-                            <input type="hidden" name="_next" value="https://jitendragurung.com.np/thankyou" />
-                            <input type="hidden" name="_template" value="table" />
-                            <input type="hidden" name="_autoresponse" value="Thank you for reaching out. I will get back to you shortly!!!" />
-                            <input type="hidden" name="_subject" value="New submission!" />
-                            <FormLabel htmlFor="firstName" mb="0rem">First Name</FormLabel>
+                            <input
+                                type="hidden"
+                                name="_next"
+                                value="https://jitendragurung.com.np/thankyou"
+                            />
+                            <input
+                                type="hidden"
+                                name="_template"
+                                value="table"
+                            />
+                            <input
+                                type="hidden"
+                                name="_autoresponse"
+                                value="Thank you for reaching out. I will get back to you shortly!!!"
+                            />
+                            <input
+                                type="hidden"
+                                name="_subject"
+                                value="New submission!"
+                            />
+                            <FormLabel htmlFor="firstName" mb="0rem">
+                                First Name
+                            </FormLabel>
                             <Input
                                 sx={inputStyle}
                                 type="text"
@@ -113,7 +134,9 @@ const ContactForm = () => {
                                 isLoading={props.isSubmitting}
                                 loadingText="Sending..."
                                 rightIcon={
-                                    <RiSendPlaneFill style={{ fontSize: "1.5rem" }} />
+                                    <RiSendPlaneFill
+                                        style={{ fontSize: "1.5rem" }}
+                                    />
                                 }
                             >
                                 Send

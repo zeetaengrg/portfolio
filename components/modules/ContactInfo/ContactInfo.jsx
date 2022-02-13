@@ -4,7 +4,6 @@ import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const ContactInfo = () => {
-
     const iconStyle = {
         fontSize: "2rem",
     };
@@ -50,7 +49,12 @@ const ContactInfo = () => {
                     alignItems={{ base: "center" }}
                 >
                     <Box>
-                        <Flex direction="column" justifyContent="center" gap={{ base: "1rem", md: "2rem" }} alignItems={{ base: "center", md: "flex-start" }}>
+                        <Flex
+                            direction="column"
+                            justifyContent="center"
+                            gap={{ base: "1rem", md: "2rem" }}
+                            alignItems={{ base: "center", md: "flex-start" }}
+                        >
                             <Flex sx={flexStyle}>
                                 <ImLocation style={iconStyle} />
                                 <Text sx={textStyle}>Pokhara, Nepal</Text>
@@ -65,7 +69,9 @@ const ContactInfo = () => {
                                     href="mailto:zeetaen.gurung@gmail.com"
                                     sx={linkStyle}
                                 >
-                                    <Text sx={textStyle}>zeetaen.gurung@gmail.com</Text>
+                                    <Text sx={textStyle}>
+                                        zeetaen.gurung@gmail.com
+                                    </Text>
                                 </Link>
                             </Flex>
                         </Flex>
@@ -104,7 +110,7 @@ const ContactInfo = () => {
                     </Box>
                     <Divider />
                 </Flex>
-            </Box>        
+            </Box>
         </>
     );
 };
