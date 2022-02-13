@@ -33,15 +33,6 @@ const Skills = () => {
         _selected: { bg: "#141E39", border: "1px solid #a5abbd" },
     };
 
-    const flexStyle = {
-        justifyContent: "center",
-        gap: "2rem",
-        flexWrap: {
-            base: "wrap",
-            md: "nowrap",
-        }
-    }
-
     const iconStyle = {
         marginLeft: "0.5rem"
     }
@@ -64,46 +55,44 @@ const Skills = () => {
                 <Divider width="50%" mb="0.5rem" />
             </Center>
             <Center>
-                <Text fontWeight="bold" fontSize="1.1rem">My Tools and Technologies</Text>
+                <Text fontWeight="bold" fontSize="1.1rem">
+                    My Tools and Technologies
+                </Text>
             </Center>
             <Tabs
                 m={{ base: "1.5rem 0", md: "1.5rem 0" }}
                 variant="solid-rounded"
                 align="center"
-                isLazy
             >
                 <TabList>
-                    <Tab sx={tabStyle}>Frontend<BsFront style={iconStyle} /></Tab>
-                    {/* <Tab sx={tabStyle}>Back-End</Tab> */}
-                    {/* <Tab sx={tabStyle}>Database</Tab> */}
-                    <Tab sx={tabStyle}>Tools<FaTools style={iconStyle} /></Tab>
-                    <Tab sx={tabStyle}>UI/UX<MdDesignServices style={iconStyle} /></Tab>
+                    {tabList.map((tab) => (
+                        <Tab sx={tabStyle} key={tab}>
+                            {tab}
+                            <Box sx={iconStyle}>
+                                {tab === "Frontend" && <BsFront />}
+                                {tab === "Backend" && <BsBack />}
+                                {tab === "Database" && <FaDatabase />}
+                                {tab === "Tools" && <FaTools />}
+                                {tab === "UI/UX" && <MdDesignServices />}
+                            </Box>
+                        </Tab>
+                    ))}
                 </TabList>
                 <TabPanels>
                     <TabPanel>
-                        <Flex sx={flexStyle} >
-                            <FrontendTab />
-                        </Flex>
+                        <FrontendTab />
                     </TabPanel>
                     {/* <TabPanel>
-                        <Flex sx={flexStyle} >
-                            <BackendTab />
-                        </Flex>
+                        <BackendTab />
                     </TabPanel>
                     <TabPanel>
-                        <Flex sx={flexStyle} >
-                            <DatabaseTab />
-                        </Flex>
+                        <DatabaseTab />
                     </TabPanel> */}
                     <TabPanel>
-                        <Flex sx={flexStyle} >
-                            <ToolsTab />
-                        </Flex>
+                        <ToolsTab />
                     </TabPanel>
                     <TabPanel>
-                        <Flex sx={flexStyle} >
-                            <UITab />
-                        </Flex>
+                        <UITab />
                     </TabPanel>
                 </TabPanels>
             </Tabs>
