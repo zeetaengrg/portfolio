@@ -1,6 +1,16 @@
-import { Image } from '@chakra-ui/react';
+import { Flex, Image, Tooltip } from '@chakra-ui/react';
+import { icons } from '../../../../data/data';
 
 const FrontendTab = () => {
+
+    const flexStyle = {
+        justifyContent: "center",
+        gap: "2rem",
+        flexWrap: {
+            base: "wrap",
+            md: "nowrap",
+        }
+    }
 
     const imageStyle = {
         height: { base: "4rem", md: "5.625rem" },
@@ -10,31 +20,19 @@ const FrontendTab = () => {
 
     return (
         <>
-            <Image
-                src="/images/html.png"
-                alt="HTML5"
-                sx={imageStyle}
-            />
-            <Image
-                src="/images/css.png"
-                alt="CSS3"
-                sx={imageStyle}
-            />
-            <Image
-                src="/images/javascript.png"
-                alt="JavaScript"
-                sx={imageStyle}
-            />
-            <Image
-                src="/images/reactjs.png"
-                alt="ReactJS"
-                sx={imageStyle}
-            />
-            <Image
-                src="/images/nextjs.png"
-                alt="NextJS"
-                sx={imageStyle}
-            />
+            {icons.map((icon, index) => (
+                <Flex key={index} sx={flexStyle} >
+                    {icon.frontend.map(i => (
+                        <Tooltip key={i.id} label={i.name} placement="top">
+                            <Image
+                                src={i.image}
+                                alt={i.name}
+                                sx={imageStyle}
+                            />
+                        </Tooltip>
+                    ))}
+                </Flex>
+            ))}
         </>
     );
 };

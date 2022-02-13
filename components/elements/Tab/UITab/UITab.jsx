@@ -1,6 +1,16 @@
-import { Image, Tooltip } from "@chakra-ui/react";
+import { Image, Tooltip, Flex } from "@chakra-ui/react";
+import { icons } from "../../../../data/data";
 
 const UITab = () => {
+
+    const flexStyle = {
+        justifyContent: "center",
+        gap: "2rem",
+        flexWrap: {
+            base: "wrap",
+            md: "nowrap",
+        }
+    }
 
     const imageStyle = {
         height: { base: "4rem", md: "5.625rem" },
@@ -10,20 +20,19 @@ const UITab = () => {
 
     return (
         <>
-            <Tooltip label="Figma" placement="top">
-                <Image
-                    src="/images/figma.png"
-                    alt="Figma"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Framer Motion" placement="top">
-                <Image
-                    src="/images/framer-motion.png"
-                    alt="Framer Motion"
-                    sx={imageStyle}
-                />
-            </Tooltip>
+            {icons.map((icon, index) => (
+                <Flex key={index} sx={flexStyle} >
+                    {icon.ui.map(i => (
+                        <Tooltip key={i.id} label={i.name} placement="top">
+                            <Image
+                                src={i.image}
+                                alt={i.name}
+                                sx={imageStyle}
+                            />
+                        </Tooltip>
+                    ))}
+                </Flex>
+            ))}
         </>
     );
 };

@@ -1,6 +1,16 @@
-import { Image, Tooltip } from "@chakra-ui/react";
+import { Flex, Image, Tooltip } from "@chakra-ui/react";
+import { icons } from "../../../../data/data";
 
 const ToolsTab = () => {
+
+    const flexStyle = {
+        justifyContent: "center",
+        gap: "2rem",
+        flexWrap: {
+            base: "wrap",
+            md: "nowrap",
+        }
+    }
 
     const imageStyle = {
         height: { base: "4rem", md: "5.625rem" },
@@ -10,62 +20,19 @@ const ToolsTab = () => {
 
     return (
         <>
-            <Tooltip label="Sass" placement="top">
-                <Image
-                    src="/images/sass.png"
-                    alt="Sass"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Styled Components" placement="top">
-                <Image
-                    src="/images/styled-components.png"
-                    alt="Styled Components"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Bootstrap" placement="top">
-                <Image
-                    src="/images/bootstrap.png"
-                    alt="Bootstrap"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Tailwind CSS" placement="top">
-                <Image
-                    src="/images/tailwind.png"
-                    alt="Tailwind"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Material-UI" placement="top">
-                <Image
-                    src="/images/materialui.png"
-                    alt="Material UI"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Chakra-UI" placement="top">
-                <Image
-                    src="/images/chakraui.webp"
-                    alt="Chakra UI"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="Git" placement="top">
-                <Image
-                    src="/images/git.png"
-                    alt="Git"
-                    sx={imageStyle}
-                />
-            </Tooltip>
-            <Tooltip label="GitHub" placement="top">
-                <Image
-                    src="/images/github.png"
-                    alt="GitHub"
-                    sx={imageStyle}
-                />
-            </Tooltip>
+            {icons.map((icon, index) => (
+                <Flex key={index} sx={flexStyle} >
+                    {icon.tools.map(i => (
+                        <Tooltip key={i.id} label={i.name} placement="top">
+                            <Image
+                                src={i.image}
+                                alt={i.name}
+                                sx={imageStyle}
+                            />
+                        </Tooltip>
+                    ))}
+                </Flex>
+            ))}
         </>
     );
 };
