@@ -1,7 +1,28 @@
 import { Box, Flex, Link, Spacer } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import LogoImage from "../../elements/LogoImage/LogoImage";
 
+const MotionLink = motion(Link);
+
+const linkVariants = {
+    hidden: {
+        opacity: 0,
+        y: -80,
+    },
+    visible: i => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: i * 0.2,
+            duration: 1,
+            type: "spring",
+            stiffness: 120,
+        }
+    })
+}
+
 const Navbar = () => {
+    const linkItem = ["About Me", "Skills", "Projects", "Contact"];
 
     const linkStyle = {
         _hover: {
