@@ -1,7 +1,22 @@
-import { Link } from "@chakra-ui/react";
+import { Box, Link } from "@chakra-ui/react";
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
 
 const SocialIconLinks = () => {
+
+    const links = [
+        {
+            name: "Facebook Icon",
+            url: "https://www.facebook.com/zeetaen/"
+        },
+        {
+            name: "Instagram Icon",
+            url: "https://www.instagram.com/zeetaen/"
+        },
+        {
+            name: "Youtube Icon",
+            url: "https://www.youtube.com/c/ZeetaenGurung"
+        }
+    ]
 
     const iconStyle = {
         fontSize: "1.5rem",
@@ -13,19 +28,25 @@ const SocialIconLinks = () => {
             color: "#a5abbd",
         },
         _focus: { boxShadow: "none" },
+        target: "_blank",
+        rel: "noopener noreferrer nofollow",
     }
 
     return (
         <>
-            <Link href="https://www.facebook.com/zeetaen/" aria-label="Facebook Icon" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
-                <FaFacebookSquare style={iconStyle} />
-            </Link>
-            <Link href="https://www.instagram.com/zeetaen/" aria-label="Instagram Icon" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
-                <FaInstagramSquare style={iconStyle} />
-            </Link>
-            <Link href="https://www.youtube.com/c/ZeetaenGurung" aria-label="Youtube Icon" sx={linkStyle} target="_blank" rel="noreferrer noopener nofollow">
-                <FaYoutubeSquare style={iconStyle} />
-            </Link>
+            {links.map((link, index) => (
+                <Link href={link.url} aria-label={link.name} key={index} {...linkStyle}>
+                    <Box {...iconStyle}>
+                        {link.name === "Facebook Icon" ? (
+                            <FaFacebookSquare />
+                        ) : link.name === "Instagram Icon" ? (
+                            <FaInstagramSquare />
+                        ) : (
+                            <FaYoutubeSquare />
+                        )}
+                    </Box>
+                </Link>
+            ))}
         </>
     );
 };
