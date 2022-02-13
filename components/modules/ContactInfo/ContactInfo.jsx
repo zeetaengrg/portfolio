@@ -4,6 +4,22 @@ import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 
 const ContactInfo = () => {
+
+    const links = [
+        {
+            name: "LinkedIn Icon",
+            url: "https://www.linkedin.com/in/zeetaen1878/",
+        },
+        {
+            name: "Github Icon",
+            url: "https://github.com/zeetaen1989"
+        },
+        {
+            name: "Codepen Icon",
+            url: "https://codepen.io/zeetaen1989"
+        }
+    ]
+
     const iconStyle = {
         fontSize: "2rem",
     };
@@ -79,33 +95,22 @@ const ContactInfo = () => {
                     <Divider />
                     <Box>
                         <Flex gap="5rem">
-                            <Link
-                                sx={socialLinkStyle}
-                                href="https://www.linkedin.com/in/zeetaen1878/"
-                                target="_blank"
-                                rel="noreferrer noopener nofollow"
-                                aria-label="Linkedin Icon"
-                            >
-                                <FaLinkedinIn />
-                            </Link>
-                            <Link
-                                sx={socialLinkStyle}
-                                href="https://github.com/zeetaen1989"
-                                target="_blank"
-                                rel="noreferrer noopener nofollow"
-                                aria-label="Github Icon"
-                            >
-                                <FaGithub />
-                            </Link>
-                            <Link
-                                sx={socialLinkStyle}
-                                href="https://codepen.io/zeetaen1989"
-                                target="_blank"
-                                rel="noreferrer noopener nofollow"
-                                aria-label="Codepen Icon"
-                            >
-                                <FaCodepen />
-                            </Link>
+                            {links.map((link) => (
+                                <Link
+                                    href={link.url}
+                                    aria-label={link.name}
+                                    key={link.name}
+                                    {...socialLinkStyle}
+                                >
+                                    {link.name === "LinkedIn Icon" ? (
+                                        <FaLinkedinIn />
+                                    ) : link.name === "Github Icon" ? (
+                                        <FaGithub />
+                                    ) : (
+                                        <FaCodepen />
+                                    )}
+                                </Link>
+                            ))}
                         </Flex>
                     </Box>
                     <Divider />
