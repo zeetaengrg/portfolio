@@ -11,6 +11,9 @@ import {
     Center,
     Box,
 } from "@chakra-ui/react";
+import { BsFront } from "react-icons/bs";
+import { FaTools } from "react-icons/fa";
+import { MdDesignServices } from "react-icons/md";
 import FrontendTab from "../../elements/Tab/FrontendTab/FrontendTab";
 import BackendTab from "../../elements/Tab/BackendTab/BackendTab";
 import DatabaseTab from "../../elements/Tab/DatabaseTab/DatabaseTab";
@@ -35,6 +38,10 @@ const Skills = () => {
             base: "wrap",
             md: "nowrap",
         }
+    }
+
+    const iconStyle = {
+        marginLeft: "0.5rem"
     }
 
     return (
@@ -64,11 +71,11 @@ const Skills = () => {
                 isLazy
             >
                 <TabList>
-                    <Tab sx={tabStyle}>Frontend</Tab>
+                    <Tab sx={tabStyle}>Frontend<BsFront style={iconStyle} /></Tab>
                     {/* <Tab sx={tabStyle}>Back-End</Tab> */}
                     {/* <Tab sx={tabStyle}>Database</Tab> */}
-                    <Tab sx={tabStyle}>Tools</Tab>
-                    <Tab sx={tabStyle}>UI/UX</Tab>
+                    <Tab sx={tabStyle}>Tools<FaTools style={iconStyle} /></Tab>
+                    <Tab sx={tabStyle}>UI/UX<MdDesignServices style={iconStyle} /></Tab>
                 </TabList>
                 <TabPanels>
                     <TabPanel>
