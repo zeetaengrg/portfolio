@@ -7,11 +7,11 @@ const MotionBtn = motion(Button);
 const btnVariants = {
     hidden: {
         opacity: 0,
-        x: "10vh",
+        y: "10vh",
     },
     visible: {
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: {
             delay: 0.8,
             duration: 1.2,
