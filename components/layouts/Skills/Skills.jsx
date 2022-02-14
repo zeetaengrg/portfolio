@@ -23,6 +23,17 @@ const Skills = () => {
 
     const tabList = ["Frontend", "Tools", "UI/UX"];
 
+    const headingStyle = {
+        id: "skills",
+        textAlign: "center",
+        textTransform: "uppercase",
+        bgGradient: "linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)",
+        bgClip: "text",
+        fontSize: { base: "3rem", md: "4rem" },
+        fontFamily: "inherit",
+        marginTop: "2rem",
+    }
+
     const tabStyle = {
         margin: { base: "0.5rem", md: "1.3rem" },
         fontSize: { base: "1rem", md: "1.2rem" },
@@ -38,18 +49,7 @@ const Skills = () => {
 
     return (
         <Box>
-            <Heading
-                id="skills"
-                textAlign="center"
-                textTransform="uppercase"
-                bgGradient="linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)"
-                bgClip="text"
-                fontSize={{ base: "3rem", md: "4rem" }}
-                fontFamily="inherit"
-                mt="2rem"
-            >
-                Tools and Technologies
-            </Heading>
+            <Heading sx={headingStyle}>Tools and Technologies</Heading>
             <Center>
                 <Divider width="50%" mb="0.5rem" />
             </Center>
