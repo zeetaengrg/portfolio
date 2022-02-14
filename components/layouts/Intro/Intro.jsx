@@ -10,31 +10,14 @@ const MotionText = motion(Text)
 
 const MotionIcon = motion(Box)
 
-const imgVariants = {
-    hidden: {
-        opacity: 0,
-        x: "-10vh",
-    },
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            delay: 0.8,
-            duration: 1.2,
-            ease: "easeInOut",
-            type: "tween",
-        }
-    }
-}
-
 const commonVariants = {
     hidden: {
         opacity: 0,
-        x: "10vh",
+        y: "10vh",
     },
     visible: {
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: {
             delay: 0.8,
             duration: 1.2,
@@ -89,7 +72,7 @@ const Intro = () => {
                         sx={imgStyle}
                         src="/images/jiten.webp"
                         alt="Jiten Image"
-                        variants={imgVariants}
+                        variants={commonVariants}
                         initial="hidden"
                         animate="visible"
                     />
