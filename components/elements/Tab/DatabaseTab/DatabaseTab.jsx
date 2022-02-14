@@ -1,5 +1,5 @@
 import { Image, Flex, Tooltip } from "@chakra-ui/react";
-import { icons } from "../../../../data/data";
+import { icons } from "../../../../data/icons-data";
 
 const DatabaseTab = () => {
 

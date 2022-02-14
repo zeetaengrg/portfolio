@@ -1,5 +1,19 @@
 import { Flex, Image, Tooltip } from '@chakra-ui/react';
-import { icons } from '../../../../data/data';
+import { icons } from '../../../../data/icons-data';
+import { motion, AnimatePresence } from 'framer-motion';
+
+// const MotionImage = motion(Image)
+
+// const imgVariants = {
+//     hidden: {
+//         opacity: 0,
+//         y: "10vh",
+//     },
+//     visible: {
+//         opacity: 1,
+//         y: 0,
+//     }
+// }
 
 const FrontendTab = () => {
 
@@ -21,7 +35,7 @@ const FrontendTab = () => {
     return (
         <>
             {icons.map((icon, index) => (
-                <Flex key={index} sx={flexStyle} >
+                <Flex key={index} sx={flexStyle}>
                     {icon.frontend.map(i => (
                         <Tooltip key={i.id} label={i.name} placement="top">
                             <Image
