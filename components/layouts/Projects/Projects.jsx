@@ -1,5 +1,5 @@
 import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
-import { projects } from "../../../data/data";
+import { projects } from "../../../data/projects-data";
 
 const Projects = () => {
 
