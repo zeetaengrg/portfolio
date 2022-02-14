@@ -38,11 +38,21 @@ const ToolsTab = () => {
                 <Flex key={index} sx={flexStyle} >
                     {icon.tools.map(i => (
                         <Tooltip key={i.id} label={i.name} placement="top">
-                            <Image
-                                src={i.image}
-                                alt={i.name}
-                                sx={imageStyle}
-                            />
+                            {/* <AnimatePresence> */}
+                                <Image
+                                    src={i.image}
+                                    alt={i.name}
+                                    sx={imageStyle}
+                                    // variants={imgVariants}
+                                    // initial="hidden"
+                                    // animate="visible"
+                                    // exit={{
+                                    //     opacity: 0,
+                                    //     y: "-10vh",
+                                    // }}
+                                    // transition={{ duration: 0.15 }}
+                                />
+                            {/* </AnimatePresence> */}
                         </Tooltip>
                     ))}
                 </Flex>
