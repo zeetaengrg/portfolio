@@ -6,7 +6,6 @@ import {
     Tab,
     TabPanels,
     TabPanel,
-    Flex,
     Divider,
     Center,
     Box,
