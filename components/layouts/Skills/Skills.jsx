@@ -18,10 +18,54 @@ import BackendTab from "../../elements/Tab/BackendTab/BackendTab";
 import DatabaseTab from "../../elements/Tab/DatabaseTab/DatabaseTab";
 import ToolsTab from "../../elements/Tab/ToolTab/ToolsTab";
 import UITab from "../../elements/Tab/UITab/UITab";
+import { motion, AnimatePresence } from "framer-motion";
+
+// const MotionTabPanel = motion(TabPanel)
+
+const tabVariants = {
+    hidden: {
+        opacity: 0,
+        y: "10vh",
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 0.2,
+            duration: 0.5,
+        }
+    },
+    exit: {
+        opacity: 0,
+        y: "-10vh",
+        transition: {
+            delay: 0.2,
+            duration: 0.5,
+        }
+    }
+}
 
 const Skills = () => {
 
     const tabList = ["Frontend", "Tools", "UI/UX"];
+
+    const tabPanels = [
+        {
+            item: <FrontendTab />,
+        },
+        // {
+        //     item: <BackendTab />,
+        // },
+        // {
+        //     item: <DatabaseTab />,
+        // },
+        {
+            item: <ToolsTab />,
+        },
+        {
+            item: <UITab />,
+        }
+    ]
 
     const headingStyle = {
         id: "skills",
@@ -83,6 +127,21 @@ const Skills = () => {
                         </Tab>
                     ))}
                 </TabList>
+                {/* <TabPanels>
+                    <AnimatePresence>
+                        {tabPanels.map((panel, index) => (
+                            <MotionTabPanel
+                                key={index}
+                                variants={tabVariants}
+                                initial="hidden"
+                                animate="visible"
+                                exit="exit"
+                            >
+                                {panel.item}
+                            </MotionTabPanel>
+                        ))}
+                    </AnimatePresence>
+                </TabPanels> */}
                 <TabPanels>
                     <TabPanel>
                         <FrontendTab />
