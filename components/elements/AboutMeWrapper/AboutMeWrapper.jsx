@@ -14,7 +14,7 @@ const AboutMeWrapper = () => {
         {
             icon: <GiAchievement />,
             title: "Certifications",
-            subtitle: "3+ Certs"
+            subtitle: "2+ Certs"
         },
         {
             icon: <RiSuitcaseFill />,
