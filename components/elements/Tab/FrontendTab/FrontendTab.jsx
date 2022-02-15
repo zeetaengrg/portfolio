@@ -1,19 +1,5 @@
 import { Flex, Image, Tooltip } from '@chakra-ui/react';
 import { icons } from '../../../../data/icons-data';
-import { motion, AnimatePresence } from 'framer-motion';
-
-// const MotionImage = motion(Image)
-
-// const imgVariants = {
-//     hidden: {
-//         opacity: 0,
-//         y: "10vh",
-//     },
-//     visible: {
-//         opacity: 1,
-//         y: 0,
-//     }
-// }
 
 const FrontendTab = () => {
 

@@ -2,6 +2,20 @@ import { Box, Flex, Text, Link, Divider } from "@chakra-ui/react";
 import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import { motion } from "framer-motion";
+
+const MotionFlex = motion(Flex)
+
+const commonVariants = {
+    hidden: {
+        opacity: 0,
+        y: "5vh",
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+    }
+}
 
 const ContactInfo = () => {
 
@@ -60,11 +74,20 @@ const ContactInfo = () => {
     return (
         <>
             <Box>
-                <Flex
+                <MotionFlex
                     flexDirection="column"
                     justifyContent="center"
                     gap={{ base: "1rem", md: "2rem" }}
                     alignItems={{ base: "center" }}
+                    variants={commonVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.2,
+                        duration: 0.5,
+                        type: "tween",
+                    }}
                 >
                     <Box>
                         <Flex
@@ -116,7 +139,7 @@ const ContactInfo = () => {
                         </Flex>
                     </Box>
                     <Divider />
-                </Flex>
+                </MotionFlex>
             </Box>
         </>
     );

@@ -18,30 +18,24 @@ import BackendTab from "../../elements/Tab/BackendTab/BackendTab";
 import DatabaseTab from "../../elements/Tab/DatabaseTab/DatabaseTab";
 import ToolsTab from "../../elements/Tab/ToolTab/ToolsTab";
 import UITab from "../../elements/Tab/UITab/UITab";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
-// const MotionTabPanel = motion(TabPanel)
+const MotionHeading = motion(Heading)
 
-const tabVariants = {
+const MotionDivider = motion(Divider)
+
+const MotionText = motion(Text)
+
+const MotionTabs = motion(Tabs)
+
+const commonVariants = {
     hidden: {
         opacity: 0,
-        y: "10vh",
+        y: "5vh",
     },
     visible: {
         opacity: 1,
         y: 0,
-        transition: {
-            delay: 0.2,
-            duration: 0.5,
-        }
-    },
-    exit: {
-        opacity: 0,
-        y: "-10vh",
-        transition: {
-            delay: 0.2,
-            duration: 0.5,
-        }
     }
 }
 
@@ -49,26 +43,7 @@ const Skills = () => {
 
     const tabList = ["Frontend", "Tools", "UI/UX"];
 
-    const tabPanels = [
-        {
-            item: <FrontendTab />,
-        },
-        // {
-        //     item: <BackendTab />,
-        // },
-        // {
-        //     item: <DatabaseTab />,
-        // },
-        {
-            item: <ToolsTab />,
-        },
-        {
-            item: <UITab />,
-        }
-    ]
-
     const headingStyle = {
-        id: "skills",
         textAlign: "center",
         textTransform: "uppercase",
         bgGradient: "linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)",
@@ -93,19 +68,66 @@ const Skills = () => {
 
     return (
         <Box>
-            <Heading sx={headingStyle}>Tools and Technologies</Heading>
+            <MotionHeading
+                id="skills"
+                sx={headingStyle}
+                variants={commonVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.1,
+                    duration: 0.5,
+                    type: "tween",
+                }}
+            >
+                Tools and Technologies
+            </MotionHeading>
             <Center>
-                <Divider width="50%" mb="0.5rem" />
+                <MotionDivider
+                    width="50%"
+                    mb="0.5rem"
+                    variants={commonVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.2,
+                        duration: 0.5,
+                        type: "tween",
+                    }}
+                />
             </Center>
             <Center>
-                <Text fontWeight="bold" fontSize="1.1rem">
+                <MotionText
+                    fontWeight="bold"
+                    fontSize="1.1rem"
+                    variants={commonVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.5,
+                        type: "tween",
+                    }}
+                >
                     My Tools and Technologies
-                </Text>
+                </MotionText>
             </Center>
-            <Tabs
+            <MotionTabs
                 m={{ base: "1.5rem 0", md: "1.5rem 0" }}
                 variant="solid-rounded"
                 align="center"
+                variants={commonVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.4,
+                    duration: 0.5,
+                    type: "tween",
+                }}
             >
                 <TabList>
                     {tabList.map((tab) => (
@@ -127,39 +149,24 @@ const Skills = () => {
                         </Tab>
                     ))}
                 </TabList>
-                {/* <TabPanels>
-                    <AnimatePresence>
-                        {tabPanels.map((panel, index) => (
-                            <MotionTabPanel
-                                key={index}
-                                variants={tabVariants}
-                                initial="hidden"
-                                animate="visible"
-                                exit="exit"
-                            >
-                                {panel.item}
-                            </MotionTabPanel>
-                        ))}
-                    </AnimatePresence>
-                </TabPanels> */}
                 <TabPanels>
-                    <TabPanel>
-                        <FrontendTab />
-                    </TabPanel>
-                    {/* <TabPanel>
-                        <BackendTab />
-                    </TabPanel>
-                    <TabPanel>
-                        <DatabaseTab />
-                    </TabPanel> */}
-                    <TabPanel>
-                        <ToolsTab />
-                    </TabPanel>
-                    <TabPanel>
-                        <UITab />
-                    </TabPanel>
+                    {tabList.map((tab) => (
+                        <TabPanel key={tab}>
+                            {tab === "Frontend" ? (
+                                <FrontendTab />
+                            ) : tab === "Backend" ? (
+                                <BackendTab />
+                            ) : tab === "Database" ? (
+                                <DatabaseTab />
+                            ) : tab === "Tools" ? (
+                                <ToolsTab />
+                            ) : (
+                                <UITab />
+                            )}
+                        </TabPanel>
+                    ))}
                 </TabPanels>
-            </Tabs>
+            </MotionTabs>
         </Box>
     );
 };

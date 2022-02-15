@@ -9,11 +9,46 @@ import {
 } from "@chakra-ui/react";
 import ContactForm from "../../modules/ContactForm/ContactForm";
 import ContactInfo from "../../modules/ContactInfo/ContactInfo";
+import { motion } from "framer-motion";
+
+const MotionHeading = motion(Heading)
+
+const MotionDivider = motion(Divider)
+
+const MotionText = motion(Text)
+
+const MotionImage = motion(Image)
+
+const commonVariants = {
+    hidden: {
+        opacity: 0,
+        y: "5vh",
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+    }
+}
+
+const imgVariants = {
+    hidden: {
+        scale: 0,
+    },
+    visible: {
+        scale: 1,
+        transition: {
+            delay: 0.4,
+            duration: 0.5,
+            type: "spring",
+            stiffness: 110
+        }
+    }
+
+}
 
 const Contacts = () => {
 
     const headingStyle = {
-        id: "contacts",
         textAlign: "center",
         textTransform: "uppercase",
         bgGradient: "linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)",
@@ -31,7 +66,7 @@ const Contacts = () => {
         position: "absolute",
         bottom: "5rem",
         width: "50rem",
-        opacity: "0.2",
+        opacity: "0.2"
     }
 
     const flexStyle = {
@@ -45,20 +80,62 @@ const Contacts = () => {
 
     return (
         <Box position="relative">
-            <Heading sx={headingStyle}>Get In Touch</Heading>
+            <MotionHeading
+                id="contact"
+                sx={headingStyle}
+                variants={commonVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.1,
+                    duration: 0.5,
+                    type: "tween",
+                }}
+            >
+                Get In Touch
+            </MotionHeading>
             <Center>
-                <Divider width={{ base: "60%", md: "25%" }} mb="0.5rem" />
+                <MotionDivider
+                    width={{ base: "60%", md: "25%" }}
+                    mb="0.5rem"
+                    variants={commonVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.2,
+                        duration: 0.5,
+                        type: "tween",
+                    }}
+                />
             </Center>
             <Center>
-                <Text fontWeight="bold" fontSize="1.1rem">
+                <MotionText
+                    fontWeight="bold"
+                    fontSize="1.1rem"
+                    variants={commonVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.5,
+                        type: "tween",
+                    }}
+                >
                     Contact Me
-                </Text>
+                </MotionText>
             </Center>
             <Center>
-                <Image
+                <MotionImage
                     src="/images/contact.webp"
                     alt="Contact Me SVG"
                     sx={imgStyle}
+                    variants={imgVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
                 />
             </Center>
             <Flex sx={flexStyle}>

@@ -20,9 +20,9 @@ const commonVariants = {
         y: 0,
         transition: {
             delay: 0.8,
-            duration: 1.2,
-            ease: "easeInOut",
-            type: "tween",
+            duration: 1,
+            type: "spring",
+            stiffness: 110,
         }
     }
 }

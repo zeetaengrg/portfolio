@@ -1,4 +1,18 @@
 import { Text, Link } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+
+const MotionText = motion(Text)
+
+const commonVariants = {
+    hidden: {
+        opacity: 0,
+        y: "5vh",
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+    }
+}
 
 const AboutMeText = () => {
 
@@ -23,10 +37,20 @@ const AboutMeText = () => {
 
     return (
         <>
-            <Text
+            <MotionText
                 p={{ base: "1.5rem 0rem", md: "2rem" }}
                 fontSize={{ base: "1.1rem", md: "1.2rem" }}
                 textAlign="center"
+                variants={commonVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.5,
+                    duration: 0.5,
+                    type: "tween",
+                    stiffness: 110,
+                }}
             >
                 A Front-End developing aficionado from{" "}
                 <Link
@@ -148,7 +172,7 @@ const AboutMeText = () => {
                 <br />
                 As per my hobby, I am a football fanatic and secretly dream
                 about being a Rock &apos;n&apos; Roll guitarist.
-            </Text>
+            </MotionText>
         </>
     );
 };

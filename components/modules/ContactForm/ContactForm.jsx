@@ -1,15 +1,28 @@
-import { VStack, FormLabel, Input, Textarea, Button, FormControl } from '@chakra-ui/react';
+import { VStack, FormLabel, Input, Textarea, Button } from "@chakra-ui/react";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { Formik, Form } from 'formik';
-import * as Yup from 'yup';
+import { Formik, Form } from "formik";
+import * as Yup from "yup";
+import { motion } from "framer-motion";
+
+const MotionVStack = motion(VStack)
+
+const commonVariants = {
+    hidden: {
+        opacity: 0,
+        y: "5vh",
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+    }
+}
 
 const ContactForm = () => {
-
     const inputStyle = {
         width: { base: "20rem", md: "22rem" },
         bgColor: "#141E39",
         color: "#a5abbd",
-    }
+    };
 
     const btnStyle = {
         width: { base: "20rem", md: "22rem" },
@@ -26,33 +39,33 @@ const ContactForm = () => {
         firstName: "",
         lastName: "",
         email: "",
-        message: ""
+        message: "",
     };
-    
+
     const validationSchema = Yup.object().shape({
         firstName: Yup.string()
-            .min(3, 'Too Short!')
-            .max(50, 'Too Long!')
-            .required('Required'),
+            .min(3, "Too Short!")
+            .max(50, "Too Long!")
+            .required("Required"),
         lastName: Yup.string()
-            .min(3, 'Too Short!')
-            .max(50, 'Too Long!')
-            .required('Required'),
+            .min(3, "Too Short!")
+            .max(50, "Too Long!")
+            .required("Required"),
         email: Yup.string()
-            .email('Please Enter Valid Email')
-            .required('Required'),
+            .email("Please Enter Valid Email")
+            .required("Required"),
         message: Yup.string()
-            .min(100, 'Too Short!')
-            .max(2000, 'Too Long!')
-            .required('Required'),
-    })
-    
+            .min(100, "Too Short!")
+            .max(2000, "Too Long!")
+            .required("Required"),
+    });
+
     const onSubmit = (values, actions) => {
         setTimeout(() => {
-            alert(JSON.stringify(values, null, 2))
+            alert(JSON.stringify(values, null, 2));
             actions.resetForm();
             actions.setSubmitting(false);
-        }, 2000)
+        }, 2000);
     };
 
     return (
@@ -67,7 +80,19 @@ const ContactForm = () => {
                         action="https://formsubmit.co/69c115d95dc7b2b56652acc2a86de33b"
                         method="POST"
                     >
-                        <VStack spacing={2} alignItems="flex-start">
+                        <MotionVStack
+                            spacing={2}
+                            alignItems="flex-start"
+                            variants={commonVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 0.2,
+                                duration: 0.5,
+                                type: "tween",
+                            }}
+                        >
                             <input
                                 type="hidden"
                                 name="_next"
@@ -141,7 +166,7 @@ const ContactForm = () => {
                             >
                                 Send
                             </Button>
-                        </VStack>
+                        </MotionVStack>
                     </form>
                 </Form>
             )}

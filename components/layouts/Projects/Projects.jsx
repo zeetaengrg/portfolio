@@ -1,7 +1,37 @@
 import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
 import { projects } from "../../../data/projects-data";
+import { motion } from "framer-motion";
+
+const MotionHeading = motion(Heading)
+
+const MotionDivider = motion(Divider)
+
+const MotionText = motion(Text)
+
+const MotionFlex = motion(Flex)
+
+const commonVariants = {
+    hidden: {
+        opacity: 0,
+        y: "5vh",
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+    }
+}
 
 const Projects = () => {
+
+    const headingStyle = {
+        textAlign: "center",
+        textTransform: "uppercase",
+        bgGradient: "linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)",
+        bgClip: "text",
+        fontSize: { base: "3rem", md: "4rem" },
+        fontFamily: "inherit",
+        marginTop: { base: "1rem", md: "5rem" },
+    }
 
     const linkStyle = {
         _hover: {
@@ -29,33 +59,69 @@ const Projects = () => {
 
     return (
         <Box>
-            <Heading
+            <MotionHeading
                 id="projects"
-                textAlign="center"
-                bgGradient="linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)"
-                textTransform="uppercase"
-                bgClip="text"
-                fontSize={{ base: "3rem", md: "4rem" }}
-                fontFamily="inherit"
-                mt={{ base: "1rem", md: "5rem" }}
+                sx={headingStyle}
+                variants={commonVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    delay: 0.1,
+                    duration: 0.5,
+                    type: "tween",
+                }}
             >
                 Projects
-            </Heading>
+            </MotionHeading>
             <Center>
-                <Divider width={{ base: "40%", md: "15%" }} mb="0.5rem" />
+                <MotionDivider
+                    width={{ base: "40%", md: "15%" }}
+                    mb="0.5rem"
+                    variants={commonVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.2,
+                        duration: 0.5,
+                        type: "tween",
+                    }}
+                />
             </Center>
             <Center>
-                <Text fontWeight="bold" fontSize="1.1rem">
+                <MotionText
+                    fontWeight="bold"
+                    fontSize="1.1rem"
+                    variants={commonVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.5,
+                        type: "tween",
+                    }}
+                >
                     My Recent Works
-                </Text>
+                </MotionText>
             </Center>
             {projects.map((project) => (
                 <>
-                    <Flex
+                    <MotionFlex
                         m={{ base: "1.5rem 2rem", md: "3rem 6rem" }}
                         gap={{ base: "1.5rem", md: "2rem" }}
                         justifyContent="center"
                         direction={{ base: "column", md: "row" }}
+                        variants={commonVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 0.4,
+                            duration: 0.5,
+                            type: "tween",
+                        }}
                     >
                         <Box flex="2">
                             <Link
@@ -106,12 +172,21 @@ const Projects = () => {
                                 ))}
                             </Flex>
                         </Grid>
-                    </Flex>
-                    <Flex
+                    </MotionFlex>
+                    <MotionFlex
                         m={{ base: "1.5rem 2rem", md: "3rem 6rem" }}
                         gap={{ base: "1.5rem", md: "2rem" }}
                         justifyContent="center"
                         direction={{ base: "column-reverse", md: "row" }}
+                        variants={commonVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{
+                            delay: 0.5,
+                            duration: 0.5,
+                            type: "tween",
+                        }}
                     >
                         <Grid placeContent="center" flex="1">
                             <Text textAlign={{ base: "center", md: "left" }}>
@@ -162,7 +237,7 @@ const Projects = () => {
                                 />
                             </Link>
                         </Box>
-                    </Flex>
+                    </MotionFlex>
                 </>
             ))}
         </Box>
