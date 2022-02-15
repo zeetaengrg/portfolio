@@ -46,6 +46,38 @@ export const icons = [
                 image: "/images/mongodb.png",
             }
         ],
+        ui: [
+            {
+                id: 1,
+                name: "Bootstrap",
+                image: "/images/bootstrap.png",
+            },
+            {
+                id: 2,
+                name: "Tailwind CSS",
+                image: "/images/tailwind.png",
+            },
+            {
+                id: 3,
+                name: "Material-UI",
+                image: "/images/materialui.png",
+            },
+            {
+                id: 4,
+                name: "Chakra-UI",
+                image: "/images/chakraui.webp",
+            },
+            {
+                id: 5,
+                name: "Figma",
+                image: "/images/figma.png",
+            },
+            {
+                id: 6,
+                name: "Framer Motion",
+                image: "/images/framer-motion.png",
+            }
+        ],
         tools: [
             {
                 id: 1,
@@ -59,45 +91,13 @@ export const icons = [
             },
             {
                 id: 3,
-                name: "Bootstrap",
-                image: "/images/bootstrap.png",
-            },
-            {
-                id: 4,
-                name: "Tailwind CSS",
-                image: "/images/tailwind.png",
-            },
-            {
-                id: 5,
-                name: "Material-UI",
-                image: "/images/materialui.png",
-            },
-            {
-                id: 6,
-                name: "Chakra-UI",
-                image: "/images/chakraui.webp",
-            },
-            {
-                id: 7,
                 name: "Git",
                 image: "/images/git.png",
             },
             {
-                id: 8,
+                id: 4,
                 name: "GitHub",
                 image: "/images/github.png",
-            }
-        ],
-        ui: [
-            {
-                id: 1,
-                name: "Figma",
-                image: "/images/figma.png",
-            },
-            {
-                id: 2,
-                name: "Framer Motion",
-                image: "/images/framer-motion.png",
             }
         ]
     }
