@@ -41,7 +41,7 @@ const commonVariants = {
 
 const Skills = () => {
 
-    const tabList = ["Frontend", "Tools", "UI/UX"];
+    const tabList = ["Frontend", "UI/UX", "Tools"];
 
     const headingStyle = {
         textAlign: "center",
@@ -140,10 +140,10 @@ const Skills = () => {
                                     <BsBack />
                                 ) : tab === "Database" ? (
                                     <FaDatabase />
-                                ) : tab === "Tools" ? (
-                                    <FaTools />
-                                ) : (
+                                ) : tab === "UI/UX" ? (
                                     <MdDesignServices />
+                                ) : (
+                                    <FaTools />
                                 )}
                             </Box>
                         </Tab>
@@ -158,10 +158,10 @@ const Skills = () => {
                                 <BackendTab />
                             ) : tab === "Database" ? (
                                 <DatabaseTab />
-                            ) : tab === "Tools" ? (
-                                <ToolsTab />
-                            ) : (
+                            ) : tab === "UI/UX" ? (
                                 <UITab />
+                            ) : (
+                                <ToolsTab />
                             )}
                         </TabPanel>
                     ))}
