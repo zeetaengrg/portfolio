@@ -112,7 +112,7 @@ const Skills = () => {
                         type: "tween",
                     }}
                 >
-                    My Expertise
+                    My Field of Expertise
                 </MotionText>
             </Center>
             <MotionTabs
