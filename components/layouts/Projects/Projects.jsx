@@ -20,6 +20,18 @@ const commonVariants = {
 
 const Projects = () => {
 
+    const flexStyle = {
+        margin: {
+            base: "1.5rem 2rem",
+            md: "3rem 6rem",
+        },
+        gap: {
+            base: "1.5rem",
+            md: "2rem",
+        },
+        justifyContent: "center",
+    }
+
     const linkStyle = {
         _hover: {
             textDecoration: "none",
@@ -52,9 +64,7 @@ const Projects = () => {
             {projects.map((project) => (
                 <>
                     <MotionFlex
-                        m={{ base: "1.5rem 2rem", md: "3rem 6rem" }}
-                        gap={{ base: "1.5rem", md: "2rem" }}
-                        justifyContent="center"
+                        sx={flexStyle}
                         direction={{ base: "column", md: "row" }}
                         variants={commonVariants}
                         initial="hidden"
@@ -117,9 +127,7 @@ const Projects = () => {
                         </Grid>
                     </MotionFlex>
                     <MotionFlex
-                        m={{ base: "1.5rem 2rem", md: "3rem 6rem" }}
-                        gap={{ base: "1.5rem", md: "2rem" }}
-                        justifyContent="center"
+                        sx={flexStyle}
                         direction={{ base: "column-reverse", md: "row" }}
                         variants={commonVariants}
                         initial="hidden"
