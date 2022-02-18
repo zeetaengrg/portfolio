@@ -23,7 +23,7 @@ const Projects = () => {
     const flexStyle = {
         margin: {
             base: "1.5rem 2rem",
-            md: "3rem 6rem",
+            md: "4rem 6rem",
         },
         gap: {
             base: "1.5rem",

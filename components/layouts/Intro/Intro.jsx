@@ -28,6 +28,7 @@ const commonVariants = {
 }
 
 const Intro = () => {
+
     const flexStyle = {
         justifyContent: "center",
         alignItems: "center",

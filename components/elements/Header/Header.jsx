@@ -14,9 +14,7 @@ const commonVariants = {
     }
 };
 
-const Header = (props) => {
-
-    const { heading } = props;
+const Header = ({ heading }) => {
 
 	const headingStyle = {
         textAlign: "center",
@@ -25,8 +23,8 @@ const Header = (props) => {
         bgClip: "text",
         fontSize: { base: "3rem", md: "4rem" },
         fontFamily: "inherit",
-        marginTop: { base: "2rem", md: "0.2rem" },
-    }
+        marginTop: { base: "2rem", md: "3rem" },
+    };
 
 	return (
         <MotionHeading
