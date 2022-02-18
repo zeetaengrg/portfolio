@@ -69,7 +69,7 @@ const Skills = () => {
                 }}
             >
                 <TabList>
-                    {tabList.map((tab) => (
+                    {tabList.map(tab => (
                         <Tab sx={tabStyle} key={tab}>
                             {tab}
                             <Box {...iconStyle}>
@@ -89,7 +89,7 @@ const Skills = () => {
                     ))}
                 </TabList>
                 <TabPanels>
-                    {tabList.map((tab) => (
+                    {tabList.map(tab => (
                         <TabPanel key={tab}>
                             {tab === "Frontend" ? (
                                 <FrontendTab />
