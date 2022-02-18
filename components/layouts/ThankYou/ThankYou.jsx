@@ -22,7 +22,15 @@ const ThankYou = () => {
     }
 
     const boxStyle = {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
         background: "#384765",
+        width: {
+            base: "80%",
+            md: "40%"
+        },
         padding: {
             base: "0.5rem",
             md: "1.5rem"
