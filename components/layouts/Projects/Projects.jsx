@@ -1,12 +1,9 @@
 import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
 import { projects } from "../../../data/projects-data";
 import { motion } from "framer-motion";
-
-const MotionHeading = motion(Heading)
-
-const MotionDivider = motion(Divider)
-
-const MotionText = motion(Text)
+import Header from "../../elements/Header/Header";
+import LineDivider from "../../elements/LineDivider/LineDivider";
+import SubHeader from "../../elements/SubHeader/SubHeader";
 
 const MotionFlex = motion(Flex)
 
@@ -22,16 +19,6 @@ const commonVariants = {
 }
 
 const Projects = () => {
-
-    const headingStyle = {
-        textAlign: "center",
-        textTransform: "uppercase",
-        bgGradient: "linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)",
-        bgClip: "text",
-        fontSize: { base: "3rem", md: "4rem" },
-        fontFamily: "inherit",
-        marginTop: { base: "1rem", md: "5rem" },
-    }
 
     const linkStyle = {
         _hover: {
@@ -59,53 +46,9 @@ const Projects = () => {
 
     return (
         <Box>
-            <MotionHeading
-                id="projects"
-                sx={headingStyle}
-                variants={commonVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{
-                    delay: 0.1,
-                    duration: 0.5,
-                    type: "tween",
-                }}
-            >
-                Projects
-            </MotionHeading>
-            <Center>
-                <MotionDivider
-                    width={{ base: "40%", md: "15%" }}
-                    mb="0.5rem"
-                    variants={commonVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{
-                        delay: 0.2,
-                        duration: 0.5,
-                        type: "tween",
-                    }}
-                />
-            </Center>
-            <Center>
-                <MotionText
-                    fontWeight="bold"
-                    fontSize="1.1rem"
-                    variants={commonVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    transition={{
-                        delay: 0.3,
-                        duration: 0.5,
-                        type: "tween",
-                    }}
-                >
-                    My Recent Works
-                </MotionText>
-            </Center>
+            <Header heading="Projects" />
+            <LineDivider />
+            <SubHeader subHeading="My Recent Works" />
             {projects.map((project) => (
                 <>
                     <MotionFlex
