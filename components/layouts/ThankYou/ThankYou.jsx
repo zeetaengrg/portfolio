@@ -1,20 +1,18 @@
-import { Box, Center, Divider, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import { FaPrayingHands } from "react-icons/fa";
 import GoBackBtn from "../../elements/Btn/GoBackBtn/GoBackBtn";
 
 const ThankYou = () => {
 
-    const gridStyle = {
-        placeContent: "center",
-        textAlign: "center",
+    const flexStyle = {
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
         height: {
-            base: "65.5vh",
-            md: "59.9vh",
+            base: "68.9vh",
+            md: "66.5vh",
+            lg: "66.5vh"
         },
-        padding: {
-            base: "1.5rem",
-            md: "0rem 3rem"
-        }
     }
     
     const headingStyle = {
