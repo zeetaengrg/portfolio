@@ -5,7 +5,7 @@ export default class Document extends NextDocument {
       <Html lang='en'>
         <Head>
           <meta charSet='utf-8' />
-          <meta name='keywords' content='Portfolio, Portfolio Website, Jiten, zeetaen, Jiten Gurung' />
+          <meta name='keywords' content='Portfolio, Portfolio Website, Jiten, zeetaen, Jiten Gurung, Jitendra, Jitendra Kumar Gurung' />
           <meta name='description' content='Portfolio Website of Jiten Gurung' />
           <meta name='author' content='Jiten Gurung, zeetaen.gurung@gmail.com' />
           <meta name='copyright' content='Jiten Gurung' />
