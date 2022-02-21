@@ -1,8 +1,6 @@
 import Head from "next/head";
 import NextLink from "next/link";
-import Navbar from '../components/layouts/Navbar/Navbar';
-import Error from '../components/layouts/Error/Error';
-import Footer from '../components/layouts/Footer/Footer';
+import { Navbar, Error, Footer } from "../components/layouts";
 
 const ErrorPage = () => {
     return (
