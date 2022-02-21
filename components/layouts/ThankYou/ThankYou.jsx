@@ -1,6 +1,6 @@
 import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
 import { FaPrayingHands } from "react-icons/fa";
-import GoBackBtn from "../../elements/Btn/GoBackBtn/GoBackBtn";
+import { GoBackBtn } from "../../elements";
 
 const ThankYou = () => {
 

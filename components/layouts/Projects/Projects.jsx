@@ -1,9 +1,7 @@
-import { Center, Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
+import { Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
 import { projects } from "../../../data/projects-data";
 import { motion } from "framer-motion";
-import Header from "../../elements/Header/Header";
-import LineDivider from "../../elements/LineDivider/LineDivider";
-import SubHeader from "../../elements/SubHeader/SubHeader";
+import { Header, LineDivider, SubHeader } from "../../elements";
 
 const MotionFlex = motion(Flex)
 

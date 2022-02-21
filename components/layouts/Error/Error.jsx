@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import GoBackBtn from "../../elements/Btn/GoBackBtn/GoBackBtn";
+import { GoBackBtn } from '../../elements';
 
 const Error = () => {
 

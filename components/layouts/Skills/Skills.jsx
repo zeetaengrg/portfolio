@@ -6,17 +6,19 @@ import {
     TabPanel,
     Box,
 } from "@chakra-ui/react";
-import Header from "../../elements/Header/Header";
-import LineDivider from "../../elements/LineDivider/LineDivider";
-import SubHeader from "../../elements/SubHeader/SubHeader";
+import {
+    Header,
+    LineDivider,
+    SubHeader,
+    FrontendTab,
+    BackendTab,
+    DatabaseTab,
+    ToolsTab,
+    UITab,
+} from "../../elements";
 import { BsFront, BsBack } from "react-icons/bs";
 import { FaTools, FaDatabase } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
-import FrontendTab from "../../elements/Tab/FrontendTab/FrontendTab";
-import BackendTab from "../../elements/Tab/BackendTab/BackendTab";
-import DatabaseTab from "../../elements/Tab/DatabaseTab/DatabaseTab";
-import ToolsTab from "../../elements/Tab/ToolTab/ToolsTab";
-import UITab from "../../elements/Tab/UITab/UITab";
 import { motion } from "framer-motion";
 
 const MotionTabs = motion(Tabs)

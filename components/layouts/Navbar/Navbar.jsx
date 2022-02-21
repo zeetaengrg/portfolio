@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Spacer } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import LogoImage from "../../elements/LogoImage/LogoImage";
+import { LogoImage } from "../../elements" 
 
 const MotionLink = motion(Link);
 

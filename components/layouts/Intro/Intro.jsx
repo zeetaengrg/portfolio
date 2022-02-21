@@ -1,8 +1,7 @@
 import { Flex, Image, Text, Link, Box } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import DownloadBtn from "../../elements/Btn/DownloadBtn/DownloadBtn";
-import HireMeBtn from "../../elements/Btn/HireMeBtn/HireMeBtn";
+import { DownloadBtn, HireMeBtn } from "../../elements";
 
 const MotionImage = motion(Image)
 

@@ -4,12 +4,9 @@ import {
     Image,
     Box
 } from "@chakra-ui/react";
-import ContactForm from "../../modules/ContactForm/ContactForm";
-import ContactInfo from "../../modules/ContactInfo/ContactInfo";
 import { motion } from "framer-motion";
-import Header from "../../elements/Header/Header";
-import LineDivider from "../../elements/LineDivider/LineDivider";
-import SubHeader from "../../elements/SubHeader/SubHeader";
+import { ContactForm, ContactInfo } from "../../modules";
+import { Header, LineDivider, SubHeader } from "../../elements";
 
 const MotionImage = motion(Image)
 
