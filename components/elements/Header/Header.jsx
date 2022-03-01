@@ -14,7 +14,7 @@ const commonVariants = {
     }
 };
 
-const Header = ({ heading }) => {
+const Header = ({ heading, id }) => {
 
 	const headingStyle = {
         textAlign: "center",
@@ -28,7 +28,7 @@ const Header = ({ heading }) => {
 
 	return (
         <MotionHeading
-            id="aboutme"
+            id={id}
             sx={headingStyle}
             variants={commonVariants}
             initial="hidden"
