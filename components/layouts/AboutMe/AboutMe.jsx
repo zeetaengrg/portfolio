@@ -4,7 +4,7 @@ import { Header, ContactMeBtn, AboutMeWrapper, AboutMeText, SubHeader, LineDivid
 const AboutMe = () => {
     return (
         <Flex direction="column">
-            <Header heading="About Me" />
+            <Header heading="About Me" id="aboutme" />
             <LineDivider />
             <SubHeader subHeading="My Introduction" />
             <Box p={{ base: "1.5rem", md: "2rem 5rem", lg: "2rem 10rem" }}>

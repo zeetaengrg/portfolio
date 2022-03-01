@@ -53,7 +53,7 @@ const Skills = () => {
 
     return (
         <Box>
-            <Header heading="Tools And Technologies" />
+            <Header heading="Tools And Technologies" id="skills" />
             <LineDivider />
             <SubHeader subHeading="My Field of Expertise" />
             <MotionTabs

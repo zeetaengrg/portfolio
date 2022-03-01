@@ -50,7 +50,7 @@ const Contacts = () => {
 
     return (
         <Box position="relative">
-            <Header heading="Get In Touch" />
+            <Header heading="Get In Touch" id="contact" />
             <LineDivider />
             <SubHeader subHeading="Let's Talk" />
             <Center>

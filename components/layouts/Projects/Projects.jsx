@@ -56,7 +56,7 @@ const Projects = () => {
 
     return (
         <Box>
-            <Header heading="Projects" />
+            <Header heading="Projects" id="projects" />
             <LineDivider />
             <SubHeader subHeading="My Recent Works" />
             {projects.map((project) => (
