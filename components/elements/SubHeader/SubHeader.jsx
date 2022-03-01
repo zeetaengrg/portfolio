@@ -14,9 +14,7 @@ const commonVariants = {
     }
 };
 
-const SubHeader = (props) => {
-
-    const { subHeading } = props;
+const SubHeader = ({ subHeading }) => {
 
     return (
         <Center>
