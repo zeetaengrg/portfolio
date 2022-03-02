@@ -1,4 +1,4 @@
-import { Text, Link } from "@chakra-ui/react";
+import { Text, Link, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const MotionText = motion(Text)
@@ -171,7 +171,7 @@ const AboutMeText = () => {
                 <br />
                 <br />
                 As per my hobby, I am a football fanatic and secretly dream
-                about being a Rock &apos;n&apos; Roll guitarist.
+                about being a Rock &apos;n&apos; Roll guitarist <Image src="/images/guitar.png" alt="Guitar" height="2rem" width="2rem" display="inline-block" />.
             </MotionText>
         </>
     );
