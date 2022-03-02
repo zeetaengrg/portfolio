@@ -1,6 +1,6 @@
 import { VStack, FormLabel, Input, Textarea, Button } from "@chakra-ui/react";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { Formik, Form } from "formik";
+import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
 import { btnStyle } from "../../elements/Btn/Btn";
@@ -59,11 +59,10 @@ const ContactForm = () => {
             .required("Required"),
     });
 
-    const onSubmit = (values, actions) => {
+    const onSubmit = (values, {resetForm, setSubmitting}) => {
         setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            actions.resetForm();
-            actions.setSubmitting(false);
+            resetForm(initialValues);
+            setSubmitting(false);
         }, 2000);
     };
 
@@ -73,7 +72,7 @@ const ContactForm = () => {
             validationSchema={validationSchema}
             onSubmit={onSubmit}
         >
-            {(props) => (
+            {({isSubmitting}) => (
                 <Form>
                     <form
                         action="https://formsubmit.co/69c115d95dc7b2b56652acc2a86de33b"
@@ -123,6 +122,7 @@ const ContactForm = () => {
                                 name="firstName"
                                 required
                             />
+                            <ErrorMessage name="firstName" />
                             <FormLabel htmlFor="lastName">Last Name</FormLabel>
                             <Input
                                 sx={inputStyle}
@@ -132,6 +132,7 @@ const ContactForm = () => {
                                 name="lastName"
                                 required
                             />
+                            <ErrorMessage name="lastName" />
                             <FormLabel htmlFor="email">Email Address</FormLabel>
                             <Input
                                 sx={inputStyle}
@@ -141,6 +142,7 @@ const ContactForm = () => {
                                 type="email"
                                 required
                             />
+                            <ErrorMessage name="email" />
                             <FormLabel htmlFor="message">Message</FormLabel>
                             <Textarea
                                 sx={inputStyle}
@@ -150,11 +152,12 @@ const ContactForm = () => {
                                 height="10rem"
                                 required
                             />
+                            <ErrorMessage name="message" />
                             <Button
                                 mt="1rem"
                                 sx={btn}
                                 type="submit"
-                                isLoading={props.isSubmitting}
+                                isLoading={isSubmitting}
                                 loadingText="Sending..."
                                 rightIcon={
                                     <RiSendPlaneFill
