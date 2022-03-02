@@ -12,7 +12,7 @@ export const projects = [
         linkOne: "https://hulu-landing-page-clone.vercel.app/",
         imageTwo: "/images/portfolio.webp",
         altTwo: "Portfolio Website",
-        linkTwo: "https://zeetaen.vercel.app/",
+        linkTwo: "https://www.jitendragurung.com.np/",
         technologyOne: [
             {
                 id: 1,
