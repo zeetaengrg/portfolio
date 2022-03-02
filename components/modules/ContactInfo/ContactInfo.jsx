@@ -3,6 +3,7 @@ import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { linkStyle } from "../../elements/LinkStyle/LinkStyle";
 
 const MotionFlex = motion(Flex)
 
@@ -40,6 +41,7 @@ const ContactInfo = () => {
 
     const textStyle = {
         fontSize: "1.2rem",
+        textTransform: "none",
     };
 
     const flexStyle = {
@@ -47,21 +49,12 @@ const ContactInfo = () => {
         alignItems: "center",
     };
 
-    const linkStyle = {
-        _hover: {
-            "&::after": { content: "none" },
-            color: "#a5abbd",
-        },
-        textTransform: "none",
-        _focus: { boxShadow: "none" },
-    };
-
     const socialLinkStyle = {
         textTransform: "none",
         _focus: { boxShadow: "none" },
         fontSize: "2rem",
         cursor: "pointer",
-        transition: "all 0.2s ease-out",
+        transition: "all 0.25s linear",
         _hover: {
             transform: "translateY(5px)",
             color: "#fff",

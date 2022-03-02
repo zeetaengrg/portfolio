@@ -1,5 +1,6 @@
 import { Box, Link } from "@chakra-ui/react";
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
+import { linkStyle } from "../LinkStyle/LinkStyle";
 
 const SocialIconLinks = () => {
 
@@ -20,16 +21,8 @@ const SocialIconLinks = () => {
 
     const iconStyle = {
         fontSize: "1.5rem",
-    }
-
-    const linkStyle = {
-        _hover: {
-            "&::after": { content: "none" },
-            color: "#a5abbd",
-        },
-        _focus: { boxShadow: "none" },
-        target: "_blank",
-        rel: "noopener noreferrer nofollow",
+        transition: "all 0.2s linear",
+        _hover: { color: "white", transform: "translateY(-2px)" },
     }
 
     return (

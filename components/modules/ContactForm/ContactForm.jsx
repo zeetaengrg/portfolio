@@ -3,6 +3,7 @@ import { RiSendPlaneFill } from "react-icons/ri";
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
+import { btnStyle } from "../../elements/Btn/Btn";
 
 const MotionVStack = motion(VStack)
 
@@ -22,17 +23,15 @@ const ContactForm = () => {
         width: { base: "20rem", md: "22rem" },
         bgColor: "#141E39",
         color: "#a5abbd",
+        border: "none",
+        boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset",
     };
 
-    const btnStyle = {
-        width: { base: "20rem", md: "22rem" },
-        bgColor: "#141E39",
-        color: "#a5abbd",
+    const btn = {
+        ...btnStyle,
         fontSize: "1.1rem",
+        width: { base: "20rem", md: "22rem" },
         textTransform: "uppercase",
-        _focus: { boxShadow: "none" },
-        _hover: { bg: "#a5abbd", color: "#384765", borderColor: "#0F3460" },
-        _active: { bg: "#a5abbd", color: "#384765", transform: "scale(0.99)" },
     };
 
     const initialValues = {
@@ -153,8 +152,7 @@ const ContactForm = () => {
                             />
                             <Button
                                 mt="1rem"
-                                variant="outline"
-                                sx={btnStyle}
+                                sx={btn}
                                 type="submit"
                                 isLoading={props.isSubmitting}
                                 loadingText="Sending..."
