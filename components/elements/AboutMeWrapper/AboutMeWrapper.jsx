@@ -46,13 +46,13 @@ const AboutMeWrapper = () => {
         width: "7rem",
         bgColor: "#141E39",
         borderRadius: "0.3rem",
-        border: "1px solid #a5abbd",
         padding: "0.8rem",
         display: "flex",
         gap: "0.5rem",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset",
     }
 
     const iconStyle = {
