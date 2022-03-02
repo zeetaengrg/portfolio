@@ -1,6 +1,7 @@
 import { Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaCloudDownloadAlt } from "react-icons/fa";
+import { btnStyle } from "../Btn";
 
 const MotionBtn = motion(Button);
 
@@ -23,25 +24,19 @@ const btnVariants = {
 
 const DownloadBtn = () => {
 
-    const btnStyle = {
-        padding: "0 0.8rem",
-        backgroundColor: "#141E39",
-        fontSize: "1.2rem",
+    const btn = {
+        ...btnStyle,
         justifyContent: {
             base: "center",
-            md: "start"
-        },
-        _focus: { boxShadow: "none" },
-        _hover: { bg: "#a5abbd", color: "#384765", borderColor: "#384765" },
-        _active: { bg: "#a5abbd", color: "#384765", transform: "scale(0.99)" },
+            md: "start",
+        }
     };
 
     return (
         <>
             <MotionBtn
-                variant="outline"
                 size="lg"
-                sx={btnStyle}
+                sx={btn}
                 // isLoading
                 // loadingText="Downloading"
                 // spinnerPlacement="end"

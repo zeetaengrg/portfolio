@@ -1,6 +1,7 @@
 import { Button } from "@chakra-ui/react";
 import { IoMdContact } from "react-icons/io";
 import { motion } from "framer-motion";
+import { btnStyle } from "../Btn";
 
 const MotionBtn = motion(Button);
 
@@ -17,20 +18,10 @@ const commonVariants = {
 
 const ContactMeBtn = () => {
 
-    const btnStyle = {
-        padding: "0 0.8rem",
-        backgroundColor: "#16213E",
-        fontSize: "1.2rem",
-        _focus: { boxShadow: "none" },
-        _hover: { bg: "#a5abbd", color: "#384765", borderColor: "#384765" },
-        _active: { bg: "#a5abbd", color: "#384765", transform: "scale(0.99)" },
-    };
-
     return (
         <>
             <MotionBtn
                 sx={btnStyle}
-                variant="outline"
                 size="lg"
                 rightIcon={
                     <IoMdContact
