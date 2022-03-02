@@ -2,6 +2,7 @@ import { Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui
 import { projects } from "../../../data/projects-data";
 import { motion } from "framer-motion";
 import { Header, LineDivider, SubHeader } from "../../elements";
+import { linkStyle } from "../../elements/LinkStyle/LinkStyle";
 
 const MotionFlex = motion(Flex)
 
@@ -29,14 +30,6 @@ const Projects = () => {
         },
         justifyContent: "center",
     }
-
-    const linkStyle = {
-        _hover: {
-            textDecoration: "none",
-            "&::after": { content: "none" }
-        },
-        _focus: { outline: "none" },
-    };
 
     const imgStyle = {
         transition: "all 0.3s ease-in-out",
@@ -79,7 +72,7 @@ const Projects = () => {
                                 sx={linkStyle}
                                 href={project.linkOne}
                                 target="_blank"
-                                rel="noreferrer noopener nofollow"
+                                rel="noopener noreferrer nofollow"
                             >
                                 <Image
                                     key={project.id}
@@ -176,7 +169,7 @@ const Projects = () => {
                                 sx={linkStyle}
                                 href={project.linkTwo}
                                 target="_blank"
-                                rel="noreferrer noopener nofollow"
+                                rel="noopener noreferrer nofollow"
                             >
                                 <Image
                                     key={project.id}
