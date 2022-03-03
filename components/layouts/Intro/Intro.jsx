@@ -2,70 +2,47 @@ import { Flex, Image, Text, Link, Box } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { DownloadBtn, HireMeBtn } from "../../elements";
+import {
+    blobOneVariants,
+    blobTwoVariants,
+    commonVariants,
+    blobOneStyle,
+    blobTwoStyle,
+    flexStyle,
+    imgStyle,
+    linkStyle,
+} from "./Styles";
 
-const MotionImage = motion(Image)
+const MotionImage = motion(Image);
 
-const MotionText = motion(Text)
+const BlobMotionImage = motion(Image);
 
-const MotionIcon = motion(Box)
+const MotionText = motion(Text);
 
-const commonVariants = {
-    hidden: {
-        opacity: 0,
-        y: "10vh",
-    },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: 0.8,
-            duration: 1,
-            type: "spring",
-            stiffness: 110,
-        }
-    }
-}
+const MotionIcon = motion(Box);
 
 const Intro = () => {
 
-    const flexStyle = {
-        justifyContent: "center",
-        alignItems: "center",
-        height: {
-            base: "55vh",
-            md: "60vh",
-            lg: "87vh",
-        },
-        gap: {
-            base: "1rem",
-            md: "2rem",
-        },
-        flexDirection: {
-            base: "column",
-            md: "row",
-        },
-    };
-
-    const imgStyle = {
-        borderRadius: "50%",
-        boxShadow: "0px 0px 10px 10px rgba(0,0,0,0.5)",
-        width: {
-            base: "8rem",
-            md: "12rem",
-            lg: "17rem",
-        },
-    };
-
-    const linkStyle = {
-        _hover: {
-            "&::after": {
-                content: "none"
-            }
-        }
-    }
-
     return (
         <Box>
+            <Box>
+                <BlobMotionImage
+                    src="/images/blob1.svg"
+                    alt="blob"
+                    sx={blobOneStyle}
+                    variants={blobOneVariants}
+                    initial="start"
+                    animate="finish"
+                />
+                <BlobMotionImage
+                    src="/images/blob2.svg"
+                    alt="blob"
+                    sx={blobTwoStyle}
+                    variants={blobTwoVariants}
+                    initial="start"
+                    animate="finish"
+                />
+            </Box>
             <Flex sx={flexStyle}>
                 <Box>
                     <MotionImage
