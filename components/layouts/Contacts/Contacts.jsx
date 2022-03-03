@@ -49,7 +49,7 @@ const Contacts = () => {
     }
 
     return (
-        <Box position="relative">
+        <Box position="relative" mb="4rem">
             <Header heading="Get In Touch" id="contact" />
             <LineDivider />
             <SubHeader subHeading="Let's Talk" />
