@@ -4,10 +4,21 @@ import { SocialIconLinks } from '../../elements';
 
 const Footer = () => {
 
+    const boxStyle = {
+        backgroundColor: {
+            base: "#141e39",
+            md: "transparent",
+        },
+    }
+
     const imgTag = {
         position: "absolute",
         bottom: "0",
         width: "100vw",
+        display: {
+            base: "none",
+            md: "block"
+        }
     }
 
     const imageStyle = {
@@ -19,7 +30,7 @@ const Footer = () => {
     }
 
     return (
-        <Box>
+        <Box sx={boxStyle}>
             <Image src="/images/wave.svg" alt="waves" sx={imgTag} />
             <Flex
                 justifyContent="center"
