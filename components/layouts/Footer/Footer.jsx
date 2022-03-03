@@ -4,6 +4,12 @@ import { SocialIconLinks } from '../../elements';
 
 const Footer = () => {
 
+    const imgTag = {
+        position: "absolute",
+        bottom: "0",
+        width: "100vw",
+    }
+
     const imageStyle = {
         width: "60px",
         height: "45px",
@@ -14,12 +20,17 @@ const Footer = () => {
 
     return (
         <Box>
-            <Flex bgColor="#141E39" justifyContent="center" direction="column">
+            <Image src="/images/wave.svg" alt="waves" sx={imgTag} />
+            <Flex
+                justifyContent="center"
+                direction="column"
+                position="relative"
+            >
                 <Center>
                     <Image src="/images/logo.svg" alt="Logo" sx={imageStyle} />
                 </Center>
                 <Flex
-                    m={{ base: "1rem 0", md: "0rem 0" }}
+                    m={{ base: "1rem 0", md: "0.5rem 0" }}
                     gap="2rem"
                     justifyContent="center"
                 >
