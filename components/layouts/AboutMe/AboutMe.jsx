@@ -1,5 +1,12 @@
 import { Link, Flex, Box } from "@chakra-ui/react";
-import { Header, ContactMeBtn, AboutMeWrapper, AboutMeText, SubHeader, LineDivider } from "../../elements";
+import {
+    Header,
+    ContactMeBtn,
+    AboutMeWrapper,
+    AboutMeText,
+    SubHeader,
+    LineDivider,
+} from "../../elements";
 
 const AboutMe = () => {
     return (
