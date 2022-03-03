@@ -39,7 +39,7 @@ const Footer = () => {
                 <Text
                     fontSize="0.8rem"
                     mt={{ base: "0.5rem", md: "1rem" }}
-                    mb="0.5rem"
+                    mb={{ base: "1rem", md: "1.5rem" }}
                 >
                     <Flex justifyContent="center" alignItems="center">
                         2022 <FaCopyright style={{ margin: "0 0.5rem" }} />
