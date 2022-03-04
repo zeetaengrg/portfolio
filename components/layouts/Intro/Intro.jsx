@@ -5,9 +5,11 @@ import { DownloadBtn, HireMeBtn } from "../../elements";
 import {
     blobOneVariants,
     blobTwoVariants,
+    blobThreeVariants,
     commonVariants,
     blobOneStyle,
     blobTwoStyle,
+    blobThreeStyle,
     flexStyle,
     imgStyle,
     linkStyle,
@@ -39,6 +41,14 @@ const Intro = () => {
                     alt="blob"
                     sx={blobTwoStyle}
                     variants={blobTwoVariants}
+                    initial="start"
+                    animate="finish"
+                />
+                <BlobMotionImage
+                    src="/images/blob3.svg"
+                    alt="blob"
+                    sx={blobThreeStyle}
+                    variants={blobThreeVariants}
                     initial="start"
                     animate="finish"
                 />
