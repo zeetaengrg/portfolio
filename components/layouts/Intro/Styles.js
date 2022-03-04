@@ -19,7 +19,7 @@ export const blobTwoVariants = {
     finish: {
         scale: 1.3,
         transition: {
-            delay: 3,
+            delay: 1.5,
             repeat: Infinity,
             repeatType: "reverse",
             duration: 3,
@@ -34,7 +34,22 @@ export const blobThreeVariants = {
     finish: {
         scale: 1.2,
         transition: {
-            delay: 1.5,
+            delay: 3,
+            repeat: Infinity,
+            repeatType: "reverse",
+            duration: 3,
+        }
+    }
+}
+
+export const blobFourVariants = {
+    start: {
+        scale: 0.8,
+    },
+    finish: {
+        scale: 1.2,
+        transition: {
+            delay: 2.5,
             repeat: Infinity,
             repeatType: "reverse",
             duration: 3,
@@ -89,11 +104,24 @@ export const blobTwoStyle = {
 
 export const blobThreeStyle = {
     position: "absolute",
-    top: "5rem",
-    left: "15rem",
-    width: "15vw",
-    height: "35vh",
+    top: "10rem",
+    left: "35rem",
+    width: "20vw",
+    height: "40vh",
     opacity: "0.2",
+    display: {
+        base: "none",
+        md: "block",
+    }
+}
+
+export const blobFourStyle = {
+    position: "absolute",
+    top: "7rem",
+    left: "10rem",
+    width: "5vw",
+    height: "15vh",
+    opacity: "0.5",
     display: {
         base: "none",
         md: "block",

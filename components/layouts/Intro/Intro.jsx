@@ -6,10 +6,12 @@ import {
     blobOneVariants,
     blobTwoVariants,
     blobThreeVariants,
+    blobFourVariants,
     commonVariants,
     blobOneStyle,
     blobTwoStyle,
     blobThreeStyle,
+    blobFourStyle,
     flexStyle,
     imgStyle,
     linkStyle,
@@ -49,6 +51,14 @@ const Intro = () => {
                     alt="blob"
                     sx={blobThreeStyle}
                     variants={blobThreeVariants}
+                    initial="start"
+                    animate="finish"
+                />
+                 <BlobMotionImage
+                    src="/images/blob4.png"
+                    alt="blob"
+                    sx={blobFourStyle}
+                    variants={blobFourVariants}
                     initial="start"
                     animate="finish"
                 />
