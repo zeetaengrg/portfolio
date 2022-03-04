@@ -5,7 +5,8 @@ export const blobOneVariants = {
     finish: {
         scale: 1.2,
         transition: {
-            yoyo: Infinity,
+            repeat: Infinity,
+            repeatType: "reverse",
             duration: 3,
         }
     }
@@ -19,7 +20,8 @@ export const blobTwoVariants = {
         scale: 1.3,
         transition: {
             delay: 3,
-            yoyo: Infinity,
+            repeat: Infinity,
+            repeatType: "reverse",
             duration: 3,
         }
     }
@@ -33,7 +35,8 @@ export const blobThreeVariants = {
         scale: 1.2,
         transition: {
             delay: 1.5,
-            yoyo: Infinity,
+            repeat: Infinity,
+            repeatType: "reverse",
             duration: 3,
         }
     }
