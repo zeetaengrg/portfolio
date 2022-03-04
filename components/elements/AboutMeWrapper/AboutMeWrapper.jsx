@@ -1,9 +1,7 @@
 import { Flex, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
-import { FaGraduationCap } from "react-icons/fa";
-import { GiAchievement } from "react-icons/gi";
-import { RiSuitcaseFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import {
+    wrapperList,
     listItemStyle,
     iconStyle,
     titleStyle,
@@ -29,51 +27,32 @@ const listItemVariants = {
 };
 
 const AboutMeWrapper = () => {
-    const wrapperList = [
-        {
-            icon: <FaGraduationCap />,
-            title: "Education",
-            subtitle: "B.Sc. Hons",
-        },
-        {
-            icon: <GiAchievement />,
-            title: "Certifications",
-            subtitle: "2+ Certs",
-        },
-        {
-            icon: <RiSuitcaseFill />,
-            title: "Completed",
-            subtitle: "10+ Projects",
-        },
-    ];
-
+    
     return (
-        <>
-            <List>
-                <Flex gap="1rem">
-                    {wrapperList.map((wrapper) => (
-                        <MotionListItem
-                            sx={listItemStyle}
-                            key={wrapper}
-                            variants={listItemVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                        >
-                                <ListIcon {...iconStyle}>
-                                    {wrapper.icon}
-                                </ListIcon>
-                                <Text {...titleStyle}>
-                                    {wrapper.title}
-                                </Text>
-                                <Text {...subTitleStyle}>
-                                    {wrapper.subtitle}
-                                </Text>
-                        </MotionListItem>
-                    ))}
-                </Flex>
-            </List>
-        </>
+        <List>
+            <Flex gap="1rem">
+                {wrapperList.map((wrapper) => (
+                    <MotionListItem
+                        sx={listItemStyle}
+                        key={wrapper}
+                        variants={listItemVariants}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                    >
+                            <ListIcon {...iconStyle}>
+                                {wrapper.icon}
+                            </ListIcon>
+                            <Text {...titleStyle}>
+                                {wrapper.title}
+                            </Text>
+                            <Text {...subTitleStyle}>
+                                {wrapper.subtitle}
+                            </Text>
+                    </MotionListItem>
+                ))}
+            </Flex>
+        </List>
     );
 };
 

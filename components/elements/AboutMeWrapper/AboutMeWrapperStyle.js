@@ -1,3 +1,25 @@
+import { FaGraduationCap } from "react-icons/fa";
+import { GiAchievement } from "react-icons/gi";
+import { RiSuitcaseFill } from "react-icons/ri";
+
+export const wrapperList = [
+    {
+        icon: <FaGraduationCap />,
+        title: "Education",
+        subtitle: "B.Sc. Hons",
+    },
+    {
+        icon: <GiAchievement />,
+        title: "Certifications",
+        subtitle: "2+ Certs",
+    },
+    {
+        icon: <RiSuitcaseFill />,
+        title: "Completed",
+        subtitle: "10+ Projects",
+    },
+];
+
 export const listItemStyle = {
     width: "7rem",
     bgColor: "#141E39",
