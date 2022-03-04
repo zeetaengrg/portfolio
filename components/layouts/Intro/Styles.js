@@ -3,7 +3,7 @@ export const blobOneVariants = {
         scale: 0.9,
     },
     finish: {
-        scale: 1.3,
+        scale: 1.2,
         transition: {
             yoyo: Infinity,
             duration: 3,
@@ -18,7 +18,21 @@ export const blobTwoVariants = {
     finish: {
         scale: 1.3,
         transition: {
-            delay: 2,
+            delay: 3,
+            yoyo: Infinity,
+            duration: 3,
+        }
+    }
+}
+
+export const blobThreeVariants = {
+    start: {
+        scale: 0.8,
+    },
+    finish: {
+        scale: 1.2,
+        transition: {
+            delay: 1.5,
             yoyo: Infinity,
             duration: 3,
         }
@@ -64,6 +78,19 @@ export const blobTwoStyle = {
     width: "20vw",
     height: "40vh",
     opacity: "0.5",
+    display: {
+        base: "none",
+        md: "block",
+    }
+}
+
+export const blobThreeStyle = {
+    position: "absolute",
+    top: "5rem",
+    left: "15rem",
+    width: "15vw",
+    height: "35vh",
+    opacity: "0.2",
     display: {
         base: "none",
         md: "block",
