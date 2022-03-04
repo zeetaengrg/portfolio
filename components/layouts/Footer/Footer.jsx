@@ -15,6 +15,7 @@ const Footer = () => {
         position: "absolute",
         bottom: "0",
         width: "100vw",
+        // zIndex: "1",
         display: {
             base: "none",
             md: "block"
