@@ -1,5 +1,5 @@
 import { Box, Link } from "@chakra-ui/react";
-import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 import { linkStyle } from "../LinkStyle/LinkStyle";
 
 const SocialIconLinks = () => {
@@ -14,8 +14,8 @@ const SocialIconLinks = () => {
             url: "https://www.instagram.com/zeetaen/"
         },
         {
-            name: "Youtube Icon",
-            url: "https://www.youtube.com/c/ZeetaenGurung"
+            name: "Twitter Icon",
+            url: "https://twitter.com/zeetaen"
         }
     ]
 
@@ -35,7 +35,7 @@ const SocialIconLinks = () => {
                         ) : link.name === "Instagram Icon" ? (
                             <FaInstagramSquare />
                         ) : (
-                            <FaYoutubeSquare />
+                            <FaTwitterSquare />
                         )}
                     </Box>
                 </Link>
