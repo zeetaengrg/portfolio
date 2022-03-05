@@ -1,6 +1,5 @@
 import { FaGraduationCap } from "react-icons/fa";
-import { GiAchievement } from "react-icons/gi";
-import { RiSuitcaseFill } from "react-icons/ri";
+import { GiAchievement, GiBookshelf } from "react-icons/gi";
 
 export const wrapperList = [
     {
@@ -9,14 +8,14 @@ export const wrapperList = [
         subtitle: "B.Sc. Hons",
     },
     {
+        icon: <GiBookshelf />,
+        title: "Curriculum",
+        subtitle: "2+ Courses",
+    },
+    {
         icon: <GiAchievement />,
         title: "Certifications",
         subtitle: "2+ Certs",
-    },
-    {
-        icon: <RiSuitcaseFill />,
-        title: "Completed",
-        subtitle: "10+ Projects",
     },
 ];
 
