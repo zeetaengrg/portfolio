@@ -114,7 +114,7 @@ const AboutMeText = () => {
                     rel="noreferrer noopener nofollow"
                     href="https://bit.ly/3rHHHUs"
                 >
-                    TheNetNinja
+                    The Net Ninja
                 </Link>
                 , and many more.
                 <br />
@@ -139,8 +139,8 @@ const AboutMeText = () => {
                     JavaScript Algorithms and Data Structures Certification
                 </Link>{" "}
                 from freeCodeCamp. To further prove my hardworking habtitude,
-                during my university days, I was awarded with the Best Software
-                Project Award by{" "}
+                during my university days, I along with my team was awarded with
+                the Best Software Project Award by{" "}
                 <Link
                     href="https://nta.gov.np"
                     sx={specialLinkStyle}
@@ -153,8 +153,8 @@ const AboutMeText = () => {
                 <br />
                 <br />
                 Right now I am upskilling myself by learning ReactJS and NextJS
-                frameworks and have completed few projects using them which can
-                be found in my{" "}
+                and have completed few projects using them which can be found in
+                my{" "}
                 <Link
                     href="https://bit.ly/3LmRDue"
                     sx={specialLinkStyle}
