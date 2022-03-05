@@ -55,7 +55,7 @@ const Skills = () => {
         <Box>
             <Header heading="Tools And Technologies" id="skills" />
             <LineDivider />
-            <SubHeader subHeading="My Field of Expertise" />
+            <SubHeader subHeading="Libraries, Frameworks and Tools I Use" />
             <MotionTabs
                 m={{ base: "1.5rem 0", md: "1.5rem 0" }}
                 variant="solid-rounded"
