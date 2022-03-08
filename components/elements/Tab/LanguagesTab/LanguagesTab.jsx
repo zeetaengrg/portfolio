@@ -1,7 +1,7 @@
 import { Flex, Image, Tooltip } from '@chakra-ui/react';
 import { icons } from '../../../../data/icons-data';
 
-const FrontendTab = () => {
+const LanguagesTab = () => {
 
     const flexStyle = {
         justifyContent: "center",
@@ -22,7 +22,7 @@ const FrontendTab = () => {
         <>
             {icons.map((icon, index) => (
                 <Flex key={index} sx={flexStyle}>
-                    {icon.frontend.map(i => (
+                    {icon.language.map(i => (
                         <Tooltip key={i.id} label={i.name} placement="top">
                             <Image
                                 src={i.image}
@@ -37,4 +37,4 @@ const FrontendTab = () => {
     );
 };
 
-export default FrontendTab;
+export default LanguagesTab;

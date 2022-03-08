@@ -1,7 +1,7 @@
 import { Image, Tooltip, Flex } from "@chakra-ui/react";
 import { icons } from "../../../../data/icons-data";
 
-const UITab = () => {
+const Library = () => {
 
     const flexStyle = {
         justifyContent: "center",
@@ -22,7 +22,7 @@ const UITab = () => {
         <>
             {icons.map((icon, index) => (
                 <Flex key={index} sx={flexStyle} >
-                    {icon.ui.map(i => (
+                    {icon.library.map(i => (
                         <Tooltip key={i.id} label={i.name} placement="top">
                             <Image
                                 src={i.image}
@@ -37,4 +37,4 @@ const UITab = () => {
     );
 };
 
-export default UITab;
+export default Library;
