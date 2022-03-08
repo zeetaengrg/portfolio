@@ -16,6 +16,7 @@ import {
     ToolsTab,
     LibraryTab,
 } from "../../elements";
+import { tabList, tabStyle, iconStyle } from "./SkillsStyle";
 import { BsFront, BsBack } from "react-icons/bs";
 import { FaTools, FaDatabase } from "react-icons/fa";
 import { MdLanguage, MdDesignServices } from "react-icons/md";
@@ -36,20 +37,7 @@ const commonVariants = {
 
 const Skills = () => {
 
-    const tabList = ["Languages", "Libraries/Frameworks", "Tools"];
-
-    const tabStyle = {
-        margin: { base: "0.5rem", md: "1.3rem" },
-        fontSize: { base: "1rem", md: "1.2rem" },
-        color: "#a5abbd",
-        _focus: { outline: "none" },
-        _active: { bg: "none" },
-        _selected: { bg: "#141E39", border: "1px solid #a5abbd" },
-    };
-
-    const iconStyle = {
-        marginLeft: "0.5rem",
-    }
+    
 
     return (
         <Box>
