@@ -54,7 +54,7 @@ const Intro = () => {
                     initial="start"
                     animate="finish"
                 />
-                 <BlobMotionImage
+                <BlobMotionImage
                     src="/images/blob4.png"
                     alt="blob"
                     sx={blobFourStyle}

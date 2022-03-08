@@ -77,12 +77,11 @@ export const commonVariants = {
 
 export const blobOneStyle = {
     position: "absolute",
-    color: "transparent",
-    top: "18rem",
-    left: "-17rem",
-    width: "60vw",
-    height: "60vh",
-    opacity: "0.1",
+    top: "12rem",
+    left: "-10rem",
+    width: "50vw",
+    height: "100vh",
+    opacity: "0.15",
     display: {
         base: "none",
         md: "block",
