@@ -48,7 +48,7 @@ const Skills = () => {
     };
 
     const iconStyle = {
-        marginLeft: "0.5rem"
+        marginLeft: "0.5rem",
     }
 
     return (
@@ -75,13 +75,13 @@ const Skills = () => {
                         <Tab sx={tabStyle} key={tab}>
                             {tab}
                             <Box {...iconStyle}>
-                                {tab === "Frontend" ? (
-                                    <BsFront />
+                                {tab === "Languages" ? (
+                                    <MdLanguage />
                                 ) : tab === "Backend" ? (
                                     <BsBack />
                                 ) : tab === "Database" ? (
                                     <FaDatabase />
-                                ) : tab === "UI/UX" ? (
+                                ) : tab === "Libraries/Frameworks" ? (
                                     <MdDesignServices />
                                 ) : (
                                     <FaTools />
