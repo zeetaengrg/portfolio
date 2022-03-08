@@ -11,6 +11,6 @@ export { default as SocialIconLinks } from "./SocialIconLinks/SocialIconLinks";
 export { default as SubHeader } from "./SubHeader/SubHeader";
 export { default as BackendTab } from "./Tab/BackendTab/BackendTab";
 export { default as DatabaseTab } from "./Tab/DatabaseTab/DatabaseTab";
-export { default as FrontendTab } from "./Tab/LanguagesTab/LanguagesTab";
+export { default as LanguagesTab } from "./Tab/LanguagesTab/LanguagesTab";
 export { default as ToolsTab } from "./Tab/ToolsTab/ToolsTab";
-export { default as UITab } from "./Tab/UITab/UITab";
+export { default as LibraryTab } from "./Tab/LibraryTab/LibraryTab";
