@@ -10,15 +10,15 @@ import {
     Header,
     LineDivider,
     SubHeader,
-    FrontendTab,
+    LanguagesTab,
     BackendTab,
     DatabaseTab,
     ToolsTab,
-    UITab,
+    LibraryTab,
 } from "../../elements";
 import { BsFront, BsBack } from "react-icons/bs";
 import { FaTools, FaDatabase } from "react-icons/fa";
-import { MdDesignServices } from "react-icons/md";
+import { MdLanguage, MdDesignServices } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const MotionTabs = motion(Tabs)
@@ -36,7 +36,7 @@ const commonVariants = {
 
 const Skills = () => {
 
-    const tabList = ["Frontend", "UI/UX", "Tools"];
+    const tabList = ["Languages", "Libraries/Frameworks", "Tools"];
 
     const tabStyle = {
         margin: { base: "0.5rem", md: "1.3rem" },
@@ -93,14 +93,14 @@ const Skills = () => {
                 <TabPanels>
                     {tabList.map(tab => (
                         <TabPanel key={tab}>
-                            {tab === "Frontend" ? (
-                                <FrontendTab />
+                            {tab === "Languages" ? (
+                                <LanguagesTab />
                             ) : tab === "Backend" ? (
                                 <BackendTab />
                             ) : tab === "Database" ? (
                                 <DatabaseTab />
-                            ) : tab === "UI/UX" ? (
-                                <UITab />
+                            ) : tab === "Libraries/Frameworks" ? (
+                                <LibraryTab />
                             ) : (
                                 <ToolsTab />
                             )}
