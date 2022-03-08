@@ -33,7 +33,7 @@ export const listItemStyle = {
 }
 
 export const iconStyle = {
-    color: "#0B111E",
+    color: "#fff",
     fontSize: "1.5rem",
     marginInlineEnd: "0rem"
 }
