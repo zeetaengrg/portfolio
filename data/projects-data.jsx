@@ -9,10 +9,12 @@ export const projects = [
             "A personal portfolio website which showcases the skills, tools and technologies used and recent projects. Having learned how to build Portfolio website from Kevin Powell using HTML, CSS and JavaScript, to put the skills to test and also to build personal Portfolio Website, it was built from scratch to implement NextJS framework.",
         imageOne: "/images/hulu.webp",
         altOne: "Hulu Landing Page",
-        linkOne: "https://hulu-landing-page-clone.vercel.app/",
+        demoLinkOne: "https://hulu-landing-page-clone.vercel.app/",
+        sourceLinkOne: "https://github.com/zeetaen1989/hulu-landing-page-clone",
         imageTwo: "/images/portfolio.webp",
         altTwo: "Portfolio Website",
-        linkTwo: "https://www.jitendragurung.com.np/",
+        demoLinkTwo: "https://www.jitendragurung.com.np/",
+        sourceLinkTwo: "https://github.com/zeetaen1989/portfolio",
         technologyOne: [
             {
                 id: 1,
@@ -58,10 +60,12 @@ export const projects = [
             "This is a clothing store e-commerce website built to demonstrate full stack development technologies. This project is under construction.",
         imageOne: "/images/breakingbad.webp",
         altOne: "Breaking Bad API",
-        linkOne: "https://reverent-morse-0a844d.netlify.app/",
+        demoLinkOne: "https://reverent-morse-0a844d.netlify.app/",
+        sourceLinkOne: "https://github.com/zeetaen1989/breaking-bad-api/tree/develop",
         imageTwo: "/images/clothingstore.webp",
         altTwo: "E-Commerce Website",
-        linkTwo: "#",
+        demoLinkTwo: "#",
+        sourceLinkTwo: "https://github.com/zeetaen1989/e-commerce-clothing-shop",
         technologyOne: [
             {
                 id: 1,
