@@ -37,9 +37,6 @@ const DownloadBtn = () => {
             <MotionBtn
                 size="lg"
                 sx={btn}
-                // isLoading
-                // loadingText="Downloading"
-                // spinnerPlacement="end"
                 rightIcon={
                     <FaCloudDownloadAlt
                         style={{ fontSize: "1.5rem" }}
