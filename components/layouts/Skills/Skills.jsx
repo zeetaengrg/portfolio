@@ -37,8 +37,6 @@ const commonVariants = {
 
 const Skills = () => {
 
-    
-
     return (
         <Box>
             <Header heading="Tools And Technologies" id="skills" />
