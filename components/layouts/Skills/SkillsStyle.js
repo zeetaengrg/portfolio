@@ -12,5 +12,5 @@ export const tabStyle = {
 };
 
 export const iconStyle = {
-    marginLeft: "0.5rem",
+    marginLeft: "0.2rem",
 }
