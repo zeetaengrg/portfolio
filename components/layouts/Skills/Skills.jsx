@@ -46,6 +46,7 @@ const Skills = () => {
             <SubHeader subHeading="Libraries, Frameworks and Tools I Use" />
             <MotionTabs
                 m={{ base: "1.5rem 0", md: "1.5rem 0" }}
+                size="sm"
                 variant="solid-rounded"
                 align="center"
                 variants={commonVariants}
