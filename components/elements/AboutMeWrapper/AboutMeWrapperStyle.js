@@ -3,16 +3,19 @@ import { GiAchievement, GiBookshelf } from "react-icons/gi";
 
 export const wrapperList = [
     {
+        id: 1,
         icon: <FaGraduationCap />,
         title: "Education",
         subtitle: "B.Sc. Hons",
     },
     {
+        id: 2,
         icon: <GiBookshelf />,
         title: "Curriculum",
         subtitle: "2+ Courses",
     },
     {
+        id: 3,
         icon: <GiAchievement />,
         title: "Certifications",
         subtitle: "2+ Certs",
