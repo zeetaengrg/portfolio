@@ -1,39 +1,10 @@
 import { Text, Link, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { commonVariants, linkStyle, specialLinkStyle } from "./AboutMeTextStyles";
 
 const MotionText = motion(Text)
 
-const commonVariants = {
-    hidden: {
-        opacity: 0,
-        y: "5vh",
-    },
-    visible: {
-        opacity: 1,
-        y: 0,
-    }
-}
-
 const AboutMeText = () => {
-
-    const linkStyle = {
-        _hover:{
-            "&::after": { content: "none" },
-        },
-    }
-
-    const specialLinkStyle = {
-        _hover:{
-            "&::after": { content: "none" },
-        },
-        _focus: { outline: "none" },
-        _active: { outline: "none" },
-        textTransform: "none",
-        fontFamily: "inherit",
-        fontSize: { base: "1.1rem", md: "1.2rem" },
-        fontWeight: "normal",
-        textDecoration: "underline",
-    }
 
     return (
         <>
