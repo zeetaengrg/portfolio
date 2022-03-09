@@ -2,7 +2,7 @@ import { Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui
 import { projects } from "../../../data/projects-data";
 import { motion } from "framer-motion";
 import { Header, LineDivider, SubHeader, DemoBtn, SourceBtn } from "../../elements";
-import { boxStyle, commonVariants, flexStyle, imgStyle, linkContainer, linkToProjects, techTextStyle } from "./ProjectsStyle";
+import { boxStyle, commonVariants, flexStyle, imgStyle, linkContainer, linkToProjects, techTextStyle, techFlexStyle } from "./ProjectsStyle";
 
 const MotionFlex = motion(Flex)
 
@@ -74,9 +74,7 @@ const Projects = () => {
                                 Tech Stacks
                             </Text>
                             <Flex
-                                mt="0.5rem"
-                                gap="2rem"
-                                justifyContent={{ base: "center", md: "left" }}
+                                sx={techFlexStyle}
                             >
                                 {project.technologyOne.map((tech) => (
                                     <Image
@@ -133,15 +131,9 @@ const Projects = () => {
                                     <SourceBtn />
                                 </Link>
                             </Box>
-                            <Text
-                                sx={techTextStyle}
-                            >
-                                Tech Stacks
-                            </Text>
+                            <Text sx={techTextStyle}>Tech Stacks</Text>
                             <Flex
-                                mt="0.5rem"
-                                gap="2rem"
-                                justifyContent={{ base: "center", md: "left" }}
+                                sx={techFlexStyle}
                             >
                                 {project.technologyTwo.map((tech) => (
                                     <Image
