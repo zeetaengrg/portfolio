@@ -34,7 +34,7 @@ const AboutMeWrapper = () => {
                 {wrapperList.map((wrapper) => (
                     <MotionListItem
                         sx={listItemStyle}
-                        key={wrapper}
+                        key={wrapper.id}
                         variants={listItemVariants}
                         initial="hidden"
                         whileInView="visible"
