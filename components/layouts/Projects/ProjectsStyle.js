@@ -16,14 +16,14 @@ export const flexStyle = {
     },
     gap: {
         base: "1.5rem",
-        md: "2rem",
+        md: "1.8rem",
     },
     justifyContent: "center",
 }
 
 export const boxStyle = {
     width: {
-        base: "250px",
+        base: "275px",
         md: "750px",
     },
     height: {
@@ -50,8 +50,8 @@ export const boxStyle = {
 export const imgStyle = {
     objectFit: "cover",
     width: {
-        base: "250px",
-        md: "750px",
+        base: "275px",
+        md: "760px",
     },
     height: {
         base: "150px",
@@ -65,13 +65,13 @@ export const imgStyle = {
         base: {
             margin: "0 auto",
         },
-        md: "1.5rem",
+        md: "1rem",
     },
     left: {
         base: {
             margin: "0 auto",
         },
-        md: "1.5rem",
+        md: "1rem",
     },
     borderRadius: "0.5rem",
     transition: "all 0.25s ease-in-out",
@@ -79,7 +79,7 @@ export const imgStyle = {
     _hover: {
         base: "none",
         md: {
-            transform: "translate(-1.5rem, -1.5rem)",
+            transform: "translate(-1rem, -1rem)",
         },
     }
 };
@@ -95,6 +95,7 @@ export const linkContainer = {
 }
 
 export const linkToProjects = {
+    marginTop: "0.5rem",
     backgroundColor: "#141E39",
     padding: "0.3rem 0.8rem",
     borderRadius: "0.3rem",
@@ -109,7 +110,7 @@ export const linkToProjects = {
 
 export const techTextStyle = {
     color: "#ecb7d4",
-    mt: "0.5rem",
+    marginTop: "1rem",
     textTransform: "uppercase",
     textAlign: {
         base: "center",
