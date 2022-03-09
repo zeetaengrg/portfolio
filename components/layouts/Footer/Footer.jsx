@@ -23,7 +23,7 @@ const Footer = () => {
                 >
                     <SocialIconLinks />
                 </Flex>
-                <Text
+                <Box
                     fontSize="0.8rem"
                     mt={{ base: "0.5rem", md: "1rem" }}
                     mb={{ base: "1rem", md: "1.5rem" }}
@@ -32,7 +32,7 @@ const Footer = () => {
                         2022 <FaCopyright style={{ margin: "0 0.5rem" }} />
                         Jiten Gurung. All Rights Reserved.
                     </Flex>
-                </Text>
+                </Box>
             </Flex>
         </Box>
     );
