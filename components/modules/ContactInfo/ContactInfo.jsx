@@ -4,65 +4,11 @@ import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { linkStyle } from "../../elements/LinkStyle/LinkStyle";
+import { commonVariants, links, iconStyle, textStyle, flexStyle, socialLinkStyle } from "./ContactInfoStyles";
 
 const MotionFlex = motion(Flex)
 
-const commonVariants = {
-    hidden: {
-        opacity: 0,
-        y: "5vh",
-    },
-    visible: {
-        opacity: 1,
-        y: 0,
-    }
-}
-
 const ContactInfo = () => {
-
-    const links = [
-        {
-            name: "LinkedIn Icon",
-            url: "https://www.linkedin.com/in/zeetaen1878/",
-        },
-        {
-            name: "Github Icon",
-            url: "https://github.com/zeetaen1989"
-        },
-        {
-            name: "Codepen Icon",
-            url: "https://codepen.io/zeetaen1989"
-        }
-    ]
-
-    const iconStyle = {
-        fontSize: "2rem",
-    };
-
-    const textStyle = {
-        fontSize: "1.2rem",
-        textTransform: "none",
-    };
-
-    const flexStyle = {
-        gap: "1rem",
-        alignItems: "center",
-    };
-
-    const socialLinkStyle = {
-        textTransform: "none",
-        _focus: { boxShadow: "none" },
-        fontSize: "2rem",
-        cursor: "pointer",
-        transition: "all 0.25s linear",
-        _hover: {
-            transform: "translateY(5px)",
-            color: "#fff",
-            "&::after": { content: "none" },
-        },
-        target: "_blank",
-        rel: "noopener noreferrer nofollow",
-    };
 
     return (
         <>
