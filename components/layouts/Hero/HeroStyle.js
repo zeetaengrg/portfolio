@@ -132,7 +132,7 @@ export const flexStyle = {
     justifyContent: "center",
     alignItems: "center",
     height: {
-        base: "55vh",
+        base: "100%",
         md: "60vh",
         lg: "87vh",
     },

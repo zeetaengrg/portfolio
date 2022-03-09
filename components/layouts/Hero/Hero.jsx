@@ -15,7 +15,7 @@ import {
     flexStyle,
     imgStyle,
     linkStyle,
-} from "./Styles";
+} from "./HeroStyle";
 
 const MotionImage = motion(Image);
 
@@ -25,7 +25,7 @@ const MotionText = motion(Text);
 
 const MotionIcon = motion(Box);
 
-const Intro = () => {
+const Hero = () => {
 
     return (
         <Box>
@@ -177,4 +177,4 @@ const Intro = () => {
     );
 };
 
-export default Intro;
+export default Hero;
