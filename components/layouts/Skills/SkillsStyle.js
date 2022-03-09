@@ -1,4 +1,6 @@
-export const tabList = ["Languages", "Libraries/Frameworks", "Tools"];
+export const tabList = [
+    "Language", "UI Design", "Tools"
+];
 
 export const tabStyle = {
     margin: { base: "0.5rem", md: "1.3rem" },
