@@ -1,9 +1,8 @@
 import { Divider, Flex, Grid, Heading, Image, Text, Link, Box } from "@chakra-ui/react";
 import { projects } from "../../../data/projects-data";
 import { motion } from "framer-motion";
-import { Header, LineDivider, SubHeader } from "../../elements";
-import { linkStyle } from "../../elements/LinkStyle/LinkStyle";
-import { commonVariants, flexStyle, imgStyle, techTextStyle } from "./ProjectsStyle";
+import { Header, LineDivider, SubHeader, DemoBtn, SourceBtn } from "../../elements";
+import { boxStyle, commonVariants, flexStyle, imgStyle, linkContainer, linkToProjects, techTextStyle } from "./ProjectsStyle";
 
 const MotionFlex = motion(Flex)
 
@@ -29,20 +28,13 @@ const Projects = () => {
                             type: "tween",
                         }}
                     >
-                        <Box flex="2">
-                            <Link
-                                sx={linkStyle}
-                                href={project.linkOne}
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                            >
-                                <Image
-                                    key={project.id}
-                                    src={project.imageOne}
-                                    alt={project.altOne}
-                                    sx={imgStyle}
-                                />
-                            </Link>
+                        <Box sx={boxStyle}>
+                            <Image
+                                key={project.id}
+                                src={project.imageOne}
+                                alt={project.altOne}
+                                sx={imgStyle}
+                            />
                         </Box>
                         <Grid placeContent="center" flex="1">
                             <Text textAlign={{ base: "center", md: "left" }}>
@@ -126,20 +118,13 @@ const Projects = () => {
                                 ))}
                             </Flex>
                         </Grid>
-                        <Box flex="2">
-                            <Link
-                                sx={linkStyle}
-                                href={project.linkTwo}
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                            >
-                                <Image
-                                    key={project.id}
-                                    src={project.imageTwo}
-                                    alt={project.altTwo}
-                                    sx={imgStyle}
-                                />
-                            </Link>
+                        <Box sx={boxStyle}>
+                            <Image
+                                key={project.id}
+                                src={project.imageTwo}
+                                alt={project.altTwo}
+                                sx={imgStyle}
+                            />
                         </Box>
                     </MotionFlex>
                 </>
