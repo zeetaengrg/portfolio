@@ -1,3 +1,4 @@
+import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
 import { Navbar, ThankYou, Footer } from '../components/layouts';
 
@@ -7,9 +8,13 @@ const ThankYouPage = () => {
             <Head>
                 <title>Thank You | Jiten Gurung</title>
             </Head>
-            <Navbar />
-            <ThankYou />
-            <Footer />
+            <Box position="relative" zIndex="999">
+                <Navbar />
+                <ThankYou />
+            </Box>
+            <Box position="absolute" width="100%">
+                <Footer />
+            </Box>
         </>
     );
 };
