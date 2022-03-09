@@ -96,7 +96,7 @@ export const linkContainer = {
 
 export const linkToProjects = {
     backgroundColor: "#141E39",
-    padding: "0.3rem 0.4rem",
+    padding: "0.3rem 0.8rem",
     borderRadius: "0.3rem",
     _hover: {
         "&::after": { content: "none" },
