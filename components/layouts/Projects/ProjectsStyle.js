@@ -22,12 +22,66 @@ export const flexStyle = {
 }
 
 export const boxStyle = {
+    width: {
+        base: "250px",
+        md: "750px",
+    },
+    height: {
+        base: "150px",
+        md: "362px",
+    },
+    margin: {
+        base: "0 auto",
+    },
+    position: "relative",
     flex: "2",
+    border: "1px solid rgba(165, 171, 189, 0.4)",
+    borderRadius: "0.5rem",
+    transition: "border 0.25s linear",
+    _hover: {
+        border: {
+            base: "1px solid rgba(165, 171, 189, 0.4)",
+            md: "none",
+            lg: "none",
+        },
+    }
 }
 
 export const imgStyle = {
+    objectFit: "cover",
+    width: {
+        base: "250px",
+        md: "750px",
+    },
+    height: {
+        base: "150px",
+        md: "360px",
+    },
+    position: {
+        base: "initial",
+        md: "absolute",
+    },
+    top: {
+        base: {
+            margin: "0 auto",
+        },
+        md: "1.5rem",
+    },
+    left: {
+        base: {
+            margin: "0 auto",
+        },
+        md: "1.5rem",
+    },
     borderRadius: "0.5rem",
+    transition: "all 0.25s ease-in-out",
     boxShadow: "0 0.5rem 1.5rem 1rem rgba(0,0,0,0.5)",
+    _hover: {
+        base: "none",
+        md: {
+            transform: "translate(-1.5rem, -1.5rem)",
+        },
+    }
 };
 
 export const linkContainer = {
@@ -61,4 +115,14 @@ export const techTextStyle = {
         base: "center",
         md: "left",
     }
+}
+
+export const techFlexStyle = {
+    flexWrap: "wrap",
+    marginTop: "0.5rem",
+    gap: "2rem",
+    justifyContent: {
+        base: "center",
+        md: "left",
+    },
 }
