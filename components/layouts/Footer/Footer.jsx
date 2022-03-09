@@ -1,34 +1,9 @@
 import { Center, Text, Flex, Image, Box } from '@chakra-ui/react';
 import { FaCopyright } from 'react-icons/fa';
 import { SocialIconLinks } from '../../elements';
+import { boxStyle, imgTag, imageStyle } from './FooterStyles';
 
 const Footer = () => {
-
-    const boxStyle = {
-        backgroundColor: {
-            base: "#141e39",
-            md: "transparent",
-        },
-    }
-
-    const imgTag = {
-        position: "absolute",
-        bottom: "0",
-        width: "100vw",
-        // zIndex: "1",
-        display: {
-            base: "none",
-            md: "block"
-        }
-    }
-
-    const imageStyle = {
-        width: "60px",
-        height: "45px",
-        m: {
-            base: "1rem 0", md: "2rem 0"
-        }
-    }
 
     return (
         <Box sx={boxStyle}>
