@@ -64,13 +64,13 @@ const Skills = () => {
                         <Tab sx={tabStyle} key={tab}>
                             {tab}
                             <Box {...iconStyle}>
-                                {tab === "Languages" ? (
+                                {tab === "Language" ? (
                                     <MdLanguage />
                                 ) : tab === "Backend" ? (
                                     <BsBack />
                                 ) : tab === "Database" ? (
                                     <FaDatabase />
-                                ) : tab === "Libraries/Frameworks" ? (
+                                ) : tab === "UI Design" ? (
                                     <MdDesignServices />
                                 ) : (
                                     <FaTools />
@@ -82,13 +82,13 @@ const Skills = () => {
                 <TabPanels>
                     {tabList.map(tab => (
                         <TabPanel key={tab}>
-                            {tab === "Languages" ? (
+                            {tab === "Language" ? (
                                 <LanguagesTab />
                             ) : tab === "Backend" ? (
                                 <BackendTab />
                             ) : tab === "Database" ? (
                                 <DatabaseTab />
-                            ) : tab === "Libraries/Frameworks" ? (
+                            ) : tab === "UI Design" ? (
                                 <LibraryTab />
                             ) : (
                                 <ToolsTab />
