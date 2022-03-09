@@ -49,6 +49,24 @@ const Projects = () => {
                                 <Divider mb="0.5rem" />
                                 {project.descriptionOne}
                             </Text>
+                            <Box sx={linkContainer}>
+                                <Link
+                                    href={project.demoLinkOne}
+                                    sx={linkToProjects}
+                                    target="_blank"
+                                    rel="noopener noreferrer nofollow"
+                                >
+                                    <DemoBtn />
+                                </Link>
+                                <Link
+                                    href={project.sourceLinkOne}
+                                    sx={linkToProjects}
+                                    target="_blank"
+                                    rel="noopener noreferrer nofollow"
+                                >
+                                    <SourceBtn />
+                                </Link>
+                            </Box>
                             <Text
                                 sx={techTextStyle}
                                 textAlign={{ base: "center", md: "left" }}
@@ -97,9 +115,26 @@ const Projects = () => {
                                 <Divider mb="0.5rem" />
                                 {project.descriptionTwo}
                             </Text>
+                            <Box sx={linkContainer}>
+                                <Link
+                                    href={project.demoLinkTwo}
+                                    sx={linkToProjects}
+                                    target="_blank"
+                                    rel="noopener noreferrer nofollow"
+                                >
+                                    <DemoBtn />
+                                </Link>
+                                <Link
+                                    href={project.sourceLinkTwo}
+                                    sx={linkToProjects}
+                                    target="_blank"
+                                    rel="noopener noreferrer nofollow"
+                                >
+                                    <SourceBtn />
+                                </Link>
+                            </Box>
                             <Text
                                 sx={techTextStyle}
-                                textAlign={{ base: "center", md: "left" }}
                             >
                                 Tech Stacks
                             </Text>
