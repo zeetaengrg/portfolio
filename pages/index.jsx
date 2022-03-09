@@ -1,7 +1,7 @@
 import Head from "next/head";
 import {
     Navbar,
-    Intro,
+    Hero,
     AboutMe,
     Skills,
     Projects,
@@ -16,7 +16,7 @@ const Layout = () => {
 				<title>Jiten Gurung | Portfolio Website</title>
 			</Head>
 			<Navbar />
-			<Intro />
+			<Hero />
 			<AboutMe />
 			<Skills />
 			<Projects />
