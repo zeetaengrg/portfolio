@@ -37,9 +37,10 @@ const Projects = () => {
                             />
                         </Box>
                         <Grid placeContent="center" flex="1">
-                            <Text textAlign={{ base: "center", md: "left" }}>
+                            <Box textAlign={{ base: "center", md: "left" }}>
                                 <Heading
                                     as="h3"
+                                    size="lg"
                                     fontSize="2rem"
                                     color="#3892f9"
                                     key={project.id}
@@ -47,8 +48,8 @@ const Projects = () => {
                                     {project.titleOne}
                                 </Heading>
                                 <Divider mb="0.5rem" />
-                                {project.descriptionOne}
-                            </Text>
+                                <Text>{project.descriptionOne}</Text>
+                            </Box>
                             <Box sx={linkContainer}>
                                 <Link
                                     href={project.demoLinkOne}
@@ -67,15 +68,15 @@ const Projects = () => {
                                     <SourceBtn />
                                 </Link>
                             </Box>
-                            <Text
+                            <Heading
+                                as="h6"
+                                size="sm"
                                 sx={techTextStyle}
                                 textAlign={{ base: "center", md: "left" }}
                             >
                                 Tech Stacks
-                            </Text>
-                            <Flex
-                                sx={techFlexStyle}
-                            >
+                            </Heading>
+                            <Flex sx={techFlexStyle}>
                                 {project.technologyOne.map((tech) => (
                                     <Image
                                         src={tech.image}
@@ -101,9 +102,10 @@ const Projects = () => {
                         }}
                     >
                         <Grid placeContent="center" flex="1">
-                            <Text textAlign={{ base: "center", md: "left" }}>
+                            <Box textAlign={{ base: "center", md: "left" }}>
                                 <Heading
                                     as="h3"
+                                    size="lg"
                                     fontSize="2rem"
                                     color="#3892f9"
                                     key={project.id}
@@ -111,8 +113,8 @@ const Projects = () => {
                                     {project.titleTwo}
                                 </Heading>
                                 <Divider mb="0.5rem" />
-                                {project.descriptionTwo}
-                            </Text>
+                                <Text>{project.descriptionTwo}</Text>
+                            </Box>
                             <Box sx={linkContainer}>
                                 <Link
                                     href={project.demoLinkTwo}
@@ -131,10 +133,14 @@ const Projects = () => {
                                     <SourceBtn />
                                 </Link>
                             </Box>
-                            <Text sx={techTextStyle}>Tech Stacks</Text>
-                            <Flex
-                                sx={techFlexStyle}
+                            <Heading
+                                as="h6"
+                                size="sm"
+                                sx={techTextStyle}
                             >
+                                Tech Stacks
+                            </Heading>
+                            <Flex sx={techFlexStyle}>
                                 {project.technologyTwo.map((tech) => (
                                     <Image
                                         src={tech.image}
