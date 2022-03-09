@@ -103,7 +103,7 @@ export const projects = [
                 id: 5,
                 name: "MongoDB",
                 image: "/images/mongodb.svg",
-            }
+            },
         ]
     },
 ];
