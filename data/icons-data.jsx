@@ -48,31 +48,30 @@ export const icons = [
                 image: "/images/nextjs.png",
             },
             {
-                id: 4,
+                id: 3,
                 name: "Chakra-UI",
                 image: "/images/chakraui.svg",
             },
             {
-                id: 5,
+                id: 4,
                 name: "Material-UI",
                 image: "/images/mui.svg",
             },
             {
-                id: 6,
+                id: 5,
                 name: "Bootstrap",
                 image: "/images/bootstrap.svg",
             },
             {
-                id: 7,
+                id: 6,
                 name: "TailwindCSS",
                 image: "/images/tailwindcss.svg",
             },
             {
-                id: 8,
+                id: 7,
                 name: "Framer Motion",
                 image: "/images/framer-motion.png",
             }
-            
         ],
         tools: [
             {
