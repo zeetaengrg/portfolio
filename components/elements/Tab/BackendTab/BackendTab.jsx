@@ -1,23 +1,8 @@
 import { Image, Flex, Tooltip } from "@chakra-ui/react";
 import { icons } from "../../../../data/icons-data";
+import { flexStyle, imageStyle } from "../TabsStyle";
 
 const BackendTab = () => {
-
-    const flexStyle = {
-        justifyContent: "center",
-        gap: "2rem",
-        flexWrap: {
-            base: "wrap",
-            md: "nowrap",
-        }
-    }
-
-    const imageStyle = {
-        height: { base: "4rem", md: "5.625rem" },
-        width: { base: "4rem", md: "5.625rem" },
-        objectFit: "contain",
-    };
-
     return (
         <>
             {icons.map((icon, index) => (

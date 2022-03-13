@@ -99,6 +99,7 @@ export const linkToProjects = {
     backgroundColor: "#141E39",
     padding: "0.3rem 0.8rem",
     borderRadius: "0.3rem",
+    transition: "all 0.25s ease-in-out",
     _hover: {
         "&::after": { content: "none" },
         backgroundColor: "#a5abbd",
