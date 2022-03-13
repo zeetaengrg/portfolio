@@ -17,7 +17,7 @@ import {
     LibraryTab,
 } from "../../elements";
 import { tabList, tabStyle, iconStyle } from "./SkillsStyle";
-import { BsFront, BsBack } from "react-icons/bs";
+import { BsBack } from "react-icons/bs";
 import { FaTools, FaDatabase } from "react-icons/fa";
 import { MdLanguage, MdDesignServices } from "react-icons/md";
 import { motion } from "framer-motion";
