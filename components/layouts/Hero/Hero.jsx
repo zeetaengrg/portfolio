@@ -154,8 +154,8 @@ const Hero = () => {
                         </Box>
                         <Box>
                             <Flex
-                                gap="1rem"
-                                mt="1rem"
+                                gap="2rem"
+                                mt="2rem"
                                 justifyContent={{ base: "center", md: "left" }}
                             >
                                 <Link
