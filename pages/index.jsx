@@ -1,13 +1,13 @@
 import Head from "next/head";
 import {
-    Navbar,
-    Hero,
-    AboutMe,
-    Skills,
-    Projects,
-    Contacts,
-    Footer,
-} from "../components/layouts";
+  Navbar,
+  Hero,
+  AboutMe,
+  Skills,
+  Projects,
+  Contacts,
+  Footer,
+} from "../components/templates";
 
 const Layout = () => {
 	return (
