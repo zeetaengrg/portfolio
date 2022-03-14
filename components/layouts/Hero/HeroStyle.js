@@ -138,7 +138,7 @@ export const flexStyle = {
     },
     gap: {
         base: "1rem",
-        md: "2rem",
+        md: "4rem",
     },
     flexDirection: {
         base: "column",
