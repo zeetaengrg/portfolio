@@ -54,50 +54,45 @@ export const icons = [
             },
             {
                 id: 4,
-                name: "Material-UI",
-                image: "/images/mui.svg",
-            },
-            {
-                id: 5,
                 name: "Bootstrap",
                 image: "/images/bootstrap.svg",
             },
             {
-                id: 6,
+                id: 5,
                 name: "TailwindCSS",
                 image: "/images/tailwindcss.svg",
             },
             {
-                id: 7,
-                name: "Framer Motion",
-                image: "/images/framer-motion.png",
-            }
-        ],
-        tools: [
-            {
-                id: 1,
+                id: 6,
                 name: "Sass",
                 image: "/images/sass.svg",
             },
             {
-                id: 2,
+                id: 7,
                 name: "Styled Components",
                 image: "/images/styled-components.svg",
             },
+        ],
+        tools: [
             {
-                id: 3,
+                id: 1,
                 name: "Git",
                 image: "/images/git.svg",
             },
             {
-                id: 4,
+                id: 2,
                 name: "GitHub",
                 image: "/images/github.svg",
             },
             {
-                id: 5,
+                id: 3,
                 name: "Figma",
                 image: "/images/figma.svg",
+            },
+            {
+                id: 4,
+                name: "Framer Motion",
+                image: "/images/framer-motion.png",
             },
         ]
     }
