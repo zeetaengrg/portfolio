@@ -52,16 +52,16 @@ export const projects = [
     },
     {
         id: 2,
-        titleOne: "Breaking Bad API",
+        titleOne: "Restaurant Website",
         titleTwo: "E-Commerce Website",
         descriptionOne:
-            `This project shows a simple demonstration of how to fetch the data from the external API. In this project, Axios is used to fetch the data from "The Breaking Bad API" (https://breakingbadapi.com/).`,
+            `This is a fully responsive restaurant's website where you can browse the menu and order. The design was provided by AR Shakir(https://www.arshakir.com/project/restaurant-landing-page) through his website.`,
         descriptionTwo:
             "This is a clothing store e-commerce website built to demonstrate full stack development technologies. This project is under construction.",
-        imageOne: "/images/breakingbad.webp",
-        altOne: "Breaking Bad API",
-        demoLinkOne: "https://reverent-morse-0a844d.netlify.app/",
-        sourceLinkOne: "https://github.com/zeetaen1989/breaking-bad-api/tree/develop",
+        imageOne: "/images/restaurant.png",
+        altOne: "Yannal's Restaurant",
+        demoLinkOne: "#",
+        sourceLinkOne: "https://github.com/zeetaen1989/mamas-joint",
         imageTwo: "/images/clothingstore.webp",
         altTwo: "E-Commerce Website",
         demoLinkTwo: "#",
@@ -69,8 +69,8 @@ export const projects = [
         technologyOne: [
             {
                 id: 1,
-                name: "React",
-                image: "/images/reactjs.svg",
+                name: "NextJS",
+                image: "/images/nextjs.png",
             },
             {
                 id: 2,
