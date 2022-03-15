@@ -52,13 +52,13 @@ export const projects = [
     },
     {
         id: 2,
-        titleOne: "Yannal's Restaurant",
+        titleOne: "Mama's Joint",
         titleTwo: "E-Commerce Website",
         descriptionOne:
-            `This is a fully responsive restaurant's website where you can browse the menu and order. The design was provided by AR Shakir(https://www.arshakir.com/project/restaurant-landing-page) through his website.`,
+            `This is a fully responsive restaurant's landing page where you can browse the popular menu and get information about the restaurant in detail. Built from scratch with pixel perfect design provided by AR Shakir`,
         descriptionTwo:
             "This is a clothing store e-commerce website built to demonstrate full stack development technologies. This project is under construction.",
-        imageOne: "/images/restaurant.png",
+        imageOne: "/images/mamas-joint.png",
         altOne: "Yannal's Restaurant",
         demoLinkOne: "https://mamas-joint.vercel.app/",
         sourceLinkOne: "https://github.com/zeetaen1989/mamas-joint",
