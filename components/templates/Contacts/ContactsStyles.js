@@ -1,4 +1,4 @@
-const imgVariants = {
+export const imgVariants = {
     hidden: {
         scale: 0,
     },

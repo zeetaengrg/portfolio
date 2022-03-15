@@ -1,7 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import NextLink from "next/link";
-import { Navbar, Error, Footer } from "../components/layouts";
+import { Error } from "../components/layouts";
+import { Navbar, Footer } from "../components/templates";
 
 const ErrorPage = () => {
 

@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react';
 import Head from 'next/head';
-import { Navbar, ThankYou, Footer } from '../components/layouts';
+import { ThankYou } from '../components/layouts';
+import { Navbar, Footer } from '../components/templates';
 
 const ThankYouPage = () => {
     return (
