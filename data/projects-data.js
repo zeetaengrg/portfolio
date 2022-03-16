@@ -1,6 +1,7 @@
 export const projects = [
     {
-        id: 1,
+        idOne: 1,
+        idTwo: 2,
         titleOne: "Hulu Landing Page",
         titleTwo: "Portfolio Website",
         descriptionOne:
@@ -8,11 +9,9 @@ export const projects = [
         descriptionTwo:
             "A personal portfolio website which showcases the skills, tools and technologies used and recent projects. Having learned how to build Portfolio website from Kevin Powell using HTML, CSS and JavaScript, to put the skills to test and also to build personal Portfolio Website, it was built from scratch to implement NextJS framework.",
         imageOne: "/images/hulu.webp",
-        altOne: "Hulu Landing Page",
         demoLinkOne: "https://hulu-landing-page-clone.vercel.app/",
         sourceLinkOne: "https://github.com/zeetaen1989/hulu-landing-page-clone",
         imageTwo: "/images/portfolio.webp",
-        altTwo: "Portfolio Website",
         demoLinkTwo: "https://www.jitendragurung.com.np/",
         sourceLinkTwo: "https://github.com/zeetaen1989/portfolio",
         technologyOne: [
@@ -51,7 +50,8 @@ export const projects = [
         ]
     },
     {
-        id: 2,
+        idOne: 3,
+        idTwo: 4,
         titleOne: "Mama's Joint",
         titleTwo: "E-Commerce Website",
         descriptionOne:
@@ -59,11 +59,9 @@ export const projects = [
         descriptionTwo:
             "This is a clothing store e-commerce website built to demonstrate full stack development technologies. This project is under construction.",
         imageOne: "/images/mamas-joint.png",
-        altOne: "Yannal's Restaurant",
         demoLinkOne: "https://mamas-joint.vercel.app/",
         sourceLinkOne: "https://github.com/zeetaen1989/mamas-joint",
         imageTwo: "/images/clothingstore.webp",
-        altTwo: "E-Commerce Website",
         demoLinkTwo: "#",
         sourceLinkTwo: "https://github.com/zeetaen1989/e-commerce-clothing-shop",
         technologyOne: [

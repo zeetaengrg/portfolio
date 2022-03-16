@@ -86,11 +86,16 @@ export const icons = [
             },
             {
                 id: 3,
+                name: "GitLab",
+                image: "/images/gitlab.svg",
+            },
+            {
+                id: 4,
                 name: "Figma",
                 image: "/images/figma.svg",
             },
             {
-                id: 4,
+                id: 5,
                 name: "Framer Motion",
                 image: "/images/framer-motion.png",
             },
