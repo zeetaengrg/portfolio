@@ -7,6 +7,7 @@ import {
   Text,
   Link,
   Box,
+  Tooltip,
 } from "@chakra-ui/react";
 import { projects } from "../../../data/projects-data";
 import { motion } from "framer-motion";
@@ -53,9 +54,9 @@ const Projects = () => {
           >
             <Box sx={boxStyle}>
               <Image
-                key={project.id}
+                key={project.idOne}
                 src={project.imageOne}
-                alt={project.altOne}
+                alt={project.titleOne}
                 sx={imgStyle}
               />
             </Box>
@@ -66,7 +67,7 @@ const Projects = () => {
                   size="lg"
                   fontSize="2rem"
                   color="#3892f9"
-                  key={project.id}
+                  key={project.idOne}
                 >
                   {project.titleOne}
                 </Heading>
@@ -101,12 +102,14 @@ const Projects = () => {
               </Heading>
               <Flex sx={techFlexStyle}>
                 {project.technologyOne.map((tech) => (
-                  <Image
-                    src={tech.image}
-                    alt={tech.name}
-                    key={tech.id}
-                    height="48px"
-                  />
+                  <Tooltip key={tech.id} label={tech.name} placement="top">
+                    <Image
+                      src={tech.image}
+                      alt={tech.name}
+                      key={tech.id}
+                      height="48px"
+                    />
+                  </Tooltip>
                 ))}
               </Flex>
             </Grid>
@@ -131,7 +134,7 @@ const Projects = () => {
                   size="lg"
                   fontSize="2rem"
                   color="#3892f9"
-                  key={project.id}
+                  key={project.idTwo}
                 >
                   {project.titleTwo}
                 </Heading>
@@ -161,20 +164,22 @@ const Projects = () => {
               </Heading>
               <Flex sx={techFlexStyle}>
                 {project.technologyTwo.map((tech) => (
-                  <Image
-                    src={tech.image}
-                    alt={tech.name}
-                    key={tech.id}
-                    height="48px"
-                  />
+                  <Tooltip label={tech.name} placement="top" key={tech.id}>
+                    <Image
+                      src={tech.image}
+                      alt={tech.name}
+                      key={tech.id}
+                      height="48px"
+                    />
+                  </Tooltip>
                 ))}
               </Flex>
             </Grid>
             <Box sx={boxStyle}>
               <Image
-                key={project.id}
+                key={project.idTwo}
                 src={project.imageTwo}
-                alt={project.altTwo}
+                alt={project.titleTwo}
                 sx={imgStyle}
               />
             </Box>
