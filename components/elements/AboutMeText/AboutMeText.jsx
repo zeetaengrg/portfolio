@@ -13,7 +13,7 @@ import {
   linkStyle,
   specialLinkStyle,
 } from "./AboutMeTextStyles";
-import { FaCheckCircle, FaFreeCodeCamp } from "react-icons/fa";
+import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import { FiCornerDownRight } from "react-icons/fi";
 import { curriculums } from "../../../data/about-data";
 
@@ -62,7 +62,7 @@ const AboutMeText = () => {
           Curriculums:
         </Heading>
         <Box m="1rem">
-          {curriculums.map((curriculum) => (
+          {curriculums.map(curriculum => (
             <List key={curriculum.id}>
               <ListItem
                 display="flex"
@@ -71,7 +71,6 @@ const AboutMeText = () => {
               >
                 <ListIcon as={FaCheckCircle} />
                 <Link
-                  fontSize="1.2rem"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   sx={linkStyle}
@@ -80,6 +79,7 @@ const AboutMeText = () => {
                   {curriculum.title}
                 </Link>
                 <Link
+                  m="0rem 0.5rem"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   sx={linkStyle}
@@ -87,15 +87,8 @@ const AboutMeText = () => {
                 >
                   <i>(freeCodeCamp)</i>
                 </Link>
-              </ListItem>
-              <ListItem
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-              >
-                <FiCornerDownRight />
+                <FaArrowRight style={{ fontSize: { base: "1rem", md: "1.2rem" }, marginRight: "0.5rem" }}/>
                 <Link
-                  fontSize="1.2rem"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   sx={linkStyle}
