@@ -3,13 +3,12 @@ import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { linkStyle } from "../../elements/LinkStyle/LinkStyle";
+import { linkStyle } from "../../elements/LinkStyle";
 import { commonVariants, links, iconStyle, textStyle, flexStyle, socialLinkStyle } from "./ContactInfoStyles";
 
 const MotionFlex = motion(Flex)
 
 const ContactInfo = () => {
-
     return (
         <>
             <Box>
