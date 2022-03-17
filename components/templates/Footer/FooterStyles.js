@@ -18,7 +18,7 @@ export const imgTag = {
 export const imageStyle = {
     width: "60px",
     height: "45px",
-    m: {
+    margin: {
         base: "1rem 0", md: "2rem 0"
     }
 }

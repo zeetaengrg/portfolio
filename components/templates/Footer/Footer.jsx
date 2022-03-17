@@ -1,4 +1,4 @@
-import { Center, Text, Flex, Image, Box } from '@chakra-ui/react';
+import { Center, Flex, Image, Box } from '@chakra-ui/react';
 import { FaCopyright } from 'react-icons/fa';
 import { SocialIconLinks } from '../../elements';
 import { boxStyle, imgTag, imageStyle } from './FooterStyles';
