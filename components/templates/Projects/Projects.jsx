@@ -37,8 +37,8 @@ const Projects = () => {
       <Header heading="Projects" id="projects" />
       <LineDivider />
       <SubHeader subHeading="My Recent Works" />
-      {projects.map((project) => (
-        <>
+      {projects.map(project => (
+        <Box key={project.id}>
           <MotionFlex
             sx={flexStyle}
             direction={{ base: "column", md: "row" }}
@@ -54,7 +54,6 @@ const Projects = () => {
           >
             <Box sx={boxStyle}>
               <Image
-                key={project.idOne}
                 src={project.imageOne}
                 alt={project.titleOne}
                 sx={imgStyle}
@@ -67,7 +66,6 @@ const Projects = () => {
                   size="lg"
                   fontSize="2rem"
                   color="#3892f9"
-                  key={project.idOne}
                 >
                   {project.titleOne}
                 </Heading>
@@ -134,7 +132,6 @@ const Projects = () => {
                   size="lg"
                   fontSize="2rem"
                   color="#3892f9"
-                  key={project.idTwo}
                 >
                   {project.titleTwo}
                 </Heading>
@@ -177,14 +174,13 @@ const Projects = () => {
             </Grid>
             <Box sx={boxStyle}>
               <Image
-                key={project.idTwo}
                 src={project.imageTwo}
                 alt={project.titleTwo}
                 sx={imgStyle}
               />
             </Box>
           </MotionFlex>
-        </>
+        </Box>
       ))}
     </Box>
   );
