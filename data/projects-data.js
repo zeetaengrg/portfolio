@@ -1,7 +1,6 @@
 export const projects = [
     {
-        idOne: 1,
-        idTwo: 2,
+        id: 1,
         titleOne: "Hulu Landing Page",
         titleTwo: "Portfolio Website",
         descriptionOne:
@@ -50,8 +49,7 @@ export const projects = [
         ]
     },
     {
-        idOne: 3,
-        idTwo: 4,
+        id: 2,
         titleOne: "Mama's Joint",
         titleTwo: "E-Commerce Website",
         descriptionOne:
