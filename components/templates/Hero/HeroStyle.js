@@ -58,7 +58,6 @@ export const blobFourVariants = {
 }
 
 export const commonVariants = {
-
     hidden: {
         opacity: 0,
         y: "10vh",

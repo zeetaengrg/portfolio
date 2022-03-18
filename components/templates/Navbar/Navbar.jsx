@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Spacer } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { LogoImage } from "../../elements" 
+import { LogoImage, MobileNavbar } from "../../elements" 
 import { linkVariants, linkItem, linkStyle } from "./NavbarStyles";
 
 const MotionLink = motion(Link);
@@ -33,6 +33,7 @@ const Navbar = () => {
                     </MotionLink>
                 ))}
             </Flex>
+            <MobileNavbar />
         </Flex>
     );
 };

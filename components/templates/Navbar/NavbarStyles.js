@@ -15,7 +15,7 @@ export const linkVariants = {
     })
 }
 
-export const linkItem = ["About Me", "Skills", "Projects", "Contact"];
+export const linkItem = ["About Me", "Skills", "Projects", "Contacts"];
 
 export const linkStyle = {
     _hover: {
@@ -26,4 +26,9 @@ export const linkStyle = {
         md: "0.9rem",
     },
     _focus: { boxShadow: "none" },
+    display: {
+        base: "none",
+        md: "block",
+        lg: "block",
+    }
 };

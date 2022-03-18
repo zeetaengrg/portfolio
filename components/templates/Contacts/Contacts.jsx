@@ -15,7 +15,7 @@ const Contacts = () => {
 
     return (
         <Box position="relative" mb="4rem" zIndex="999">
-            <Header heading="Get In Touch" id="contact" />
+            <Header heading="Get In Touch" id="contacts" />
             <LineDivider />
             <SubHeader subHeading="Let's Talk" />
             <Center>

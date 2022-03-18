@@ -28,7 +28,7 @@ const MotionIcon = motion(Box);
 const Hero = () => {
 
     return (
-        <Box>
+        <Box mt={{ base: "5rem", md: "0rem" }}>
             <Box>
                 <BlobMotionImage
                     src="/images/blob1.svg"
