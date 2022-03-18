@@ -61,7 +61,7 @@ const AboutMeText = () => {
           Curriculums:
         </Heading>
         {curriculums.map((curriculum) => (
-          <List key={curriculum.id} mb="0.5rem">
+          <List key={curriculum.id} m="0.5rem 0rem">
             <ListItem
               display="flex"
               alignItems="center"
@@ -107,6 +107,7 @@ const AboutMeText = () => {
             </ListItem>
           </List>
         ))}
+        <br />
         Without being ostentacious, to further prove my hardworking habtitude,
         during my university days, I along with my team was awarded with the
         Best Software Project Award by{" "}
