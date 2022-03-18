@@ -18,7 +18,7 @@ const boxVariants = {
     y: "-100vh",
   },
   visible: {
-    opacity: 0.9,
+    opacity: 0.97,
     y: 0,
     transition: {
       duration: 0.5,
