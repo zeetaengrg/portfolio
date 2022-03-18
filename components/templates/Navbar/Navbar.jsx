@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <Flex
-            p={{ base: "0.5rem 1rem", md: "0.8rem 4rem", lg: "0.8rem 6rem" }}
+            p={{ base: "0.8rem 2rem", md: "0.8rem 4rem", lg: "0.8rem 6rem" }}
         >
             <Box>
                 <LogoImage />
