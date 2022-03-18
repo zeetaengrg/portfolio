@@ -14,7 +14,7 @@ const AboutMe = () => {
             <Header heading="About Me" id="aboutme" />
             <LineDivider />
             <SubHeader subHeading="My Introduction" />
-            <Box p={{ base: "1.5rem", md: "2rem 5rem", lg: "2rem 10rem" }}>
+            <Box p={{ base: "1.5rem 3rem", md: "2rem 5rem", lg: "2rem 10rem" }}>
                 <Flex direction="column" alignItems="center">
                     <Flex gap={{ base: "0.5rem", md: "1rem" }}>
                         <AboutMeWrapper />

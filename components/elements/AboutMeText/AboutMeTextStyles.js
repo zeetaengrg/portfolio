@@ -34,5 +34,4 @@ export const specialLinkStyle = {
     fontSize: { base: "1rem", md: "1.2rem" },
     fontWeight: "normal",
     textDecoration: "underline",
-    fontStyle: "italic",
 }

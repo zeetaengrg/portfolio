@@ -14,7 +14,6 @@ import {
   specialLinkStyle,
 } from "./AboutMeTextStyles";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
-import { FiCornerDownRight } from "react-icons/fi";
 import { curriculums } from "../../../data/about-data";
 
 const MotionBox = motion(Box);
@@ -23,7 +22,7 @@ const AboutMeText = () => {
   return (
     <>
       <MotionBox
-        p={{ base: "1.5rem 0rem", md: "1rem" }}
+        p={{ base: "1.5rem 1rem", md: "1.5rem 5rem" }}
         fontSize={{ base: "1.1rem", md: "1.2rem" }}
         textAlign="center"
         variants={commonVariants}
@@ -58,53 +57,56 @@ const AboutMeText = () => {
         learn web technologies seriously.
         <br />
         <br />
-        <Heading as="h3" fontSize="1.5rem">
+        <Heading as="h3" fontSize={{ base: "1.2rem", md: "1.5rem" }}>
           Curriculums:
         </Heading>
-        <Box m="1rem">
-          {curriculums.map(curriculum => (
-            <List key={curriculum.id}>
-              <ListItem
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
+        {curriculums.map((curriculum) => (
+          <List key={curriculum.id} mb="0.5rem">
+            <ListItem
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <ListIcon as={FaCheckCircle} />
+              <Link
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                sx={linkStyle}
+                href={curriculum.link}
               >
-                <ListIcon as={FaCheckCircle} />
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  sx={linkStyle}
-                  href={curriculum.link}
-                >
-                  {curriculum.title}
-                </Link>
-                <Link
-                  m="0rem 0.5rem"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  sx={linkStyle}
-                  href="https://www.freecodecamp.org/"
-                >
-                  <i>(freeCodeCamp)</i>
-                </Link>
-                <FaArrowRight style={{ fontSize: { base: "1rem", md: "1.2rem" }, marginRight: "0.5rem" }}/>
-                <Link
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  sx={linkStyle}
-                  href={curriculum.certificateUrl}
-                >
-                  {curriculum.title === "Front End Development Libraries"
-                    ? `Ongoing`
-                    : `Certificate` &&
-                      curriculum.title === "Back End Development and APIs"
-                    ? "Ongoing"
-                    : "Certificate"}
-                </Link>
-              </ListItem>
-            </List>
-          ))}
-        </Box>
+                {curriculum.title}
+              </Link>
+              <Link
+                m="0rem 0.5rem"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                sx={linkStyle}
+                href="https://www.freecodecamp.org/"
+              >
+                <i>(freeCodeCamp)</i>
+              </Link>
+              <FaArrowRight
+                style={{
+                  fontSize: { base: "1rem", md: "1.2rem" },
+                  marginRight: "0.5rem",
+                }}
+              />
+              <Link
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                sx={linkStyle}
+                href={curriculum.certificateUrl}
+              >
+                {curriculum.title === "Front End Development Libraries"
+                  ? `Ongoing`
+                  : `Certificate` &&
+                    curriculum.title === "Back End Development and APIs"
+                  ? "Ongoing"
+                  : "Certificate"}
+              </Link>
+            </ListItem>
+          </List>
+        ))}
         Without being ostentacious, to further prove my hardworking habtitude,
         during my university days, I along with my team was awarded with the
         Best Software Project Award by{" "}
