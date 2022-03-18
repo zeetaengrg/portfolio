@@ -1,14 +1,17 @@
 export const menuStyle = {
   position: "absolute",
-  right: "0.7rem",
+  right: "1rem",
   background: "transparent",
-  fontSize: "3.5rem",
+  fontSize: "3rem",
   _hover: {
     backgroundColor: "none",
     color: "white",
   },
   _active: {
     backgroundColor: "none",
+    transform: "rotate(180deg)",
+    opacity: "0",
+    transition: "all 0.25s",
   },
   _focus: "none",
   opacity: {
