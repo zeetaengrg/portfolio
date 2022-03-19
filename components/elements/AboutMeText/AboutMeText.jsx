@@ -64,8 +64,9 @@ const AboutMeText = () => {
           <List key={curriculum.id} m="0.5rem 0rem">
             <ListItem
               display="flex"
-              alignItems="center"
+              alignItems="start"
               justifyContent="center"
+
             >
               <ListIcon as={FaCheckCircle} />
               <Link
