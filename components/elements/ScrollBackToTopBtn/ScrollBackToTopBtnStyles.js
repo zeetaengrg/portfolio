@@ -2,7 +2,7 @@ import { btnStyle } from '../Btn/Btn';
 
 export const btn = {
   ...btnStyle,
-  _hover: {
+  '&:hover': {
     ...btnStyle._hover,
     transform: "scale(1.1)"
   },
