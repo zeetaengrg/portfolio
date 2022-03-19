@@ -1,35 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Button } from '@chakra-ui/react';
-import { FaArrowAltCircleUp } from 'react-icons/fa';
-import { btn } from './ScrollBackToTopBtnStyles';
+import React, { useState, useEffect } from "react";
+import { Box, Button } from "@chakra-ui/react";
+import { FaArrowAltCircleUp } from "react-icons/fa";
+import { btn } from "./ScrollBackToTopBtnStyles";
 
 const ScrollBackToTopBtn = () => {
-
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const handleVisibleTopBtn = () => {
-    setScrollPosition(window.pageYOffset);
-  }
+  const handleVisibleBtn = () => {
+    setScrollPosition(scrollY);
+  };
 
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleVisibleTopBtn);
-    return () => window.removeEventListener('scroll', handleVisibleTopBtn);
-  }, [])
+    window.addEventListener("scroll", handleVisibleBtn);
+    return () => window.removeEventListener("scroll", handleVisibleBtn);
+  }, []);
 
   return (
-      <Box>
-        {scrollPosition > 500 && (
-          <Button sx={btn} onClick={handleScrollToTop}>
-            <FaArrowAltCircleUp />
-          </Button>
-        )}
-      </Box>
-  )
-}
+    <Box>
+      {scrollPosition > 500 && (
+        <Button sx={btn} onClick={handleScrollToTop}>
+          <FaArrowAltCircleUp />
+        </Button>
+      )}
+    </Box>
+  );
+};
 
 export default ScrollBackToTopBtn;
