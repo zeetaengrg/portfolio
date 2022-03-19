@@ -4,7 +4,6 @@ import { SocialIconLinks } from '../../elements';
 import { boxStyle, imgTag, imageStyle } from './FooterStyles';
 
 const Footer = () => {
-
     return (
         <Box sx={boxStyle}>
             <Image src="/images/wave.svg" alt="waves" sx={imgTag} />
