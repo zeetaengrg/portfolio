@@ -10,6 +10,7 @@ export { default as Header } from "./Header/Header";
 export { default as LineDivider } from "./LineDivider/LineDivider";
 export { default as LogoImage } from "./LogoImage/LogoImage";
 export { default as MobileNavbar } from "./MobileNavbar/MobileNavbar";
+export { default as ScrollBackToTopBtn } from "./ScrollBackToTopBtn/ScrollBackToTopBtn";
 export { default as SocialIconLinks } from "./SocialIconLinks/SocialIconLinks";
 export { default as SubHeader } from "./SubHeader/SubHeader";
 export { default as BackendTab } from "./Tab/BackendTab/BackendTab";
