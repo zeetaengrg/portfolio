@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { ScrollBackToTopBtn } from "../components/elements";
 import {
   Navbar,
   Hero,
@@ -16,6 +17,7 @@ const Layout = () => {
 				<title>Jiten Gurung | Portfolio Website</title>
 			</Head>
 			<Navbar />
+			<ScrollBackToTopBtn />
 			<Hero />
 			<AboutMe />
 			<Skills />
