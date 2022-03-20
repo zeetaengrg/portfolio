@@ -13,7 +13,7 @@ import {
   linkStyle,
   specialLinkStyle,
 } from "./AboutMeTextStyles";
-import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import { FaCheckCircle } from "react-icons/fa";
 import { curriculums } from "../../../data/about-data";
 
 const MotionBox = motion(Box);
@@ -66,7 +66,6 @@ const AboutMeText = () => {
               display="flex"
               alignItems="start"
               justifyContent="center"
-
             >
               <ListIcon as={FaCheckCircle} />
               <Link
