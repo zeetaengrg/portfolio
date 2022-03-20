@@ -85,16 +85,11 @@ const AboutMeText = () => {
               >
                 <i>(freeCodeCamp)</i>
               </Link>
-              <FaArrowRight
-                style={{
-                  fontSize: { base: "1rem", md: "1.2rem" },
-                  marginRight: "0.5rem",
-                }}
-              />
               <Link
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 sx={linkStyle}
+                textDecoration="underline"
                 href={curriculum.certificateUrl}
               >
                 {curriculum.title === "Front End Development Libraries"
