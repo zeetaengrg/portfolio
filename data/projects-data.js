@@ -53,7 +53,7 @@ export const projects = [
         titleOne: "Mama's Joint",
         titleTwo: "E-Commerce Website",
         descriptionOne:
-            `This is a fully responsive restaurant's landing page where you can browse the popular menu and get information about the restaurant in detail. Built from scratch with pixel perfect design provided by AR Shakir`,
+            `This is a fully responsive restaurant's landing page where you can browse the popular menu and get information about the restaurant in detail. Built from scratch with pixel perfect design provided by AR Shakir.`,
         descriptionTwo:
             "This is a clothing store e-commerce website built to demonstrate full stack development technologies. This project is under construction.",
         imageOne: "/images/mamas-joint.png",
