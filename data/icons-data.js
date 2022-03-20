@@ -74,27 +74,27 @@ export const library = [
 export const tools = [
     {
         id: 1,
-        name: "Git",
-        image: "/images/git.svg",
-    },
-    {
-        id: 2,
-        name: "GitHub",
-        image: "/images/github.svg",
-    },
-    {
-        id: 3,
-        name: "GitLab",
-        image: "/images/gitlab.svg",
-    },
-    {
-        id: 4,
         name: "Figma",
         image: "/images/figma.svg",
     },
     {
-        id: 5,
+        id: 2,
         name: "Framer Motion",
         image: "/images/framer-motion.png",
+    },
+    {
+        id: 3,
+        name: "Git",
+        image: "/images/git.svg",
+    },
+    {
+        id: 4,
+        name: "GitHub",
+        image: "/images/github.svg",
+    },
+    {
+        id: 5,
+        name: "GitLab",
+        image: "/images/gitlab.svg",
     },
 ];
