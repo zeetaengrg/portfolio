@@ -23,12 +23,12 @@ export const flexStyle = {
 
 export const boxStyle = {
     width: {
-        base: "275px",
-        md: "750px",
+        base: "17rem",
+        md: "47rem",
     },
     height: {
-        base: "150px",
-        md: "362px",
+        base: "9rem",
+        md: "23rem",
     },
     margin: {
         base: "0 auto",
@@ -50,12 +50,12 @@ export const boxStyle = {
 export const imgStyle = {
     objectFit: "cover",
     width: {
-        base: "275px",
-        md: "760px",
+        base: "17rem",
+        md: "47.5rem",
     },
     height: {
-        base: "150px",
-        md: "360px",
+        base: "9rem",
+        md: "23rem",
     },
     position: {
         base: "initial",
