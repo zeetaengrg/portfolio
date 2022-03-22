@@ -77,18 +77,18 @@ export const commonVariants = {
 export const blobOneStyle = {
   position: "absolute",
   top: {
-    md: "15rem",
+    md: "20rem",
     lg: "12rem",
   },
   left: {
-    md: "0rem",
+    md: "-5rem",
     lg: "-10rem",
   },
   width: {
     md: "50vw",
   },
   height: {
-    md: "50vh",
+    md: "40vh",
     lg: "100vh",
   },
   opacity: "0.15",
@@ -126,15 +126,13 @@ export const blobThreeStyle = {
   position: "absolute",
   top: {
     md: "15rem",
-    lg: "10rem",
   },
   right: {
     md: "15rem",
-    lg: "30rem",
+    lg: "25rem",
   },
   width: {
-    md: "15vw",
-    lg: "20vw",
+    md: "20vw",
   },
   height: {
     md: "20vh",
@@ -152,11 +150,11 @@ export const blobFourStyle = {
   top: "7rem",
   left: "10rem",
   width: {
-    md: "3vw",
-    lg: "5vw",
+    md: "5vw",
   },
   height: {
-    md: "10vw",
+    md: "5vh",
+    lg: "15vh",
   },
   opacity: "0.5",
   display: {
