@@ -61,7 +61,7 @@ const Projects = () => {
             </Box>
             <Grid placeContent="center" flex="1">
               <Box textAlign={{ base: "center", md: "left" }}>
-                <Heading as="h3" size="lg" fontSize="2rem" color="#3892f9">
+                <Heading as="h1" size="lg" fontSize="2rem" color="#3892f9">
                   {project.titleOne}
                 </Heading>
                 <Divider mb="0.5rem" />
@@ -86,8 +86,8 @@ const Projects = () => {
                 </Link>
               </Box>
               <Heading
-                as="h6"
-                size="sm"
+                as="h2"
+                size="md"
                 sx={techTextStyle}
                 textAlign={{ base: "center", md: "left" }}
               >
@@ -122,7 +122,7 @@ const Projects = () => {
           >
             <Grid placeContent="center" flex="1">
               <Box textAlign={{ base: "center", md: "left" }}>
-                <Heading as="h3" size="lg" fontSize="2rem" color="#3892f9">
+                <Heading as="h1" size="lg" fontSize="2rem" color="#3892f9">
                   {project.titleTwo}
                 </Heading>
                 <Divider mb="0.5rem" />
@@ -146,7 +146,7 @@ const Projects = () => {
                   <SourceBtn />
                 </Link>
               </Box>
-              <Heading as="h6" size="sm" sx={techTextStyle}>
+              <Heading as="h2" size="sm" sx={techTextStyle}>
                 Tech Stacks
               </Heading>
               <Flex sx={techFlexStyle}>
