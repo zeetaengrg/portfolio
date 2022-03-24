@@ -4,7 +4,7 @@ export default class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta name="keywords" content="Jitendra, Jitendra Gurung, zeetaen" />
           <meta
             name="google-site-verification"
