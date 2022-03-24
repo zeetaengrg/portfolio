@@ -62,11 +62,7 @@ const AboutMeText = () => {
         </Heading>
         {curriculums.map((curriculum) => (
           <List key={curriculum.id} m="0.5rem 0rem">
-            <ListItem
-              display="flex"
-              alignItems="start"
-              justifyContent="center"
-            >
+            <ListItem display="flex" alignItems="start" justifyContent="center">
               <ListIcon as={FaCheckCircle} />
               <Link
                 target="_blank"
