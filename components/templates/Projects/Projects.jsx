@@ -9,7 +9,7 @@ import {
   Box,
   Tooltip,
 } from "@chakra-ui/react";
-import { projects } from "../../../data/projects-data";
+import { projects } from "@data/projects-data";
 import { motion } from "framer-motion";
 import {
   Header,
@@ -17,7 +17,7 @@ import {
   SubHeader,
   DemoBtn,
   SourceBtn,
-} from "../../elements";
+} from "@components/elements";
 import {
   boxStyle,
   commonVariants,

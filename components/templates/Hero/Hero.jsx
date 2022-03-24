@@ -1,7 +1,7 @@
 import { Flex, Image, Text, Link, Box } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { DownloadBtn, HireMeBtn } from "../../elements";
+import { DownloadBtn, HireMeBtn } from "@components/elements";
 import {
   blobOneVariants,
   blobTwoVariants,

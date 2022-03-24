@@ -1,4 +1,8 @@
 import { TabList, Tabs, Tab, TabPanels, TabPanel, Box } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { BsBack } from "react-icons/bs";
+import { FaTools, FaDatabase } from "react-icons/fa";
+import { MdLanguage, MdDesignServices } from "react-icons/md";
 import {
   Header,
   LineDivider,
@@ -8,12 +12,8 @@ import {
   DatabaseTab,
   ToolsTab,
   LibraryTab,
-} from "../../elements";
+} from "@components/elements";
 import { tabList, tabStyle, iconStyle } from "./SkillsStyle";
-import { BsBack } from "react-icons/bs";
-import { FaTools, FaDatabase } from "react-icons/fa";
-import { MdLanguage, MdDesignServices } from "react-icons/md";
-import { motion } from "framer-motion";
 
 const MotionTabs = motion(Tabs);
 
