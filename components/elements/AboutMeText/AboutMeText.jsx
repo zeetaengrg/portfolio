@@ -14,7 +14,7 @@ import {
   specialLinkStyle,
 } from "./AboutMeTextStyles";
 import { FaCheckCircle } from "react-icons/fa";
-import { curriculums } from "../../../data/about-data";
+import { curriculums } from "@data/about-data";
 
 const MotionBox = motion(Box);
 
