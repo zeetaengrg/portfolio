@@ -1,6 +1,6 @@
 import { Image, Tooltip, Flex } from "@chakra-ui/react";
-import { library } from "../../../../data/icons-data";
-import { flexStyle, imageStyle } from "../TabsStyle";
+import { library } from "@data/icons-data";
+import { flexStyle } from "../TabsStyle";
 
 const Library = () => {
   return (

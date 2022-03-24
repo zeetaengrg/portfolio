@@ -1,6 +1,6 @@
 import { Image, Flex, Tooltip } from "@chakra-ui/react";
-import { database } from "../../../../data/icons-data";
-import { flexStyle, imageStyle } from "../TabsStyle";
+import { database } from "@data/icons-data";
+import { flexStyle } from "../TabsStyle";
 
 const DatabaseTab = () => {
   return (
