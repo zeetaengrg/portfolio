@@ -7,6 +7,10 @@ export default class Document extends NextDocument {
           <meta charset="utf-8" />
           <meta name="keywords" content="Jitendra, Jitendra Gurung, zeetaen" />
           <meta
+            name="google-site-verification"
+            content="WIFwiUnwtnHytBzpBU2ZyH8TpAhnruvOZJkRavlj94s"
+          />
+          <meta
             name="description"
             content="Portfolio Website of Jiten Gurung"
           />
