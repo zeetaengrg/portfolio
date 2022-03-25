@@ -72,6 +72,11 @@ export const projects = [
         name: "Sass",
         image: "/images/sass.svg",
       },
+      {
+        id: 3,
+        name: "Figma",
+        image: "/images/figma.svg",
+      },
     ],
     technologyTwo: [
       {
