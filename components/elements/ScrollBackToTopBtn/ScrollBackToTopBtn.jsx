@@ -11,7 +11,12 @@ const ScrollBackToTopBtn = () => {
   };
 
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      opacity: 0,
+      transition: "opacity 0.5s ease-in-out",
+    });
   };
 
   useEffect(() => {

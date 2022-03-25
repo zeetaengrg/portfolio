@@ -1,10 +1,10 @@
-import { btnStyle } from '../Btn/Btn';
+import { btnStyle } from "../Btn/Btn";
 
 export const btn = {
   ...btnStyle,
-  '&:hover': {
-    ...btnStyle._hover,
-    transform: "scale(1.1)"
+  "&:hover": {
+    transform: "scale(1.1)",
+    transition: "transform 0.3s ease-in-out",
   },
   borderRadius: "50%",
   fontSize: "1.7rem",
@@ -19,4 +19,6 @@ export const btn = {
     base: "1rem",
     md: "2rem",
   },
-}
+  opacity: "1",
+  transition: "opacity 0.5s ease-in-out",
+};
