@@ -151,7 +151,7 @@ const Hero = () => {
             <Box>
               <Flex
                 gap="2rem"
-                mt="2rem"
+                mt={{ base: "1rem", md: "2rem" }}
                 justifyContent={{ base: "center", md: "left" }}
               >
                 <Link href="/cv/Resume.pdf" download sx={linkStyle}>
