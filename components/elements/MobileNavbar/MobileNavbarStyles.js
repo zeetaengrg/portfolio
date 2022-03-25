@@ -9,9 +9,8 @@ export const menuStyle = {
   },
   _active: {
     backgroundColor: "none",
-    transform: "rotate(360deg)",
     opacity: "0",
-    transition: "all 0.3s",
+    transition: "all 0.25s",
   },
   _focus: "none",
   opacity: {
@@ -20,4 +19,4 @@ export const menuStyle = {
     lg: "0",
   },
   transition: "all 0.25s ease-in-out",
-}
+};
