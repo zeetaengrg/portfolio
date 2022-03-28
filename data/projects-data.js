@@ -46,6 +46,11 @@ export const projects = [
         name: "Framer Motion",
         image: "/images/framer-motion.png",
       },
+      {
+        id: 4,
+        name: "Figma",
+        image: "/images/figma.svg",
+      },
     ],
   },
   {
