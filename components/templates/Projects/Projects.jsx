@@ -59,7 +59,7 @@ const Projects = () => {
                 sx={imgStyle}
               />
             </Box>
-            <Grid placeContent="center" flex="1">
+            <Grid placeContent="center" width={{ base: "100%", md: "35%" }}>
               <Box textAlign={{ base: "center", md: "left" }}>
                 <Heading as="h1" size="lg" fontSize="2rem" color="#3892f9">
                   {project.titleOne}
