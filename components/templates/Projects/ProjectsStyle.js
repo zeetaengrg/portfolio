@@ -34,13 +34,16 @@ export const boxStyle = {
     base: "0 auto",
   },
   position: "relative",
-  flex: "2",
-  border: "1px solid rgba(165, 171, 189, 0.4)",
+  width: "65%",
+  border: {
+    base: "none",
+    md: "1px solid rgba(165, 171, 189, 0.4)",
+  },
   borderRadius: "0.5rem",
   transition: "border 0.25s linear",
   _hover: {
     border: {
-      base: "1px solid rgba(165, 171, 189, 0.4)",
+      base: "none",
       md: "none",
       lg: "none",
     },
@@ -60,6 +63,9 @@ export const imgStyle = {
   position: {
     base: "initial",
     md: "absolute",
+  },
+  margin: {
+    base: "0 auto",
   },
   top: {
     base: {
