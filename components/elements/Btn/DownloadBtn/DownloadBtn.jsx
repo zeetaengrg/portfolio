@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaCloudDownloadAlt } from "react-icons/fa";
@@ -23,6 +24,8 @@ const btnVariants = {
 };
 
 const DownloadBtn = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   const btn = {
     ...btnStyle,
     justifyContent: {
@@ -40,6 +43,13 @@ const DownloadBtn = () => {
         variants={btnVariants}
         initial="hidden"
         animate="visible"
+        isLoading={isLoading}
+        loadingText="Downloading"
+        spinnerPlacement="end"
+        onClick={() => {
+          setIsLoading(true);
+          setTimeout(() => setIsLoading(false), 1000);
+        }}
       >
         Download CV
       </MotionBtn>
