@@ -1,4 +1,3 @@
-import * as Yup from "yup";
 import { btnStyle } from "../../elements/Btn/Btn";
 
 export const commonVariants = {
