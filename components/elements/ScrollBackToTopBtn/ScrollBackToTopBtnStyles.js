@@ -13,11 +13,9 @@ export const btn = {
   zIndex: "1000",
   right: {
     base: "1rem",
-    md: "2rem",
   },
   bottom: {
     base: "1rem",
-    md: "2rem",
   },
   opacity: "1",
   transition: "opacity 0.5s ease-in-out",
