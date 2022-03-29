@@ -32,7 +32,7 @@ const Skills = () => {
   return (
     <Box>
       <Header heading="Tools And Technologies" id="skills" />
-      <LineDivider />
+      <LineDivider width={{ base: "70%", md: "50%", lg: "40%" }} />
       <SubHeader subHeading="Libraries, Frameworks and Tools" />
       <MotionTabs
         m={{ base: "1.5rem 0", md: "1.5rem 0" }}

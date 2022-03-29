@@ -35,8 +35,8 @@ const Projects = () => {
   return (
     <Box>
       <Header heading="Projects" id="projects" />
-      <LineDivider />
-      <SubHeader subHeading="My Recent Works" />
+      <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
+      <SubHeader subHeading="Recent Works" />
       {projects.map((project) => (
         <Box key={project.id}>
           <MotionFlex
@@ -120,7 +120,7 @@ const Projects = () => {
               type: "tween",
             }}
           >
-            <Grid placeContent="center" flex="1">
+            <Grid placeContent="center" width={{ base: "100%", md: "35%" }}>
               <Box textAlign={{ base: "center", md: "left" }}>
                 <Heading as="h1" size="lg" fontSize="2rem" color="#3892f9">
                   {project.titleTwo}

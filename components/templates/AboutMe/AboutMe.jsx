@@ -12,9 +12,9 @@ const AboutMe = () => {
   return (
     <Flex direction="column">
       <Header heading="About Me" id="aboutme" />
-      <LineDivider />
-      <SubHeader subHeading="My Introduction" />
-      <Box p={{ base: "1.5rem 3rem", md: "2rem 5rem", lg: "2rem 10rem" }}>
+      <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
+      <SubHeader subHeading="Introduction" />
+      <Box p={{ base: "1.5rem 3rem", md: "2rem 3rem", lg: "2rem 10rem" }}>
         <Flex direction="column" alignItems="center">
           <Flex gap={{ base: "0.5rem", md: "1rem" }}>
             <AboutMeWrapper />

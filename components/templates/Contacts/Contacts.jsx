@@ -15,7 +15,7 @@ const Contacts = () => {
       zIndex="999"
     >
       <Header heading="Get In Touch" id="contacts" />
-      <LineDivider />
+      <LineDivider width={{ base: "60%", md: "40%", lg: "25%" }} />
       <SubHeader subHeading="Let's Talk" />
       <Center>
         <MotionImage
