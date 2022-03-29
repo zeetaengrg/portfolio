@@ -12,11 +12,12 @@ export const commonVariants = {
 export const flexStyle = {
   margin: {
     base: "1.5rem 2rem",
-    md: "4rem 6rem",
+    md: "4rem 3rem",
+    lg: "4rem 5rem",
   },
   gap: {
     base: "1.5rem",
-    md: "1.8rem",
+    md: "2rem",
   },
   justifyContent: "center",
 };
