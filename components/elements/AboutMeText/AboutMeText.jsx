@@ -1,12 +1,4 @@
-import {
-  Link,
-  Image,
-  Heading,
-  List,
-  ListItem,
-  ListIcon,
-  Box,
-} from "@chakra-ui/react";
+import { Link, Heading, List, ListItem, ListIcon, Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import {
   commonVariants,
