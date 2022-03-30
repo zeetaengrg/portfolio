@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { CgMenuRound, CgCloseO } from "react-icons/cg";
 import { menuStyle } from "./MobileNavbarStyles";
 import MobileNavLinks from "../MobileNavLinks/MobileNavLinks";
