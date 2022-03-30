@@ -17,6 +17,4 @@ export const btn = {
   bottom: {
     base: "1rem",
   },
-  opacity: "1",
-  transition: "opacity 0.5s ease-in-out",
 };
