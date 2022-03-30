@@ -1,4 +1,16 @@
-import { VStack, FormLabel, Input, Textarea, Button } from "@chakra-ui/react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import {
+  Box,
+  Heading,
+  Text,
+  VStack,
+  FormLabel,
+  Input,
+  Textarea,
+  Button,
+  useToast,
+} from "@chakra-ui/react";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 import { commonVariants, inputStyle, btn } from "./ContactFormStyles";
@@ -6,12 +18,38 @@ import { commonVariants, inputStyle, btn } from "./ContactFormStyles";
 const MotionVStack = motion(VStack);
 
 const ContactForm = () => {
+  const formRef = useRef();
+  const toast = useToast();
+  const [isEmpty, setIsEmpty] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_mp496km",
+        "template_m3uh723",
+        formRef.current,
+        "QYs6XPIDZILbDUvfX"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setIsEmpty(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    setTimeout(() => {
+      e.target.reset();
+    }, 500);
+  };
+
   return (
     <>
-      <form
-        action="https://formsubmit.co/69c115d95dc7b2b56652acc2a86de33b"
-        method="POST"
-      >
+      <form ref={formRef} onSubmit={sendEmail}>
         <MotionVStack
           spacing={2}
           alignItems="flex-start"
