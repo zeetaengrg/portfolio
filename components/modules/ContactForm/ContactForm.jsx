@@ -28,23 +28,21 @@ const ContactForm = () => {
     emailjs
       .sendForm(
         "service_mp496km",
-        "template_m3uh723",
+        "template_y2jo2km",
         formRef.current,
         "QYs6XPIDZILbDUvfX"
       )
       .then(
         (result) => {
           console.log(result.text);
-          setIsEmpty(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
 
-    setTimeout(() => {
-      e.target.reset();
-    }, 500);
+    e.target.reset();
+    setIsEmpty(true);
   };
 
   return (
