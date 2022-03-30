@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Box, Button } from "@chakra-ui/react";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { btn } from "./ScrollBackToTopBtnStyles";
