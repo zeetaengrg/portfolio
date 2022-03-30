@@ -106,6 +106,40 @@ const ContactForm = () => {
             sx={btn}
             type="submit"
             rightIcon={<RiSendPlaneFill style={{ fontSize: "1.5rem" }} />}
+            onClick={() => {
+              toast({
+                render: () =>
+                  isEmpty ? (
+                    <Box
+                      color="#0b111e"
+                      p={3}
+                      bg="#a5abbd"
+                      borderRadius="0.4rem"
+                      textAlign="center"
+                    >
+                      <Heading as="h3" size="md">
+                        Please Fill Out the Form
+                      </Heading>
+                    </Box>
+                  ) : (
+                    <Box
+                      color="#0b111e"
+                      p={3}
+                      bg="#a5abbd"
+                      borderRadius="0.4rem"
+                      textAlign="center"
+                    >
+                      <Heading as="h3">Message Sent!!!</Heading>
+                      <Text fontSize="1rem">
+                        Thank You for contacting me. Your message has been sent
+                        successfully!
+                      </Text>
+                    </Box>
+                  ),
+                duration: 2500,
+                isClosable: true,
+              });
+            }}
           >
             Send
           </Button>
