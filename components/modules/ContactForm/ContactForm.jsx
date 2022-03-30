@@ -63,18 +63,6 @@ const ContactForm = () => {
             type: "tween",
           }}
         >
-          <input
-            type="hidden"
-            name="_next"
-            value="https://jitendragurung.com.np/thankyou"
-          />
-          <input type="hidden" name="_template" value="table" />
-          <input
-            type="hidden"
-            name="_autoresponse"
-            value="Thank you for reaching out. I will get back to you shortly!!!"
-          />
-          <input type="hidden" name="_subject" value="New submission!" />
           <FormLabel htmlFor="firstName" mb="0rem">
             First Name
           </FormLabel>
