@@ -17,19 +17,12 @@ import {
   linkStyle,
 } from "./HeroStyle";
 
-const MotionImage = motion(Image);
-
-const BlobMotionImage = motion(Image);
-
-const MotionText = motion(Text);
-
-const MotionIcon = motion(Box);
-
 const Hero = () => {
   return (
     <Box mt={{ base: "5rem", md: "0rem" }}>
       <Box>
-        <BlobMotionImage
+        <Image
+          as={motion.img}
           src="/images/blob1.svg"
           alt="blob"
           sx={blobOneStyle}
@@ -37,7 +30,8 @@ const Hero = () => {
           initial="start"
           animate="finish"
         />
-        <BlobMotionImage
+        <Image
+          as={motion.img}
           src="/images/blob2.svg"
           alt="blob"
           sx={blobTwoStyle}
@@ -45,7 +39,8 @@ const Hero = () => {
           initial="start"
           animate="finish"
         />
-        <BlobMotionImage
+        <Image
+          as={motion.img}
           src="/images/blob3.svg"
           alt="blob"
           sx={blobThreeStyle}
@@ -53,7 +48,8 @@ const Hero = () => {
           initial="start"
           animate="finish"
         />
-        <BlobMotionImage
+        <Image
+          as={motion.img}
           src="/images/blob4.png"
           alt="blob"
           sx={blobFourStyle}
@@ -64,7 +60,8 @@ const Hero = () => {
       </Box>
       <Flex sx={flexStyle}>
         <Box>
-          <MotionImage
+          <Image
+            as={motion.img}
             sx={imgStyle}
             src="/images/jiten.webp"
             alt="Jiten Image"
@@ -77,7 +74,8 @@ const Hero = () => {
         </Box>
         <Box>
           <Flex direction="column" textAlign={{ base: "center", md: "start" }}>
-            <MotionText
+            <Text
+              as={motion.p}
               casing="uppercase"
               fontSize={{ base: "1rem", md: "1.5rem" }}
               variants={commonVariants}
@@ -85,10 +83,11 @@ const Hero = () => {
               animate="visible"
             >
               Hi!
-            </MotionText>
+            </Text>
             <Box fontSize={{ base: "1.5rem", md: "2rem" }}>
               <Flex justifyContent={{ base: "center", md: "start" }}>
-                <MotionText
+                <Text
+                  as={motion.p}
                   fontWeight="bold"
                   casing="uppercase"
                   variants={commonVariants}
@@ -96,8 +95,9 @@ const Hero = () => {
                   animate="visible"
                 >
                   I&apos;m
-                </MotionText>
-                <MotionIcon
+                </Text>
+                <Box
+                  as={motion.div}
                   variants={commonVariants}
                   initial="hidden"
                   animate="visible"
@@ -108,8 +108,9 @@ const Hero = () => {
                       fontSize: "0.8rem",
                     }}
                   />
-                </MotionIcon>
-                <MotionText
+                </Box>
+                <Text
+                  as={motion.p}
                   casing="uppercase"
                   color="#fff"
                   fontSize={{ base: "3rem", md: "4rem" }}
@@ -120,8 +121,9 @@ const Hero = () => {
                   animate="visible"
                 >
                   Jiten
-                </MotionText>
-                <MotionIcon
+                </Text>
+                <Box
+                  as={motion.div}
                   variants={commonVariants}
                   initial="hidden"
                   animate="visible"
@@ -132,11 +134,12 @@ const Hero = () => {
                       fontSize: "0.8rem",
                     }}
                   />
-                </MotionIcon>
+                </Box>
               </Flex>
             </Box>
             <Box>
-              <MotionText
+              <Text
+                as={motion.p}
                 casing="uppercase"
                 fontSize={{ base: "2.5rem", md: "3rem" }}
                 fontWeight="bold"
@@ -146,7 +149,7 @@ const Hero = () => {
                 animate="visible"
               >
                 Front End Dev
-              </MotionText>
+              </Text>
             </Box>
             <Box>
               <Flex
