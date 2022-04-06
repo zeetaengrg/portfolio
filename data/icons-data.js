@@ -52,21 +52,16 @@ export const library = [
   },
   {
     id: 4,
-    name: "Bootstrap",
-    image: "/images/bootstrap.svg",
-  },
-  {
-    id: 5,
     name: "TailwindCSS",
     image: "/images/tailwindcss.svg",
   },
   {
-    id: 6,
+    id: 5,
     name: "Sass",
     image: "/images/sass.svg",
   },
   {
-    id: 7,
+    id: 6,
     name: "Styled Components",
     image: "/images/styled-components.svg",
   },
@@ -101,10 +96,5 @@ export const tools = [
     id: 6,
     name: "GitHub",
     image: "/images/github.svg",
-  },
-  {
-    id: 7,
-    name: "GitLab",
-    image: "/images/gitlab.svg",
   },
 ];
