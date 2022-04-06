@@ -1,7 +1,15 @@
 import { useState, useEffect } from "react";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, keyframes } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { btn } from "./ScrollBackToTopBtnStyles";
+
+const animationKeyframes = keyframes`
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; }
+`;
+
+const animation = `${animationKeyframes} 0.35s ease-in-out`;
 
 const ScrollBackToTopBtn = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -25,7 +33,12 @@ const ScrollBackToTopBtn = () => {
   return (
     <Box>
       {scrollPosition > 500 && (
-        <Button sx={btn} onClick={handleScrollToTop}>
+        <Button
+          as={motion.button}
+          animation={animation}
+          sx={btn}
+          onClick={handleScrollToTop}
+        >
           <FaArrowAltCircleUp />
         </Button>
       )}
