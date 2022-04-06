@@ -1,4 +1,4 @@
-import { Flex, Text, List, ListItem, ListIcon } from "@chakra-ui/react";
+import { Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import {
   wrapperList,
@@ -7,8 +7,6 @@ import {
   titleStyle,
   subTitleStyle,
 } from "./AboutMeWrapperStyle";
-
-const MotionListItem = motion(ListItem);
 
 const listItemVariants = {
   hidden: {
@@ -30,7 +28,8 @@ const AboutMeWrapper = () => {
   return (
     <List display="flex" gap="1rem">
       {wrapperList.map((wrapper) => (
-        <MotionListItem
+        <ListItem
+          as={motion.li}
           sx={listItemStyle}
           key={wrapper.id}
           variants={listItemVariants}
@@ -41,7 +40,7 @@ const AboutMeWrapper = () => {
           <ListIcon {...iconStyle}>{wrapper.icon}</ListIcon>
           <Text {...titleStyle}>{wrapper.title}</Text>
           <Text {...subTitleStyle}>{wrapper.subtitle}</Text>
-        </MotionListItem>
+        </ListItem>
       ))}
     </List>
   );
