@@ -21,7 +21,7 @@ const AboutMe = () => {
           </Flex>
           <AboutMeText />
           <Box>
-            <Link href="#contact" _hover={{ "&::after": { content: "none" } }}>
+            <Link href="#contacts" _hover={{ "&::after": { content: "none" } }}>
               <ContactMeBtn />
             </Link>
           </Box>
