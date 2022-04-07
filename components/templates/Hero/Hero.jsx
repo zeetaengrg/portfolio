@@ -19,7 +19,7 @@ import {
 
 const Hero = () => {
   return (
-    <Box mt={{ base: "5rem", md: "0rem" }}>
+    <Box mt={{ base: "2rem", md: "0rem" }}>
       <Box>
         <Image
           as={motion.img}
