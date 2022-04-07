@@ -1,4 +1,4 @@
-import { Loader } from "@components/elements";
+import { Loader } from "@components/layouts";
 import Head from "next/head";
 
 const LoaderPage = () => {
