@@ -1,18 +1,20 @@
+import { useState, useEffect } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-import Head from "next/head";
 import { theme } from "@styles/theme";
+import { Loader } from "@components/layouts";
 
 function MyApp({ Component, pageProps }) {
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(true);
+    }, 3000);
+  }, []);
+
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <meta
-          key="viewport"
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        />
-      </Head>
-      <Component {...pageProps} />
+      {!isLoading ? <Loader /> : <Component {...pageProps} />}
     </ChakraProvider>
   );
 }
