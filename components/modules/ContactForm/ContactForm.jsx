@@ -20,7 +20,7 @@ const MotionVStack = motion(VStack);
 const ContactForm = () => {
   const formRef = useRef();
   const toast = useToast();
-  const [isEmpty, setIsEmpty] = useState(false);
+  const [isEmpty, setIsEmpty] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -42,7 +42,7 @@ const ContactForm = () => {
       );
 
     e.target.reset();
-    setIsEmpty(true);
+    setIsEmpty(false);
   };
 
   return (
@@ -134,7 +134,7 @@ const ContactForm = () => {
                       </Text>
                     </Box>
                   ),
-                duration: 2500,
+                duration: 5000,
                 isClosable: true,
               });
             }}
