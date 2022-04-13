@@ -109,7 +109,7 @@ const ContactForm = () => {
                 render: () =>
                   isEmpty ? (
                     <Box
-                      color="#0b111e"
+                      color="red"
                       p={3}
                       bg="#a5abbd"
                       borderRadius="0.4rem"
@@ -121,7 +121,7 @@ const ContactForm = () => {
                     </Box>
                   ) : (
                     <Box
-                      color="#0b111e"
+                      color="green"
                       p={3}
                       bg="#a5abbd"
                       borderRadius="0.4rem"
