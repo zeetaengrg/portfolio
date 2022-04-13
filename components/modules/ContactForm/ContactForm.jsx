@@ -134,7 +134,7 @@ const ContactForm = () => {
                       </Text>
                     </Box>
                   ),
-                duration: 2500,
+                duration: 5000,
                 isClosable: true,
               });
             }}
