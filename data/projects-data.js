@@ -63,7 +63,7 @@ export const projects = [
     imageOne: "/images/mamas-joint.webp",
     demoLinkOne: "https://mamas-joint.vercel.app/",
     sourceLinkOne: "https://github.com/zeetaen1989/mamas-joint",
-    imageTwo: "/images/clothingstore.webp",
+    imageTwo: "/images/alpha-male.webp",
     demoLinkTwo: "#",
     sourceLinkTwo: "https://github.com/zeetaen1989/e-commerce-clothing-shop",
     technologyOne: [
