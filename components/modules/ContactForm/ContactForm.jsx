@@ -20,7 +20,7 @@ const MotionVStack = motion(VStack);
 const ContactForm = () => {
   const formRef = useRef();
   const toast = useToast();
-  // const [isEmpty, setIsEmpty] = useState();
+  // const [isEmpty, setIsEmpty] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -112,7 +112,7 @@ const ContactForm = () => {
                   //     color="#0b111e"
                   //     p={3}
                   //     bg="#a5abbd"
-                  //     borderRadius="0.4rem"
+                  //     borderRadius="1rem"
                   //     textAlign="center"
                   //   >
                   //     <Heading as="h3" size="md">
@@ -124,7 +124,7 @@ const ContactForm = () => {
                     color="#0b111e"
                     p={3}
                     bg="#a5abbd"
-                    borderRadius="0.4rem"
+                    borderRadius="1rem"
                     textAlign="center"
                   >
                     <Heading as="h3">Message Sent!!!</Heading>
