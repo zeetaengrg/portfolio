@@ -4,7 +4,7 @@ export const btn = {
   ...btnStyle,
   "&:hover": {
     transform: "scale(1.1)",
-    transition: "transform 0.3s ease-in-out",
+    transition: "transform 0.3s ease",
   },
   borderRadius: "50%",
   fontSize: "1.7rem",

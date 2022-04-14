@@ -10,7 +10,6 @@ export const menuStyle = {
   _active: {
     backgroundColor: "none",
     opacity: "0",
-    transition: "opacity 0.5s ease-in-out",
   },
   _focus: "none",
   opacity: {
