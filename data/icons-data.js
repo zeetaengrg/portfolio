@@ -47,23 +47,23 @@ export const library = [
   },
   {
     id: 3,
-    name: "Chakra-UI",
-    image: "/images/chakraui.svg",
-  },
-  {
-    id: 4,
-    name: "TailwindCSS",
-    image: "/images/tailwindcss.svg",
-  },
-  {
-    id: 5,
     name: "Sass",
     image: "/images/sass.svg",
   },
   {
-    id: 6,
+    id: 4,
     name: "Styled Components",
     image: "/images/styled-components.svg",
+  },
+  {
+    id: 5,
+    name: "Chakra-UI",
+    image: "/images/chakraui.svg",
+  },
+  {
+    id: 6,
+    name: "TailwindCSS",
+    image: "/images/tailwindcss.svg",
   },
 ];
 export const tools = [
@@ -84,16 +84,11 @@ export const tools = [
   },
   {
     id: 4,
-    name: "Postman",
-    image: "/images/postman.png",
-  },
-  {
-    id: 5,
     name: "Git",
     image: "/images/git.svg",
   },
   {
-    id: 6,
+    id: 5,
     name: "GitHub",
     image: "/images/github.svg",
   },
