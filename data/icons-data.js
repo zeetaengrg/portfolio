@@ -43,7 +43,7 @@ export const library = [
   {
     id: 2,
     name: "NextJS",
-    image: "/images/nextjs.png",
+    image: "/images/nextjs.svg",
   },
   {
     id: 3,

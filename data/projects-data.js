@@ -34,7 +34,7 @@ export const projects = [
       {
         id: 1,
         name: "NextJS",
-        image: "/images/nextjs.png",
+        image: "/images/nextjs.svg",
       },
       {
         id: 2,
@@ -70,7 +70,7 @@ export const projects = [
       {
         id: 1,
         name: "NextJS",
-        image: "/images/nextjs.png",
+        image: "/images/nextjs.svg",
       },
       {
         id: 2,
