@@ -1,6 +1,7 @@
 import NextLink from "next/link";
 import { Link, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { linkStyle } from "../LinkStyle";
 
 const MotionImage = motion(Image);
 
@@ -22,10 +23,6 @@ const imageVariants = {
 };
 
 const LogoImage = () => {
-  const linkStyle = {
-    _focus: { boxShadow: "none" },
-  };
-
   return (
     <NextLink href="/" passHref>
       <Link sx={linkStyle}>
