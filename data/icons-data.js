@@ -79,7 +79,7 @@ export const tools = [
   },
   {
     id: 3,
-    name: "Redux",
+    name: "Redux Toolkit",
     image: "/images/redux.svg",
   },
   {
