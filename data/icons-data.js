@@ -60,11 +60,6 @@ export const library = [
     name: "Chakra-UI",
     image: "/images/chakraui.svg",
   },
-  {
-    id: 6,
-    name: "TailwindCSS",
-    image: "/images/tailwindcss.svg",
-  },
 ];
 export const tools = [
   {
