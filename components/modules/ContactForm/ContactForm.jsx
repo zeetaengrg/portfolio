@@ -1,26 +1,16 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import { useRouter } from "next/router";
 import emailjs from "@emailjs/browser";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { motion } from "framer-motion";
-import {
-  Box,
-  Heading,
-  Text,
-  VStack,
-  FormLabel,
-  Input,
-  Textarea,
-  Button,
-  useToast,
-} from "@chakra-ui/react";
+import { VStack, FormLabel, Input, Textarea, Button } from "@chakra-ui/react";
 import { commonVariants, inputStyle, btn } from "./ContactFormStyles";
 
 const MotionVStack = motion(VStack);
 
 const ContactForm = () => {
   const formRef = useRef();
-  const toast = useToast();
-  // const [isEmpty, setIsEmpty] = useState(false);
+  const router = useRouter();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -42,7 +32,6 @@ const ContactForm = () => {
       );
 
     e.target.reset();
-    // setIsEmpty(true);
   };
 
   return (
@@ -104,41 +93,7 @@ const ContactForm = () => {
             sx={btn}
             type="submit"
             rightIcon={<RiSendPlaneFill style={{ fontSize: "1.5rem" }} />}
-            onClick={() => {
-              toast({
-                render: () => (
-                  // isEmpty ? (
-                  //   <Box
-                  //     color="#0b111e"
-                  //     p={3}
-                  //     bg="#a5abbd"
-                  //     borderRadius="1rem"
-                  //     textAlign="center"
-                  //   >
-                  //     <Heading as="h3" size="md">
-                  //       Please Fill Out the Form
-                  //     </Heading>
-                  //   </Box>
-                  // ) : (
-                  <Box
-                    color="#0b111e"
-                    p={3}
-                    bg="#a5abbd"
-                    borderRadius="1rem"
-                    textAlign="center"
-                  >
-                    <Heading as="h3">Message Sent!!!</Heading>
-                    <Text fontSize="1rem">
-                      Thank You for contacting me. Your message has been sent
-                      successfully!
-                    </Text>
-                  </Box>
-                ),
-                // ),
-                duration: 5000,
-                isClosable: true,
-              });
-            }}
+            onClick={() => router.push("/thankyou")}
           >
             Send
           </Button>
