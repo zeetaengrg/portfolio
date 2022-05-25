@@ -8,6 +8,9 @@ import {
   Link,
   Box,
   Tooltip,
+  GridItem,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
 import { projects } from "@data/projects-data";
 import { motion } from "framer-motion";
@@ -66,6 +69,25 @@ const Projects = () => {
                 </Heading>
                 <Divider mb="0.5rem" />
                 <Text>{project.descriptionOne}</Text>
+                <Box>
+                  <Text
+                    textAlign="center"
+                    textTransform="uppercase"
+                    fontWeight="bold"
+                    mt="0.5rem"
+                  >
+                    Skills Learned
+                  </Text>
+                  <Grid templateColumns="repeat(2, 1fr)" gap={1}>
+                    {project.skillsOne.map((skill) => (
+                      <GridItem key={skill}>
+                        <UnorderedList>
+                          <ListItem>{skill}</ListItem>
+                        </UnorderedList>
+                      </GridItem>
+                    ))}
+                  </Grid>
+                </Box>
               </Box>
               <Box sx={linkContainer}>
                 <Link
@@ -127,6 +149,25 @@ const Projects = () => {
                 </Heading>
                 <Divider mb="0.5rem" />
                 <Text>{project.descriptionTwo}</Text>
+                <Box>
+                  <Text
+                    textAlign="center"
+                    textTransform="uppercase"
+                    fontWeight="bold"
+                    mt="0.5rem"
+                  >
+                    Skills Learned
+                  </Text>
+                  <Grid templateColumns="repeat(2, 1fr)" gap={1}>
+                    {project.skillsTwo.map((skill) => (
+                      <GridItem key={skill}>
+                        <UnorderedList>
+                          <ListItem>{skill}</ListItem>
+                        </UnorderedList>
+                      </GridItem>
+                    ))}
+                  </Grid>
+                </Box>
               </Box>
               <Box sx={linkContainer}>
                 <Link
