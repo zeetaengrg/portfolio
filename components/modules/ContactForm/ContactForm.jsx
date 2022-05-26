@@ -39,7 +39,6 @@ const ContactForm = () => {
           console.log(error.text);
         }
       );
-
     e.target.reset();
   };
 
@@ -67,7 +66,7 @@ const ContactForm = () => {
             type="text"
             placeholder="Insert Your First Name..."
             id="firstName"
-            name="firstName"
+            name="submitForm"
             required
           />
           <FormLabel htmlFor="lastName">Last Name</FormLabel>
@@ -76,14 +75,14 @@ const ContactForm = () => {
             type="text"
             placeholder="Insert Your Last Name..."
             id="lastName"
-            name="lastName"
+            name="submitForm"
             required
           />
           <FormLabel htmlFor="email">Email Address</FormLabel>
           <Input
             sx={inputStyle}
             placeholder="Insert Your Email..."
-            name="email"
+            name="submitForm"
             id="email"
             type="email"
             required
@@ -92,7 +91,7 @@ const ContactForm = () => {
           <Textarea
             sx={inputStyle}
             placeholder="Insert Your Message..."
-            name="message"
+            name="submitForm"
             id="message"
             height="10rem"
             required
