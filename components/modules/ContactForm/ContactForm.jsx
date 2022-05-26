@@ -66,7 +66,7 @@ const ContactForm = () => {
             type="text"
             placeholder="Insert Your First Name..."
             id="firstName"
-            name="submitForm"
+            name="firstName"
             required
           />
           <FormLabel htmlFor="lastName">Last Name</FormLabel>
@@ -75,14 +75,14 @@ const ContactForm = () => {
             type="text"
             placeholder="Insert Your Last Name..."
             id="lastName"
-            name="submitForm"
+            name="lastName"
             required
           />
           <FormLabel htmlFor="email">Email Address</FormLabel>
           <Input
             sx={inputStyle}
             placeholder="Insert Your Email..."
-            name="submitForm"
+            name="email"
             id="email"
             type="email"
             required
@@ -91,7 +91,7 @@ const ContactForm = () => {
           <Textarea
             sx={inputStyle}
             placeholder="Insert Your Message..."
-            name="submitForm"
+            name="message"
             id="message"
             height="10rem"
             required
