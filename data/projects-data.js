@@ -91,7 +91,7 @@ export const projects = [
       "React Router",
       "Styled Components",
       "REST API with MongoDB",
-      "JWT Authentication",
+      "JWT Authorization",
       "Git",
     ],
     descriptionTwo:
