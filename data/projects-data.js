@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     titleOne: "Mama's Joint",
-    titleTwo: "Pizza Land",
+    titleTwo: "PizzaLand",
     descriptionOne:
       "A restaurant's landing page with responsive feature. Built from scratch with pixel perfect Figma design provided by AR Shakir.",
     skillsOne: [
@@ -26,7 +26,7 @@ export const projects = [
       "Redux Toolkit",
       "Redux Persist",
       "Axios",
-      "REST API with Node.js, Express.js, MongoDB",
+      "RESTful API",
       "API Testing with Postman",
       "PayPal Payment",
       "Git",
@@ -84,7 +84,7 @@ export const projects = [
   },
   {
     id: 2,
-    titleOne: "E-Commerce Website",
+    titleOne: "Alpha Male Apparels",
     titleTwo: "Portfolio Website",
     descriptionOne:
       "A clothing store e-commerce website built using MERN stack. Features like user authentication using JWT and admin panel dashboard for CRUD operations have been implemented.",
@@ -97,7 +97,7 @@ export const projects = [
       "Redux Toolkit",
       "Redux Persist",
       "Axios",
-      "REST API with Node.js, Express.js, MongoDB",
+      "RESTful API",
       "API Testing with Postman",
       "Stripe Payment",
       "Git",
