@@ -29,6 +29,7 @@ export const projects = [
       "REST API with MongoDB",
       "API Testing with Postman",
       "Mapbox",
+      "PayPal Payment",
       "Git",
     ],
     imageOne: "/images/mamas-joint.webp",
