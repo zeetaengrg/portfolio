@@ -78,13 +78,11 @@ const Projects = () => {
                   >
                     Skills Learned
                   </Text>
-                  <Grid templateColumns="repeat(2, 1fr)" gap={1}>
+                  <Grid templateColumns="repeat(2, 1fr)">
                     {project.skillsOne.map((skill) => (
-                      <GridItem key={skill}>
-                        <UnorderedList>
-                          <ListItem>{skill}</ListItem>
-                        </UnorderedList>
-                      </GridItem>
+                      <UnorderedList key={skill}>
+                        <ListItem>{skill}</ListItem>
+                      </UnorderedList>
                     ))}
                   </Grid>
                 </Box>
@@ -107,12 +105,7 @@ const Projects = () => {
                   <SourceBtn />
                 </Link>
               </Box>
-              <Heading
-                as="h2"
-                size="md"
-                sx={techTextStyle}
-                textAlign={{ base: "center", md: "left" }}
-              >
+              <Heading as="h2" size="md" sx={techTextStyle}>
                 Tech Stacks
               </Heading>
               <Flex sx={techFlexStyle}>
@@ -158,13 +151,11 @@ const Projects = () => {
                   >
                     Skills Learned
                   </Text>
-                  <Grid templateColumns="repeat(2, 1fr)" gap={1}>
+                  <Grid templateColumns="repeat(2, 1fr)">
                     {project.skillsTwo.map((skill) => (
-                      <GridItem key={skill}>
-                        <UnorderedList>
-                          <ListItem>{skill}</ListItem>
-                        </UnorderedList>
-                      </GridItem>
+                      <UnorderedList key={skill}>
+                        <ListItem>{skill}</ListItem>
+                      </UnorderedList>
                     ))}
                   </Grid>
                 </Box>
