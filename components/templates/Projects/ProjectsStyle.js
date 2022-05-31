@@ -26,11 +26,12 @@ export const boxStyle = {
   width: {
     base: "80%",
     md: "85%",
-    lg: "60%",
+    lg: "65%",
   },
   height: {
     base: "9rem",
     md: "20rem",
+    lg: "23rem",
   },
   margin: {
     base: "0 auto",
@@ -56,6 +57,7 @@ export const imgStyle = {
   height: {
     base: "9rem",
     md: "20rem",
+    lg: "23rem",
   },
   position: {
     base: "initial",
