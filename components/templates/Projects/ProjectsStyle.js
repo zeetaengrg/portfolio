@@ -12,7 +12,7 @@ export const commonVariants = {
 export const flexStyle = {
   margin: {
     base: "1.5rem 2rem",
-    md: "4rem 3rem",
+    md: "2rem 3rem",
     lg: "4rem 5rem",
   },
   gap: {
@@ -24,18 +24,18 @@ export const flexStyle = {
 
 export const boxStyle = {
   width: {
-    base: "17rem",
-    md: "47rem",
+    base: "80%",
+    md: "85%",
+    lg: "60%",
   },
   height: {
     base: "9rem",
-    md: "23rem",
+    md: "20rem",
   },
   margin: {
     base: "0 auto",
   },
   position: "relative",
-  width: "65%",
   border: {
     base: "none",
     md: "1px solid rgba(165, 171, 189, 0.4)",
@@ -53,13 +53,9 @@ export const boxStyle = {
 
 export const imgStyle = {
   objectFit: "cover",
-  width: {
-    base: "17rem",
-    md: "47.5rem",
-  },
   height: {
     base: "9rem",
-    md: "23rem",
+    md: "20rem",
   },
   position: {
     base: "initial",
@@ -124,6 +120,7 @@ export const techTextStyle = {
   textAlign: {
     base: "center",
     md: "left",
+    lg: "left",
   },
 };
 
