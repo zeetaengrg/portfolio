@@ -130,7 +130,7 @@ export const techTextStyle = {
 export const techFlexStyle = {
   flexWrap: "wrap",
   marginTop: "0.5rem",
-  gap: "2rem",
+  gap: "1rem",
   justifyContent: {
     base: "center",
     md: "left",
