@@ -8,7 +8,6 @@ import {
   Link,
   Box,
   Tooltip,
-  GridItem,
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
@@ -44,7 +43,7 @@ const Projects = () => {
         <Box key={project.id}>
           <MotionFlex
             sx={flexStyle}
-            direction={{ base: "column", md: "row" }}
+            direction={{ base: "column", md: "column", lg: "row" }}
             variants={commonVariants}
             initial="hidden"
             whileInView="visible"
@@ -62,23 +61,44 @@ const Projects = () => {
                 sx={imgStyle}
               />
             </Box>
-            <Grid placeContent="center" width={{ base: "100%", md: "35%" }}>
-              <Box textAlign={{ base: "center", md: "left" }}>
-                <Heading as="h1" size="lg" fontSize="2rem" color="#3892f9">
+            <Grid
+              placeItems={{ base: "center", md: "left", lg: "normal" }}
+              width={{ base: "100%", md: "100%", lg: "35%" }}
+            >
+              <Box>
+                <Heading
+                  as="h1"
+                  size="lg"
+                  textTransform="uppercase"
+                  fontSize="2rem"
+                  color="#3892f9"
+                  textAlign={{ base: "center", md: "center", lg: "left" }}
+                >
                   {project.titleOne}
                 </Heading>
-                <Divider mb="0.5rem" />
-                <Text>{project.descriptionOne}</Text>
+                <Divider
+                  margin={{ base: "0.5rem auto", md: "0.5rem auto" }}
+                  width={{ base: "45%", md: "45%", lg: "100%" }}
+                />
+                <Text textAlign={{ base: "center", md: "center", lg: "left" }}>
+                  {project.descriptionOne}
+                </Text>
                 <Box>
-                  <Text
-                    textAlign="center"
+                  <Heading
+                    as="h2"
+                    size="sm"
                     textTransform="uppercase"
                     fontWeight="bold"
-                    mt="0.5rem"
+                    mt="1rem"
+                    color="#ecb7d4"
+                    textAlign={{ base: "center", md: "center", lg: "left" }}
                   >
                     Skills Learned
-                  </Text>
-                  <Grid templateColumns="repeat(2, 1fr)">
+                  </Heading>
+                  <Grid
+                    templateColumns="repeat(2, 1fr)"
+                    padding={{ base: "0rem 1rem", md: "0rem 5rem", lg: "0rem" }}
+                  >
                     {project.skillsOne.map((skill) => (
                       <UnorderedList key={skill}>
                         <ListItem>{skill}</ListItem>
@@ -105,7 +125,7 @@ const Projects = () => {
                   <SourceBtn />
                 </Link>
               </Box>
-              <Heading as="h2" size="md" sx={techTextStyle}>
+              <Heading as="h2" size="sm" sx={techTextStyle}>
                 Tech Stacks
               </Heading>
               <Flex sx={techFlexStyle}>
@@ -124,7 +144,11 @@ const Projects = () => {
           </MotionFlex>
           <MotionFlex
             sx={flexStyle}
-            direction={{ base: "column-reverse", md: "row" }}
+            direction={{
+              base: "column-reverse",
+              md: "column-reverse",
+              lg: "row",
+            }}
             variants={commonVariants}
             initial="hidden"
             whileInView="visible"
@@ -135,23 +159,44 @@ const Projects = () => {
               type: "tween",
             }}
           >
-            <Grid placeContent="center" width={{ base: "100%", md: "35%" }}>
-              <Box textAlign={{ base: "center", md: "left" }}>
-                <Heading as="h1" size="lg" fontSize="2rem" color="#3892f9">
+            <Grid
+              placeItems={{ base: "center", md: "center", lg: "normal" }}
+              width={{ base: "100%", md: "100%", lg: "35%" }}
+            >
+              <Box>
+                <Heading
+                  as="h1"
+                  size="lg"
+                  textTransform="uppercase"
+                  fontSize="2rem"
+                  color="#3892f9"
+                  textAlign={{ base: "center", md: "center", lg: "left" }}
+                >
                   {project.titleTwo}
                 </Heading>
-                <Divider mb="0.5rem" />
-                <Text>{project.descriptionTwo}</Text>
+                <Divider
+                  margin={{ base: "0.5rem auto", md: "0.5rem auto" }}
+                  width={{ base: "45%", md: "45%", lg: "100%" }}
+                />
+                <Text textAlign={{ base: "center", md: "center", lg: "left" }}>
+                  {project.descriptionTwo}
+                </Text>
                 <Box>
-                  <Text
-                    textAlign="center"
+                  <Heading
+                    as="h2"
+                    size="sm"
                     textTransform="uppercase"
                     fontWeight="bold"
-                    mt="0.5rem"
+                    mt="1rem"
+                    color="#ecb7d4"
+                    textAlign={{ base: "center", md: "center", lg: "left" }}
                   >
                     Skills Learned
-                  </Text>
-                  <Grid templateColumns="repeat(2, 1fr)">
+                  </Heading>
+                  <Grid
+                    templateColumns="repeat(2, 1fr)"
+                    padding={{ base: "0rem 1rem", md: "0rem 5rem", lg: "0rem" }}
+                  >
                     {project.skillsTwo.map((skill) => (
                       <UnorderedList key={skill}>
                         <ListItem>{skill}</ListItem>
