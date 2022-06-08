@@ -33,10 +33,10 @@ export const projects = [
     ],
     imageOne: "/images/mamas-joint.webp",
     demoLinkOne: "https://mamas-joint.vercel.app/",
-    sourceLinkOne: "https://github.com/zeetaen1989/mamas-joint",
+    sourceLinkOne: "https://github.com/zeetaengrg/mamas-joint",
     imageTwo: "/images/pizzaland.png",
     demoLinkTwo: "#",
-    sourceLinkTwo: "https://github.com/zeetaen1989/pizza-delivery",
+    sourceLinkTwo: "https://github.com/zeetaengrg/pizza-delivery",
     technologyOne: [
       {
         id: 1,
@@ -114,10 +114,10 @@ export const projects = [
     ],
     imageOne: "/images/alpha-male.webp",
     demoLinkOne: "#",
-    sourceLinkOne: "https://github.com/zeetaen1989/e-commerce-clothing-shop",
+    sourceLinkOne: "https://github.com/zeetaengrg/e-commerce-clothing-shop",
     imageTwo: "/images/portfolio.webp",
     demoLinkTwo: "https://jitendragurung.com.np/",
-    sourceLinkTwo: "https://github.com/zeetaen1989/portfolio",
+    sourceLinkTwo: "https://github.com/zeetaengrg/portfolio",
     technologyOne: [
       {
         id: 1,
