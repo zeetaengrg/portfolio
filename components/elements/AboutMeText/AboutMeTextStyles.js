@@ -17,21 +17,19 @@ export const linkStyle = {
   _active: { outline: "none" },
   textTransform: "none",
   fontWeight: "normal",
-  fontSize: {
-    base: "1rem",
-    md: "1.2rem",
-  },
+  fontSize: "1rem",
 };
 
 export const specialLinkStyle = {
   _hover: {
     "&::after": { content: "none" },
+    fontSize: "1rem",
   },
   _focus: { outline: "none" },
   _active: { outline: "none" },
   textTransform: "none",
   fontFamily: "inherit",
-  fontSize: { base: "1rem", md: "1.2rem" },
+  fontSize: "1rem",
   fontWeight: "normal",
-  textDecoration: "underline",
+  color: "#3892f9",
 };
