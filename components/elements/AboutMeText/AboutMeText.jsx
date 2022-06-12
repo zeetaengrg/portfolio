@@ -14,7 +14,6 @@ const AboutMeText = () => {
   return (
     <MotionBox
       p={{ base: "1.5rem 1rem", md: "1.5rem 5rem" }}
-      fontSize={{ base: "1.1rem", md: "1.2rem" }}
       textAlign="center"
       variants={commonVariants}
       initial="hidden"
@@ -33,7 +32,6 @@ const AboutMeText = () => {
         target="_blank"
         rel="noreferrer noopener nofollow"
         sx={linkStyle}
-        fontSize={{ base: "1.1rem", md: "1.5rem" }}
       >
         🇳🇵
       </Link>{" "}
@@ -48,7 +46,7 @@ const AboutMeText = () => {
       web technologies seriously.
       <br />
       <br />
-      <Heading as="h3" fontSize={{ base: "1.2rem", md: "1.5rem" }}>
+      <Heading as="h3" size="md">
         Curriculums:
       </Heading>
       {curriculums.map((curriculum) => (
@@ -99,9 +97,9 @@ const AboutMeText = () => {
         rel="noreferrer noopener nofollow"
         target="_blank"
       >
-        Nepal Telecommunication Authority
+        Nepal Telecommunication Authority(NTA){" "}
       </Link>
-      (NTA) for building Class Routine Management System.
+      for building Class Routine Management System.
       <br />
       <br />
       Right now I am upskilling myself by learning ReactJS and NextJS and have
