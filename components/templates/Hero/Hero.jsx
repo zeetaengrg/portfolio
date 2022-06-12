@@ -3,61 +3,21 @@ import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { DownloadBtn, HireMeBtn } from "@components/elements";
 import {
-  blobOneVariants,
-  blobTwoVariants,
-  blobThreeVariants,
-  blobFourVariants,
   commonVariants,
-  blobOneStyle,
-  blobTwoStyle,
-  blobThreeStyle,
-  blobFourStyle,
   flexStyle,
   imgStyle,
   linkStyle,
+  heroImgStyle,
 } from "./HeroStyle";
 
 const Hero = () => {
   return (
     <Box mt={{ base: "2rem", md: "0rem" }}>
-      <Box>
-        <Image
-          as={motion.img}
-          src="/images/blob1.svg"
-          alt="blob"
-          sx={blobOneStyle}
-          variants={blobOneVariants}
-          initial="start"
-          animate="finish"
-        />
-        <Image
-          as={motion.img}
-          src="/images/blob2.svg"
-          alt="blob"
-          sx={blobTwoStyle}
-          variants={blobTwoVariants}
-          initial="start"
-          animate="finish"
-        />
-        <Image
-          as={motion.img}
-          src="/images/blob3.svg"
-          alt="blob"
-          sx={blobThreeStyle}
-          variants={blobThreeVariants}
-          initial="start"
-          animate="finish"
-        />
-        <Image
-          as={motion.img}
-          src="/images/blob4.png"
-          alt="blob"
-          sx={blobFourStyle}
-          variants={blobFourVariants}
-          initial="start"
-          animate="finish"
-        />
-      </Box>
+      <Image
+        src="/images/hero-bg.svg"
+        alt="hero-background"
+        sx={heroImgStyle}
+      />
       <Flex sx={flexStyle}>
         <Box>
           <Image
