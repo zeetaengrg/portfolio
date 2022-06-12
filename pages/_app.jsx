@@ -1,22 +1,42 @@
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "@styles/theme";
-import { Loader } from "@components/layouts";
+import { LoadingAnimation } from "@components/elements";
 
-function MyApp({ Component, pageProps }) {
-  const [isLoading, setIsLoading] = useState(false);
+const Loader = () => {
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(true);
-    }, 3000);
-  }, []);
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
+    const handleComplete = (url) =>
+      url === router.asPath &&
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
 
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  }, [router]);
+
+  return loading && <LoadingAnimation />;
+};
+
+const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
-      {!isLoading ? <Loader /> : <Component {...pageProps} />}
+      <Loader />
+      <Component {...pageProps} />
     </ChakraProvider>
   );
-}
+};
 
 export default MyApp;
