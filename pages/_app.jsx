@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "@styles/theme";
 import { LoadingAnimation } from "@components/elements";
+import ThankYouPage from "./thankyou";
 
 const Loader = () => {
   const router = useRouter();
@@ -31,10 +32,18 @@ const Loader = () => {
 };
 
 const MyApp = ({ Component, pageProps }) => {
+  const router = useRouter();
+
   return (
     <ChakraProvider theme={theme}>
-      <Loader />
-      <Component {...pageProps} />
+      {router.asPath === "/thankyou" ? (
+        <ThankYouPage />
+      ) : (
+        <>
+          <Loader />
+          <Component {...pageProps} />
+        </>
+      )}
     </ChakraProvider>
   );
 };
