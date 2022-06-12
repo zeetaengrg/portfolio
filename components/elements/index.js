@@ -18,3 +18,4 @@ export { default as DatabaseTab } from "./Tab/DatabaseTab/DatabaseTab";
 export { default as LanguagesTab } from "./Tab/LanguagesTab/LanguagesTab";
 export { default as ToolsTab } from "./Tab/ToolsTab/ToolsTab";
 export { default as LibraryTab } from "./Tab/LibraryTab/LibraryTab";
+export { default as LoadingAnimation } from "./LoadingAnimation/LoadingAnimation";
