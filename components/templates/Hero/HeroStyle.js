@@ -1,9 +1,17 @@
 export const heroImgStyle = {
   position: "absolute",
   opacity: "0.3",
-  height: "89vh",
+  height: {
+    base: "50vh",
+    md: "60vh",
+    lg: "100vh",
+  },
   width: "100%",
-  objectFit: "cover",
+  objectFit: {
+    base: "cover",
+    md: "contain",
+    lg: "cover",
+  },
 };
 
 export const commonVariants = {
@@ -34,11 +42,12 @@ export const flexStyle = {
   },
   gap: {
     base: "1rem",
-    md: "4rem",
+    md: "2rem",
   },
   flexDirection: {
     base: "column",
-    md: "row",
+    md: "column",
+    lg: "row",
   },
 };
 
