@@ -23,7 +23,7 @@ const Hero = () => {
           <Image
             as={motion.img}
             sx={imgStyle}
-            src="/images/jiten.webp"
+            src="/images/profile-pic.png"
             alt="Jiten Image"
             variants={commonVariants}
             initial="hidden"
@@ -33,7 +33,10 @@ const Hero = () => {
           />
         </Box>
         <Box>
-          <Flex direction="column" textAlign={{ base: "center", md: "start" }}>
+          <Flex
+            direction="column"
+            textAlign={{ base: "center", md: "center", lg: "start" }}
+          >
             <Text
               as={motion.p}
               casing="uppercase"
@@ -45,7 +48,9 @@ const Hero = () => {
               Hi!
             </Text>
             <Box fontSize={{ base: "1.5rem", md: "2rem" }}>
-              <Flex justifyContent={{ base: "center", md: "start" }}>
+              <Flex
+                justifyContent={{ base: "center", md: "center", lg: "start" }}
+              >
                 <Text
                   as={motion.p}
                   fontWeight="bold"
@@ -110,12 +115,25 @@ const Hero = () => {
               >
                 Front End Dev
               </Text>
+              <Text
+                as={motion.p}
+                variants={commonVariants}
+                initial="hidden"
+                animate="visible"
+                mt="0.5rem"
+                p={{ base: "0rem 2rem", md: "0rem 7rem", lg: "0rem" }}
+                width={{ lg: "34rem" }}
+              >
+                An aspiring front end web developer with a dignified passion for
+                creating beautiful and functional UI with modest designing
+                experience.
+              </Text>
             </Box>
             <Box>
               <Flex
-                gap="2rem"
-                mt={{ base: "1rem", md: "2rem" }}
-                justifyContent={{ base: "center", md: "left" }}
+                gap="1.5rem"
+                mt="1rem"
+                justifyContent={{ base: "center", md: "center", lg: "start" }}
               >
                 <Link href="/cv/Resume.pdf" download sx={linkStyle}>
                   <DownloadBtn />
