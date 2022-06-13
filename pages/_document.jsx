@@ -5,7 +5,10 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
-          <meta name="keywords" content="Jitendra, Jitendra Gurung, zeetaen" />
+          <meta
+            name="keywords"
+            content="Jitendra, Jitendra Gurung, zeetaen, jitendra gurung, jitendra"
+          />
           <meta
             name="google-site-verification"
             content="WIFwiUnwtnHytBzpBU2ZyH8TpAhnruvOZJkRavlj94s"
