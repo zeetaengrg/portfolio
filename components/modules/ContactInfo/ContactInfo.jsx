@@ -3,11 +3,11 @@ import { ImLocation } from "react-icons/im";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { linkStyle } from "@components/elements";
 import {
   commonVariants,
   links,
   iconStyle,
+  mailStyle,
   textStyle,
   flexStyle,
   socialLinkStyle,
@@ -51,7 +51,7 @@ const ContactInfo = () => {
               </Flex>
               <Flex sx={flexStyle}>
                 <HiMail style={iconStyle} />
-                <Link href="mailto:zeetaen.gurung@gmail.com" sx={linkStyle}>
+                <Link href="mailto:zeetaen.gurung@gmail.com" sx={mailStyle}>
                   <Text sx={textStyle}>zeetaen.gurung@gmail.com</Text>
                 </Link>
               </Flex>
