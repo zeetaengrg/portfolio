@@ -31,7 +31,7 @@ export const boxStyle = {
   height: {
     base: "9rem",
     md: "20rem",
-    lg: "23rem",
+    lg: "23.1rem",
   },
   margin: {
     base: "0 auto",
@@ -39,17 +39,10 @@ export const boxStyle = {
   position: "relative",
   border: {
     base: "none",
-    md: "1px solid rgba(165, 171, 189, 0.4)",
+    md: "1px solid rgba(165, 171, 189, 0.5)",
   },
   borderRadius: "0.5rem",
   transition: "border 0.25s linear",
-  _hover: {
-    border: {
-      base: "none",
-      md: "none",
-      lg: "none",
-    },
-  },
 };
 
 export const imgStyle = {
