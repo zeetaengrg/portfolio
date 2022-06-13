@@ -31,7 +31,7 @@ export const boxStyle = {
   height: {
     base: "9rem",
     md: "20rem",
-    lg: "23.1rem",
+    lg: "23.12rem",
   },
   margin: {
     base: "0 auto",
