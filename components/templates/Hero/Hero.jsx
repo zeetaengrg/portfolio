@@ -5,7 +5,6 @@ import { DownloadBtn, HireMeBtn } from "@components/elements";
 import {
   commonVariants,
   flexStyle,
-  imgStyle,
   linkStyle,
   heroImgStyle,
 } from "./HeroStyle";
@@ -22,7 +21,6 @@ const Hero = () => {
         <Box>
           <Image
             as={motion.img}
-            sx={imgStyle}
             src="/images/profile-pic.png"
             alt="Jiten Image"
             variants={commonVariants}
@@ -122,7 +120,7 @@ const Hero = () => {
                 animate="visible"
                 mt="0.5rem"
                 p={{ base: "0rem 2rem", md: "0rem 7rem", lg: "0rem" }}
-                width={{ lg: "34rem" }}
+                width={{ lg: "30rem" }}
               >
                 An aspiring front end web developer with a dignified passion for
                 creating beautiful and functional UI with modest designing
