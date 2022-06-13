@@ -15,6 +15,13 @@ const Layout = () => {
     <>
       <Head>
         <title>Jiten Gurung | Portfolio Website</title>
+        <meta
+          name="keywords"
+          content="Jitendra, Jitendra Gurung, zeetaen, jitendra gurung, jitendra"
+        />
+        <meta name="description" content="Portfolio Website of Jiten Gurung" />
+        <meta name="author" content="Jitendra Gurung" />
+        <meta name="copyright" content="Jitendra Gurung" />
       </Head>
       <Navbar />
       <ScrollBackToTopBtn />
