@@ -28,8 +28,16 @@ export const iconStyle = {
   fontSize: "2rem",
 };
 
+export const mailStyle = {
+  _hover: {
+    "&::after": { content: "none" },
+    textDecoration: "none",
+    color: "#a5abbd",
+  },
+};
+
 export const textStyle = {
-  fontSize: "1.2rem",
+  fontSize: "1.1rem",
   textTransform: "none",
 };
 
