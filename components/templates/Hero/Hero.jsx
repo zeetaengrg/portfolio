@@ -1,7 +1,12 @@
 import { Flex, Image, Text, Link, Box } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { DownloadBtn, HireMeBtn } from "@components/elements";
+import {
+  DownloadBtn,
+  HireMeBtn,
+  SidebarMailLink,
+  SidebarSocialIcons,
+} from "@components/elements";
 import {
   commonVariants,
   flexStyle,
@@ -17,6 +22,7 @@ const Hero = () => {
         alt="hero-background"
         sx={heroImgStyle}
       />
+      <SidebarSocialIcons />
       <Flex sx={flexStyle}>
         <Box>
           <Image
@@ -144,6 +150,7 @@ const Hero = () => {
           </Flex>
         </Box>
       </Flex>
+      <SidebarMailLink />
     </Box>
   );
 };
