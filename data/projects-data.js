@@ -115,7 +115,7 @@ export const projects = [
     imageOne: "/images/alpha-male.webp",
     demoLinkOne: "#",
     sourceLinkOne: "https://github.com/zeetaengrg/e-commerce-clothing-shop",
-    imageTwo: "/images/portfolio.webp",
+    imageTwo: "/images/portfolio.png",
     demoLinkTwo: "https://jitendragurung.com.np/",
     sourceLinkTwo: "https://github.com/zeetaengrg/portfolio",
     technologyOne: [
