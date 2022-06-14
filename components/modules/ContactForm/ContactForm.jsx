@@ -58,24 +58,15 @@ const ContactForm = () => {
             type: "tween",
           }}
         >
-          <FormLabel htmlFor="firstName" mb="0rem">
-            First Name
+          <FormLabel htmlFor="fullName" mb="0rem">
+            Full Name
           </FormLabel>
           <Input
             sx={inputStyle}
             type="text"
-            placeholder="Insert Your First Name..."
-            id="firstName"
-            name="firstName"
-            required
-          />
-          <FormLabel htmlFor="lastName">Last Name</FormLabel>
-          <Input
-            sx={inputStyle}
-            type="text"
-            placeholder="Insert Your Last Name..."
-            id="lastName"
-            name="lastName"
+            placeholder="Insert Your Full Name"
+            id="fullName"
+            name="fullName"
             required
           />
           <FormLabel htmlFor="email">Email Address</FormLabel>
@@ -85,6 +76,15 @@ const ContactForm = () => {
             name="email"
             id="email"
             type="email"
+            required
+          />
+          <FormLabel htmlFor="subject">Subject</FormLabel>
+          <Input
+            sx={inputStyle}
+            placeholder="Insert Your Subject..."
+            name="subject"
+            id="subject"
+            type="text"
             required
           />
           <FormLabel htmlFor="message">Message</FormLabel>
