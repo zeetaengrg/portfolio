@@ -9,6 +9,34 @@ export const commonVariants = {
   },
 };
 
+export const boxVariants = {
+  start: {
+    transition: {
+      staggerChildren: 0.4,
+    },
+  },
+  end: {
+    transition: {
+      staggerChildren: 0.4,
+    },
+  },
+};
+
+export const arrowVariants = {
+  start: {
+    opacity: 0,
+  },
+  end: {
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
+
 export const iconStyle = {
   fontSize: "1.5rem",
   cursor: "pointer",
