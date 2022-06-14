@@ -1,7 +1,5 @@
 export { default as AboutMeText } from "./AboutMeText/AboutMeText";
 export { default as AboutMeWrapper } from "./AboutMeWrapper/AboutMeWrapper";
-export { default as DemoBtn } from "./Btn/DemoBtn/DemoBtn";
-export { default as SourceBtn } from "./Btn/SourceBtn/SourceBtn";
 export { default as ContactMeBtn } from "./Btn/ContactMeBtn/ContactMeBtn";
 export { default as DownloadBtn } from "./Btn/DownloadBtn/DownloadBtn";
 export { default as GoBackBtn } from "./Btn/GoBackBtn/GoBackBtn";
