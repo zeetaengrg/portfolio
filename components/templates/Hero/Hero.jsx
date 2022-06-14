@@ -16,15 +16,33 @@ import {
 
 const Hero = () => {
   return (
-    <Box mt={{ base: "2rem", md: "0rem" }}>
+    <Box
+      as="section"
+      height={{ md: "80vh" }}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+    >
       <Image
         src="/images/hero-bg.svg"
         alt="hero-background"
         sx={heroImgStyle}
       />
-      <SidebarSocialIcons />
+      <Box
+        position="fixed"
+        top="50%"
+        left="-3rem"
+        transform="translateY(-50%)"
+        zIndex="15"
+        display={{ base: "none", md: "block" }}
+        transition="all 0.3s ease"
+        _hover={{ left: "0rem" }}
+      >
+        <SidebarSocialIcons />
+      </Box>
       <Flex sx={flexStyle}>
-        <Box>
+        <Box as="figure">
           <Image
             as={motion.img}
             src="/images/profile-pic.png"
@@ -150,7 +168,18 @@ const Hero = () => {
           </Flex>
         </Box>
       </Flex>
-      <SidebarMailLink />
+      <Box
+        position="fixed"
+        top="50%"
+        right="-1.8rem"
+        transform="translateY(-50%)"
+        zIndex="15"
+        display={{ base: "none", md: "block" }}
+        transition="all 0.3s ease"
+        _hover={{ right: "0rem" }}
+      >
+        <SidebarMailLink />
+      </Box>
     </Box>
   );
 };
