@@ -10,8 +10,8 @@ import {
 
 const AboutMe = () => {
   return (
-    <Flex direction="column">
-      <Header heading="About Me" id="aboutme" />
+    <Flex direction="column" id="aboutme">
+      <Header heading="About Me" />
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Introduction" />
       <Box p={{ base: "1.5rem 3rem", md: "2rem 3rem", lg: "2rem 10rem" }}>
