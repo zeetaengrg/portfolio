@@ -136,21 +136,16 @@ export const projects = [
       },
       {
         id: 4,
-        name: "NodeJS",
-        image: "/images/nodejs.svg",
-      },
-      {
-        id: 5,
         name: "ExpressJS",
         image: "/images/expressjs.svg",
       },
       {
-        id: 6,
+        id: 5,
         name: "MongoDB",
         image: "/images/mongodb.svg",
       },
       {
-        id: 7,
+        id: 6,
         name: "Postman",
         image: "/images/postman.png",
       },
