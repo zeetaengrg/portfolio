@@ -10,11 +10,12 @@ const Contacts = () => {
   return (
     <Box
       position="relative"
-      mb="4rem"
+      mb={{ base: "0rem", lg: "4rem" }}
       mt={{ base: "3rem", md: "6rem" }}
       zIndex="10"
+      id="contacts"
     >
-      <Header heading="Get In Touch" id="contacts" />
+      <Header heading="Get In Touch" />
       <LineDivider width={{ base: "60%", md: "40%", lg: "25%" }} />
       <SubHeader subHeading="Let's Talk" />
       <Center>
@@ -30,7 +31,7 @@ const Contacts = () => {
       </Center>
       <Flex sx={flexStyle}>
         <ContactForm />
-        {/* <ContactInfo /> */}
+        <ContactInfo />
       </Flex>
     </Box>
   );
