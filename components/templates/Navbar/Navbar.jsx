@@ -7,7 +7,11 @@ const MotionLink = motion(Link);
 
 const Navbar = () => {
   return (
-    <Flex p={{ base: "0.8rem 2rem", md: "0.8rem 4rem", lg: "1rem 6rem" }}>
+    <Flex
+      p={{ base: "0.8rem 2rem", md: "1.5rem 4rem", lg: "1.7rem 6rem" }}
+      position="relative"
+      zIndex="999"
+    >
       <Box>
         <LogoImage />
       </Box>
