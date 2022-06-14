@@ -13,7 +13,7 @@ export const flexStyle = {
   margin: {
     base: "1.5rem 2rem",
     md: "2rem 3rem",
-    lg: "4rem 5rem",
+    lg: "3rem 6rem",
   },
   gap: {
     base: "1.5rem",
@@ -84,24 +84,32 @@ export const imgStyle = {
 
 export const linkContainer = {
   display: "flex",
-  justifyContent: {
-    base: "center",
-    md: "flex-start",
-  },
   gap: "1rem",
   marginTop: "0.5rem",
 };
 
+export const linkContainerRight = {
+  ...linkContainer,
+  justifyContent: {
+    base: "center",
+    md: "flex-start",
+    lg: "flex-end",
+  },
+};
+
 export const linkToProjects = {
   marginTop: "0.5rem",
-  backgroundColor: "#141E39",
-  padding: "0.3rem 0.8rem",
-  borderRadius: "0.3rem",
+  backgroundColor: "#141D38",
+  borderRadius: "5rem",
+  display: "grid",
+  placeItems: "center",
+  padding: "0.5rem",
+  fontSize: "1.5rem",
   transition: "all 0.25s ease-in-out",
   _hover: {
     "&::after": { content: "none" },
-    backgroundColor: "#a5abbd",
-    color: "#0B111E",
+    color: "#fff",
+    transform: "scale(1.1)",
   },
   _focus: { boxShadow: "none" },
   boxShadow:
@@ -112,10 +120,14 @@ export const techTextStyle = {
   color: "#ecb7d4",
   marginTop: "1rem",
   textTransform: "uppercase",
+};
+
+export const techTextStyleRight = {
+  ...techTextStyle,
   textAlign: {
     base: "center",
     md: "left",
-    lg: "left",
+    lg: "right",
   },
 };
 
@@ -123,8 +135,13 @@ export const techFlexStyle = {
   flexWrap: "wrap",
   marginTop: "0.5rem",
   gap: "1rem",
+};
+
+export const techFlexStyleRight = {
+  ...techFlexStyle,
   justifyContent: {
     base: "center",
     md: "left",
+    lg: "right",
   },
 };
