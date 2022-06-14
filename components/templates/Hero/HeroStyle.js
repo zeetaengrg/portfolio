@@ -35,11 +35,6 @@ export const flexStyle = {
   position: "relative",
   justifyContent: "center",
   alignItems: "center",
-  height: {
-    base: "80vh",
-    md: "60vh",
-    lg: "87vh",
-  },
   gap: {
     base: "1rem",
     md: "2rem",
