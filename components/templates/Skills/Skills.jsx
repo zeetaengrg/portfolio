@@ -30,8 +30,16 @@ const commonVariants = {
 
 const Skills = () => {
   return (
-    <Box>
-      <Header heading="Tools And Technologies" id="skills" />
+    <Box
+      as="section"
+      id="skills"
+      height={{ md: "95vh", lg: "100vh" }}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Header heading="Tools And Technologies" />
       <LineDivider width={{ base: "70%", md: "50%", lg: "40%" }} />
       <SubHeader subHeading="Libraries, Frameworks and Tools" />
       <MotionTabs
