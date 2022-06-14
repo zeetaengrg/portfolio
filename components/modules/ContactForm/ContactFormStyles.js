@@ -18,6 +18,9 @@ export const inputStyle = {
   border: "none",
   boxShadow:
     "4px 4px 8px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset",
+  "&::placeholder": {
+    opacity: 0.5,
+  },
 };
 
 export const btn = {
