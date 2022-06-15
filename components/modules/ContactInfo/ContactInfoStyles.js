@@ -11,14 +11,17 @@ export const commonVariants = {
 
 export const links = [
   {
+    id: 1,
     name: "LinkedIn Icon",
     url: "https://www.linkedin.com/in/zeetaengrg/",
   },
   {
+    id: 2,
     name: "Github Icon",
     url: "https://github.com/zeetaengrg",
   },
   {
+    id: 3,
     name: "Codepen Icon",
     url: "https://codepen.io/zeetaen",
   },
