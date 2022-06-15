@@ -1,15 +1,14 @@
-import { Box, Link, Spacer, Wrap } from "@chakra-ui/react";
-import { boxStyle, mobileLinkStyle } from "./MobileNavLinksStyles";
+import { motion } from "framer-motion";
+import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import { FaProjectDiagram } from "react-icons/fa";
 import {
   MdAccountCircle,
   MdContactPhone,
   MdDesignServices,
 } from "react-icons/md";
-import { FaProjectDiagram } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { boxStyle, mobileLinkStyle } from "./MobileNavLinksStyles";
 
 const MotionBox = motion(Box);
-
 const MotionLink = motion(Link);
 
 const boxVariants = {
@@ -22,12 +21,11 @@ const boxVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      type: "spring",
-      stiffness: 100,
+      type: "tween",
       staggerChildren: 0.3,
-    }
-  }
-}
+    },
+  },
+};
 
 const linkVariants = {
   hidden: {
@@ -38,12 +36,11 @@ const linkVariants = {
     transition: {
       type: "spring",
       stiffness: 100,
-    }
-  }
-}
+    },
+  },
+};
 
 const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
-
   const linkItem = [
     {
       id: 1,
@@ -64,33 +61,37 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
       id: 4,
       name: "Contacts",
       icon: <MdContactPhone />,
-    }
-  ]
+    },
+  ];
 
   return (
     <MotionBox
+      as="nav"
       sx={boxStyle}
       variants={boxVariants}
       initial="hidden"
       animate="visible"
     >
-      {linkItem.map((link) => {
-        return (
-          <MotionLink
-            key={link.id}
-            sx={mobileLinkStyle}
-            href={`#${link.name.replace(/\s+/g, "").toLowerCase()}`}
-            onClick={() => isMobile && closeMobileMenu()}
-            variants={linkVariants}
-          >
-            <Wrap>
+      <UnorderedList
+        listStyleType="none"
+        display="flex"
+        flexDirection="column"
+        gap="3rem"
+      >
+        {linkItem.map((link) => (
+          <ListItem key={link.id}>
+            <MotionLink
+              sx={mobileLinkStyle}
+              href={`#${link.name.replace(/\s+/g, "").toLowerCase()}`}
+              onClick={() => isMobile && closeMobileMenu()}
+              variants={linkVariants}
+            >
               {link.icon}
-              <Spacer />
               {link.name}
-            </Wrap>
-          </MotionLink>
-        );
-      })}
+            </MotionLink>
+          </ListItem>
+        ))}
+      </UnorderedList>
     </MotionBox>
   );
 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Flex, Link } from "@chakra-ui/react";
+import { Box, Link } from "@chakra-ui/react";
 import { FiMail } from "react-icons/fi";
 
 const MotionBox = motion(Box);

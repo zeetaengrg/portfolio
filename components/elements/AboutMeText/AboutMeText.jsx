@@ -1,5 +1,5 @@
-import { Link, Heading, List, ListItem, ListIcon, Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { Link, Heading, List, ListItem, ListIcon, Box } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 import { curriculums } from "@data/about-data";
 import {
@@ -13,6 +13,7 @@ const MotionBox = motion(Box);
 const AboutMeText = () => {
   return (
     <MotionBox
+      as="article"
       p={{ base: "1.5rem 1rem", md: "1.5rem 5rem" }}
       textAlign="center"
       variants={commonVariants}

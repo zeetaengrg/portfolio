@@ -26,13 +26,13 @@ const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openMenu = (
-    <Box {...menuStyle}>
+    <Box as="figure" {...menuStyle}>
       <CgMenuRound onClick={() => setIsOpen(!isOpen)} />
     </Box>
   );
 
   const closeMenu = (
-    <Box {...menuStyle}>
+    <Box as="figure" {...menuStyle}>
       <CgCloseO onClick={() => setIsOpen(!isOpen)} />
     </Box>
   );
@@ -40,7 +40,12 @@ const MobileNavbar = () => {
   const closeMobileMenu = () => setIsOpen(false);
 
   return (
-    <MotionBox variants={menuVariants} initial="hidden" animate="visible">
+    <MotionBox
+      as="aside"
+      variants={menuVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {isOpen ? closeMenu : openMenu}
       {isOpen && (
         <MobileNavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />

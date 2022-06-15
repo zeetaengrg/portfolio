@@ -16,7 +16,7 @@ const commonVariants = {
 
 const LineDivider = ({ width }) => {
   return (
-    <Center>
+    <Center as="figure">
       <MotionDivider
         width={width}
         mb="0.5rem"
