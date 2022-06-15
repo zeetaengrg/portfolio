@@ -24,18 +24,16 @@ const btnVariants = {
 
 const HireMeBtn = () => {
   return (
-    <>
-      <MotionBtn
-        size="lg"
-        sx={btnStyle}
-        rightIcon={<FaHandshake style={{ fontSize: "1.5rem" }} />}
-        variants={btnVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        Hire Me
-      </MotionBtn>
-    </>
+    <MotionBtn
+      size="lg"
+      sx={btnStyle}
+      rightIcon={<FaHandshake style={{ fontSize: "1.5rem" }} />}
+      variants={btnVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      Hire Me
+    </MotionBtn>
   );
 };
 

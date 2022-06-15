@@ -35,25 +35,23 @@ const DownloadBtn = () => {
   };
 
   return (
-    <>
-      <MotionBtn
-        size="lg"
-        sx={btn}
-        rightIcon={<FaCloudDownloadAlt style={{ fontSize: "1.5rem" }} />}
-        variants={btnVariants}
-        initial="hidden"
-        animate="visible"
-        isLoading={isLoading}
-        loadingText="Downloading"
-        spinnerPlacement="end"
-        onClick={() => {
-          setIsLoading(true);
-          setTimeout(() => setIsLoading(false), 2500);
-        }}
-      >
-        Download CV
-      </MotionBtn>
-    </>
+    <MotionBtn
+      size="lg"
+      sx={btn}
+      rightIcon={<FaCloudDownloadAlt style={{ fontSize: "1.5rem" }} />}
+      variants={btnVariants}
+      initial="hidden"
+      animate="visible"
+      isLoading={isLoading}
+      loadingText="Downloading"
+      spinnerPlacement="end"
+      onClick={() => {
+        setIsLoading(true);
+        setTimeout(() => setIsLoading(false), 2500);
+      }}
+    >
+      Download CV
+    </MotionBtn>
   );
 };
 
