@@ -1,20 +1,13 @@
-import { Image, Tooltip, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
+import { TabContent } from "@components/elements";
 import { library } from "@data/icons-data";
 import { flexStyle } from "../TabsStyle";
 
 const Library = () => {
   return (
-    <Flex sx={flexStyle}>
+    <Flex as="figure" sx={flexStyle}>
       {library.map((item) => (
-        <Tooltip key={item.id} label={item.name} placement="top">
-          <Image
-            src={item.image}
-            alt={item.name}
-            height={{ base: "4rem", md: "5.625rem" }}
-            width={{ base: "4rem", md: "5.625rem" }}
-            objectFit="contain"
-          />
-        </Tooltip>
+        <TabContent key={item.id} item={item} />
       ))}
     </Flex>
   );
