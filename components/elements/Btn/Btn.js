@@ -3,7 +3,7 @@ export const btnStyle = {
   backgroundColor: "#141E39",
   fontSize: "1.2rem",
   transition: "all 0.3s ease",
-  _focus: { boxShadow: "none" },
+  _focus: { outline: "none" },
   _hover: {
     bg: "#a5abbd",
     color: "#0b111e",
