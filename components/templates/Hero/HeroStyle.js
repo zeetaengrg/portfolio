@@ -1,16 +1,14 @@
-export const heroImgStyle = {
+export const boxStyle = {
   position: "absolute",
-  opacity: "0.3",
-  height: {
-    base: "50vh",
-    md: "60vh",
-    lg: "100vh",
+  top: {
+    base: "0",
+    md: "7rem",
+    lg: "-8rem",
   },
-  width: "100%",
-  objectFit: {
-    base: "cover",
-    md: "contain",
-    lg: "cover",
+  opacity: "0.3",
+  display: {
+    base: "none",
+    md: "block",
   },
 };
 
@@ -37,7 +35,6 @@ export const flexStyle = {
   alignItems: "center",
   gap: {
     base: "1rem",
-    md: "2rem",
   },
   flexDirection: {
     base: "column",

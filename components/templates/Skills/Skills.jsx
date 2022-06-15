@@ -1,5 +1,5 @@
-import { TabList, Tabs, Tab, TabPanels, TabPanel, Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { TabList, Tabs, Tab, TabPanels, TabPanel, Box } from "@chakra-ui/react";
 import { BsBack } from "react-icons/bs";
 import { FaTools, FaDatabase } from "react-icons/fa";
 import { MdLanguage, MdDesignServices } from "react-icons/md";
@@ -14,6 +14,7 @@ import {
   LibraryTab,
 } from "@components/elements";
 import { tabList, tabStyle, iconStyle } from "./SkillsStyle";
+import Image from "next/image";
 
 const MotionTabs = motion(Tabs);
 
@@ -33,16 +34,25 @@ const Skills = () => {
     <Box
       as="section"
       id="skills"
-      height={{ md: "95vh", lg: "100vh" }}
+      height={{ base: "87vh", md: "95vh", lg: "100vh" }}
       display="flex"
       flexDirection="column"
       justifyContent="center"
-      alignItems="center"
+      postion="relative"
     >
+      <Box as="figure" position="absolute" opacity="0.2">
+        <Image
+          src="/images/skills-bg.svg"
+          alt="Skills section background"
+          height={750}
+          width={1500}
+        />
+      </Box>
       <Header heading="Tools And Technologies" />
       <LineDivider width={{ base: "70%", md: "50%", lg: "40%" }} />
       <SubHeader subHeading="Libraries, Frameworks and Tools" />
       <MotionTabs
+        as="article"
         m={{ base: "1.5rem 0", md: "1.5rem 0" }}
         size="sm"
         variant="solid-rounded"
@@ -57,11 +67,11 @@ const Skills = () => {
           type: "tween",
         }}
       >
-        <TabList>
+        <TabList as="ul">
           {tabList.map((tab) => (
             <Tab sx={tabStyle} key={tab}>
               {tab}
-              <Box {...iconStyle}>
+              <Box as="figure" {...iconStyle}>
                 {tab === "Language" ? (
                   <MdLanguage />
                 ) : tab === "Backend" ? (
@@ -77,9 +87,9 @@ const Skills = () => {
             </Tab>
           ))}
         </TabList>
-        <TabPanels>
+        <TabPanels as="ul">
           {tabList.map((tab) => (
-            <TabPanel key={tab}>
+            <TabPanel as="li" key={tab}>
               {tab === "Language" ? (
                 <LanguagesTab />
               ) : tab === "Backend" ? (

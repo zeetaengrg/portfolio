@@ -1,62 +1,66 @@
-import { Flex, Image, Text, Link, Box } from "@chakra-ui/react";
-import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { Flex, Text, Link, Box } from "@chakra-ui/react";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import {
   DownloadBtn,
   HireMeBtn,
   SidebarMailLink,
   SidebarSocialIcons,
 } from "@components/elements";
-import {
-  commonVariants,
-  flexStyle,
-  linkStyle,
-  heroImgStyle,
-} from "./HeroStyle";
+import { commonVariants, flexStyle, linkStyle, boxStyle } from "./HeroStyle";
 
 const Hero = () => {
   return (
     <Box
       as="section"
-      height={{ md: "80vh" }}
+      height={{ base: "87vh", md: "90vh", lg: "80vh" }}
       display="flex"
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      position="relative"
     >
-      <Image
-        src="/images/hero-bg.svg"
-        alt="hero-background"
-        sx={heroImgStyle}
-      />
+      <Box as="figure" sx={boxStyle}>
+        <Image
+          src="/images/hero-bg.svg"
+          alt="hero-background"
+          height="850"
+          width="1500"
+          objectFit="cover"
+        />
+      </Box>
       <Box
+        as="aside"
         position="fixed"
         top="50%"
-        left="-3rem"
+        left="-4rem"
         transform="translateY(-50%)"
         zIndex="15"
         display={{ base: "none", md: "block" }}
         transition="all 0.3s ease"
-        _hover={{ left: "0rem" }}
+        _hover={{ left: "-1rem" }}
       >
         <SidebarSocialIcons />
       </Box>
-      <Flex sx={flexStyle}>
-        <Box as="figure">
+      <Box as="article" display="flex" sx={flexStyle}>
+        <Box
+          as={motion.figure}
+          variants={commonVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <Image
-            as={motion.img}
             src="/images/profile-pic.png"
             alt="Jiten Image"
-            variants={commonVariants}
-            initial="hidden"
-            animate="visible"
-            width={{ base: "8rem", md: "12rem", lg: "17rem" }}
-            height="100%"
+            height="300"
+            width="300"
           />
         </Box>
-        <Box>
-          <Flex
-            direction="column"
+        <Box as="section">
+          <Box
+            as="article"
+            flexDirection="column"
             textAlign={{ base: "center", md: "center", lg: "start" }}
           >
             <Text
@@ -165,10 +169,11 @@ const Hero = () => {
                 </Link>
               </Flex>
             </Box>
-          </Flex>
+          </Box>
         </Box>
-      </Flex>
+      </Box>
       <Box
+        as="aside"
         position="fixed"
         top="50%"
         right="-1.8rem"

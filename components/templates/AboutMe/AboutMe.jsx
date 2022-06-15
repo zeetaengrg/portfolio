@@ -10,24 +10,28 @@ import {
 
 const AboutMe = () => {
   return (
-    <Flex direction="column" id="aboutme">
+    <Box as="section" display="flex" flexDirection="column" id="aboutme">
       <Header heading="About Me" />
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Introduction" />
-      <Box p={{ base: "1.5rem 3rem", md: "2rem 3rem", lg: "2rem 10rem" }}>
-        <Flex direction="column" alignItems="center">
-          <Flex gap={{ base: "0.5rem", md: "1rem" }}>
-            <AboutMeWrapper />
-          </Flex>
-          <AboutMeText />
-          <Box>
-            <Link href="#contacts" _hover={{ "&::after": { content: "none" } }}>
-              <ContactMeBtn />
-            </Link>
-          </Box>
+      <Box
+        as="section"
+        p={{ base: "1.5rem 3rem", md: "2rem 3rem", lg: "2rem 10rem" }}
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+      >
+        <Flex as="article" gap={{ base: "0.5rem", md: "1rem" }}>
+          <AboutMeWrapper />
         </Flex>
+        <AboutMeText />
+        <Box as="figure">
+          <Link href="#contacts" _hover={{ "&::after": { content: "none" } }}>
+            <ContactMeBtn />
+          </Link>
+        </Box>
       </Box>
-    </Flex>
+    </Box>
   );
 };
 

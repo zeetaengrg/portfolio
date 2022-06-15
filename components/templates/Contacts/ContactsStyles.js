@@ -20,7 +20,7 @@ export const imgStyle = {
   },
   position: "absolute",
   bottom: "5rem",
-  width: "50rem",
+  width: "80rem",
   opacity: "0.2",
 };
 

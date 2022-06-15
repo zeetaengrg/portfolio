@@ -9,11 +9,22 @@ export const commonVariants = {
   },
 };
 
+export const gridStyle = {
+  display: "grid",
+  columnGap: {
+    base: "2rem",
+    md: "9rem",
+    lg: "2rem",
+  },
+  gridTemplateColumns: "repeat(2, 1fr)",
+  padding: { base: "0rem", md: "0rem 5rem", lg: "0rem" },
+};
+
 export const flexStyle = {
   margin: {
     base: "1.5rem 2rem",
     md: "2rem 3rem",
-    lg: "3rem 6rem",
+    lg: "3rem 5rem",
   },
   gap: {
     base: "1.5rem",
@@ -85,7 +96,6 @@ export const imgStyle = {
 export const linkContainer = {
   display: "flex",
   gap: "1rem",
-  marginTop: "0.5rem",
 };
 
 export const linkContainerRight = {

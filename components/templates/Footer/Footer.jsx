@@ -7,29 +7,37 @@ const Footer = () => {
   const today = new Date();
 
   return (
-    <Box sx={boxStyle}>
-      <Image src="/images/wave.svg" alt="waves" sx={imgTag} />
+    <Box as="footer" sx={boxStyle}>
+      <Box as="figure">
+        <Image src="/images/wave.svg" alt="waves" sx={imgTag} />
+      </Box>
       <Flex
+        as="article"
         justifyContent="center"
         direction="column"
         position="relative"
         gap={{ base: "1rem", md: "1rem", lg: "2rem" }}
       >
-        <Center>
+        <Center as="figure">
           <Image src="/images/logo.svg" alt="Logo" sx={imageStyle} />
         </Center>
-        <Box display={{ base: "block", md: "none" }}>
+        <Box as="section" display={{ base: "block", md: "none" }}>
           <SocialIconLinks />
         </Box>
-        <Box fontSize="0.8rem" mb={{ base: "0.5rem", lg: "1.5rem" }}>
+        <Box
+          as="section"
+          fontSize="0.8rem"
+          mb={{ base: "0.5rem", lg: "1.5rem" }}
+        >
           <Flex
-            justifyContent="center"
-            alignItems="center"
+            as="article"
+            justify="center"
+            align="center"
             direction="column"
             gap={{ base: "0rem", lg: "0.5rem" }}
           >
             <Text>Designed & Built By Jiten Gurung</Text>
-            <Flex alignItems="center">
+            <Flex as="section" align="center">
               {today.getFullYear()}{" "}
               <FaCopyright style={{ margin: "0 0.5rem" }} />
               All Rights Reserved.

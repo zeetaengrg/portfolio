@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   Divider,
   Flex,
@@ -11,9 +12,10 @@ import {
   UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
-import { projects } from "@data/projects-data";
-import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import { Header, LineDivider, SubHeader } from "@components/elements";
+import { projects } from "@data/projects-data";
 import {
   boxStyle,
   commonVariants,
@@ -26,26 +28,27 @@ import {
   techTextStyleRight,
   techFlexStyleRight,
   linkContainerRight,
+  gridStyle,
 } from "./ProjectsStyle";
-import { FaGithub } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
 
 const MotionFlex = motion(Flex);
 
 const Projects = () => {
   return (
-    <Box id="projects">
+    <Box as="section" id="projects">
       <Header heading="Projects" />
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Recent Works" />
       {projects.map((project) => (
         <Box
+          as="section"
           key={project.id}
           display="flex"
           flexDirection="column"
           gap={{ base: "1rem", md: "2rem", lg: "4rem" }}
         >
           <MotionFlex
+            as="article"
             sx={flexStyle}
             direction={{ base: "column", md: "column", lg: "row" }}
             variants={commonVariants}
@@ -53,12 +56,12 @@ const Projects = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{
-              delay: 0.4,
+              delay: 0.5,
               duration: 0.5,
               type: "tween",
             }}
           >
-            <Box sx={boxStyle}>
+            <Box as="figure" sx={boxStyle}>
               <Image
                 src={project.imageOne}
                 alt={project.titleOne}
@@ -66,7 +69,8 @@ const Projects = () => {
               />
             </Box>
             <Grid
-              placeItems={{ base: "center", md: "left", lg: "normal" }}
+              as="section"
+              placeItems={{ base: "center", md: "center", lg: "normal" }}
               width={{ base: "100%", md: "100%", lg: "35%" }}
             >
               <Heading
@@ -80,7 +84,8 @@ const Projects = () => {
                 {project.titleOne}
               </Heading>
               <Divider
-                margin={{ base: "0.5rem auto", md: "0.5rem auto" }}
+                as="figure"
+                margin={{ base: "0.5rem auto" }}
                 width={{ base: "45%", md: "45%", lg: "100%" }}
               />
               <Text
@@ -89,7 +94,7 @@ const Projects = () => {
               >
                 {project.descriptionOne}
               </Text>
-              <Box>
+              <Box as="section">
                 <Heading
                   as="h2"
                   size="sm"
@@ -101,63 +106,70 @@ const Projects = () => {
                 >
                   Skills Learned
                 </Heading>
-                <Grid
-                  templateColumns="repeat(2, 1fr)"
-                  padding={{ base: "0rem 1rem", md: "0rem 5rem", lg: "0rem" }}
-                >
+                <UnorderedList sx={gridStyle}>
                   {project.skillsOne.map((skill) => (
-                    <UnorderedList
-                      textAlign="right"
-                      marginRight="0rem"
-                      display="flex"
-                      justifyContent="flex-end"
-                      key={skill}
-                    >
-                      <ListItem>{skill}</ListItem>
-                    </UnorderedList>
+                    <ListItem key={skill}>{skill}</ListItem>
                   ))}
-                </Grid>
+                </UnorderedList>
               </Box>
               <Heading as="h2" size="sm" sx={techTextStyleRight}>
                 Tech Stacks
               </Heading>
-              <Flex sx={techFlexStyleRight}>
+              <Flex as="section" sx={techFlexStyleRight}>
                 {project.technologyOne.map((tech) => (
                   <Tooltip key={tech.id} label={tech.name} placement="top">
                     <Image
                       src={tech.image}
                       alt={tech.name}
                       key={tech.id}
-                      height="48px"
+                      height="3rem"
                     />
                   </Tooltip>
                 ))}
               </Flex>
-              <Box sx={linkContainerRight}>
-                <Tooltip label="Live Demo" placement="bottom">
-                  <Link
-                    href={project.demoLinkOne}
-                    sx={linkToProjects}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
+              <Flex as="section" flexDirection="column">
+                <Heading
+                  as="h2"
+                  size="sm"
+                  textTransform="uppercase"
+                  fontWeight="bold"
+                  mt="1rem"
+                  color="#ecb7d4"
+                  textAlign={{ base: "center", md: "center", lg: "right" }}
+                >
+                  Source
+                </Heading>
+                <Box as="figure" sx={linkContainerRight}>
+                  <Tooltip as="figcaption" label="Live Demo" placement="bottom">
+                    <Link
+                      href={project.demoLinkOne}
+                      sx={linkToProjects}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                    >
+                      <FiExternalLink />
+                    </Link>
+                  </Tooltip>
+                  <Tooltip
+                    as="figcaption"
+                    label="Source Code"
+                    placement="bottom"
                   >
-                    <FiExternalLink />
-                  </Link>
-                </Tooltip>
-                <Tooltip label="Source Code" placement="bottom">
-                  <Link
-                    href={project.sourceLinkOne}
-                    sx={linkToProjects}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                  >
-                    <FaGithub />
-                  </Link>
-                </Tooltip>
-              </Box>
+                    <Link
+                      href={project.sourceLinkOne}
+                      sx={linkToProjects}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                    >
+                      <FaGithub />
+                    </Link>
+                  </Tooltip>
+                </Box>
+              </Flex>
             </Grid>
           </MotionFlex>
           <MotionFlex
+            as="article"
             sx={flexStyle}
             direction={{
               base: "column-reverse",
@@ -175,10 +187,11 @@ const Projects = () => {
             }}
           >
             <Grid
+              as="section"
               placeItems={{ base: "center", md: "center", lg: "normal" }}
               width={{ base: "100%", md: "100%", lg: "35%" }}
             >
-              <Box>
+              <Box as="section">
                 <Heading
                   as="h1"
                   size="lg"
@@ -190,7 +203,8 @@ const Projects = () => {
                   {project.titleTwo}
                 </Heading>
                 <Divider
-                  margin={{ base: "0.5rem auto", md: "0.5rem auto" }}
+                  as="figure"
+                  margin={{ base: "0.5rem auto" }}
                   width={{ base: "45%", md: "45%", lg: "100%" }}
                 />
                 <Text
@@ -199,7 +213,7 @@ const Projects = () => {
                 >
                   {project.descriptionTwo}
                 </Text>
-                <Box>
+                <Box as="section">
                   <Heading
                     as="h2"
                     size="sm"
@@ -211,57 +225,74 @@ const Projects = () => {
                   >
                     Skills Learned
                   </Heading>
-                  <Grid
-                    templateColumns="repeat(2, 1fr)"
-                    padding={{ base: "0rem 1rem", md: "0rem 5rem", lg: "0rem" }}
-                  >
+                  <UnorderedList sx={gridStyle}>
                     {project.skillsTwo.map((skill) => (
-                      <UnorderedList textAlign="left" key={skill}>
-                        <ListItem>{skill}</ListItem>
-                      </UnorderedList>
+                      <ListItem key={skill}>{skill}</ListItem>
                     ))}
-                  </Grid>
+                  </UnorderedList>
                 </Box>
               </Box>
               <Heading as="h2" size="sm" sx={techTextStyle}>
                 Tech Stacks
               </Heading>
-              <Flex sx={techFlexStyle}>
+              <Flex as="figure" sx={techFlexStyle}>
                 {project.technologyTwo.map((tech) => (
-                  <Tooltip label={tech.name} placement="top" key={tech.id}>
+                  <Tooltip
+                    as="figcaption"
+                    label={tech.name}
+                    placement="top"
+                    key={tech.id}
+                  >
                     <Image
                       src={tech.image}
                       alt={tech.name}
                       key={tech.id}
-                      height="48px"
+                      height="3rem"
                     />
                   </Tooltip>
                 ))}
               </Flex>
-              <Box sx={linkContainer}>
-                <Tooltip label="Live Demo" placement="bottom">
-                  <Link
-                    href={project.demoLinkTwo}
-                    sx={linkToProjects}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
+              <Flex as="section" flexDirection="column">
+                <Heading
+                  as="h2"
+                  size="sm"
+                  textTransform="uppercase"
+                  fontWeight="bold"
+                  mt="1rem"
+                  color="#ecb7d4"
+                  textAlign={{ base: "center", md: "center", lg: "left" }}
+                >
+                  Source
+                </Heading>
+                <Box as="figure" sx={linkContainer}>
+                  <Tooltip as="figcaption" label="Live Demo" placement="bottom">
+                    <Link
+                      href={project.demoLinkTwo}
+                      sx={linkToProjects}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                    >
+                      <FiExternalLink />
+                    </Link>
+                  </Tooltip>
+                  <Tooltip
+                    as="figcaption"
+                    label="Source Code"
+                    placement="bottom"
                   >
-                    <FiExternalLink />
-                  </Link>
-                </Tooltip>
-                <Tooltip label="Source Code" placement="bottom">
-                  <Link
-                    href={project.sourceLinkTwo}
-                    sx={linkToProjects}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                  >
-                    <FaGithub />
-                  </Link>
-                </Tooltip>
-              </Box>
+                    <Link
+                      href={project.sourceLinkTwo}
+                      sx={linkToProjects}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                    >
+                      <FaGithub />
+                    </Link>
+                  </Tooltip>
+                </Box>
+              </Flex>
             </Grid>
-            <Box sx={boxStyle}>
+            <Box as="figure" sx={boxStyle}>
               <Image
                 src={project.imageTwo}
                 alt={project.titleTwo}
