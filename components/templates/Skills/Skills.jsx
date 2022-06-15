@@ -38,7 +38,6 @@ const Skills = () => {
       display="flex"
       flexDirection="column"
       justifyContent="center"
-      postion="relative"
     >
       <Box as="figure" position="absolute" opacity="0.2">
         <Image
