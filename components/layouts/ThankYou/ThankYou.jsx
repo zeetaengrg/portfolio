@@ -5,10 +5,12 @@ import { flexStyle, headingStyle, textStyle, boxStyle } from "./ThankYouStyles";
 
 const ThankYou = () => {
   return (
-    <Flex sx={flexStyle}>
-      <Box sx={boxStyle}>
-        <Heading sx={headingStyle}>Thank You!!!</Heading>
-        <Divider width="60%" />
+    <Flex as="section" sx={flexStyle}>
+      <Box as="article" sx={boxStyle}>
+        <Heading as="h1" sx={headingStyle}>
+          Thank You!!!
+        </Heading>
+        <Divider as="figure" width="60%" />
         <Text sx={textStyle}>
           Your message has been sent successfully. I will get back to you
           shortly.
