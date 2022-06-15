@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import Image from "next/image";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { GoBackBtn } from "@components/elements";
 
 const Error = () => {
@@ -10,30 +11,39 @@ const Error = () => {
   };
 
   return (
-    <>
-      <Box m={{ base: "1.5rem", md: "2.5rem" }}>
-        <Flex
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-          gap={{ base: "0rem", md: "1rem" }}
-        >
-          <Text fontSize={{ base: "1.1rem", md: "1.3rem" }} sx={textStyle}>
-            Oops!!! Page Not Found
-          </Text>
+    <Box
+      as="section"
+      m={{ base: "1.5rem 0rem", md: "0rem 0rem 5rem" }}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      height={{ base: "62vh", md: "72.5vh", lg: "76vh" }}
+      gap={{ base: "0rem", md: "1rem" }}
+    >
+      <Flex
+        as="article"
+        direction="column"
+        alignItems="center"
+        gap={{ base: "0rem", md: "1rem" }}
+      >
+        <Text fontSize={{ base: "1.1rem", md: "1.3rem" }} sx={textStyle}>
+          Oops!!! Page Not Found
+        </Text>
+        <Box as="figure" p={{ base: "0rem 3rem", md: "0rem" }}>
           <Image
             src="/images/error.svg"
             alt="404 Error"
-            width={{ base: "80%", md: "50%" }}
-            m="2.5rem 0"
+            height={300}
+            width={600}
           />
-          <Text sx={textStyle} fontSize={{ base: "1.2rem", md: "1.3rem" }}>
-            Sorry, but the page you requested was not found!
-          </Text>
-          <GoBackBtn />
-        </Flex>
-      </Box>
-    </>
+        </Box>
+        <Text sx={textStyle} fontSize={{ base: "1.2rem", md: "1.3rem" }}>
+          Sorry, but the page you requested was not found!
+        </Text>
+      </Flex>
+      <GoBackBtn />
+    </Box>
   );
 };
 
