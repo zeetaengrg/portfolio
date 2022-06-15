@@ -15,22 +15,22 @@ export const boxStyle = {
   },
   justifyContent: "center",
   alignItems: "center",
-  flexDirection: "column",
-  gap: "3rem",
-}
+};
 
 export const mobileLinkStyle = {
   _hover: {
-    '&::after': { content: "none" },
+    "&::after": { content: "none" },
     color: "white",
   },
   _focus: { boxShadow: "none" },
   fontSize: "1.5rem",
-  margin: "1.5rem auto",
+  margin: "2rem auto",
   display: {
-    base: "block",
+    base: "flex",
     md: "none",
     lg: "none",
   },
+  alignItems: "center",
+  gap: "1rem",
   transition: "all 0.25s ease-in-out",
-}
+};
