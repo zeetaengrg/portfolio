@@ -1,13 +1,11 @@
 import Head from "next/head";
 import { ScrollBackToTopBtn } from "@components/elements";
 import {
-  Navbar,
   Hero,
   AboutMe,
   Skills,
   Projects,
   Contacts,
-  Footer,
 } from "@components/templates";
 
 const Layout = () => {
@@ -23,14 +21,12 @@ const Layout = () => {
         <meta name="author" content="Jitendra Gurung" />
         <meta name="copyright" content="Jitendra Gurung" />
       </Head>
-      <Navbar />
       <ScrollBackToTopBtn />
       <Hero />
       <AboutMe />
       <Skills />
       <Projects />
       <Contacts />
-      <Footer />
     </>
   );
 };
