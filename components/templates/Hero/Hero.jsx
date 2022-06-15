@@ -28,6 +28,7 @@ const Hero = () => {
           height="850"
           width="1500"
           objectFit="cover"
+          priority
         />
       </Box>
       <Box
@@ -55,6 +56,7 @@ const Hero = () => {
             alt="Jiten Image"
             height="300"
             width="300"
+            priority
           />
         </Box>
         <Box as="section">
