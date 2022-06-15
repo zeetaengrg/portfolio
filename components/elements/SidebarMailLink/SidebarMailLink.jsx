@@ -47,21 +47,44 @@ const SidebarMailLink = () => {
 
   return (
     <MotionBox
-      as="aside"
+      as="section"
       variants={commonVariants}
       initial="hidden"
       animate="visible"
       transition={{ delay: 1.1, duration: 1, type: "tween" }}
     >
-      <Flex>
+      <Box as="article" display="flex">
         <Box
+          as="figure"
           m="auto 0"
           bg="#141D38"
           p="0.5rem"
           display="grid"
           placeItems="center"
           borderRadius="1rem 0rem 0rem 1rem"
-          boxShadow="0 0.5rem 1rem rgba(0, 0, 0, 0.5)"
+          position="relative"
+          _before={{
+            content: '""',
+            position: "absolute",
+            bg: "transparent",
+            height: "1rem",
+            width: "1rem",
+            top: "-0.9rem",
+            right: "-0.05rem",
+            borderBottomRightRadius: "1rem",
+            boxShadow: "5px 5px 0 0.4px #141D38",
+          }}
+          _after={{
+            content: '""',
+            position: "absolute",
+            bg: "transparent",
+            height: "1rem",
+            width: "1rem",
+            top: "2.45rem",
+            right: "-0.05rem",
+            borderTopRightRadius: "1rem",
+            boxShadow: "2px -4px 0 0.4px #141D38",
+          }}
         >
           <Link href="mailto:zeetaen.gurung@gmail.com" sx={mailStyle}>
             <FiMail style={iconStyle} />
@@ -73,11 +96,10 @@ const SidebarMailLink = () => {
           display="grid"
           placeItems="center"
           borderRadius="2rem 0rem 0rem 2rem"
-          boxShadow="0 0.5rem 1rem rgba(0, 0, 0, 0.5)"
         >
           <p style={textStyle}>zeetaen.gurung@gmail.com</p>
         </Box>
-      </Flex>
+      </Box>
     </MotionBox>
   );
 };

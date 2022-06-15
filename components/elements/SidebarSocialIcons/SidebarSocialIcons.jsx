@@ -1,29 +1,18 @@
 import { motion } from "framer-motion";
-import { Box, Flex, Link } from "@chakra-ui/react";
-import {
-  FiCodepen,
-  FiFacebook,
-  FiGithub,
-  FiInstagram,
-  FiLinkedin,
-  FiTwitter,
-} from "react-icons/fi";
+import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import {
   arrowVariants,
   boxVariants,
   commonVariants,
-  iconStyle,
+  links,
   socialLinkStyle,
 } from "./SidebarSocialIconsStyles";
 
-const MotionBox = motion(Box);
-const MotionArrow = motion(Box);
-
 const SidebarSocialIcons = () => {
   return (
-    <MotionBox
-      as="aside"
+    <Box
+      as={motion.section}
       variants={commonVariants}
       initial="hidden"
       animate="visible"
@@ -33,8 +22,9 @@ const SidebarSocialIcons = () => {
         type: "tween",
       }}
     >
-      <Flex>
-        <Flex
+      <Box as="article" display="flex">
+        <UnorderedList
+          listStyleType="none"
           gap="1.5rem"
           direction="column"
           bg="#141D38"
@@ -44,77 +34,81 @@ const SidebarSocialIcons = () => {
           display="grid"
           placeItems="center"
         >
-          <Link
-            href="https://www.linkedin.com/in/zeetaengrg/"
-            sx={socialLinkStyle}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <FiLinkedin style={iconStyle} />
-          </Link>
-          <Link
-            href="https://github.com/zeetaengrg"
-            sx={socialLinkStyle}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <FiGithub style={iconStyle} />
-          </Link>
-          <Link
-            href="https://www.facebook.com/zeetaen/"
-            sx={socialLinkStyle}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <FiFacebook style={iconStyle} />
-          </Link>
-          <Link
-            href="https://www.instagram.com/zeetaen/"
-            sx={socialLinkStyle}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <FiInstagram style={iconStyle} />
-          </Link>
-          <Link
-            href="https://twitter.com/zeetaen"
-            sx={socialLinkStyle}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <FiTwitter style={iconStyle} />
-          </Link>
-          <Link
-            href="https://codepen.io/zeetaen"
-            sx={socialLinkStyle}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            <FiCodepen style={iconStyle} />
-          </Link>
-        </Flex>
-        <MotionBox
+          {links.map((link) => (
+            <ListItem
+              key={link.id}
+              transition="all 0.3s ease"
+              _hover={{ transform: "scale(1.1)" }}
+            >
+              <Link
+                href={link.url}
+                sx={socialLinkStyle}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                {link.icon}
+              </Link>
+            </ListItem>
+          ))}
+        </UnorderedList>
+        <Box
+          as={motion.section}
           variants={boxVariants}
           initial="start"
           animate="end"
+          bg="#141D38"
+          height="2rem"
+          width="2.5rem"
+          borderRadius="0rem 2rem 2rem 0rem"
           margin="auto 0"
           display="flex"
+          justifyContent="center"
+          alignItems="center"
           cursor="pointer"
           transition="all 0.3s ease"
+          position="relative"
+          _before={{
+            content: '""',
+            position: "absolute",
+            bg: "transparent",
+            height: "1rem",
+            width: "1rem",
+            top: "-0.95rem",
+            left: "0rem",
+            borderBottomLeftRadius: "1rem",
+            boxShadow: "-4px 4px 0 0.3px #141D38",
+          }}
+          _after={{
+            content: '""',
+            position: "absolute",
+            bg: "transparent",
+            height: "1rem",
+            width: "1rem",
+            top: "2rem",
+            left: "0rem",
+            borderTopLeftRadius: "1rem",
+            boxShadow: "-3px -4px 0 3px #141D38",
+          }}
         >
-          <MotionArrow variants={arrowVariants} position="absolute">
-            <MdOutlineDoubleArrow fontSize="1.5rem" />
-          </MotionArrow>
-          <MotionArrow
+          <Box
+            as={motion.figure}
             variants={arrowVariants}
             position="absolute"
-            left="3.75rem"
+            left="0.15rem"
           >
             <MdOutlineDoubleArrow fontSize="1.5rem" />
-          </MotionArrow>
-        </MotionBox>
-      </Flex>
-    </MotionBox>
+          </Box>
+          <Box
+            as={motion.figure}
+            variants={arrowVariants}
+            position="absolute"
+            left="0.65rem"
+          >
+            <MdOutlineDoubleArrow fontSize="1.5rem" />
+          </Box>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 
