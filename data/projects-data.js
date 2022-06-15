@@ -9,6 +9,7 @@ export const projects = [
       "NextJS Architecture",
       "React Hooks & Props",
       "Responsive Design",
+      "Semantic HTML",
       "Flexbox",
       "Grid",
       "CSS Positioning",
@@ -16,11 +17,12 @@ export const projects = [
       "Git",
     ],
     descriptionTwo:
-      "An online pizza delivery service platform. Built with features like Admin Panel for CRUD operations and PayPal Payment System.",
+      "An online pizza delivery platform with features like Admin Panel for CRUD operations and PayPal payment.",
     skillsTwo: [
       "NextJS Architecture",
       "React Hooks & Props",
       "Sass Partials",
+      "Semantic HTML",
       "Redux Toolkit",
       "Redux Persist",
       "Axios",
@@ -87,12 +89,13 @@ export const projects = [
     titleOne: "Alpha Male Apparels",
     titleTwo: "Portfolio Website",
     descriptionOne:
-      "A clothing store e-commerce website built using MERN stack. Features like user authentication using JWT and admin panel dashboard for CRUD operations have been implemented.",
+      "An e-commerce clothing store built with features like JWT authentication and admin panel dashboard.",
     skillsOne: [
       "ReactJS Architecture",
       "React Hooks",
       "React Router",
       "Styled Components",
+      "Semantic HTML",
       "JWT Authentication",
       "Redux Toolkit",
       "Redux Persist",
@@ -107,6 +110,7 @@ export const projects = [
     skillsTwo: [
       "NextJS Architecture",
       "React Hooks & Props",
+      "Semantic HTML",
       "Chakra UI",
       "Next Router",
       "Framer Motion",
