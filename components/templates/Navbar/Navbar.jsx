@@ -8,7 +8,7 @@ const MotionLink = motion(Link);
 const Navbar = () => {
   return (
     <Box
-      as="section"
+      as="header"
       display="flex"
       alignItems="center"
       justifyContent="space-between"
