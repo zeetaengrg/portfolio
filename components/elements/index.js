@@ -1,4 +1,5 @@
-export { default as AboutMeText } from "./AboutMeText/AboutMeText";
+export { default as CurriculumList } from "./CurriculumList/CurriculumList";
+export { default as CurriculumTable } from "./CurriculumTable/CurriculumTable";
 export { default as AboutMeWrapper } from "./AboutMeWrapper/AboutMeWrapper";
 export { default as ContactMeBtn } from "./Btn/ContactMeBtn/ContactMeBtn";
 export { default as DownloadBtn } from "./Btn/DownloadBtn/DownloadBtn";
