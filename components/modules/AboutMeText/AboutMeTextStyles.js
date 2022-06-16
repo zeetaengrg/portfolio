@@ -9,17 +9,6 @@ export const commonVariants = {
   },
 };
 
-export const linkStyle = {
-  _hover: {
-    "&::after": { content: "none" },
-  },
-  _focus: { outline: "none" },
-  _active: { outline: "none" },
-  textTransform: "none",
-  fontWeight: "normal",
-  fontSize: "1rem",
-};
-
 export const specialLinkStyle = {
   _hover: {
     "&::after": { content: "none" },

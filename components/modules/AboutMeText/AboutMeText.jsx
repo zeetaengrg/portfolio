@@ -1,20 +1,8 @@
 import { motion } from "framer-motion";
-import {
-  Link,
-  Heading,
-  ListItem,
-  ListIcon,
-  Box,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
-import { FaCheckCircle } from "react-icons/fa";
+import { Link, Heading, Box, Text, UnorderedList } from "@chakra-ui/react";
+import { CurriculumList, CurriculumTable } from "@components/elements";
 import { curriculums } from "@data/about-data";
-import {
-  commonVariants,
-  linkStyle,
-  specialLinkStyle,
-} from "./AboutMeTextStyles";
+import { commonVariants, specialLinkStyle } from "./AboutMeTextStyles";
 
 const MotionBox = motion(Box);
 
@@ -47,50 +35,27 @@ const AboutMeText = () => {
         applications. As a result, during the pandemic, I had an epiphany to
         learn web technologies seriously.
       </Text>
-      <Heading as="h3" size="md" fontSize="1.1rem">
+      <Heading
+        as="h3"
+        size="md"
+        fontSize="1.1rem"
+        display={{ base: "none", md: "block" }}
+      >
         Curriculums:
       </Heading>
-      <UnorderedList m="0.25rem 0rem">
+      <UnorderedList
+        m="0.25rem 0rem"
+        display={{ base: "none", md: "flex" }}
+        flexDirection="column"
+        gap={{ base: "0.75rem", md: "0.25rem", lg: "0rem" }}
+      >
         {curriculums.map((curriculum) => (
-          <ListItem
-            key={curriculum.id}
-            display="flex"
-            alignItems="start"
-            justifyContent="center"
-          >
-            <ListIcon as={FaCheckCircle} />
-            <Link
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              sx={linkStyle}
-              href={curriculum.link}
-            >
-              {curriculum.title}
-            </Link>
-            <Link
-              m="0rem 0.5rem"
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              sx={linkStyle}
-              href="https://www.freecodecamp.org/"
-            >
-              <i>({curriculum.platform})</i>
-            </Link>
-            <Link
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              sx={linkStyle}
-              textDecoration="underline"
-              href={curriculum.certificateUrl}
-            >
-              {curriculum.title === "Front End Development Libraries" &&
-              "Back End Development and APIs"
-                ? `Ongoing`
-                : "Certificate"}
-            </Link>
-          </ListItem>
+          <CurriculumList key={curriculum.id} curriculum={curriculum} />
         ))}
       </UnorderedList>
+      <Box as="figure" display={{ base: "block", md: "none" }}>
+        <CurriculumTable />
+      </Box>
       <Text m="0.5rem 0rem">
         Without being ostentacious, to further prove my hardworking habtitude,
         during my university days, I along with my team was awarded with the
@@ -101,8 +66,7 @@ const AboutMeText = () => {
           rel="noreferrer noopener nofollow"
           target="_blank"
         >
-          {" "}
-          Nepal Telecommunication Authority(NTA){" "}
+          &nbsp;Nepal Telecommunication Authority(NTA)&nbsp;
         </Link>
         for building Class Routine Management System.
       </Text>
@@ -115,13 +79,11 @@ const AboutMeText = () => {
           rel="noopener noreferrer nofollow"
           target="_blank"
         >
-          {" "}
-          GitHub{" "}
+          &nbsp;GitHub&nbsp;
         </Link>
         profile and
         <Link href="#projects" sx={specialLinkStyle}>
-          {" "}
-          Projects{" "}
+          &nbsp;Projects&nbsp;
         </Link>
         section.
       </Text>
