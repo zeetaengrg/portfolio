@@ -20,7 +20,6 @@ const CurriculumList = ({ curriculum }) => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      gap="0.5rem"
     >
       <ListIcon as={FaCheckCircle} fontSize="0.7rem" />
       <Link
@@ -37,7 +36,7 @@ const CurriculumList = ({ curriculum }) => {
         sx={linkStyle}
         href="https://www.freecodecamp.org/"
       >
-        <i>({curriculum.platform})</i>
+        &ensp;<i>({curriculum.platform})</i>&ensp;
       </Link>
       <Link
         target="_blank"
