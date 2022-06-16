@@ -3,10 +3,10 @@ import {
   Header,
   ContactMeBtn,
   AboutMeWrapper,
-  AboutMeText,
   SubHeader,
   LineDivider,
 } from "@components/elements";
+import { AboutMeText } from "@components/modules";
 
 const AboutMe = () => {
   return (
