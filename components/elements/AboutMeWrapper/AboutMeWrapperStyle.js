@@ -11,7 +11,7 @@ export const wrapperList = [
   {
     id: 2,
     icon: <GiBookshelf />,
-    title: "Curriculum",
+    title: "Curriculums",
     subtitle: "3+ Courses",
   },
   {
