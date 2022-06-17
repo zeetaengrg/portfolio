@@ -1,17 +1,3 @@
-export const boxStyle = {
-  position: "absolute",
-  top: {
-    base: "0",
-    md: "7rem",
-    lg: "-8rem",
-  },
-  opacity: "0.3",
-  display: {
-    base: "none",
-    md: "block",
-  },
-};
-
 export const commonVariants = {
   hidden: {
     opacity: 0,
@@ -29,17 +15,36 @@ export const commonVariants = {
   },
 };
 
+export const boxStyle = {
+  position: "absolute",
+  opacity: "0.3",
+  display: {
+    base: "none",
+    md: "block",
+  },
+
+  "&>span": {
+    top: {
+      base: 0,
+      lg: "-8rem",
+      xl: "0rem",
+    },
+  },
+};
+
 export const flexStyle = {
   position: "relative",
   justifyContent: "center",
   alignItems: "center",
   gap: {
     base: "1rem",
+    md: "2rem",
   },
   flexDirection: {
     base: "column",
     md: "column",
-    lg: "row",
+    lg: "column",
+    xl: "row",
   },
 };
 
