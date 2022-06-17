@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { TabList, Tabs, Tab, TabPanels, TabPanel, Box } from "@chakra-ui/react";
 import { BsBack } from "react-icons/bs";
@@ -14,7 +15,6 @@ import {
   LibraryTab,
 } from "@components/elements";
 import { tabList, tabStyle, iconStyle } from "./SkillsStyle";
-import Image from "next/image";
 
 const MotionTabs = motion(Tabs);
 
@@ -34,7 +34,7 @@ const Skills = () => {
     <Box
       as="section"
       id="skills"
-      height={{ base: "87vh", md: "95vh", lg: "100vh" }}
+      height={{ base: "65vh", md: "60vh", lg: "45vh" }}
       display="flex"
       flexDirection="column"
       justifyContent="center"
