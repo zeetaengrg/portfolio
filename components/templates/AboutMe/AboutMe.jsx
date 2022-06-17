@@ -10,7 +10,13 @@ import { AboutMeText } from "@components/modules";
 
 const AboutMe = () => {
   return (
-    <Box as="section" display="flex" flexDirection="column" id="aboutme">
+    <Box
+      as="section"
+      display="flex"
+      flexDirection="column"
+      id="aboutme"
+      mt={{ base: "2rem", md: "0rem" }}
+    >
       <Header heading="About Me" />
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Introduction" />
