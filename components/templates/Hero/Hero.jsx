@@ -62,7 +62,7 @@ const Hero = () => {
           <Box
             as="article"
             flexDirection="column"
-            gap={{ base: "0.5rem", md: "1rem" }}
+            gap={{ base: "0.5rem", md: "1rem", xl: "0rem" }}
             display="flex"
             textAlign={{
               base: "center",
@@ -81,8 +81,9 @@ const Hero = () => {
             >
               Hi!
             </Text>
-            <Box fontSize={{ base: "1.5rem", md: "2rem" }}>
+            <Box as="section" fontSize={{ base: "1.5rem", md: "2rem" }}>
               <Flex
+                as="article"
                 gap="0.5rem"
                 justifyContent={{
                   base: "center",
@@ -102,7 +103,7 @@ const Hero = () => {
                   I&apos;m
                 </Text>
                 <Box
-                  as={motion.div}
+                  as={motion.figure}
                   variants={commonVariants}
                   initial="hidden"
                   animate="visible"
@@ -128,7 +129,7 @@ const Hero = () => {
                   Jiten
                 </Text>
                 <Box
-                  as={motion.div}
+                  as={motion.figure}
                   variants={commonVariants}
                   initial="hidden"
                   animate="visible"
@@ -142,41 +143,40 @@ const Hero = () => {
                 </Box>
               </Flex>
             </Box>
-            <Box>
-              <Text
-                as={motion.p}
-                casing="uppercase"
-                fontSize={{ base: "2.5rem", md: "3rem" }}
-                fontWeight="bold"
-                lineHeight="1"
-                variants={commonVariants}
-                initial="hidden"
-                animate="visible"
-              >
-                Front End Dev
-              </Text>
-              <Text
-                as={motion.p}
-                variants={commonVariants}
-                initial="hidden"
-                animate="visible"
-                m={{
-                  base: "0.5rem 0rem",
-                  md: "1rem 0rem",
-                  lg: "1rem 0rem",
-                  xl: "0.5rem 0rem",
-                }}
-                p={{ base: "0rem 2rem", md: "0rem 7rem", lg: "0rem" }}
-                width={{ lg: "30rem" }}
-              >
-                An aspiring front end web developer with a dignified passion for
-                creating beautiful and functional UI with modest designing
-                experience.
-              </Text>
-            </Box>
+            <Text
+              as={motion.p}
+              casing="uppercase"
+              fontSize={{ base: "2.5rem", md: "3rem" }}
+              fontWeight="bold"
+              lineHeight="1"
+              variants={commonVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              Front End Dev
+            </Text>
+            <Text
+              as={motion.p}
+              variants={commonVariants}
+              initial="hidden"
+              animate="visible"
+              m={{
+                base: "0.5rem 0rem",
+                md: "1rem 0rem",
+                lg: "1rem 0rem",
+                xl: "0.5rem 0rem",
+              }}
+              p={{ base: "0rem 2rem", md: "0rem 7rem", lg: "0rem" }}
+              width={{ lg: "30rem" }}
+            >
+              An aspiring front end web developer with a dignified passion for
+              creating beautiful and functional UI with modest designing
+              experience.
+            </Text>
             <Flex
+              as="section"
               gap="1.5rem"
-              m={{ base: "0rem auto", md: "0.5rem auto" }}
+              m={{ base: "0rem auto", md: "0.5rem auto", xl: "0.5rem 0rem" }}
               justifyContent={{
                 base: "center",
                 md: "center",
