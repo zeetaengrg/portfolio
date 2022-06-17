@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <Box
       as="section"
-      height={{ base: "87vh", md: "90vh", lg: "80vh" }}
+      height={{ base: "87vh", md: "93vh", xl: "80vh" }}
       display="flex"
       flexDirection="column"
       justifyContent="center"
@@ -25,10 +25,8 @@ const Hero = () => {
         <Image
           src="/images/hero-bg.svg"
           alt="hero-background"
-          height="850"
-          width="1500"
-          objectFit="cover"
-          priority
+          height={850}
+          width={1500}
         />
       </Box>
       <Box
@@ -57,13 +55,21 @@ const Hero = () => {
             height="300"
             width="300"
             priority
+            quality={100}
           />
         </Box>
         <Box as="section">
           <Box
             as="article"
             flexDirection="column"
-            textAlign={{ base: "center", md: "center", lg: "start" }}
+            gap={{ base: "0.5rem", md: "1rem" }}
+            display="flex"
+            textAlign={{
+              base: "center",
+              md: "center",
+              lg: "center",
+              xl: "left",
+            }}
           >
             <Text
               as={motion.p}
@@ -77,7 +83,13 @@ const Hero = () => {
             </Text>
             <Box fontSize={{ base: "1.5rem", md: "2rem" }}>
               <Flex
-                justifyContent={{ base: "center", md: "center", lg: "start" }}
+                gap="0.5rem"
+                justifyContent={{
+                  base: "center",
+                  md: "center",
+                  lg: "center",
+                  xl: "left",
+                }}
               >
                 <Text
                   as={motion.p}
@@ -148,7 +160,12 @@ const Hero = () => {
                 variants={commonVariants}
                 initial="hidden"
                 animate="visible"
-                mt="0.5rem"
+                m={{
+                  base: "0.5rem 0rem",
+                  md: "1rem 0rem",
+                  lg: "1rem 0rem",
+                  xl: "0.5rem 0rem",
+                }}
                 p={{ base: "0rem 2rem", md: "0rem 7rem", lg: "0rem" }}
                 width={{ lg: "30rem" }}
               >
@@ -157,20 +174,23 @@ const Hero = () => {
                 experience.
               </Text>
             </Box>
-            <Box>
-              <Flex
-                gap="1.5rem"
-                mt="1rem"
-                justifyContent={{ base: "center", md: "center", lg: "start" }}
-              >
-                <Link href="/cv/Resume.pdf" download sx={linkStyle}>
-                  <DownloadBtn />
-                </Link>
-                <Link href="#contacts" sx={linkStyle}>
-                  <HireMeBtn />
-                </Link>
-              </Flex>
-            </Box>
+            <Flex
+              gap="1.5rem"
+              m={{ base: "0rem auto", md: "0.5rem auto" }}
+              justifyContent={{
+                base: "center",
+                md: "center",
+                lg: "center",
+                xs: "left",
+              }}
+            >
+              <Link href="/cv/Resume.pdf" download sx={linkStyle}>
+                <DownloadBtn />
+              </Link>
+              <Link href="#contacts" sx={linkStyle}>
+                <HireMeBtn />
+              </Link>
+            </Flex>
           </Box>
         </Box>
       </Box>
