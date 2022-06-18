@@ -16,6 +16,7 @@ const Footer = () => {
         justifyContent="center"
         direction="column"
         position="relative"
+        bottom={{ base: "0rem", xl: "-7rem" }}
         gap={{ base: "1rem", md: "1rem", lg: "2rem" }}
       >
         <Center as="figure">
