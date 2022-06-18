@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "@styles/theme";
-import { LoadingAnimation } from "@components/elements";
-import { Layout } from "@components/layouts";
+import { Layout, LoadingAnimation } from "@components/layouts";
 import ThankYouPage from "./thankyou";
 
 const Loader = () => {
