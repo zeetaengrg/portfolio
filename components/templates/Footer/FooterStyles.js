@@ -7,7 +7,10 @@ export const boxStyle = {
 
 export const imgTag = {
   position: "absolute",
-  bottom: "0",
+  bottom: {
+    base: "0",
+    xl: "-8rem",
+  },
   width: "100vw",
   display: {
     base: "none",
