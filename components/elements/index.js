@@ -18,6 +18,5 @@ export { default as LanguagesTab } from "./Tab/LanguagesTab/LanguagesTab";
 export { default as ToolsTab } from "./Tab/ToolsTab/ToolsTab";
 export { default as LibraryTab } from "./Tab/LibraryTab/LibraryTab";
 export { default as TabContent } from "./TabContent/TabContent";
-export { default as LoadingAnimation } from "./LoadingAnimation/LoadingAnimation";
 export { default as SidebarSocialIcons } from "./SidebarSocialIcons/SidebarSocialIcons";
 export { default as SidebarMailLink } from "./SidebarMailLink/SidebarMailLink";
