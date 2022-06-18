@@ -1,6 +1,6 @@
-import Image from "next/image";
+import NextImage from "next/image";
 import { motion } from "framer-motion";
-import { Flex, Text, Link, Box } from "@chakra-ui/react";
+import { Flex, Text, Link, Box, Image } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import {
   DownloadBtn,
@@ -25,8 +25,9 @@ const Hero = () => {
         <Image
           src="/images/hero-bg.svg"
           alt="hero-background"
-          height={850}
-          width={1500}
+          height="850"
+          width="1500"
+          objectFit="cover"
         />
       </Box>
       <Box
@@ -49,7 +50,7 @@ const Hero = () => {
           initial="hidden"
           animate="visible"
         >
-          <Image
+          <NextImage
             src="/images/profile-pic.png"
             alt="Jiten Image"
             height="300"
@@ -121,7 +122,7 @@ const Hero = () => {
                   color="#fff"
                   fontSize={{ base: "3rem", md: "4rem" }}
                   fontWeight="extrabold"
-                  lineHeight="1.4"
+                  lineHeight="1.2"
                   variants={commonVariants}
                   initial="hidden"
                   animate="visible"
