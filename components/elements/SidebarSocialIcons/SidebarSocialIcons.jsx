@@ -9,10 +9,12 @@ import {
   socialLinkStyle,
 } from "./SidebarSocialIconsStyles";
 
+const MotionBox = motion(Box);
+
 const SidebarSocialIcons = () => {
   return (
-    <Box
-      as={motion.section}
+    <MotionBox
+      as="section"
       variants={commonVariants}
       initial="hidden"
       animate="visible"
@@ -108,7 +110,7 @@ const SidebarSocialIcons = () => {
           </Box>
         </Box>
       </Box>
-    </Box>
+    </MotionBox>
   );
 };
 
