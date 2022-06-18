@@ -1,16 +1,39 @@
+export const boxVariants = {
+  start: {
+    opacity: 0,
+    y: "20vh",
+  },
+  end: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.9,
+      duration: 0.8,
+      ease: "easeIn",
+    },
+  },
+};
+
 export const flexStyle = {
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
   gap: {
     base: "1rem",
-    md: "2rem",
+    md: "4rem",
+    xl: "2rem",
   },
-  margin: "1rem auto 3rem",
+  margin: {
+    base: "0",
+    md: "0",
+    lg: "0",
+    xl: "1rem auto 3rem",
+  },
   height: {
-    base: "60vh",
-    md: "72.5vh",
-    lg: "76vh",
+    base: "68.5vh",
+    md: "79vh",
+    lg: "81vh",
+    xl: "55vh",
   },
 };
 
@@ -29,7 +52,7 @@ export const boxStyle = {
   width: {
     base: "80%",
     md: "60%",
-    lg: "50%",
+    lg: "40%",
   },
   padding: {
     base: "0.5rem",
