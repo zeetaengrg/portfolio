@@ -15,9 +15,8 @@ const btnVariants = {
     y: 0,
     transition: {
       delay: 1,
-      duration: 1,
-      type: "spring",
-      stiffness: 110,
+      duration: 0.8,
+      type: "tween",
     },
   },
 };
