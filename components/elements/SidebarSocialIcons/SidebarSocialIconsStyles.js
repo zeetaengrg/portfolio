@@ -60,13 +60,49 @@ export const commonVariants = {
 export const boxVariants = {
   start: {
     transition: {
-      staggerChildren: 0.4,
+      staggerChildren: 0.2,
     },
   },
   end: {
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.3,
     },
+  },
+};
+
+export const arrowContainerStyle = {
+  bg: "#141D38",
+  height: "2rem",
+  width: "2.5rem",
+  borderRadius: "0rem 2rem 2rem 0rem",
+  margin: "auto 0",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  cursor: "pointer",
+  transition: "all 0.3s ease",
+  position: "relative",
+  _before: {
+    content: '""',
+    position: "absolute",
+    bg: "transparent",
+    height: "1rem",
+    width: "1rem",
+    top: "-0.95rem",
+    left: "0rem",
+    borderBottomLeftRadius: "1rem",
+    boxShadow: "-4px 4px 0 0.3px #141D38",
+  },
+  _after: {
+    content: '""',
+    position: "absolute",
+    bg: "transparent",
+    height: "1rem",
+    width: "1rem",
+    top: "2rem",
+    left: "0rem",
+    borderTopLeftRadius: "1rem",
+    boxShadow: "-3px -4px 0 3px #141D38",
   },
 };
 
