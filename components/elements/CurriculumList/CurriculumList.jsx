@@ -38,18 +38,6 @@ const CurriculumList = ({ curriculum }) => {
       >
         &ensp;<i>({curriculum.platform})</i>&ensp;
       </Link>
-      <Link
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-        sx={linkStyle}
-        textDecoration="underline"
-        href={curriculum.certificateUrl}
-      >
-        {curriculum.title === "Front End Development Libraries" &&
-        "Back End Development and APIs"
-          ? `Ongoing`
-          : "Certificate"}
-      </Link>
     </ListItem>
   );
 };
