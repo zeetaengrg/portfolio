@@ -14,6 +14,7 @@ export const projects = [
       "Grid",
       "CSS Positioning",
       "Figma",
+      "Higher-Order Functions",
       "Git",
     ],
     descriptionTwo:
@@ -114,6 +115,7 @@ export const projects = [
       "Chakra UI",
       "Next Router",
       "Framer Motion",
+      "Higher-Order Functions",
       "Git",
     ],
     imageOne: "/images/alpha-male.webp",
