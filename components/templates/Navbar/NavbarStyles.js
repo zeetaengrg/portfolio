@@ -9,7 +9,7 @@ export const linkVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.2,
+      delay: i * 0.3,
       duration: 1,
     },
   }),
