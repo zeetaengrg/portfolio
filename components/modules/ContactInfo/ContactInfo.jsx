@@ -1,6 +1,15 @@
 import { motion } from "framer-motion";
-import { Flex, Text, Link, Divider, List, ListItem } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Link,
+  Divider,
+  List,
+  ListItem,
+  Box,
+} from "@chakra-ui/react";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
+import { MdLocationPin, MdMailOutline } from "react-icons/md";
 import {
   commonVariants,
   links,
@@ -8,10 +17,9 @@ import {
   mailStyle,
   textStyle,
   flexStyle,
-  socialLinkStyle,
   socialIconStyle,
 } from "./ContactInfoStyles";
-import { MdLocationPin, MdMailOutline } from "react-icons/md";
+import { linkStyle } from "@components/elements/LinkStyle";
 
 const MotionFlex = motion(Flex);
 
@@ -60,14 +68,16 @@ const ContactInfo = () => {
       <List display="flex" gap="5rem">
         {links.map((link) => (
           <ListItem key={link.id} m="0 auto">
-            <Link href={link.url} aria-label={link.name} {...socialLinkStyle}>
-              {link.name === "LinkedIn" ? (
-                <FaLinkedinIn style={socialIconStyle} />
-              ) : link.name === "Github" ? (
-                <FaGithub style={socialIconStyle} />
-              ) : (
-                <FaCodepen style={socialIconStyle} />
-              )}
+            <Link href={link.url} aria-label={link.name} {...linkStyle}>
+              <Box as="figure" {...socialIconStyle}>
+                {link.name === "LinkedIn" ? (
+                  <FaLinkedinIn />
+                ) : link.name === "Github" ? (
+                  <FaGithub />
+                ) : (
+                  <FaCodepen />
+                )}
+              </Box>
             </Link>
           </ListItem>
         ))}

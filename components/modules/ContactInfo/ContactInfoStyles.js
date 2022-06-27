@@ -49,20 +49,12 @@ export const flexStyle = {
   alignItems: "center",
 };
 
-export const socialLinkStyle = {
-  textTransform: "none",
-  _focus: { boxShadow: "none" },
+export const socialIconStyle = {
+  fontSize: "2rem",
   cursor: "pointer",
   transition: "all 0.25s linear",
   _hover: {
-    "&::after": { content: "none" },
+    color: "white",
+    transform: "translateY(5px)",
   },
-  target: "_blank",
-  rel: "noopener noreferrer nofollow",
-};
-
-export const socialIconStyle = {
-  fontSize: "2rem",
-  transition: "all 0.25s linear",
-  _hover: { color: "white", transform: "translateY(2px)" },
 };
