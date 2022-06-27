@@ -49,7 +49,7 @@ export const links = [
 export const commonVariants = {
   hidden: {
     opacity: 0,
-    x: "-20",
+    x: -20,
   },
   visible: {
     opacity: 1,
