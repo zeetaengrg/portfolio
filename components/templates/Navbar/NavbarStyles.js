@@ -11,8 +11,6 @@ export const linkVariants = {
     transition: {
       delay: i * 0.2,
       duration: 1,
-      type: "spring",
-      stiffness: 110,
     },
   }),
 };
