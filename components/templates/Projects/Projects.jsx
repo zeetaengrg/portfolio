@@ -29,6 +29,7 @@ import {
   techFlexStyleRight,
   linkContainerRight,
   gridStyle,
+  imgBoxStyle,
 } from "./ProjectsStyle";
 
 const MotionFlex = motion(Flex);
@@ -58,10 +59,9 @@ const Projects = () => {
             transition={{
               delay: 0.5,
               duration: 0.5,
-              type: "tween",
             }}
           >
-            <Box as="figure" sx={boxStyle}>
+            <Box as="figure" sx={imgBoxStyle}>
               <Image
                 src={project.imageOne}
                 alt={project.titleOne}
@@ -298,7 +298,7 @@ const Projects = () => {
                 </Box>
               </Flex>
             </Grid>
-            <Box as="figure" sx={boxStyle}>
+            <Box as="figure" sx={imgBoxStyle}>
               <Image
                 src={project.imageTwo}
                 alt={project.titleTwo}

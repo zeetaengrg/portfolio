@@ -33,14 +33,15 @@ export const flexStyle = {
   justifyContent: "center",
 };
 
-export const boxStyle = {
-  width: {
+export const imgBoxStyle = {
+  minWidth: {
     base: "80%",
     md: "85%",
     lg: "65%",
+    xl: "40%",
   },
   height: {
-    base: "9rem",
+    base: "8rem",
     md: "20rem",
     lg: "23.12rem",
   },
@@ -57,9 +58,12 @@ export const boxStyle = {
 };
 
 export const imgStyle = {
-  objectFit: "cover",
+  objectFit: {
+    base: "contain",
+    md: "cover",
+  },
   height: {
-    base: "9rem",
+    base: "8rem",
     md: "20rem",
     lg: "23rem",
   },
