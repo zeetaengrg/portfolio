@@ -33,7 +33,7 @@ const SidebarSocialIcons = () => {
           bg="#141D38"
           p="1.1rem 0.7rem"
           borderRadius="0rem 2rem 2rem 0rem"
-          boxShadow="0 0.5rem 1rem rgba(0, 0, 0, 0.2)"
+          boxShadow="0 0.5rem 1rem rgba(0, 0, 0, 0.3)"
           display="grid"
           placeItems="center"
         >
