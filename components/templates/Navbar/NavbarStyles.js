@@ -10,7 +10,7 @@ export const linkVariants = {
     y: 0,
     transition: {
       delay: i * 0.25,
-      duration: 1,
+      duration: 0.8,
     },
   }),
 };
