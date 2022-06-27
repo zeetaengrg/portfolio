@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
-import { MdOutlineDoubleArrow } from "react-icons/md";
+import { MdArrowForwardIos, MdOutlineDoubleArrow } from "react-icons/md";
 import {
   arrowContainerStyle,
   arrowVariants,
@@ -66,7 +66,7 @@ const SidebarSocialIcons = () => {
             position="absolute"
             left="0.15rem"
           >
-            <MdOutlineDoubleArrow fontSize="1.5rem" />
+            <MdArrowForwardIos fontSize="1.1rem" color="#fff" />
           </Box>
           <Box
             as={motion.figure}
@@ -74,7 +74,15 @@ const SidebarSocialIcons = () => {
             position="absolute"
             left="0.65rem"
           >
-            <MdOutlineDoubleArrow fontSize="1.5rem" />
+            <MdArrowForwardIos fontSize="1.1rem" color="#fff" />
+          </Box>
+          <Box
+            as={motion.figure}
+            variants={arrowVariants}
+            position="absolute"
+            left="1.15rem"
+          >
+            <MdArrowForwardIos fontSize="1.1rem" color="#fff" />
           </Box>
         </Box>
       </Box>

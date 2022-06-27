@@ -59,13 +59,16 @@ export const commonVariants = {
 
 export const boxVariants = {
   start: {
+    opacity: 0,
     transition: {
-      staggerChildren: 0.2,
+      when: "afterChildren",
     },
   },
   end: {
+    opacity: 1,
     transition: {
-      staggerChildren: 0.4,
+      when: "beforeChildren",
+      staggerChildren: 0.2,
     },
   },
 };
@@ -79,7 +82,6 @@ export const arrowContainerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  cursor: "pointer",
   transition: "all 0.3s ease",
   position: "relative",
   _before: {
@@ -113,7 +115,7 @@ export const arrowVariants = {
   end: {
     opacity: 1,
     transition: {
-      duration: 0.6,
+      duration: 0.5,
       ease: "easeInOut",
       repeat: Infinity,
       repeatType: "reverse",
