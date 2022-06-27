@@ -1,4 +1,17 @@
-export const commonVariants = {
+export const bgImgVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 0.3,
+    transition: {
+      delay: 0.6,
+      duration: 1,
+    },
+  },
+};
+
+export const profileImgVariants = {
   hidden: {
     opacity: 0,
     y: "10vh",
@@ -7,17 +20,44 @@ export const commonVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.8,
-      duration: 1,
-      type: "spring",
-      stiffness: 110,
+      delay: 0.7,
+      duration: 0.8,
+    },
+  },
+};
+
+export const parentVariants = {
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+export const childVariants = {
+  hidden: {
+    opacity: 0,
+    y: "10vh",
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
     },
   },
 };
 
 export const boxStyle = {
   position: "absolute",
-  opacity: "0.3",
   display: {
     base: "none",
     md: "block",
