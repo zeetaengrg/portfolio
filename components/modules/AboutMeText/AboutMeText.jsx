@@ -19,8 +19,6 @@ const AboutMeText = () => {
       transition={{
         delay: 0.5,
         duration: 0.5,
-        type: "tween",
-        stiffness: 110,
       }}
     >
       <Text>
