@@ -1,4 +1,4 @@
-import Image from "next/image";
+import NextImage from "next/image";
 import { motion } from "framer-motion";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { GoBackBtn } from "@components/elements";
@@ -52,7 +52,7 @@ const Error = () => {
           Oops!!! Page Not Found
         </Text>
         <Box as="figure" p={{ base: "0rem 3rem", md: "0rem" }}>
-          <Image
+          <NextImage
             src="/images/error.svg"
             alt="404 Error"
             height={300}
