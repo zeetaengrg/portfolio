@@ -2,7 +2,7 @@ export { default as CurriculumList } from "./CurriculumList/CurriculumList";
 export { default as CurriculumTable } from "./CurriculumTable/CurriculumTable";
 export { default as AboutMeWrapper } from "./AboutMeWrapper/AboutMeWrapper";
 export { default as ContactMeBtn } from "./Btn/ContactMeBtn/ContactMeBtn";
-export { default as DownloadBtn } from "./Btn/DownloadBtn/DownloadBtn";
+export { default as ResumeBtn } from "./Btn/ResumeBtn/ResumeBtn";
 export { default as GoBackBtn } from "./Btn/GoBackBtn/GoBackBtn";
 export { default as HireMeBtn } from "./Btn/HireMeBtn/HireMeBtn";
 export { default as Header } from "./Header/Header";
