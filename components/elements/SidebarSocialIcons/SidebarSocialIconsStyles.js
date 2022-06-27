@@ -30,7 +30,7 @@ export const links = [
     id: 4,
     title: "Instagram",
     url: "https://www.instagram.com/zeetaen/",
-    icon: <FaInstagram />,
+    icon: <FaInstagram fontSize="1.7rem" />,
   },
   {
     id: 5,
