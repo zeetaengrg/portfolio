@@ -1,6 +1,6 @@
 export const linkStyle = {
   borderRadius: "0.4rem",
-  padding: "0.7rem 0.8rem",
+  padding: "0.7rem 1rem",
   backgroundColor: "#141E39",
   fontSize: "1.2rem",
   fontWeight: "600",
