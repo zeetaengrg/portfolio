@@ -1,7 +1,6 @@
 import NextLink from "next/link";
-import { Link, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { linkStyle } from "../LinkStyle";
 
 const MotionImage = motion(Image);
 
@@ -25,17 +24,16 @@ const imageVariants = {
 const LogoImage = () => {
   return (
     <NextLink href="/" passHref>
-      <Link sx={linkStyle}>
-        <MotionImage
-          src="/images/logo.svg"
-          alt="Logo"
-          width="60px"
-          height="45px"
-          variants={imageVariants}
-          initial="hidden"
-          animate="visible"
-        />
-      </Link>
+      <MotionImage
+        src="/images/logo.svg"
+        alt="Logo"
+        width="60px"
+        height="45px"
+        variants={imageVariants}
+        initial="hidden"
+        animate="visible"
+        cursor="pointer"
+      />
     </NextLink>
   );
 };
