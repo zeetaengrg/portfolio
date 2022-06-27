@@ -1,6 +1,6 @@
 export const linkStyle = {
-  borderRadius: "0.3rem",
-  padding: "0.7rem 0.8rem 0.4rem",
+  borderRadius: "0.4rem",
+  padding: "0.7rem 0.8rem",
   backgroundColor: "#141E39",
   fontSize: "1.2rem",
   fontWeight: "600",
@@ -13,9 +13,10 @@ export const linkStyle = {
   },
   _focus: { outline: "none" },
   display: "flex",
-  alignItems: "start",
+  alignItems: "center",
   justifyContent: "center",
   gap: "0.5rem",
+  lineHeight: "1",
   boxShadow:
     "4px 4px 8px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset",
 };

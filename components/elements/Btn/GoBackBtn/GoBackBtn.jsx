@@ -1,5 +1,6 @@
+import NextLink from "next/link";
 import { motion } from "framer-motion";
-import { Link } from "@chakra-ui/react";
+import { Link, Text } from "@chakra-ui/react";
 import { RiArrowGoBackLine } from "react-icons/ri";
 import { linkStyle } from "../Link";
 
@@ -15,7 +16,7 @@ const GoBackBtn = () => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 1,
+        delay: 1.1,
         duration: 0.8,
         ease: "easeIn",
       },
@@ -23,18 +24,19 @@ const GoBackBtn = () => {
   };
 
   return (
-    <MotionLink
-      sx={linkStyle}
-      href="/"
-      position="relative"
-      variants={btnVariant}
-      initial="start"
-      animate="end"
-      m={{ base: "1rem 0", md: "1rem 0rem", lg: "0rem" }}
-    >
-      Go Back
-      <RiArrowGoBackLine />
-    </MotionLink>
+    <NextLink href="/" passHref>
+      <MotionLink
+        sx={linkStyle}
+        position="relative"
+        variants={btnVariant}
+        initial="start"
+        animate="end"
+        m={{ base: "1rem 0", md: "1rem 0rem", lg: "0rem" }}
+      >
+        <Text>Go Back</Text>
+        <RiArrowGoBackLine />
+      </MotionLink>
+    </NextLink>
   );
 };
 
