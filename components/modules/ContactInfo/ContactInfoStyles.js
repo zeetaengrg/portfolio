@@ -12,17 +12,17 @@ export const commonVariants = {
 export const links = [
   {
     id: 1,
-    name: "LinkedIn Icon",
+    name: "LinkedIn",
     url: "https://www.linkedin.com/in/zeetaengrg/",
   },
   {
     id: 2,
-    name: "Github Icon",
+    name: "Github",
     url: "https://github.com/zeetaengrg",
   },
   {
     id: 3,
-    name: "Codepen Icon",
+    name: "Codepen",
     url: "https://codepen.io/zeetaen",
   },
 ];
@@ -52,14 +52,17 @@ export const flexStyle = {
 export const socialLinkStyle = {
   textTransform: "none",
   _focus: { boxShadow: "none" },
-  fontSize: "2rem",
   cursor: "pointer",
   transition: "all 0.25s linear",
   _hover: {
-    transform: "translateY(5px)",
-    color: "#fff",
     "&::after": { content: "none" },
   },
   target: "_blank",
   rel: "noopener noreferrer nofollow",
+};
+
+export const socialIconStyle = {
+  fontSize: "2rem",
+  transition: "all 0.25s linear",
+  _hover: { color: "white", transform: "translateY(2px)" },
 };

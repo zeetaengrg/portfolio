@@ -1,16 +1,6 @@
 import { motion } from "framer-motion";
-import {
-  Box,
-  Flex,
-  Text,
-  Link,
-  Divider,
-  List,
-  ListItem,
-} from "@chakra-ui/react";
-import { ImLocation } from "react-icons/im";
+import { Flex, Text, Link, Divider, List, ListItem } from "@chakra-ui/react";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
 import {
   commonVariants,
   links,
@@ -19,7 +9,9 @@ import {
   textStyle,
   flexStyle,
   socialLinkStyle,
+  socialIconStyle,
 } from "./ContactInfoStyles";
+import { MdLocationPin, MdMailOutline } from "react-icons/md";
 
 const MotionFlex = motion(Flex);
 
@@ -50,7 +42,7 @@ const ContactInfo = () => {
         alignItems={{ base: "center", md: "flex-start" }}
       >
         <Flex sx={flexStyle}>
-          <ImLocation style={iconStyle} />
+          <MdLocationPin style={iconStyle} />
           <Text sx={textStyle}>Pokhara, Nepal</Text>
         </Flex>
         <Flex sx={flexStyle}>
@@ -58,7 +50,7 @@ const ContactInfo = () => {
           <Text sx={textStyle}>+977 9803709974</Text>
         </Flex>
         <Flex sx={flexStyle}>
-          <HiMail style={iconStyle} />
+          <MdMailOutline style={iconStyle} />
           <Link href="mailto:zeetaen.gurung@gmail.com" sx={mailStyle}>
             <Text sx={textStyle}>zeetaen.gurung@gmail.com</Text>
           </Link>
@@ -69,12 +61,12 @@ const ContactInfo = () => {
         {links.map((link) => (
           <ListItem key={link.id} m="0 auto">
             <Link href={link.url} aria-label={link.name} {...socialLinkStyle}>
-              {link.name === "LinkedIn Icon" ? (
-                <FaLinkedinIn />
-              ) : link.name === "Github Icon" ? (
-                <FaGithub />
+              {link.name === "LinkedIn" ? (
+                <FaLinkedinIn style={socialIconStyle} />
+              ) : link.name === "Github" ? (
+                <FaGithub style={socialIconStyle} />
               ) : (
-                <FaCodepen />
+                <FaCodepen style={socialIconStyle} />
               )}
             </Link>
           </ListItem>
