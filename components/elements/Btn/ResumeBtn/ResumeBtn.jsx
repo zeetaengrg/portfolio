@@ -16,13 +16,13 @@ const btnVariants = {
     y: 0,
     transition: {
       delay: 0.8,
-      duration: 0.8,
+      duration: 0.5,
       type: "tween",
     },
   },
 };
 
-const DownloadBtn = () => {
+const ResumeBtn = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const btn = {
@@ -49,9 +49,9 @@ const DownloadBtn = () => {
         setTimeout(() => setIsLoading(false), 2500);
       }}
     >
-      Download CV
+      Resume
     </MotionBtn>
   );
 };
 
-export default DownloadBtn;
+export default ResumeBtn;
