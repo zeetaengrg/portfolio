@@ -14,7 +14,7 @@ const commonVariants = {
     x: 0,
     transition: {
       delay: 2.4,
-      duration: 1,
+      duration: 0.5,
     },
   },
 };

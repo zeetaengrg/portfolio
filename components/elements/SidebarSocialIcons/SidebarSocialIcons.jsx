@@ -21,7 +21,7 @@ const SidebarSocialIcons = () => {
       animate="visible"
       transition={{
         delay: 2.4,
-        duration: 1,
+        duration: 0.5,
       }}
     >
       <Box as="article" display="flex">
