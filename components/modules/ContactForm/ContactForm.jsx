@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import { useRouter } from "next/router";
 import emailjs from "@emailjs/browser";
 import { RiSendPlaneFill } from "react-icons/ri";
@@ -11,15 +11,6 @@ const MotionVStack = motion(VStack);
 const ContactForm = () => {
   const formRef = useRef();
   const router = useRouter();
-  const [isSending, setIsSending] = useState(false);
-
-  const handleSend = () => {
-    setIsSending(true);
-    router.push("/thankyou");
-    setTimeout(() => {
-      setIsSending(false);
-    }, 3000);
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -40,6 +31,7 @@ const ContactForm = () => {
         }
       );
     e.target.reset();
+    router.push("/thankyou");
   };
 
   return (
@@ -101,10 +93,6 @@ const ContactForm = () => {
           sx={btn}
           type="submit"
           rightIcon={<RiSendPlaneFill style={{ fontSize: "1.5rem" }} />}
-          onClick={handleSend}
-          isLoading={isSending}
-          loadingText="Sending..."
-          spinnerPlacement="end"
         >
           Send
         </Button>
