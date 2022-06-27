@@ -16,7 +16,7 @@ const btnVariants = {
     y: 0,
     transition: {
       delay: 1,
-      duration: 0.8,
+      duration: 0.5,
       type: "tween",
     },
   },
