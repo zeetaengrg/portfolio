@@ -37,7 +37,7 @@ export const parentVariants = {
     opacity: 1,
     transition: {
       when: "beforeChildren",
-      staggerChildren: 0.2,
+      staggerChildren: 0.3,
       delay: 1,
     },
   },
