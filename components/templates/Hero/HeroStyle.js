@@ -20,7 +20,7 @@ export const profileImgVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 1.2,
+      delay: 0.95,
       duration: 0.8,
     },
   },

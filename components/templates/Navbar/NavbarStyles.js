@@ -3,13 +3,13 @@ export const linkItem = ["About Me", "Skills", "Projects", "Contacts"];
 export const linkVariants = {
   hidden: {
     opacity: 0,
-    y: -20,
+    y: -30,
   },
   visible: (i) => ({
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.3,
+      delay: i * 0.25,
       duration: 1,
     },
   }),
