@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Link } from "@chakra-ui/react";
+import { Box, Link, Text } from "@chakra-ui/react";
 import { FiMail } from "react-icons/fi";
 
 const MotionBox = motion(Box);
@@ -63,6 +63,7 @@ const SidebarMailLink = () => {
           placeItems="center"
           borderRadius="1rem 0rem 0rem 1rem"
           position="relative"
+          boxShadow="0 0.5rem 1rem rgba(0, 0, 0, 0.3)"
           _before={{
             content: '""',
             position: "absolute",
@@ -91,13 +92,14 @@ const SidebarMailLink = () => {
           </Link>
         </Box>
         <Box
+          as="article"
           bg="#141D38"
           p="1.5rem 0.2rem"
           display="grid"
           placeItems="center"
           borderRadius="2rem 0rem 0rem 2rem"
         >
-          <p style={textStyle}>zeetaen.gurung@gmail.com</p>
+          <Text style={textStyle}>zeetaen.gurung@gmail.com</Text>
         </Box>
       </Box>
     </MotionBox>
