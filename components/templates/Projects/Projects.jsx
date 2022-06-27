@@ -66,6 +66,8 @@ const Projects = () => {
                 src={project.imageOne}
                 alt={project.titleOne}
                 sx={imgStyle}
+                draggable="false"
+                userSelect="none"
               />
             </Box>
             <Grid
@@ -123,6 +125,8 @@ const Projects = () => {
                       alt={tech.name}
                       key={tech.id}
                       height="3rem"
+                      draggable="false"
+                      userSelect="none"
                     />
                   </Tooltip>
                 ))}
@@ -248,6 +252,8 @@ const Projects = () => {
                       alt={tech.name}
                       key={tech.id}
                       height="3rem"
+                      draggable="false"
+                      userSelect="none"
                     />
                   </Tooltip>
                 ))}
@@ -297,6 +303,7 @@ const Projects = () => {
                 src={project.imageTwo}
                 alt={project.titleTwo}
                 sx={imgStyle}
+                draggable="false"
               />
             </Box>
           </MotionFlex>

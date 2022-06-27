@@ -33,6 +33,7 @@ const LogoImage = () => {
         initial="hidden"
         animate="visible"
         cursor="pointer"
+        draggable="false"
       />
     </NextLink>
   );

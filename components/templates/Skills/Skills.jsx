@@ -39,12 +39,13 @@ const Skills = () => {
       flexDirection="column"
       justifyContent="center"
     >
-      <Box as="figure" position="absolute" opacity="0.2">
+      <Box as="figure" position="absolute" opacity="0.1">
         <Image
           src="/images/skills-bg.svg"
           alt="Skills section background"
           height={750}
           width={1500}
+          draggable="false"
         />
       </Box>
       <Header heading="Tools And Technologies" />

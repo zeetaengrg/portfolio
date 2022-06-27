@@ -28,6 +28,7 @@ const Contacts = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          draggable="false"
         />
       </Center>
       <Flex as="section" sx={flexStyle}>

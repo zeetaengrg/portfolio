@@ -1,6 +1,6 @@
 import { Center, Flex, Image, Box, Text } from "@chakra-ui/react";
-import { SocialIconLinks } from "@components/elements";
 import { FaCopyright } from "react-icons/fa";
+import { SocialIconLinks } from "@components/elements";
 import { boxStyle, imgTag, imageStyle } from "./FooterStyles";
 
 const Footer = () => {
@@ -9,7 +9,12 @@ const Footer = () => {
   return (
     <Box as="footer" sx={boxStyle}>
       <Box as="figure">
-        <Image src="/images/wave.svg" alt="waves" sx={imgTag} />
+        <Image
+          src="/images/wave.svg"
+          alt="waves"
+          sx={imgTag}
+          draggable="false"
+        />
       </Box>
       <Flex
         as="article"
@@ -20,7 +25,12 @@ const Footer = () => {
         gap={{ base: "1rem", md: "1rem", lg: "2rem" }}
       >
         <Center as="figure">
-          <Image src="/images/logo.svg" alt="Logo" sx={imageStyle} />
+          <Image
+            src="/images/logo.svg"
+            alt="Logo"
+            sx={imageStyle}
+            draggable="false"
+          />
         </Center>
         <Box as="section" display={{ base: "block", md: "none" }}>
           <SocialIconLinks />

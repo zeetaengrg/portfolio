@@ -28,6 +28,7 @@ const Hero = () => {
           height="850"
           width="1500"
           objectFit="cover"
+          draggable="false"
         />
       </Box>
       <Box
@@ -49,6 +50,7 @@ const Hero = () => {
           variants={commonVariants}
           initial="hidden"
           animate="visible"
+          userSelect="none"
         >
           <NextImage
             src="/images/profile-pic.png"
@@ -57,6 +59,7 @@ const Hero = () => {
             width="300"
             priority
             quality={100}
+            draggable="false"
           />
         </Box>
         <Box as="section">

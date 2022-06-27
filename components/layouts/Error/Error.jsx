@@ -57,6 +57,7 @@ const Error = () => {
             alt="404 Error"
             height={300}
             width={600}
+            draggable="false"
           />
         </Box>
         <Text sx={textStyle} fontSize={{ base: "1.2rem", md: "1.3rem" }}>
