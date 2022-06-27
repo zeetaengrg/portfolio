@@ -18,6 +18,10 @@ export const links = [
 
 export const iconStyle = {
   fontSize: "1.5rem",
+  cursor: "pointer",
   transition: "all 0.25s linear",
-  _hover: { color: "white", transform: "translateY(-2px)" },
+  _hover: {
+    color: "white",
+    transform: "translateY(-5px)",
+  },
 };
