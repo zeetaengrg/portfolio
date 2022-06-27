@@ -1,48 +1,48 @@
 import {
-  FiCodepen,
-  FiFacebook,
-  FiGithub,
-  FiInstagram,
-  FiLinkedin,
-  FiTwitter,
-} from "react-icons/fi";
+  FaCodepen,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 
 export const links = [
   {
     id: 1,
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/zeetaengrg/",
-    icon: <FiLinkedin />,
+    icon: <FaLinkedinIn />,
   },
   {
     id: 2,
     title: "Github",
     url: "https://github.com/zeetaengrg/",
-    icon: <FiGithub />,
+    icon: <FaGithub />,
   },
   {
     id: 3,
     title: "Facebook",
     url: "https://www.facebook.com/zeetaen/",
-    icon: <FiFacebook />,
+    icon: <FaFacebook />,
   },
   {
     id: 4,
     title: "Instagram",
     url: "https://www.instagram.com/zeetaen/",
-    icon: <FiInstagram />,
+    icon: <FaInstagram />,
   },
   {
     id: 5,
     title: "Twitter",
     url: "https://twitter.com/zeetaen/",
-    icon: <FiTwitter />,
+    icon: <FaTwitter />,
   },
   {
     id: 6,
     title: "CodePen",
     url: "https://codepen.io/zeetaen/",
-    icon: <FiCodepen />,
+    icon: <FaCodepen />,
   },
 ];
 

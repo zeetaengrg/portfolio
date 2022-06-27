@@ -1,9 +1,5 @@
-import { Box, Flex, Link, List, ListItem } from "@chakra-ui/react";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import { Box, Link, List, ListItem } from "@chakra-ui/react";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { linkStyle } from "../LinkStyle";
 import { links, iconStyle } from "./SocialIconsLinksStyles";
 
@@ -14,12 +10,12 @@ const SocialIconLinks = () => {
         <ListItem key={link.id}>
           <Link href={link.url} aria-label={link.name} {...linkStyle}>
             <Box as="figure" {...iconStyle}>
-              {link.name === "Facebook Icon" ? (
-                <FaFacebookSquare />
-              ) : link.name === "Instagram Icon" ? (
-                <FaInstagramSquare />
+              {link.name === "Facebook" ? (
+                <FaFacebook />
+              ) : link.name === "Instagram" ? (
+                <FaInstagram />
               ) : (
-                <FaTwitterSquare />
+                <FaTwitter />
               )}
             </Box>
           </Link>

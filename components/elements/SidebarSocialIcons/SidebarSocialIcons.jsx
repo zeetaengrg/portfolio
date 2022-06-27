@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
-import { MdArrowForwardIos, MdOutlineDoubleArrow } from "react-icons/md";
+import { MdArrowForwardIos } from "react-icons/md";
 import {
   arrowContainerStyle,
   arrowVariants,

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Box, Link, Text } from "@chakra-ui/react";
-import { FiMail } from "react-icons/fi";
+import { MdMailOutline } from "react-icons/md";
 
 const MotionBox = motion(Box);
 
@@ -91,7 +91,7 @@ const SidebarMailLink = () => {
         }}
       >
         <Link href="mailto:zeetaen.gurung@gmail.com" sx={mailStyle}>
-          <FiMail style={iconStyle} />
+          <MdMailOutline style={iconStyle} />
         </Link>
       </Box>
       <Box
