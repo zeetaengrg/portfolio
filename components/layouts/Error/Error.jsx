@@ -1,6 +1,24 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { GoBackBtn } from "@components/elements";
+
+const flexVariants = {
+  start: {
+    opacity: 0,
+    y: "20vh",
+  },
+  end: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.9,
+      duration: 0.8,
+      ease: "easeIn",
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Error = () => {
   const textStyle = {
@@ -22,7 +40,10 @@ const Error = () => {
       gap={{ base: "0rem", md: "1rem" }}
     >
       <Flex
-        as="article"
+        as={motion.article}
+        variants={flexVariants}
+        initial="start"
+        animate="end"
         direction="column"
         alignItems="center"
         gap={{ base: "0rem", md: "1rem" }}
