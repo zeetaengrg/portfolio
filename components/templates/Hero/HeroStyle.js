@@ -6,7 +6,7 @@ export const bgImgVariants = {
     opacity: 0.3,
     transition: {
       delay: 0.6,
-      duration: 0.8,
+      duration: 0.6,
     },
   },
 };
@@ -21,7 +21,7 @@ export const profileImgVariants = {
     y: 0,
     transition: {
       delay: 0.95,
-      duration: 0.8,
+      duration: 0.6,
     },
   },
 };
@@ -52,7 +52,7 @@ export const childVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.8,
+      duration: 0.6,
     },
   },
 };
