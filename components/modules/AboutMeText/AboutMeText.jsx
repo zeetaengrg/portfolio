@@ -24,7 +24,7 @@ const AboutMeText = () => {
       }}
     >
       <Text>
-        A Front-End developing aficionado, with an acute detail to hone the
+        A Front-End aficionado developer, with an acute detail to hone the
         skills as required by the project as well as modest experience of UI/UX
         designing proficiency and an immense interest to build elegant as well
         as fully functioning web applications.
