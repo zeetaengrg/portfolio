@@ -65,7 +65,7 @@ export const boxVariants = {
   },
   end: {
     transition: {
-      staggerChildren: 0.3,
+      staggerChildren: 0.4,
     },
   },
 };
@@ -113,7 +113,7 @@ export const arrowVariants = {
   end: {
     opacity: 1,
     transition: {
-      duration: 0.8,
+      duration: 0.6,
       ease: "easeInOut",
       repeat: Infinity,
       repeatType: "reverse",
