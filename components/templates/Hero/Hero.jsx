@@ -188,9 +188,7 @@ const Hero = () => {
               <Link href="/cv/Resume.pdf" download sx={linkStyle}>
                 <DownloadBtn />
               </Link>
-              <Link href="#contacts" sx={linkStyle}>
-                <HireMeBtn />
-              </Link>
+              <HireMeBtn />
             </Flex>
           </Box>
         </Box>

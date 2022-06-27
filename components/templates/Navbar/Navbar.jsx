@@ -1,3 +1,4 @@
+import NextLink from "next/link";
 import { motion } from "framer-motion";
 import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 import { LogoImage, MobileNavbar } from "@components/elements";
@@ -23,16 +24,20 @@ const Navbar = () => {
         <UnorderedList listStyleType="none" display="flex" gap="3rem">
           {linkItem.map((item, i) => (
             <ListItem key={item}>
-              <MotionLink
-                sx={linkStyle}
+              <NextLink
                 href={`/#${item.replace(/\s+/g, "").toLowerCase()}`}
-                variants={linkVariants}
-                custom={i}
-                initial="hidden"
-                animate="visible"
+                passHref
               >
-                {item}
-              </MotionLink>
+                <MotionLink
+                  sx={linkStyle}
+                  variants={linkVariants}
+                  custom={i}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  {item}
+                </MotionLink>
+              </NextLink>
             </ListItem>
           ))}
         </UnorderedList>
