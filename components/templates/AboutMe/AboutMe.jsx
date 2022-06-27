@@ -31,11 +31,7 @@ const AboutMe = () => {
           <AboutMeWrapper />
         </Flex>
         <AboutMeText />
-        <Box as="figure">
-          <Link href="#contacts" _hover={{ "&::after": { content: "none" } }}>
-            <ContactMeBtn />
-          </Link>
-        </Box>
+        <ContactMeBtn />
       </Box>
     </Box>
   );
