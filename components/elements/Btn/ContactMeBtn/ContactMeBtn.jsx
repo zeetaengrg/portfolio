@@ -1,9 +1,9 @@
-import { Button } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import { IoMdContact } from "react-icons/io";
 import { motion } from "framer-motion";
-import { btnStyle } from "../Btn";
+import { linkStyle } from "../Link";
 
-const MotionBtn = motion(Button);
+const MotionLink = motion(Link);
 
 const commonVariants = {
   hidden: {
@@ -18,10 +18,8 @@ const commonVariants = {
 
 const ContactMeBtn = () => {
   return (
-    <MotionBtn
-      sx={btnStyle}
-      size="lg"
-      rightIcon={<IoMdContact style={{ fontSize: "1.5rem" }} />}
+    <MotionLink
+      sx={linkStyle}
       variants={commonVariants}
       initial="hidden"
       whileInView="visible"
@@ -34,7 +32,8 @@ const ContactMeBtn = () => {
       }}
     >
       Contact Me
-    </MotionBtn>
+      <IoMdContact style={{ fontSize: "1.5rem" }} />
+    </MotionLink>
   );
 };
 

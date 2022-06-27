@@ -1,9 +1,9 @@
-import { Button } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import { FaHandshake } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { btnStyle } from "../Btn";
+import { linkStyle } from "../Link";
 
-const MotionBtn = motion(Button);
+const MotionLink = motion(Link);
 
 const btnVariants = {
   hidden: {
@@ -23,16 +23,15 @@ const btnVariants = {
 
 const HireMeBtn = () => {
   return (
-    <MotionBtn
-      size="lg"
-      sx={btnStyle}
-      rightIcon={<FaHandshake style={{ fontSize: "1.5rem" }} />}
+    <MotionLink
+      sx={linkStyle}
       variants={btnVariants}
       initial="hidden"
       animate="visible"
     >
       Hire Me
-    </MotionBtn>
+      <FaHandshake style={{ fontSize: "1.5rem" }} />
+    </MotionLink>
   );
 };
 

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import { Link, Button } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/react";
 import { RiArrowGoBackLine } from "react-icons/ri";
-import { btnStyle } from "../Btn";
+import { linkStyle } from "../Link";
+
+const MotionLink = motion(Link);
 
 const GoBackBtn = () => {
   const btnVariant = {
@@ -20,29 +22,19 @@ const GoBackBtn = () => {
     },
   };
 
-  const linkStyle = {
-    _hover: {
-      "&::after": { content: "none" },
-      color: "#a5abbd",
-    },
-    textTransform: "none",
-    _focus: { outline: "none" },
-  };
-
   return (
-    <Link sx={linkStyle} href="/" position="relative">
-      <Button
-        as={motion.btn}
-        variants={btnVariant}
-        initial="start"
-        animate="end"
-        m={{ base: "1rem 0", md: "1rem 0rem", lg: "0rem" }}
-        sx={btnStyle}
-        rightIcon={<RiArrowGoBackLine />}
-      >
-        Go Back
-      </Button>
-    </Link>
+    <MotionLink
+      sx={linkStyle}
+      href="/"
+      position="relative"
+      variants={btnVariant}
+      initial="start"
+      animate="end"
+      m={{ base: "1rem 0", md: "1rem 0rem", lg: "0rem" }}
+    >
+      Go Back
+      <RiArrowGoBackLine />
+    </MotionLink>
   );
 };
 
