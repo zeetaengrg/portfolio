@@ -20,7 +20,7 @@ export const profileImgVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.7,
+      delay: 0.8,
       duration: 0.8,
     },
   },
@@ -38,6 +38,7 @@ export const parentVariants = {
     transition: {
       when: "beforeChildren",
       staggerChildren: 0.2,
+      delay: "1",
     },
   },
 };
