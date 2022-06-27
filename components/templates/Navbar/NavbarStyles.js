@@ -25,7 +25,7 @@ export const linkStyle = {
     base: "0.72rem",
     md: "0.9rem",
   },
-  _focus: { boxShadow: "none" },
+  _focus: { outline: "none" },
   display: {
     base: "none",
     md: "block",
