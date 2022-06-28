@@ -9,7 +9,7 @@ import {
 
 const ProjectSourceSection = ({ project, isReverse }) => {
   return (
-    <Flex as="section" flexDirection="column">
+    <Flex as="article" flexDirection="column">
       <Heading
         as="h2"
         size="sm"

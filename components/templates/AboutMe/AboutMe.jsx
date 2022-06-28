@@ -21,7 +21,6 @@ const AboutMe = () => {
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Introduction" />
       <Box
-        as="section"
         p={{ base: "1.5rem 3rem", md: "2rem 3rem", lg: "2rem 10rem" }}
         display="flex"
         flexDirection="column"

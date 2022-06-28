@@ -17,7 +17,7 @@ const Footer = () => {
         />
       </Box>
       <Flex
-        as="article"
+        as="section"
         justifyContent="center"
         direction="column"
         position="relative"
@@ -32,32 +32,28 @@ const Footer = () => {
             draggable="false"
           />
         </Center>
-        <Box as="section" display={{ base: "block", md: "none" }}>
+        <Box as="article" display={{ base: "block", md: "none" }}>
           <SocialIconLinks />
         </Box>
-        <Box
-          as="section"
-          fontSize="0.8rem"
+        <Flex
+          as="article"
+          justify="center"
           mb={{ base: "0.5rem", lg: "1.5rem" }}
+          fontSize="0.8rem"
+          align="center"
+          direction="column"
+          gap={{ base: "0rem", lg: "0.5rem" }}
         >
-          <Flex
-            as="article"
-            justify="center"
-            align="center"
-            direction="column"
-            gap={{ base: "0rem", lg: "0.5rem" }}
-          >
-            <Text>Designed & Built By Jiten Gurung</Text>
-            <Flex as="section" align="center">
-              {today.getFullYear()}{" "}
-              <FaCopyright
-                style={{ margin: "0 0.5rem" }}
-                aria-label="Copyright Icon"
-              />
-              All Rights Reserved.
-            </Flex>
+          <Text>Designed & Built By Jiten Gurung</Text>
+          <Flex align="center">
+            {today.getFullYear()}{" "}
+            <FaCopyright
+              style={{ margin: "0 0.5rem" }}
+              aria-label="Copyright Icon"
+            />
+            All Rights Reserved.
           </Flex>
-        </Box>
+        </Flex>
       </Flex>
     </Box>
   );

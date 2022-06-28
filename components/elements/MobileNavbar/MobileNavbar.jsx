@@ -46,12 +46,7 @@ const MobileNavbar = () => {
   const closeMobileMenu = () => setIsOpen(false);
 
   return (
-    <MotionBox
-      as="aside"
-      variants={menuVariants}
-      initial="hidden"
-      animate="visible"
-    >
+    <MotionBox variants={menuVariants} initial="hidden" animate="visible">
       {isOpen ? closeMenu : openMenu}
       {isOpen && (
         <MobileNavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />

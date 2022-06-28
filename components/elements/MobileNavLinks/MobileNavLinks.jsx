@@ -70,6 +70,7 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
       variants={boxVariants}
       initial="hidden"
       animate="visible"
+      aria-label="Mobile navigation links"
     >
       <UnorderedList
         listStyleType="none"

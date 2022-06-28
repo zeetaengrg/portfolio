@@ -33,14 +33,13 @@ const AboutMeText = () => {
         applications. As a result, during the pandemic, I had an epiphany to
         learn web technologies seriously.
       </Text>
-      <Heading
-        as="h3"
-        size="md"
+      <Text
         fontSize="1.1rem"
+        fontWeight="600"
         display={{ base: "none", md: "block" }}
       >
         Curriculums:
-      </Heading>
+      </Text>
       <UnorderedList
         m="0.25rem 0rem"
         display={{ base: "none", md: "flex" }}

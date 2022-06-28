@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Box, Button, keyframes } from "@chakra-ui/react";
+import { Button, keyframes } from "@chakra-ui/react";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import { btn } from "./ScrollBackToTopBtnStyles";
 
@@ -31,7 +31,7 @@ const ScrollBackToTopBtn = () => {
   }, []);
 
   return (
-    <Box as="aside">
+    <>
       {scrollPosition > 500 && (
         <Button
           as={motion.button}
@@ -43,7 +43,7 @@ const ScrollBackToTopBtn = () => {
           <FaArrowAltCircleUp aria-label="Upward Arrow Icon" />
         </Button>
       )}
-    </Box>
+    </>
   );
 };
 

@@ -18,7 +18,7 @@ const ReverseProjects = ({ project }) => {
 
   return (
     <Flex
-      as={motion.article}
+      as={motion.div}
       sx={flexStyle}
       direction={{
         base: "column-reverse",

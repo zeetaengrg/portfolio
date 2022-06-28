@@ -58,13 +58,12 @@ const Hero = () => {
       >
         <SidebarSocialIcons />
       </Box>
-      <Box as="article" display="flex" sx={flexStyle}>
+      <Box display="flex" sx={flexStyle}>
         <Box
           as={motion.figure}
           variants={profileImgVariants}
           initial="hidden"
           animate="visible"
-          userSelect="none"
         >
           <NextImage
             src="/images/profile-pic.png"
@@ -73,6 +72,7 @@ const Hero = () => {
             width={300}
             quality={100}
             draggable="false"
+            userSelect="none"
             priority
           />
         </Box>
@@ -99,53 +99,45 @@ const Hero = () => {
           >
             Hi!
           </Text>
-          <Box
-            as={motion.section}
+          <Flex
+            as={motion.div}
             variants={childVariants}
             fontSize={{ base: "1.5rem", md: "2rem" }}
+            gap="0.5rem"
+            justifyContent={{
+              base: "center",
+              md: "center",
+              lg: "center",
+              xl: "left",
+            }}
           >
-            <Flex
-              as="article"
-              gap="0.5rem"
-              justifyContent={{
-                base: "center",
-                md: "center",
-                lg: "center",
-                xl: "left",
+            <Text fontWeight="bold" casing="uppercase">
+              I&apos;m
+            </Text>
+            <FaQuoteLeft
+              style={{
+                marginLeft: "0.5rem",
+                fontSize: "0.8rem",
               }}
+              aria-label="Left Quote Icon"
+            />
+            <Text
+              casing="uppercase"
+              color="#fff"
+              fontSize={{ base: "3rem", md: "4rem" }}
+              fontWeight="extrabold"
+              lineHeight="1.2"
             >
-              <Text fontWeight="bold" casing="uppercase">
-                I&apos;m
-              </Text>
-              <Box>
-                <FaQuoteLeft
-                  style={{
-                    marginLeft: "0.5rem",
-                    fontSize: "0.8rem",
-                  }}
-                  aria-label="Left Quote Icon"
-                />
-              </Box>
-              <Text
-                casing="uppercase"
-                color="#fff"
-                fontSize={{ base: "3rem", md: "4rem" }}
-                fontWeight="extrabold"
-                lineHeight="1.2"
-              >
-                Jiten
-              </Text>
-              <Box as="figure">
-                <FaQuoteRight
-                  style={{
-                    marginLeft: "0.5rem",
-                    fontSize: "0.8rem",
-                  }}
-                  aria-label="Right Quote Icon"
-                />
-              </Box>
-            </Flex>
-          </Box>
+              Jiten
+            </Text>
+            <FaQuoteRight
+              style={{
+                marginLeft: "0.5rem",
+                fontSize: "0.8rem",
+              }}
+              aria-label="Right Quote Icon"
+            />
+          </Flex>
           <Text
             as={motion.p}
             casing="uppercase"
@@ -173,7 +165,6 @@ const Hero = () => {
             experience.
           </Text>
           <Flex
-            as="section"
             gap="1.5rem"
             m={{ base: "0rem auto", md: "0.5rem auto", xl: "0.5rem 0rem" }}
             justifyContent={{

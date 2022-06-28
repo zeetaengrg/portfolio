@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Tooltip } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Tooltip } from "@chakra-ui/react";
 import {
   techFlexStyle,
   techFlexStyleRight,
@@ -8,7 +8,7 @@ import {
 
 const ProjectsTechSection = ({ project, isReverse }) => {
   return (
-    <>
+    <Box as="article">
       <Heading
         as="h2"
         size="sm"
@@ -16,7 +16,7 @@ const ProjectsTechSection = ({ project, isReverse }) => {
       >
         Tech Stacks
       </Heading>
-      <Flex as="section" sx={isReverse ? techFlexStyle : techFlexStyleRight}>
+      <Flex sx={isReverse ? techFlexStyle : techFlexStyleRight}>
         {isReverse
           ? project.technologyTwo.map((tech) => (
               <Tooltip
@@ -59,7 +59,7 @@ const ProjectsTechSection = ({ project, isReverse }) => {
               </Tooltip>
             ))}
       </Flex>
-    </>
+    </Box>
   );
 };
 

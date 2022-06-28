@@ -94,9 +94,9 @@ const Skills = () => {
             </Tab>
           ))}
         </TabList>
-        <TabPanels as="section">
+        <TabPanels as="article">
           {tabList.map((tab) => (
-            <TabPanel as="article" key={tab}>
+            <TabPanel key={tab}>
               {tab === "Language" ? (
                 <LanguagesTab />
               ) : tab === "Backend" ? (

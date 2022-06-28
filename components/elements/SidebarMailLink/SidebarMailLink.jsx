@@ -14,7 +14,6 @@ const MotionBox = motion(Box);
 const SidebarMailLink = () => {
   return (
     <MotionBox
-      as="section"
       variants={commonVariants}
       initial="hidden"
       animate="visible"
@@ -30,7 +29,6 @@ const SidebarMailLink = () => {
         </Link>
       </Box>
       <Box
-        as="article"
         bg="#141D38"
         p="1.5rem 0.2rem"
         display="grid"

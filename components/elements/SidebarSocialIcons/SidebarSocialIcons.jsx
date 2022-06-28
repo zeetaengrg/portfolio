@@ -15,7 +15,6 @@ const MotionBox = motion(Box);
 const SidebarSocialIcons = () => {
   return (
     <MotionBox
-      as="section"
       variants={commonVariants}
       initial="hidden"
       animate="visible"
@@ -24,7 +23,7 @@ const SidebarSocialIcons = () => {
         duration: 0.5,
       }}
     >
-      <Box as="article" display="flex">
+      <Box display="flex">
         <UnorderedList
           listStyleType="none"
           gap="1.5rem"
@@ -55,7 +54,7 @@ const SidebarSocialIcons = () => {
           ))}
         </UnorderedList>
         <Box
-          as={motion.section}
+          as={motion.div}
           sx={arrowContainerStyle}
           variants={boxVariants}
           initial="start"

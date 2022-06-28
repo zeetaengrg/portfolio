@@ -20,7 +20,12 @@ const Navbar = () => {
       <Box as="figure">
         <LogoImage />
       </Box>
-      <Box as="nav" display="flex" alignItems="center">
+      <Box
+        as="nav"
+        display="flex"
+        alignItems="center"
+        aria-label="Primary navigation links"
+      >
         <UnorderedList listStyleType="none" display="flex" gap="3rem">
           {linkItem.map((item, i) => (
             <ListItem key={item}>

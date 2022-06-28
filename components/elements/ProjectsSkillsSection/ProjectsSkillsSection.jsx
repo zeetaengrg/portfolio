@@ -3,7 +3,7 @@ import { gridStyle } from "@components/modules/ProjectsStyle";
 
 const ProjectsSkillsSection = ({ project, isReverse }) => {
   return (
-    <Box as="section">
+    <Box as="article">
       <Heading
         as="h2"
         size="sm"
