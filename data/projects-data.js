@@ -27,7 +27,6 @@ export const projects = [
       "Redux Toolkit",
       "Redux Persist",
       "Axios",
-      "getServerSideProps",
       "RESTful API",
       "CRUD Operation",
       "API Testing(Postman)",
