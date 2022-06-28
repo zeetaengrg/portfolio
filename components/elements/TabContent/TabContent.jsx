@@ -2,12 +2,12 @@ import { Image, Tooltip } from "@chakra-ui/react";
 
 const TabContent = ({ item }) => {
   return (
-    <Tooltip as="figcaption" label={item.name} placement="top">
+    <Tooltip hasArrow as="figcaption" label={item.name} placement="top">
       <Image
         src={item.image}
         alt={item.name}
-        height="75"
-        width="75"
+        height={{ base: "3rem", md: "4.5rem" }}
+        width={{ base: "3rem", md: "4.5rem" }}
         objectFit="contain"
         draggable="false"
         userSelect="none"
