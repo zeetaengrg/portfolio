@@ -5,4 +5,8 @@ export const flexStyle = {
   flexWrap: {
     base: "wrap",
   },
+  padding: {
+    base: "0rem 1rem",
+    md: "0rem 5rem",
+  },
 };
