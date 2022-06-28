@@ -43,7 +43,7 @@ export const imgBoxStyle = {
   height: {
     base: "8rem",
     md: "20rem",
-    lg: "23.12rem",
+    lg: "23.14rem",
   },
   margin: {
     base: "0 auto",
