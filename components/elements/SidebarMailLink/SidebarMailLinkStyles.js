@@ -21,7 +21,7 @@ export const iconBoxStyle = {
   placeItems: "center",
   borderRadius: "1rem 0rem 0rem 1rem",
   position: "relative",
-  boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.3)",
+  boxShadow: "-0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3)",
   _before: {
     content: '""',
     position: "absolute",

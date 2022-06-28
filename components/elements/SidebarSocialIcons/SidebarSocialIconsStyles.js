@@ -80,7 +80,7 @@ export const arrowContainerStyle = {
   display: "grid",
   placeItems: "center",
   borderRadius: "0rem 2rem 2rem 0rem",
-  boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.3)",
+  boxShadow: "0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3)",
   position: "relative",
   _before: {
     content: '""',
@@ -91,7 +91,7 @@ export const arrowContainerStyle = {
     top: "-0.95rem",
     left: "0rem",
     borderBottomLeftRadius: "1rem",
-    boxShadow: "-4px 4px 0 3px #141D38",
+    boxShadow: "-3px 4px 0 3px #141D38",
   },
   _after: {
     content: '""',
