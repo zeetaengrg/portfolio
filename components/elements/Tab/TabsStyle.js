@@ -4,6 +4,5 @@ export const flexStyle = {
   gap: "2rem",
   flexWrap: {
     base: "wrap",
-    md: "nowrap",
   },
 };
