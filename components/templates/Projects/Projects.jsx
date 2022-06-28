@@ -17,7 +17,6 @@ import { FiExternalLink } from "react-icons/fi";
 import { Header, LineDivider, SubHeader } from "@components/elements";
 import { projects } from "@data/projects-data";
 import {
-  boxStyle,
   commonVariants,
   flexStyle,
   imgStyle,

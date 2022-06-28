@@ -14,7 +14,7 @@ export const gridStyle = {
   columnGap: {
     base: "2rem",
     md: "9rem",
-    lg: "2rem",
+    lg: "1.5rem",
   },
   gridTemplateColumns: "repeat(2, 1fr)",
   padding: { base: "0rem", md: "0rem 5rem", lg: "0rem" },
@@ -38,7 +38,7 @@ export const imgBoxStyle = {
     base: "80%",
     md: "85%",
     lg: "65%",
-    xl: "40%",
+    "2xl": "40%",
   },
   height: {
     base: "8rem",
