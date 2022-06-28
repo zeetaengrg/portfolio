@@ -19,6 +19,8 @@ export default class Document extends NextDocument {
           />
           <meta name="author" content="Jitendra Gurung" />
           <meta name="copyright" content="Jitendra Gurung" />
+          <meta name="robots" content="index, follow" />
+          <meta name="theme-color" content="#0b111e" />
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
@@ -29,6 +31,7 @@ export default class Document extends NextDocument {
             type="image/x-icon"
           ></link>
           <link rel="icon" href="/favicon.ico" type="image/x-icon"></link>
+          <link rel="apple-touch-icon" href="images/logo.svg"></link>
         </Head>
         <body>
           <Main />
