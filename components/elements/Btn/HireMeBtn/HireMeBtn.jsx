@@ -26,13 +26,17 @@ const HireMeBtn = () => {
     <NextLink href="#contacts" passHref>
       <MotionLink
         sx={linkStyle}
+        href="#contacts"
+        aria-label="Link To Contact Me Section"
         variants={btnVariants}
         initial="hidden"
         animate="visible"
-        href="#contacts"
       >
         <Text>Hire Me</Text>
-        <FaHandshake style={{ fontSize: "1.5rem" }} />
+        <FaHandshake
+          style={{ fontSize: "1.5rem" }}
+          aria-label="Handshake Icon"
+        />
       </MotionLink>
     </NextLink>
   );

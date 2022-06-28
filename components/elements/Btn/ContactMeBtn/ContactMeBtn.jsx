@@ -32,9 +32,10 @@ const ContactMeBtn = () => {
           type: "tween",
           stiffness: 110,
         }}
+        aria-label="Link To Contact Me"
       >
         <Text>Contact Me</Text>
-        <IoMdContact style={{ fontSize: "1.5rem" }} />
+        <IoMdContact style={{ fontSize: "1.5rem" }} aria-label="Contact Icon" />
       </MotionLink>
     </NextLink>
   );

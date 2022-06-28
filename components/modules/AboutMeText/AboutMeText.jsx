@@ -63,6 +63,7 @@ const AboutMeText = () => {
           sx={specialLinkStyle}
           rel="noreferrer noopener nofollow"
           target="_blank"
+          aria-label="Link to Nepal Telecommunication Authority(NTA) website"
         >
           &nbsp;Nepal Telecommunication Authority(NTA)&nbsp;
         </Link>
@@ -76,11 +77,16 @@ const AboutMeText = () => {
           sx={specialLinkStyle}
           rel="noopener noreferrer nofollow"
           target="_blank"
+          aria-label="Link to my GitHub profile"
         >
           &nbsp;GitHub&nbsp;
         </Link>
         profile and
-        <Link href="#projects" sx={specialLinkStyle}>
+        <Link
+          href="#projects"
+          sx={specialLinkStyle}
+          aria-label="Link to Projects section"
+        >
           &nbsp;Projects&nbsp;
         </Link>
         section.

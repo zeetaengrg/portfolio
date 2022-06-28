@@ -23,6 +23,7 @@ const CurriculumTable = () => {
     textTransform: "none",
     fontWeight: "normal",
     fontSize: "1rem",
+    fontStyle: "italic",
   };
 
   return (
@@ -46,6 +47,7 @@ const CurriculumTable = () => {
                 rel="noopener noreferrer nofollow"
                 sx={linkStyle}
                 href={curriculum.link}
+                aria-label="Link To Curriculum Title"
               >
                 {curriculum.title}
               </Link>
@@ -56,12 +58,17 @@ const CurriculumTable = () => {
                 rel="noopener noreferrer nofollow"
                 sx={linkStyle}
                 href="https://www.freecodecamp.org/"
+                aria-label="Link To Free Code Camp Website"
               >
-                <i>{curriculum.platform}</i>
+                {curriculum.platform}
               </Link>
             </td>
             <td style={tableHeadStyle}>
-              <Link color="#3892f9" textTransform="capitalize">
+              <Link
+                color="#3892f9"
+                textTransform="capitalize"
+                aria-label="Link to curriculum certificate"
+              >
                 {curriculum.title === "Front End Development Libraries" &&
                 "Back End Development and APIs"
                   ? "Ongoing"

@@ -23,7 +23,7 @@ const ThankYou = () => {
         <Heading as="h1" sx={headingStyle}>
           Thank You!!!
         </Heading>
-        <Divider as="figure" width="60%" />
+        <Divider width="60%" />
         <Text sx={textStyle}>
           Your message has been sent successfully. I will get back to you
           shortly.

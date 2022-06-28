@@ -18,7 +18,6 @@ const ProjectsTitleSection = ({ project, isReverse }) => {
         {isReverse ? project.titleTwo : project.titleOne}
       </Heading>
       <Divider
-        as="figure"
         margin={{ base: "0.5rem auto" }}
         width={{ base: "45%", md: "45%", lg: "100%" }}
       />

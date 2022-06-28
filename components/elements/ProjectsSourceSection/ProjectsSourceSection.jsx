@@ -38,8 +38,13 @@ const ProjectSourceSection = ({ project, isReverse }) => {
             sx={linkToProjects}
             target="_blank"
             rel="noopener noreferrer nofollow"
+            aria-label={
+              isReverse
+                ? `Link to live demo of ${project.titleTwo}`
+                : `Link to live demo of ${project.titleOne}`
+            }
           >
-            <FiExternalLink />
+            <FiExternalLink aria-label="External Link Icon" />
           </Link>
         </Tooltip>
         <Tooltip
@@ -54,8 +59,13 @@ const ProjectSourceSection = ({ project, isReverse }) => {
             sx={linkToProjects}
             target="_blank"
             rel="noopener noreferrer nofollow"
+            aria-label={
+              isReverse
+                ? `Link to github source code of ${project.titleTwo}`
+                : `Link to github source code of ${project.titleOne}`
+            }
           >
-            <FaGithub />
+            <FaGithub aria-label="Github Icon" />
           </Link>
         </Tooltip>
       </Box>

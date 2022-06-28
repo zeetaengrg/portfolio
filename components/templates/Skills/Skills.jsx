@@ -72,7 +72,6 @@ const Skills = () => {
         transition={{
           delay: 0.4,
           duration: 0.5,
-          type: "tween",
         }}
       >
         <TabList as="ul">
@@ -81,15 +80,15 @@ const Skills = () => {
               {tab}
               <Box as="figure" {...iconStyle}>
                 {tab === "Language" ? (
-                  <MdLanguage />
+                  <MdLanguage aria-label="Language Icon" />
                 ) : tab === "Backend" ? (
-                  <BsBack />
+                  <BsBack aria-label="Backend Icon" />
                 ) : tab === "Database" ? (
-                  <FaDatabase />
+                  <FaDatabase aria-label="Database Icon" />
                 ) : tab === "UI Design" ? (
-                  <MdDesignServices />
+                  <MdDesignServices aria-label="UI Design Icon" />
                 ) : (
-                  <FaTools />
+                  <FaTools aria-label="Tools Icon" />
                 )}
               </Box>
             </Tab>

@@ -32,6 +32,7 @@ const ProjectsTechSection = ({ project, isReverse }) => {
                   alt={tech.name}
                   key={tech.id}
                   height="3rem"
+                  wdith="3rem"
                   draggable="false"
                   userSelect="none"
                 />
@@ -50,6 +51,7 @@ const ProjectsTechSection = ({ project, isReverse }) => {
                   alt={tech.name}
                   key={tech.id}
                   height="3rem"
+                  width="3rem"
                   draggable="false"
                   userSelect="none"
                 />

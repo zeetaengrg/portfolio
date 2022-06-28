@@ -50,16 +50,20 @@ const ContactInfo = () => {
         alignItems={{ base: "center", md: "flex-start" }}
       >
         <Flex sx={flexStyle}>
-          <MdLocationPin style={iconStyle} />
+          <MdLocationPin style={iconStyle} aria-label="Location Icon" />
           <Text sx={textStyle}>Pokhara, Nepal</Text>
         </Flex>
         <Flex sx={flexStyle}>
-          <FaMobileAlt style={iconStyle} />
+          <FaMobileAlt style={iconStyle} aria-label="Mobile Phone Icon" />
           <Text sx={textStyle}>+977 9803709974</Text>
         </Flex>
         <Flex sx={flexStyle}>
-          <MdMailOutline style={iconStyle} />
-          <Link href="mailto:zeetaen.gurung@gmail.com" sx={mailStyle}>
+          <MdMailOutline style={iconStyle} aria-label="Mail Icon" />
+          <Link
+            href="mailto:zeetaen.gurung@gmail.com"
+            sx={mailStyle}
+            aria-label="Link to send mail to zeetaen.gurung@gmail.com"
+          >
             <Text sx={textStyle}>zeetaen.gurung@gmail.com</Text>
           </Link>
         </Flex>
@@ -68,21 +72,25 @@ const ContactInfo = () => {
       <List display="flex" gap="5rem">
         {links.map((link) => (
           <ListItem key={link.id} m="0 auto">
-            <Link href={link.url} aria-label={link.name} {...linkStyle}>
+            <Link
+              href={link.url}
+              aria-label={`Link to ${link.name} page`}
+              {...linkStyle}
+            >
               <Box as="figure" {...socialIconStyle}>
                 {link.name === "LinkedIn" ? (
-                  <FaLinkedinIn />
+                  <FaLinkedinIn aria-label="LinkedIn Icon" />
                 ) : link.name === "Github" ? (
-                  <FaGithub />
+                  <FaGithub aria-label="Github Icon" />
                 ) : (
-                  <FaCodepen />
+                  <FaCodepen aria-label="Codepen Icon" />
                 )}
               </Box>
             </Link>
           </ListItem>
         ))}
       </List>
-      <Divider as="figure" m="1rem 0rem" />
+      <Divider m="1rem 0rem" />
     </MotionFlex>
   );
 };

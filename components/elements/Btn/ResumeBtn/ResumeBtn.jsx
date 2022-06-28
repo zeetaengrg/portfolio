@@ -47,6 +47,7 @@ const ResumeBtn = () => {
         setIsLoading(true);
         setTimeout(() => setIsLoading(false), 2500);
       }}
+      aria-label="Downloads My Resume in a new window"
     >
       Resume
     </MotionBtn>

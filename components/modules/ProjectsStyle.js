@@ -52,6 +52,7 @@ export const imgStyle = {
   width: {
     base: "90%",
     md: "100%",
+    lg: "100%",
   },
   height: {
     base: "8rem",

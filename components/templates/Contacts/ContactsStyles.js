@@ -22,6 +22,7 @@ export const imgStyle = {
   bottom: "5rem",
   width: "70rem",
   opacity: "0.2",
+  objectFit: "cover",
 };
 
 export const flexStyle = {

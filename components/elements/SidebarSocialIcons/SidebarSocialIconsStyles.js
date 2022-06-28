@@ -12,37 +12,37 @@ export const links = [
     id: 1,
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/zeetaengrg/",
-    icon: <FaLinkedinIn />,
+    icon: <FaLinkedinIn aria-label="LinkedIn Icon" />,
   },
   {
     id: 2,
     title: "Github",
     url: "https://github.com/zeetaengrg/",
-    icon: <FaGithub />,
+    icon: <FaGithub aria-label="Github Icon" />,
   },
   {
     id: 3,
     title: "Facebook",
     url: "https://www.facebook.com/zeetaen/",
-    icon: <FaFacebook />,
+    icon: <FaFacebook aria-label="Facebook Icon" />,
   },
   {
     id: 4,
     title: "Instagram",
     url: "https://www.instagram.com/zeetaen/",
-    icon: <FaInstagram />,
+    icon: <FaInstagram aria-label="Instagram Icon" />,
   },
   {
     id: 5,
     title: "Twitter",
     url: "https://twitter.com/zeetaen/",
-    icon: <FaTwitter />,
+    icon: <FaTwitter aria-label="Twitter Icon" />,
   },
   {
     id: 6,
     title: "CodePen",
     url: "https://codepen.io/zeetaen/",
-    icon: <FaCodepen />,
+    icon: <FaCodepen aria-label="Codepen Icon" />,
   },
 ];
 

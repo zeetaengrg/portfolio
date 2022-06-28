@@ -47,6 +47,7 @@ const SidebarSocialIcons = () => {
                 sx={socialLinkStyle}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
+                aria-label={`Link to ${link.title} page`}
               >
                 {link.icon}
               </Link>
@@ -66,7 +67,11 @@ const SidebarSocialIcons = () => {
             position="absolute"
             left="0.15rem"
           >
-            <MdArrowForwardIos fontSize="1.1rem" color="#fff" />
+            <MdArrowForwardIos
+              fontSize="1.1rem"
+              color="#fff"
+              aria-label="Forward Arrow Icon"
+            />
           </Box>
           <Box
             as={motion.figure}
@@ -74,7 +79,11 @@ const SidebarSocialIcons = () => {
             position="absolute"
             left="0.65rem"
           >
-            <MdArrowForwardIos fontSize="1.1rem" color="#fff" />
+            <MdArrowForwardIos
+              fontSize="1.1rem"
+              color="#fff"
+              aria-label="Forward Arrow Icon"
+            />
           </Box>
           <Box
             as={motion.figure}
@@ -82,7 +91,11 @@ const SidebarSocialIcons = () => {
             position="absolute"
             left="1.15rem"
           >
-            <MdArrowForwardIos fontSize="1.1rem" color="#fff" />
+            <MdArrowForwardIos
+              fontSize="1.1rem"
+              color="#fff"
+              aria-label="Forward Arrow Icon"
+            />
           </Box>
         </Box>
       </Box>

@@ -21,8 +21,12 @@ const SidebarMailLink = () => {
       display="flex"
     >
       <Box as="figure" sx={iconBoxStyle}>
-        <Link href="mailto:zeetaen.gurung@gmail.com" sx={mailStyle}>
-          <MdMailOutline style={iconStyle} />
+        <Link
+          href="mailto:zeetaen.gurung@gmail.com"
+          sx={mailStyle}
+          aria-label="Link to send an email to zeetaen.gurung@gmail.com"
+        >
+          <MdMailOutline style={iconStyle} aria-label="Mail Icon" />
         </Link>
       </Box>
       <Box

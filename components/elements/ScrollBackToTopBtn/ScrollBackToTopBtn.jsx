@@ -38,8 +38,9 @@ const ScrollBackToTopBtn = () => {
           animation={animation}
           sx={btn}
           onClick={handleScrollToTop}
+          aria-label="Scroll To Top Button"
         >
-          <FaArrowAltCircleUp />
+          <FaArrowAltCircleUp aria-label="Upward Arrow Icon" />
         </Button>
       )}
     </Box>

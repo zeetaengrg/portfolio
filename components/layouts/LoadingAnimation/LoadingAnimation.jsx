@@ -7,6 +7,7 @@ const MotionBox = motion(Box);
 const LoadingAnimation = () => {
   return (
     <MotionBox
+      as="section"
       variants={boxVariants}
       initial="start"
       animate="end"
@@ -16,12 +17,12 @@ const LoadingAnimation = () => {
       alignItems="center"
       gap="1rem"
     >
-      <MotionBox sx={ballStyle} variants={ballVariants}></MotionBox>
-      <MotionBox sx={ballStyle} variants={ballVariants}></MotionBox>
-      <MotionBox sx={ballStyle} variants={ballVariants}></MotionBox>
-      <MotionBox sx={ballStyle} variants={ballVariants}></MotionBox>
-      <MotionBox sx={ballStyle} variants={ballVariants}></MotionBox>
-      <MotionBox sx={ballStyle} variants={ballVariants}></MotionBox>
+      <MotionBox as="figure" sx={ballStyle} variants={ballVariants}></MotionBox>
+      <MotionBox as="figure" sx={ballStyle} variants={ballVariants}></MotionBox>
+      <MotionBox as="figure" sx={ballStyle} variants={ballVariants}></MotionBox>
+      <MotionBox as="figure" sx={ballStyle} variants={ballVariants}></MotionBox>
+      <MotionBox as="figure" sx={ballStyle} variants={ballVariants}></MotionBox>
+      <MotionBox as="figure" sx={ballStyle} variants={ballVariants}></MotionBox>
     </MotionBox>
   );
 };

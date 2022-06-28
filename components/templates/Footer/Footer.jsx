@@ -50,7 +50,10 @@ const Footer = () => {
             <Text>Designed & Built By Jiten Gurung</Text>
             <Flex as="section" align="center">
               {today.getFullYear()}{" "}
-              <FaCopyright style={{ margin: "0 0.5rem" }} />
+              <FaCopyright
+                style={{ margin: "0 0.5rem" }}
+                aria-label="Copyright Icon"
+              />
               All Rights Reserved.
             </Flex>
           </Flex>

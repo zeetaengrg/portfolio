@@ -27,14 +27,15 @@ const GoBackBtn = () => {
     <NextLink href="/" passHref>
       <MotionLink
         sx={linkStyle}
+        m={{ base: "1rem 0", md: "1rem 0rem", lg: "0rem" }}
         position="relative"
         variants={btnVariant}
         initial="start"
         animate="end"
-        m={{ base: "1rem 0", md: "1rem 0rem", lg: "0rem" }}
+        aria-label="Link To Home Page"
       >
         <Text>Go Back</Text>
-        <RiArrowGoBackLine />
+        <RiArrowGoBackLine aria-label="Go Back Icon" />
       </MotionLink>
     </NextLink>
   );

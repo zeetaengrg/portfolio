@@ -8,14 +8,18 @@ const SocialIconLinks = () => {
     <List display="flex" justifyContent="center" alignItems="center" gap="1rem">
       {links.map((link) => (
         <ListItem key={link.id}>
-          <Link href={link.url} aria-label={link.name} {...linkStyle}>
+          <Link
+            href={link.url}
+            aria-label={`Link to ${link.name} page`}
+            {...linkStyle}
+          >
             <Box as="figure" {...iconStyle}>
               {link.name === "Facebook" ? (
-                <FaFacebook />
+                <FaFacebook aria-label="Facebook Icon" />
               ) : link.name === "Instagram" ? (
-                <FaInstagram />
+                <FaInstagram aria-label="Instagram Icon" />
               ) : (
-                <FaTwitter />
+                <FaTwitter aria-label="Twitter Icon" />
               )}
             </Box>
           </Link>

@@ -27,13 +27,19 @@ const MobileNavbar = () => {
 
   const openMenu = (
     <Box as="figure" {...menuStyle}>
-      <CgMenuRound onClick={() => setIsOpen(!isOpen)} />
+      <CgMenuRound
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Open Menu Icon"
+      />
     </Box>
   );
 
   const closeMenu = (
     <Box as="figure" {...menuStyle}>
-      <CgCloseO onClick={() => setIsOpen(!isOpen)} />
+      <CgCloseO
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Close Menu Icon"
+      />
     </Box>
   );
 

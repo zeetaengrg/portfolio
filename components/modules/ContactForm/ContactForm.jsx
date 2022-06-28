@@ -86,13 +86,20 @@ const ContactForm = () => {
           name="message"
           id="message"
           height="10rem"
+          aria-label="Write your message here"
           required
         />
         <Button
           mt="1rem"
           sx={btn}
           type="submit"
-          rightIcon={<RiSendPlaneFill style={{ fontSize: "1.5rem" }} />}
+          rightIcon={
+            <RiSendPlaneFill
+              style={{ fontSize: "1.5rem" }}
+              aria-label="Send Icon"
+            />
+          }
+          aria-label="Sends your message to me"
         >
           Send
         </Button>

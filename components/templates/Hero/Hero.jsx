@@ -38,9 +38,9 @@ const Hero = () => {
       >
         <Image
           src="/images/hero-bg.svg"
-          alt="hero-background"
-          height="850"
-          width="1500"
+          alt="Hero section background image"
+          height="53.125rem"
+          width="93.75rem"
           objectFit="cover"
           draggable="false"
         />
@@ -68,7 +68,7 @@ const Hero = () => {
         >
           <NextImage
             src="/images/profile-pic.png"
-            alt="Jiten Image"
+            alt="Author Profile picture"
             height={300}
             width={300}
             quality={100}
@@ -123,6 +123,7 @@ const Hero = () => {
                     marginLeft: "0.5rem",
                     fontSize: "0.8rem",
                   }}
+                  aria-label="Left Quote Icon"
                 />
               </Box>
               <Text
@@ -140,6 +141,7 @@ const Hero = () => {
                     marginLeft: "0.5rem",
                     fontSize: "0.8rem",
                   }}
+                  aria-label="Right Quote Icon"
                 />
               </Box>
             </Flex>
@@ -186,6 +188,7 @@ const Hero = () => {
               sx={linkStyle}
               target="_blank"
               rel="noopener noreferrer nofollow"
+              aria-label="Link to Resume page"
             >
               <ResumeBtn />
             </Link>

@@ -21,12 +21,17 @@ const CurriculumList = ({ curriculum }) => {
       alignItems="center"
       justifyContent="center"
     >
-      <ListIcon as={FaCheckCircle} fontSize="0.7rem" />
+      <ListIcon
+        as={FaCheckCircle}
+        fontSize="0.7rem"
+        aria-label="Check Circle Icon"
+      />
       <Link
         target="_blank"
         rel="noopener noreferrer nofollow"
         sx={linkStyle}
         href={curriculum.link}
+        aria-label="Link To Curriculum Title"
       >
         {curriculum.title}
       </Link>
@@ -35,8 +40,10 @@ const CurriculumList = ({ curriculum }) => {
         rel="noopener noreferrer nofollow"
         sx={linkStyle}
         href="https://www.freecodecamp.org/"
+        aria-label="Link To Free Code Camp Website"
+        fontStyle="italic"
       >
-        &ensp;<i>({curriculum.platform})</i>&ensp;
+        &nbsp;({curriculum.platform})&nbsp;
       </Link>
     </ListItem>
   );

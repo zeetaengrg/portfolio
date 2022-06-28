@@ -34,6 +34,7 @@ const Navbar = () => {
                   custom={i}
                   initial="hidden"
                   animate="visible"
+                  aria-label={`Navigation link to ${item} section`}
                 >
                   {item}
                 </MotionLink>

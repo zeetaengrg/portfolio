@@ -21,7 +21,6 @@ const boxVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      type: "tween",
       staggerChildren: 0.3,
     },
   },
@@ -45,22 +44,22 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
     {
       id: 1,
       name: "About Me",
-      icon: <MdAccountCircle />,
+      icon: <MdAccountCircle aria-label="Account Icon" />,
     },
     {
       id: 2,
       name: "Skills",
-      icon: <MdDesignServices />,
+      icon: <MdDesignServices aria-label="Design Services Icon" />,
     },
     {
       id: 3,
       name: "Projects",
-      icon: <FaProjectDiagram />,
+      icon: <FaProjectDiagram aria-label="Project Diagram Icon" />,
     },
     {
       id: 4,
       name: "Contacts",
-      icon: <MdContactPhone />,
+      icon: <MdContactPhone aria-label="Contact Phone Icon" />,
     },
   ];
 
@@ -85,6 +84,7 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
               href={`#${link.name.replace(/\s+/g, "").toLowerCase()}`}
               onClick={() => isMobile && closeMobileMenu()}
               variants={linkVariants}
+              aria-label={`Link to ${link.name}`}
             >
               {link.icon}
               {link.name}
