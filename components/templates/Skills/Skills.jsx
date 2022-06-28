@@ -60,7 +60,7 @@ const Skills = () => {
       <LineDivider width={{ base: "70%", md: "50%", lg: "40%" }} />
       <SubHeader subHeading="Libraries, Frameworks and Tools" />
       <MotionTabs
-        as="article"
+        as="section"
         m={{ base: "1.5rem 0", md: "1.5rem 0" }}
         size="sm"
         variant="solid-rounded"
@@ -74,7 +74,7 @@ const Skills = () => {
           duration: 0.5,
         }}
       >
-        <TabList as="ul">
+        <TabList as="article">
           {tabList.map((tab) => (
             <Tab sx={tabStyle} key={tab}>
               {tab}
@@ -94,9 +94,9 @@ const Skills = () => {
             </Tab>
           ))}
         </TabList>
-        <TabPanels as="ul">
+        <TabPanels as="section">
           {tabList.map((tab) => (
-            <TabPanel as="li" key={tab}>
+            <TabPanel as="article" key={tab}>
               {tab === "Language" ? (
                 <LanguagesTab />
               ) : tab === "Backend" ? (
