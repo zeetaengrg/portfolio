@@ -1,4 +1,4 @@
-import { Center, Divider } from "@chakra-ui/react";
+import { Divider } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const MotionDivider = motion(Divider);
@@ -16,17 +16,15 @@ const commonVariants = {
 
 const LineDivider = ({ width }) => {
   return (
-    <Center as="figure">
-      <MotionDivider
-        width={width}
-        mb="0.5rem"
-        variants={commonVariants}
-        initial="hidden"
-        whileInView="visible"
-        transition={{ delay: 0.2, duration: 0.5, type: "tween" }}
-        viewport={{ once: true }}
-      />
-    </Center>
+    <MotionDivider
+      width={width}
+      m="0 auto 0.5rem"
+      variants={commonVariants}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ delay: 0.2, duration: 0.5, type: "tween" }}
+      viewport={{ once: true }}
+    />
   );
 };
 
