@@ -34,11 +34,10 @@ export const flexStyle = {
 };
 
 export const imgBoxStyle = {
-  minWidth: {
-    base: "80%",
+  width: {
+    base: "90%",
     md: "85%",
     lg: "65%",
-    "2xl": "40%",
   },
   height: {
     base: "8rem",
@@ -59,8 +58,11 @@ export const imgBoxStyle = {
 
 export const imgStyle = {
   objectFit: {
-    base: "contain",
-    md: "cover",
+    base: "cover",
+  },
+  width: {
+    base: "90%",
+    md: "100%",
   },
   height: {
     base: "8rem",
