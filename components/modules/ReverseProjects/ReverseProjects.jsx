@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Box, Flex, Grid, Image } from "@chakra-ui/react";
 import {
-  ProjectSourceSection,
   ProjectsSkillsSection,
+  ProjectsSourceSection,
   ProjectsTechSection,
   ProjectsTitleSection,
 } from "@components/elements";
@@ -41,7 +41,7 @@ const ReverseProjects = ({ project }) => {
         <ProjectsTitleSection project={project} isReverse={isReverse} />
         <ProjectsSkillsSection project={project} isReverse={isReverse} />
         <ProjectsTechSection project={project} isReverse={isReverse} />
-        <ProjectSourceSection project={project} isReverse={isReverse} />
+        <ProjectsSourceSection project={project} isReverse={isReverse} />
       </Grid>
       <Box as="figure" sx={imgBoxStyle}>
         <Image

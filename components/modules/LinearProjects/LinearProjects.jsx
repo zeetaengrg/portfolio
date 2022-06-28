@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Box, Flex, Grid, Image } from "@chakra-ui/react";
 import {
-  ProjectSourceSection,
   ProjectsSkillsSection,
+  ProjectsSourceSection,
   ProjectsTechSection,
   ProjectsTitleSection,
 } from "@components/elements";
@@ -45,7 +45,7 @@ const LinearProjects = ({ project }) => {
         <ProjectsTitleSection project={project} />
         <ProjectsSkillsSection project={project} />
         <ProjectsTechSection project={project} />
-        <ProjectSourceSection project={project} />
+        <ProjectsSourceSection project={project} />
       </Grid>
     </Flex>
   );

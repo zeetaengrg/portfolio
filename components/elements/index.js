@@ -23,4 +23,4 @@ export { default as SidebarMailLink } from "./SidebarMailLink/SidebarMailLink";
 export { default as ProjectsTitleSection } from "./ProjectsTitleSection/ProjectsTitleSection";
 export { default as ProjectsSkillsSection } from "./ProjectsSkillsSection/ProjectsSkillsSection";
 export { default as ProjectsTechSection } from "./ProjectsTechSection/ProjectsTechSection";
-export { default as ProjectSourceSection } from "./ProjectSourceSection/ProjectSourceSection";
+export { default as ProjectsSourceSection } from "./ProjectsSourceSection/ProjectsSourceSection";
