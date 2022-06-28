@@ -9,17 +9,6 @@ export const commonVariants = {
   },
 };
 
-export const gridStyle = {
-  display: "grid",
-  columnGap: {
-    base: "2rem",
-    md: "9rem",
-    lg: "1.5rem",
-  },
-  gridTemplateColumns: "repeat(2, 1fr)",
-  padding: { base: "0rem", md: "0rem 5rem", lg: "0rem" },
-};
-
 export const flexStyle = {
   margin: {
     base: "1.5rem 2rem",
@@ -99,6 +88,47 @@ export const imgStyle = {
   },
 };
 
+export const gridStyle = {
+  display: "grid",
+  columnGap: {
+    base: "2rem",
+    md: "9rem",
+    lg: "1.5rem",
+  },
+  gridTemplateColumns: "repeat(2, 1fr)",
+  padding: { base: "0rem", md: "0rem 5rem", lg: "0rem" },
+};
+
+export const techTextStyle = {
+  color: "#ecb7d4",
+  marginTop: "1rem",
+  textTransform: "uppercase",
+};
+
+export const techTextStyleRight = {
+  ...techTextStyle,
+  textAlign: {
+    base: "center",
+    md: "left",
+    lg: "right",
+  },
+};
+
+export const techFlexStyle = {
+  flexWrap: "wrap",
+  marginTop: "0.5rem",
+  gap: "1rem",
+};
+
+export const techFlexStyleRight = {
+  ...techFlexStyle,
+  justifyContent: {
+    base: "center",
+    md: "left",
+    lg: "right",
+  },
+};
+
 export const linkContainer = {
   display: "flex",
   gap: "1rem",
@@ -130,34 +160,4 @@ export const linkToProjects = {
   _focus: { boxShadow: "none" },
   boxShadow:
     "4px 4px 8px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset",
-};
-
-export const techTextStyle = {
-  color: "#ecb7d4",
-  marginTop: "1rem",
-  textTransform: "uppercase",
-};
-
-export const techTextStyleRight = {
-  ...techTextStyle,
-  textAlign: {
-    base: "center",
-    md: "left",
-    lg: "right",
-  },
-};
-
-export const techFlexStyle = {
-  flexWrap: "wrap",
-  marginTop: "0.5rem",
-  gap: "1rem",
-};
-
-export const techFlexStyleRight = {
-  ...techFlexStyle,
-  justifyContent: {
-    base: "center",
-    md: "left",
-    lg: "right",
-  },
 };
