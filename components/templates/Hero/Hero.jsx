@@ -69,11 +69,11 @@ const Hero = () => {
           <NextImage
             src="/images/profile-pic.png"
             alt="Jiten Image"
-            height="300"
-            width="300"
-            priority
+            height={300}
+            width={300}
             quality={100}
             draggable="false"
+            priority
           />
         </Box>
         <Box
