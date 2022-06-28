@@ -68,7 +68,7 @@ const ContactInfo = () => {
           </Link>
         </Flex>
       </Flex>
-      <Divider as="figure" m="1rem 0rem" />
+      <Divider m="1rem 0rem" />
       <List display="flex" gap="5rem">
         {links.map((link) => (
           <ListItem key={link.id} m="0 auto">
