@@ -30,7 +30,7 @@ export const links = [
     id: 4,
     title: "Instagram",
     url: "https://www.instagram.com/zeetaen/",
-    icon: <FaInstagram fontSize="1.7rem" />,
+    icon: <FaInstagram />,
   },
   {
     id: 5,
@@ -74,15 +74,13 @@ export const boxVariants = {
 };
 
 export const arrowContainerStyle = {
+  m: "auto 0",
   bg: "#141D38",
-  height: "2rem",
-  width: "2.5rem",
+  p: "1rem 1.25rem",
+  display: "grid",
+  placeItems: "center",
   borderRadius: "0rem 2rem 2rem 0rem",
-  margin: "auto 0",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  transition: "all 0.3s ease",
+  boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.3)",
   position: "relative",
   _before: {
     content: '""',
@@ -93,7 +91,7 @@ export const arrowContainerStyle = {
     top: "-0.95rem",
     left: "0rem",
     borderBottomLeftRadius: "1rem",
-    boxShadow: "-4px 4px 0 0.3px #141D38",
+    boxShadow: "-4px 4px 0 3px #141D38",
   },
   _after: {
     content: '""',
