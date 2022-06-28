@@ -20,3 +20,7 @@ export { default as LibraryTab } from "./Tab/LibraryTab/LibraryTab";
 export { default as TabContent } from "./TabContent/TabContent";
 export { default as SidebarSocialIcons } from "./SidebarSocialIcons/SidebarSocialIcons";
 export { default as SidebarMailLink } from "./SidebarMailLink/SidebarMailLink";
+export { default as ProjectsTitleSection } from "./ProjectsTitleSection/ProjectsTitleSection";
+export { default as ProjectsSkillsSection } from "./ProjectsSkillsSection/ProjectsSkillsSection";
+export { default as ProjectsTechSection } from "./ProjectsTechSection/ProjectsTechSection";
+export { default as ProjectSourceSection } from "./ProjectSourceSection/ProjectSourceSection";
