@@ -21,7 +21,7 @@ export const curriculums = [
     platform: "freeCodeCamp",
     link: "https://www.freecodecamp.org/learn/front-end-development-libraries/",
     certificateUrl:
-      "https://www.freecodecamp.org/certification/zeetaen/front-end-development-libraries",
+      "https://www.freecodecamp.org/learn/front-end-development-libraries/",
   },
   // {
   //   id: 4,
