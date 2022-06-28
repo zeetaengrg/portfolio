@@ -118,7 +118,13 @@ const Projects = () => {
               </Heading>
               <Flex as="section" sx={techFlexStyleRight}>
                 {project.technologyOne.map((tech) => (
-                  <Tooltip key={tech.id} label={tech.name} placement="top">
+                  <Tooltip
+                    key={tech.id}
+                    label={tech.name}
+                    placement="top"
+                    hasArrow
+                    closeOnClick={false}
+                  >
                     <Image
                       src={tech.image}
                       alt={tech.name}
@@ -143,7 +149,13 @@ const Projects = () => {
                   Source
                 </Heading>
                 <Box as="figure" sx={linkContainerRight}>
-                  <Tooltip as="figcaption" label="Live Demo" placement="bottom">
+                  <Tooltip
+                    hasArrow
+                    as="figcaption"
+                    label="Live Demo"
+                    placement="bottom"
+                    closeOnClick={false}
+                  >
                     <Link
                       href={project.demoLinkOne}
                       sx={linkToProjects}
@@ -157,6 +169,8 @@ const Projects = () => {
                     as="figcaption"
                     label="Source Code"
                     placement="bottom"
+                    hasArrow
+                    closeOnClick={false}
                   >
                     <Link
                       href={project.sourceLinkOne}
@@ -242,9 +256,11 @@ const Projects = () => {
                 {project.technologyTwo.map((tech) => (
                   <Tooltip
                     as="figcaption"
+                    key={tech.id}
                     label={tech.name}
                     placement="top"
-                    key={tech.id}
+                    hasArrow
+                    closeOnClick={false}
                   >
                     <Image
                       src={tech.image}
@@ -270,7 +286,13 @@ const Projects = () => {
                   Source
                 </Heading>
                 <Box as="figure" sx={linkContainer}>
-                  <Tooltip as="figcaption" label="Live Demo" placement="bottom">
+                  <Tooltip
+                    as="figcaption"
+                    label="Live Demo"
+                    placement="bottom"
+                    hasArrow
+                    closeOnClick={false}
+                  >
                     <Link
                       href={project.demoLinkTwo}
                       sx={linkToProjects}
@@ -284,6 +306,8 @@ const Projects = () => {
                     as="figcaption"
                     label="Source Code"
                     placement="bottom"
+                    hasArrow
+                    closeOnClick={false}
                   >
                     <Link
                       href={project.sourceLinkTwo}
