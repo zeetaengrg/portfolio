@@ -87,4 +87,19 @@ export const tools = [
     name: "GitHub",
     image: "/images/github.svg",
   },
+  {
+    id: 6,
+    name: "NPM",
+    image: "/images/npm.svg",
+  },
+  {
+    id: 7,
+    name: "Yarn",
+    image: "/images/yarn.svg",
+  },
+  {
+    id: 8,
+    name: "Postman",
+    image: "/images/postman.png",
+  },
 ];
