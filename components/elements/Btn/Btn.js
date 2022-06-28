@@ -1,5 +1,5 @@
 export const btnStyle = {
-  padding: "0 1rem",
+  padding: "0rem 1rem",
   backgroundColor: "#141E39",
   fontSize: "1.2rem",
   transition: "all 0.3s ease",
