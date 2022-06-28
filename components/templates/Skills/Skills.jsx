@@ -1,6 +1,13 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { TabList, Tabs, Tab, TabPanels, TabPanel, Box } from "@chakra-ui/react";
+import {
+  TabList,
+  Tabs,
+  Tab,
+  TabPanels,
+  TabPanel,
+  Box,
+  Image,
+} from "@chakra-ui/react";
 import { BsBack } from "react-icons/bs";
 import { FaTools, FaDatabase } from "react-icons/fa";
 import { MdLanguage, MdDesignServices } from "react-icons/md";
@@ -34,7 +41,7 @@ const Skills = () => {
     <Box
       as="section"
       id="skills"
-      height={{ base: "65vh", md: "60vh", lg: "45vh", xl: "100vh" }}
+      height={{ base: "70vh", md: "60vh", lg: "45vh", xl: "100vh" }}
       display="flex"
       flexDirection="column"
       justifyContent="center"
@@ -43,8 +50,9 @@ const Skills = () => {
         <Image
           src="/images/skills-bg.svg"
           alt="Skills section background"
-          height={750}
-          width={1500}
+          height="46.5rem"
+          width="93.5rem"
+          objectFit="cover"
           draggable="false"
         />
       </Box>
