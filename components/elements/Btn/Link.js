@@ -14,7 +14,6 @@ export const linkStyle = {
   _focus: { outline: "none" },
   display: "flex",
   alignItems: "center",
-  justifyContent: "center",
   gap: "0.5rem",
   lineHeight: "1",
   boxShadow:

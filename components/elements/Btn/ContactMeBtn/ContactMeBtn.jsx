@@ -1,6 +1,6 @@
 import NextLink from "next/link";
 import { Link, Text } from "@chakra-ui/react";
-import { IoMdContact } from "react-icons/io";
+import { MdAccountCircle } from "react-icons/md";
 import { motion } from "framer-motion";
 import { linkStyle } from "../Link";
 
@@ -33,7 +33,7 @@ const ContactMeBtn = () => {
         aria-label="Link To Contact Me section"
       >
         <Text>Contact Me</Text>
-        <IoMdContact style={{ fontSize: "1.5rem" }} aria-label="Contact Icon" />
+        <MdAccountCircle style={{ fontSize: "1.5rem" }} aria-label="Contact Icon" />
       </MotionLink>
     </NextLink>
   );
