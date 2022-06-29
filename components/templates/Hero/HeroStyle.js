@@ -38,7 +38,7 @@ export const parentVariants = {
     transition: {
       when: "beforeChildren",
       staggerChildren: 0.2,
-      delay: 1,
+      delay: 0.8,
     },
   },
 };
