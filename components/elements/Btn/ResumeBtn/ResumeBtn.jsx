@@ -15,7 +15,7 @@ const btnVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 1.4,
+      delay: 1.6,
       duration: 0.6,
     },
   },

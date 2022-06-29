@@ -19,7 +19,7 @@ const SidebarSocialIcons = () => {
       initial="hidden"
       animate="visible"
       transition={{
-        delay: 1.8,
+        delay: 2,
         duration: 0.5,
       }}
     >
