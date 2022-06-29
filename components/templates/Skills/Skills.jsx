@@ -45,14 +45,15 @@ const Skills = () => {
       display="flex"
       flexDirection="column"
       justifyContent="center"
+      position="relative"
     >
-      <Box as="figure" position="absolute" opacity="0.1">
+      <Box as="figure" position="absolute" top="-2rem" opacity="0.1">
         <Image
           src="/images/skills-bg.svg"
           alt="Skills section background"
           height="46.5rem"
           width="93.5rem"
-          objectFit="cover"
+          objectFit={{ base: "cover", lg: "contain" }}
           draggable="false"
         />
       </Box>

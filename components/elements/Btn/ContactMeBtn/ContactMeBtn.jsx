@@ -27,12 +27,10 @@ const ContactMeBtn = () => {
         whileInView="visible"
         viewport={{ once: true }}
         transition={{
-          delay: 0.1,
+          delay: 0.5,
           duration: 0.5,
-          type: "tween",
-          stiffness: 110,
         }}
-        aria-label="Link To Contact Me"
+        aria-label="Link To Contact Me section"
       >
         <Text>Contact Me</Text>
         <IoMdContact style={{ fontSize: "1.5rem" }} aria-label="Contact Icon" />
