@@ -7,7 +7,7 @@ export const commonVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      delay: 2,
+      delay: 2.2,
       duration: 0.5,
     },
   },
