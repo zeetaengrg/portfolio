@@ -15,6 +15,7 @@ export const language = [
     image: "/images/javascript.svg",
   },
 ];
+
 export const backend = [
   {
     id: 1,
@@ -27,6 +28,7 @@ export const backend = [
     image: "/images/expressjs.svg",
   },
 ];
+
 export const database = [
   {
     id: 1,
@@ -34,6 +36,7 @@ export const database = [
     image: "/images/mongodb.svg",
   },
 ];
+
 export const library = [
   {
     id: 1,
@@ -61,16 +64,17 @@ export const library = [
     image: "/images/chakraui.svg",
   },
 ];
+
 export const tools = [
   {
     id: 1,
-    name: "Figma",
-    image: "/images/figma.svg",
+    name: "NPM",
+    image: "/images/npm.svg",
   },
   {
     id: 2,
-    name: "Framer Motion",
-    image: "/images/framer-motion.png",
+    name: "Yarn",
+    image: "/images/yarn.svg",
   },
   {
     id: 3,
@@ -89,17 +93,17 @@ export const tools = [
   },
   {
     id: 6,
-    name: "NPM",
-    image: "/images/npm.svg",
+    name: "Postman",
+    image: "/images/postman.png",
   },
   {
     id: 7,
-    name: "Yarn",
-    image: "/images/yarn.svg",
+    name: "Figma",
+    image: "/images/figma.svg",
   },
   {
     id: 8,
-    name: "Postman",
-    image: "/images/postman.png",
+    name: "Framer Motion",
+    image: "/images/framer-motion.png",
   },
 ];
