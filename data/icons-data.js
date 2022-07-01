@@ -56,7 +56,7 @@ export const library = [
   {
     id: 4,
     name: "CSS Modules",
-    image: "/images/css-modules.png",
+    image: "/images/css-modules.svg",
   },
   {
     id: 5,
