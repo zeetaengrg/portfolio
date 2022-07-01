@@ -55,16 +55,11 @@ export const library = [
   },
   {
     id: 4,
-    name: "CSS Modules",
-    image: "/images/css-modules.svg",
-  },
-  {
-    id: 5,
     name: "Styled Components",
     image: "/images/styled-components.svg",
   },
   {
-    id: 6,
+    id: 5,
     name: "Chakra-UI",
     image: "/images/chakraui.svg",
   },
