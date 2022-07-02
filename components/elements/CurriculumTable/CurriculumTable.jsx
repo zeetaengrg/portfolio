@@ -4,12 +4,12 @@ import { curriculums } from "@data/about-data";
 const CurriculumTable = () => {
   const tableStyle = {
     width: "100%",
-    border: "1px solid #eaeaea",
+    border: "0.25px groove rgba(165,171,189,0.3)",
     borderCollapse: "collapse",
   };
 
   const tableHeadStyle = {
-    border: "1px solid #ddd",
+    border: "0.25px groove rgba(165,171,189,0.3)",
     padding: "8px",
   };
 
