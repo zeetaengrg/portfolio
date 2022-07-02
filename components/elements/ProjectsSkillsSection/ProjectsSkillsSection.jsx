@@ -1,5 +1,5 @@
-import { Box, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
-import { gridStyle } from "@components/modules/ProjectsStyle";
+import { Box, Heading } from "@chakra-ui/react";
+import SkillsTable from "../SkillsTable/SkillsTable";
 
 const ProjectsSkillsSection = ({ project, isReverse }) => {
   return (
@@ -19,15 +19,7 @@ const ProjectsSkillsSection = ({ project, isReverse }) => {
       >
         Skills Learned
       </Heading>
-      <UnorderedList sx={gridStyle}>
-        {isReverse
-          ? project.skillsTwo.map((skill) => (
-              <ListItem key={skill}>{skill}</ListItem>
-            ))
-          : project.skillsOne.map((skill) => (
-              <ListItem key={skill}>{skill}</ListItem>
-            ))}
-      </UnorderedList>
+      <SkillsTable project={project} isReverse={isReverse} />
     </Box>
   );
 };
