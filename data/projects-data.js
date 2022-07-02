@@ -1,6 +1,70 @@
 export const projects = [
   {
     id: 1,
+    titleOne: "Netflix Landing Page",
+    titleTwo: "Hulu Landing Page",
+    descriptionOne: "A landing page clone of Netflix website.",
+    descriptionTwo: "A landing page clone of Hulu website.",
+    skillsOne: [
+      "Basic HTML",
+      "Semantic HTML",
+      "CSS Selectors",
+      "Pseudo Class Selectors",
+      "CSS Grid",
+      "CSS Flexbox",
+      "CSS Custom Properties",
+      "Media Queries",
+    ],
+    skillsTwo: [
+      "Basic HTML",
+      "Semantic HTML",
+      "CSS Selectors",
+      "Pseudo Class Selectors",
+      "CSS Grid/Flexbox",
+      "CSS Custom Properties",
+      "Media Queries",
+      "DOM Traversing",
+      "DOM Manipulation",
+      "JS Functions",
+    ],
+    imageOne: "/images/netflix.webp",
+    imageTwo: "/images/hulu.webp",
+    demoLinkOne: "https://netflix-landing-page-clone-tau.vercel.app/",
+    demoLinkTwo: "https://hulu-landing-page-clone.vercel.app/",
+    sourceLinkOne: "https://github.com/zeetaengrg/netflix-landing-page-clone",
+    sourceLinkTwo: "https://github.com/zeetaengrg/hulu-landing-page-clone",
+    technologyOne: [
+      {
+        id: 1,
+        name: "HTML5",
+        image: "/images/html.svg",
+      },
+      {
+        id: 2,
+        name: "CSS3",
+        image: "/images/css.svg",
+      },
+    ],
+    technologyTwo: [
+      {
+        id: 1,
+        name: "HTML5",
+        image: "/images/html.svg",
+      },
+      {
+        id: 2,
+        name: "CSS3",
+        image: "/images/css.svg",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+        image: "/images/javascript.svg",
+      },
+    ],
+  },
+  {
+    id: 2,
     titleOne: "Mama's Joint",
     titleTwo: "PizzaLand",
     descriptionOne:
@@ -14,7 +78,7 @@ export const projects = [
       "Grid",
       "CSS Positioning",
       "Figma",
-      "Higher-Order Functions",
+      "Higher Order Functions",
       "Git",
     ],
     descriptionTwo:
@@ -85,7 +149,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     titleOne: "Alpha Male Apparels",
     titleTwo: "Portfolio Website",
     descriptionOne:
@@ -97,8 +161,7 @@ export const projects = [
       "Styled Components",
       "Semantic HTML",
       "JWT Authentication",
-      "Redux Toolkit",
-      "Redux Persist",
+      "Redux Toolkit/Persist",
       "Axios",
       "RESTful API",
       "API Testing(Postman)",
@@ -114,7 +177,7 @@ export const projects = [
       "Chakra UI",
       "Next Router",
       "Framer Motion",
-      "Higher-Order Functions",
+      "Higher Order Functions",
       "Git",
     ],
     imageOne: "/images/alpha-male.webp",
