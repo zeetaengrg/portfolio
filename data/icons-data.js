@@ -93,8 +93,8 @@ export const tools = [
   },
   {
     id: 6,
-    name: "Postman",
-    image: "/images/postman.png",
+    name: "VS Code",
+    image: "/images/vscode.svg",
   },
   {
     id: 7,
