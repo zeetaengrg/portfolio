@@ -1,6 +1,10 @@
 import { Image, Tooltip } from "@chakra-ui/react";
 
 const TabContent = ({ item }) => {
+  const imgStyle = {
+    filter: "drop-shadow(0.5rem 0.5rem 1rem rgba(0, 0, 0, 1))",
+  };
+
   return (
     <Tooltip hasArrow as="figcaption" label={item.name} placement="top">
       <Image
@@ -11,6 +15,7 @@ const TabContent = ({ item }) => {
         objectFit="contain"
         draggable="false"
         userSelect="none"
+        sx={imgStyle}
       />
     </Tooltip>
   );
