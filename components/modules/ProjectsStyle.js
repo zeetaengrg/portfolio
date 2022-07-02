@@ -104,13 +104,18 @@ export const techTextStyle = {
   color: "#ecb7d4",
   marginTop: "1rem",
   textTransform: "uppercase",
+  textAlign: {
+    base: "center",
+    md: "center",
+    lg: "left",
+  },
 };
 
 export const techTextStyleRight = {
   ...techTextStyle,
   textAlign: {
     base: "center",
-    md: "left",
+    md: "center",
     lg: "right",
   },
 };
