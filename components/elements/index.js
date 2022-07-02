@@ -24,3 +24,4 @@ export { default as ProjectsTitleSection } from "./ProjectsTitleSection/Projects
 export { default as ProjectsSkillsSection } from "./ProjectsSkillsSection/ProjectsSkillsSection";
 export { default as ProjectsTechSection } from "./ProjectsTechSection/ProjectsTechSection";
 export { default as ProjectsSourceSection } from "./ProjectsSourceSection/ProjectsSourceSection";
+export { default as SkillsTable } from "./SkillsTable/SkillsTable";
