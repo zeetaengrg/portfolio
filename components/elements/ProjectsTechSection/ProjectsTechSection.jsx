@@ -7,6 +7,10 @@ import {
 } from "@components/modules/ProjectsStyle";
 
 const ProjectsTechSection = ({ project, isReverse }) => {
+  const dropShadow = {
+    filter: "drop-shadow(0.5rem 0.5rem 1rem rgba(0, 0, 0, 1))",
+  };
+
   return (
     <Box as="article">
       <Heading
@@ -31,6 +35,7 @@ const ProjectsTechSection = ({ project, isReverse }) => {
                   src={tech.image}
                   alt={tech.name}
                   key={tech.id}
+                  sx={dropShadow}
                   height="3rem"
                   width="3rem"
                   draggable="false"
@@ -51,6 +56,7 @@ const ProjectsTechSection = ({ project, isReverse }) => {
                   src={tech.image}
                   alt={tech.name}
                   key={tech.id}
+                  sx={dropShadow}
                   height="3rem"
                   width="3rem"
                   draggable="false"
