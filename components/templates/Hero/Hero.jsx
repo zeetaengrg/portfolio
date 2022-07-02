@@ -191,7 +191,7 @@ const Hero = () => {
         as="aside"
         position="fixed"
         top="50%"
-        right="-1.8rem"
+        right="-1.9rem"
         transform="translateY(-50%)"
         zIndex="15"
         display={{ base: "none", md: "block" }}
