@@ -34,7 +34,7 @@ const LinearProjects = ({ project }) => {
           alt={project.titleOne}
           sx={imgStyle}
           draggable="false"
-          userSelect="none"
+          userselect="none"
         />
       </Box>
       <Grid

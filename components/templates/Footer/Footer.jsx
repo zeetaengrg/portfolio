@@ -14,6 +14,7 @@ const Footer = () => {
           alt="waves"
           sx={imgTag}
           draggable="false"
+          userSelect="none"
         />
       </Box>
       <Flex
@@ -30,6 +31,7 @@ const Footer = () => {
             alt="Logo"
             sx={imageStyle}
             draggable="false"
+            userSelect="none"
           />
         </Center>
         <Box as="article" display={{ base: "block", md: "none" }}>

@@ -72,7 +72,6 @@ const Hero = () => {
             width={300}
             quality={100}
             draggable="false"
-            userSelect="none"
             priority
           />
         </Box>

@@ -60,7 +60,6 @@ const ContactForm = () => {
         transition={{
           delay: 0.2,
           duration: 0.5,
-          type: "tween",
         }}
       >
         <FormLabel htmlFor="fullName" mb="0rem">
