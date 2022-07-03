@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { useRouter } from "next/router";
 import emailjs from "@emailjs/browser";
 import { RiSendPlaneFill } from "react-icons/ri";
@@ -11,6 +11,19 @@ const MotionVStack = motion(VStack);
 const ContactForm = () => {
   const formRef = useRef();
   const router = useRouter();
+
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleFullNameChange = (e) => setFullName(e.target.value);
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handleSubjectChange = (e) => setSubject(e.target.value);
+  const handleMessageChange = (e) => setMessage(e.target.value);
+
+  const canSend =
+    Boolean(fullName) && Boolean(email) && Boolean(subject) && Boolean(message);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -59,6 +72,7 @@ const ContactForm = () => {
           placeholder="Insert Your Full Name..."
           id="fullName"
           name="fullName"
+          onChange={handleFullNameChange}
           required
         />
         <FormLabel htmlFor="email">Email Address</FormLabel>
@@ -68,6 +82,7 @@ const ContactForm = () => {
           name="email"
           id="email"
           type="email"
+          onChange={handleEmailChange}
           required
         />
         <FormLabel htmlFor="subject">Subject</FormLabel>
@@ -77,6 +92,7 @@ const ContactForm = () => {
           name="subject"
           id="subject"
           type="text"
+          onChange={handleSubjectChange}
           required
         />
         <FormLabel htmlFor="message">Message</FormLabel>
@@ -87,6 +103,7 @@ const ContactForm = () => {
           id="message"
           height="10rem"
           aria-label="Write your message here"
+          onChange={handleMessageChange}
           required
         />
         <Button
@@ -99,6 +116,7 @@ const ContactForm = () => {
               aria-label="Send Icon"
             />
           }
+          disabled={!canSend}
           aria-label="Sends your message to me"
         >
           Send
