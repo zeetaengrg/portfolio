@@ -54,7 +54,7 @@ const AboutMeText = () => {
         <CurriculumTable />
       </Box>
       <Text m="0.5rem 0rem">
-        Without being ostentacious, to further prove my hardworking habtitude,
+        Without being ostentacious, to further prove my hardworking habitude,
         during my university days, I along with my team was awarded with the
         Best Software Project Award by
         <Link
