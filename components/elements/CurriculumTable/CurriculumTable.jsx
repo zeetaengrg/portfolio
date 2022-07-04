@@ -66,8 +66,7 @@ const CurriculumTable = () => {
             <td style={tableHeadStyle}>
               <Link
                 href={curriculum.certificateUrl}
-                color="#3892f9"
-                textTransform="capitalize"
+                sx={linkStyle}
                 aria-label={`Link to ${curriculum.title} Certificate`}
               >
                 {curriculum.title === "Front End Development Libraries" &&
