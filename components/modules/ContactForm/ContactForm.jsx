@@ -72,7 +72,6 @@ const ContactForm = () => {
           id="fullName"
           name="fullName"
           onChange={handleFullNameChange}
-          required
         />
         <FormLabel htmlFor="email">Email Address</FormLabel>
         <Input
@@ -82,7 +81,6 @@ const ContactForm = () => {
           id="email"
           type="email"
           onChange={handleEmailChange}
-          required
         />
         <FormLabel htmlFor="subject">Subject</FormLabel>
         <Input
@@ -92,7 +90,6 @@ const ContactForm = () => {
           id="subject"
           type="text"
           onChange={handleSubjectChange}
-          required
         />
         <FormLabel htmlFor="message">Message</FormLabel>
         <Textarea
@@ -103,7 +100,6 @@ const ContactForm = () => {
           height="10rem"
           aria-label="Write your message here"
           onChange={handleMessageChange}
-          required
         />
         <Button
           mt="1rem"
