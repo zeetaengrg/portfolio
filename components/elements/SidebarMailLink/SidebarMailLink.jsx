@@ -14,6 +14,7 @@ const MotionBox = motion(Box);
 const SidebarMailLink = () => {
   return (
     <MotionBox
+      as="aside"
       variants={commonVariants}
       initial="hidden"
       animate="visible"

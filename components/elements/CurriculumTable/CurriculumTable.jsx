@@ -21,6 +21,7 @@ const CurriculumTable = () => {
     _focus: { outline: "none" },
     _active: { outline: "none" },
     textTransform: "none",
+    textDecoration: "underline",
     fontWeight: "normal",
     fontSize: "1rem",
     fontStyle: "italic",

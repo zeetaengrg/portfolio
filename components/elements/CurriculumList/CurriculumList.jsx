@@ -10,6 +10,7 @@ const CurriculumList = ({ curriculum }) => {
     _focus: { outline: "none" },
     _active: { outline: "none" },
     textTransform: "none",
+    textDecoration: "underline",
     fontWeight: "normal",
     fontSize: "1rem",
   };
@@ -35,6 +36,7 @@ const CurriculumList = ({ curriculum }) => {
       >
         {curriculum.title}
       </Link>
+      &nbsp;
       <Link
         target="_blank"
         rel="noopener noreferrer nofollow"
@@ -43,7 +45,7 @@ const CurriculumList = ({ curriculum }) => {
         aria-label="Link To Free Code Camp Website"
         fontStyle="italic"
       >
-        &nbsp;({curriculum.platform})&nbsp;
+        ({curriculum.platform})
       </Link>
     </ListItem>
   );

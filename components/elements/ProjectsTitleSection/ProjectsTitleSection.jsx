@@ -4,6 +4,7 @@ const ProjectsTitleSection = ({ project, isReverse }) => {
   return (
     <>
       <Heading
+        id="projects-title"
         as="h1"
         size="lg"
         textTransform="uppercase"

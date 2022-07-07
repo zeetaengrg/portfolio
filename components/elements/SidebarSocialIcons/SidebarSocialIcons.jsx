@@ -15,6 +15,7 @@ const MotionBox = motion(Box);
 const SidebarSocialIcons = () => {
   return (
     <MotionBox
+      as="aside"
       variants={commonVariants}
       initial="hidden"
       animate="visible"
