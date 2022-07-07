@@ -12,7 +12,7 @@ import {
 
 const ThankYou = () => {
   return (
-    <Flex as="section" sx={flexStyle}>
+    <Flex as="section" aria-labelledby="thankyou" sx={flexStyle}>
       <Box
         as={motion.article}
         sx={boxStyle}
@@ -20,7 +20,7 @@ const ThankYou = () => {
         initial="start"
         animate="end"
       >
-        <Heading as="h1" sx={headingStyle}>
+        <Heading as="h1" id="thankyou" sx={headingStyle}>
           Thank You!!!
         </Heading>
         <Divider width="60%" />

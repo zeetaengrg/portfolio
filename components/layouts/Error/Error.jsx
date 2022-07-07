@@ -38,6 +38,7 @@ const Error = () => {
       alignItems="center"
       height={{ base: "62vh", md: "72.5vh", lg: "76vh" }}
       gap={{ base: "0rem", md: "1rem" }}
+      aria-labelledby="error"
     >
       <Flex
         as={motion.article}
@@ -48,7 +49,11 @@ const Error = () => {
         alignItems="center"
         gap={{ base: "0rem", md: "1rem" }}
       >
-        <Text fontSize={{ base: "1.1rem", md: "1.3rem" }} sx={textStyle}>
+        <Text
+          id="error"
+          fontSize={{ base: "1.1rem", md: "1.3rem" }}
+          sx={textStyle}
+        >
           Oops!!! Page Not Found
         </Text>
         <Box as="figure" p={{ base: "0rem 3rem", md: "0rem" }}>
