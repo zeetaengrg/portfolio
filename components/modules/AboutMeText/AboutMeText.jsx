@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link, Heading, Box, Text, UnorderedList } from "@chakra-ui/react";
+import { Link, Box, Text, UnorderedList } from "@chakra-ui/react";
 import { CurriculumList, CurriculumTable } from "@components/elements";
 import { curriculums } from "@data/about-data";
 import { commonVariants, specialLinkStyle } from "./AboutMeTextStyles";
@@ -56,7 +56,7 @@ const AboutMeText = () => {
       <Text m="0.5rem 0rem">
         Without being ostentacious, to further prove my hardworking habitude,
         during my university days, I along with my team was awarded with the
-        Best Software Project Award by
+        Best Software Project Award by&nbsp;
         <Link
           href="https://nta.gov.np"
           sx={specialLinkStyle}
@@ -64,13 +64,13 @@ const AboutMeText = () => {
           target="_blank"
           aria-label="Link to Nepal Telecommunication Authority(NTA) website"
         >
-          &nbsp;Nepal Telecommunication Authority(NTA)&nbsp;
+          Nepal Telecommunication Authority(NTA)
         </Link>
-        for building Class Routine Management System.
+        &nbsp;for building Class Routine Management System.
       </Text>
       <Text>
         Right now I am upskilling myself by learning ReactJS and NextJS and have
-        completed few projects using them which can be found in my
+        completed few projects using them which can be found in my&nbsp;
         <Link
           href="https://bit.ly/3LmRDue"
           sx={specialLinkStyle}
@@ -78,17 +78,17 @@ const AboutMeText = () => {
           target="_blank"
           aria-label="Link to my GitHub profile"
         >
-          &nbsp;GitHub&nbsp;
+          GitHub
         </Link>
-        profile and
+        &nbsp;profile and&nbsp;
         <Link
           href="#projects"
           sx={specialLinkStyle}
           aria-label="Link to Projects section"
         >
-          &nbsp;Projects&nbsp;
+          Projects
         </Link>
-        section.
+        &nbsp;section.
       </Text>
       <Text m="0.5rem 0rem 0rem">
         As per my hobby, I am a football fanatic and secretly dream about being

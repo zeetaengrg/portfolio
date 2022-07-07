@@ -15,8 +15,9 @@ const Contacts = () => {
       mb={{ base: "0rem", lg: "4rem" }}
       mt={{ base: "3rem", md: "6rem" }}
       zIndex="10"
+      aria-labelledby="contacts-title"
     >
-      <Header heading="Get In Touch" />
+      <Header id="contacts-title" heading="Get In Touch" />
       <LineDivider width={{ base: "60%", md: "40%", lg: "25%" }} />
       <SubHeader subHeading="Let's Talk" />
       <Center as="figure">

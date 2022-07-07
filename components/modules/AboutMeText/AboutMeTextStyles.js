@@ -17,6 +17,7 @@ export const specialLinkStyle = {
   _focus: { outline: "none" },
   _active: { outline: "none" },
   textTransform: "none",
+  textDecoration: "underline",
   fontFamily: "inherit",
   fontSize: "1rem",
   fontWeight: "normal",

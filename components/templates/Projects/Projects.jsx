@@ -5,8 +5,8 @@ import { projects } from "@data/projects-data";
 
 const Projects = () => {
   return (
-    <Box as="section" id="projects">
-      <Header heading="Projects" />
+    <Box as="section" id="projects" aria-labelledby="projects-title">
+      <Header id="projects-title" heading="Projects" />
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Recent Works" />
       {projects.map((project) => (

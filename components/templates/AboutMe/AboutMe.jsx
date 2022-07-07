@@ -1,4 +1,4 @@
-import { Link, Flex, Box } from "@chakra-ui/react";
+import { Flex, Box } from "@chakra-ui/react";
 import {
   Header,
   ContactMeBtn,
@@ -16,8 +16,9 @@ const AboutMe = () => {
       flexDirection="column"
       id="aboutme"
       mt={{ base: "2rem", md: "0rem" }}
+      aria-labelledby="aboutme-title"
     >
-      <Header heading="About Me" />
+      <Header id="aboutme-title" heading="About Me" />
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Introduction" />
       <Box

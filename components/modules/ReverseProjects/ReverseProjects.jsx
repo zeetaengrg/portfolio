@@ -18,7 +18,7 @@ const ReverseProjects = ({ project }) => {
 
   return (
     <Flex
-      as={motion.div}
+      as={motion.section}
       sx={flexStyle}
       direction={{
         base: "column-reverse",
@@ -32,6 +32,7 @@ const ReverseProjects = ({ project }) => {
         delay: 0.5,
         duration: 0.5,
       }}
+      aria-labelledby="projects-title"
     >
       <Grid
         as="section"

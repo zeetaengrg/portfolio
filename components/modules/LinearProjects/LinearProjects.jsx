@@ -16,7 +16,7 @@ import {
 const LinearProjects = ({ project }) => {
   return (
     <Flex
-      as={motion.div}
+      as={motion.section}
       sx={flexStyle}
       direction={{ base: "column", lg: "row" }}
       variants={commonVariants}
@@ -27,6 +27,7 @@ const LinearProjects = ({ project }) => {
         delay: 0.5,
         duration: 0.5,
       }}
+      aria-labelledby="projects-title"
     >
       <Box as="figure" sx={imgBoxStyle}>
         <Image

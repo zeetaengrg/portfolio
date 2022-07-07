@@ -46,6 +46,7 @@ const Skills = () => {
       flexDirection="column"
       justifyContent="center"
       position="relative"
+      aria-labelledby="skills-title"
     >
       <Box as="figure" position="absolute" top="-2rem" opacity="0.1">
         <Image
@@ -57,7 +58,7 @@ const Skills = () => {
           draggable="false"
         />
       </Box>
-      <Header heading="Tools And Technologies" />
+      <Header id="skills-title" heading="Tools And Technologies" />
       <LineDivider width={{ base: "70%", md: "50%", lg: "40%" }} />
       <SubHeader subHeading="Libraries, Frameworks and Tools" />
       <MotionTabs
