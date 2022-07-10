@@ -22,23 +22,33 @@ const AboutMeText = () => {
       }}
     >
       <Text>
-        A Front-End aficionado developer, with an acute detail to hone the
-        skills as required by the project as well as modest experience of UI/UX
-        designing proficiency and an immense interest to build elegant as well
-        as fully functioning web applications.
+        My interest in technologies started when I got my hands on a Toshiba
+        laptop in grade five. The curiosity of how things actually work has led
+        me to work on a network/systems engineering space configuring the
+        network/system infrastructures. As a huge proponent of advancing
+        technologies and exploring it, I have a passion for building things.
       </Text>
       <Text m="0.5rem 0rem">
-        In the past, I have worked as a network technician and system engineer.
-        However, I always had secret affair with building interactive web
-        applications. As a result, during the pandemic, I had an epiphany to
-        learn web technologies seriously.
+        Without being ostentacious, to further prove my hardworking habitude,
+        during my undergrad, I along with my team of three were awarded with the
+        Best Software Project Award by&nbsp;
+        <Link
+          href="https://nta.gov.np"
+          sx={specialLinkStyle}
+          rel="noreferrer noopener nofollow"
+          target="_blank"
+          aria-label="Link to Nepal Telecommunication Authority(NTA) website"
+        >
+          Nepal Telecommunication Authority(NTA)
+        </Link>
+        &nbsp;for building Class Routine Management System.
       </Text>
       <Text
         fontSize="1.1rem"
         fontWeight="600"
         display={{ base: "none", md: "block" }}
       >
-        Curriculums:
+        Web Development Curriculums:
       </Text>
       <UnorderedList
         m="0.25rem 0rem"
@@ -53,22 +63,7 @@ const AboutMeText = () => {
       <Box as="figure" display={{ base: "block", md: "none" }}>
         <CurriculumTable />
       </Box>
-      <Text m="0.5rem 0rem">
-        Without being ostentacious, to further prove my hardworking habitude,
-        during my university days, I along with my team was awarded with the
-        Best Software Project Award by&nbsp;
-        <Link
-          href="https://nta.gov.np"
-          sx={specialLinkStyle}
-          rel="noreferrer noopener nofollow"
-          target="_blank"
-          aria-label="Link to Nepal Telecommunication Authority(NTA) website"
-        >
-          Nepal Telecommunication Authority(NTA)
-        </Link>
-        &nbsp;for building Class Routine Management System.
-      </Text>
-      <Text>
+      {/* <Text>
         Right now I am upskilling myself by learning ReactJS and NextJS and have
         completed few projects using them which can be found in my&nbsp;
         <Link
@@ -93,7 +88,7 @@ const AboutMeText = () => {
       <Text m="0.5rem 0rem 0rem">
         As per my hobby, I am a football fanatic and secretly dream about being
         a Rock &apos;n&apos; Roll guitarist.
-      </Text>
+      </Text> */}
     </MotionBox>
   );
 };
