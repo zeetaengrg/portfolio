@@ -124,6 +124,7 @@ export const techFlexStyle = {
   flexWrap: "wrap",
   marginTop: "0.5rem",
   gap: "1rem",
+  justifyContent: { base: "center", lg: "left" },
 };
 
 export const techFlexStyleRight = {
