@@ -25,7 +25,7 @@ export const wrapperList = [
 export const listItemStyle = {
   width: "7rem",
   bgColor: "#141E39",
-  borderRadius: "0.3rem",
+  borderRadius: "0.5rem",
   padding: "0.8rem",
   display: "flex",
   gap: "0.5rem",
