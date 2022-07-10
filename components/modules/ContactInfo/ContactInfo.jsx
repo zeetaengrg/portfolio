@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { MdLocationPin, MdMailOutline } from "react-icons/md";
+import { linkStyle } from "@components/elements/LinkStyle";
 import {
   commonVariants,
   links,
@@ -19,7 +20,6 @@ import {
   flexStyle,
   socialIconStyle,
 } from "./ContactInfoStyles";
-import { linkStyle } from "@components/elements/LinkStyle";
 
 const MotionFlex = motion(Flex);
 
@@ -52,10 +52,6 @@ const ContactInfo = () => {
         <Flex sx={flexStyle}>
           <MdLocationPin style={iconStyle} aria-label="Location Icon" />
           <Text sx={textStyle}>Pokhara, Nepal</Text>
-        </Flex>
-        <Flex sx={flexStyle}>
-          <FaMobileAlt style={iconStyle} aria-label="Mobile Phone Icon" />
-          <Text sx={textStyle}>+977 9803709974</Text>
         </Flex>
         <Flex sx={flexStyle}>
           <MdMailOutline style={iconStyle} aria-label="Mail Icon" />
