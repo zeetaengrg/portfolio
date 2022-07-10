@@ -1,4 +1,20 @@
+import { motion } from "framer-motion";
 import { Divider, Heading, Text } from "@chakra-ui/react";
+
+const textVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
 
 const ProjectsTitleSection = ({ project, isReverse }) => {
   return (
@@ -16,6 +32,19 @@ const ProjectsTitleSection = ({ project, isReverse }) => {
           lg: isReverse ? "left" : "right",
         }}
       >
+        {project.titleOne === "Pizzaland" ||
+          (project.titleTwo === "Alpha Male" && (
+            <Text
+              as={motion.p}
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
+              fontSize="0.75rem"
+              color="#ecb7d4"
+            >
+              Coming Soon...
+            </Text>
+          ))}
         {isReverse ? project.titleTwo : project.titleOne}
       </Heading>
       <Divider
