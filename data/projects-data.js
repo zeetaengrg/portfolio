@@ -1,21 +1,18 @@
 export const projects = [
   {
     id: 1,
-    titleOne: "Netflix Landing Page",
-    titleTwo: "Hulu Landing Page",
-    descriptionOne: "A landing page clone of Netflix website.",
-    descriptionTwo: "A landing page clone of Hulu website.",
+    titleOne: "Hulu Landing Page",
+    titleTwo: "Mama's Joint",
+    imageOne: "/images/hulu.webp",
+    imageTwo: "/images/mamas-joint.webp",
+    demoLinkOne: "https://hulu-landing-page-clone.vercel.app/",
+    demoLinkTwo: "https://mamas-joint.vercel.app/",
+    sourceLinkOne: "https://github.com/zeetaengrg/hulu-landing-page-clone",
+    sourceLinkTwo: "https://github.com/zeetaengrg/mamas-joint",
+    descriptionOne: "A landing page clone of Hulu website.",
+    descriptionTwo:
+      "A restaurant's landing page with responsive feature. Built from scratch with pixel perfect Figma design provided by AR Shakir.",
     skillsOne: [
-      "Basic HTML",
-      "Semantic HTML",
-      "CSS Selectors",
-      "Pseudo Class Selectors",
-      "CSS Grid",
-      "CSS Flexbox",
-      "CSS Custom Properties",
-      "Media Queries",
-    ],
-    skillsTwo: [
       "Basic HTML",
       "Semantic HTML",
       "CSS Selectors",
@@ -27,25 +24,7 @@ export const projects = [
       "DOM Manipulation",
       "JS Functions",
     ],
-    imageOne: "/images/netflix.webp",
-    imageTwo: "/images/hulu.webp",
-    demoLinkOne: "https://netflix-landing-page-clone-tau.vercel.app/",
-    demoLinkTwo: "https://hulu-landing-page-clone.vercel.app/",
-    sourceLinkOne: "https://github.com/zeetaengrg/netflix-landing-page-clone",
-    sourceLinkTwo: "https://github.com/zeetaengrg/hulu-landing-page-clone",
     technologyOne: [
-      {
-        id: 1,
-        name: "HTML5",
-        image: "/images/html.svg",
-      },
-      {
-        id: 2,
-        name: "CSS3",
-        image: "/images/css.svg",
-      },
-    ],
-    technologyTwo: [
       {
         id: 1,
         name: "HTML5",
@@ -62,14 +41,8 @@ export const projects = [
         image: "/images/javascript.svg",
       },
     ],
-  },
-  {
-    id: 2,
-    titleOne: "Mama's Joint",
-    titleTwo: "PizzaLand",
-    descriptionOne:
-      "A restaurant's landing page with responsive feature. Built from scratch with pixel perfect Figma design provided by AR Shakir.",
-    skillsOne: [
+
+    skillsTwo: [
       "NextJS Architecture",
       "React Hooks & Props",
       "Responsive Design",
@@ -81,29 +54,7 @@ export const projects = [
       "Higher Order Functions",
       "Git",
     ],
-    descriptionTwo:
-      "An online pizza delivery platform with features like Admin Panel for CRUD operations and PayPal payment. This project is under final stages of completion with features like adding admin/user authentications.",
-    skillsTwo: [
-      "NextJS Architecture",
-      "React Hooks & Props",
-      "Sass Partials",
-      "Semantic HTML",
-      "Redux Toolkit",
-      "Redux Persist",
-      "Axios",
-      "RESTful API",
-      "CRUD Operation",
-      "API Testing(Postman)",
-      "PayPal Payment",
-      "Git",
-    ],
-    imageOne: "/images/mamas-joint.webp",
-    demoLinkOne: "https://mamas-joint.vercel.app/",
-    sourceLinkOne: "https://github.com/zeetaengrg/mamas-joint",
-    imageTwo: "/images/pizzaland.webp",
-    demoLinkTwo: "#",
-    sourceLinkTwo: "https://github.com/zeetaengrg/pizza-delivery",
-    technologyOne: [
+    technologyTwo: [
       {
         id: 1,
         name: "NextJS",
@@ -120,7 +71,50 @@ export const projects = [
         image: "/images/figma.svg",
       },
     ],
-    technologyTwo: [
+  },
+  {
+    id: 2,
+    titleOne: "PizzaLand",
+    titleTwo: "Alpha Male",
+    imageOne: "/images/pizzaland.webp",
+    imageTwo: "/images/alpha-male.webp",
+    demoLinkOne: "#",
+    demoLinkTwo: "#",
+    sourceLinkOne: "https://github.com/zeetaengrg/pizza-delivery",
+    sourceLinkTwo: "https://github.com/zeetaengrg/e-commerce-clothing-shop",
+    descriptionOne:
+      "An online pizza delivery platform with features like Admin Panel for CRUD operations and PayPal payment. This project is under final stages of completion with features like adding admin/user authentications.",
+    descriptionTwo:
+      "An e-commerce clothing store built with features like JWT authentication and admin panel dashboard. This project is under final stages of completion with features like of CRUD operations.",
+    skillsOne: [
+      "NextJS Architecture",
+      "React Hooks & Props",
+      "Sass Partials",
+      "Semantic HTML",
+      "Redux Toolkit",
+      "Redux Persist",
+      "Axios",
+      "REST API",
+      "CRUD Operation",
+      "API Testing(Postman)",
+      "PayPal Payment",
+      "Git",
+    ],
+    skillsTwo: [
+      "ReactJS Architecture",
+      "React Hooks",
+      "React Router",
+      "Styled Components",
+      "Semantic HTML",
+      "JWT Authentication",
+      "Redux Toolkit/Persist",
+      "Axios",
+      "REST API",
+      "API Testing(Postman)",
+      "Stripe Payment",
+      "Git",
+    ],
+    technologyOne: [
       {
         id: 1,
         name: "NextJS",
@@ -141,52 +135,8 @@ export const projects = [
         name: "MongoDB",
         image: "/images/mongodb.svg",
       },
-      {
-        id: 5,
-        name: "Postman",
-        image: "/images/postman.png",
-      },
     ],
-  },
-  {
-    id: 3,
-    titleOne: "Alpha Male Apparels",
-    titleTwo: "Portfolio Website",
-    descriptionOne:
-      "An e-commerce clothing store built with features like JWT authentication and admin panel dashboard. This project is under final stages of completion with features like of CRUD operations.",
-    skillsOne: [
-      "ReactJS Architecture",
-      "React Hooks",
-      "React Router",
-      "Styled Components",
-      "Semantic HTML",
-      "JWT Authentication",
-      "Redux Toolkit/Persist",
-      "Axios",
-      "RESTful API",
-      "API Testing(Postman)",
-      "Stripe Payment",
-      "Git",
-    ],
-    descriptionTwo:
-      "My personal portfolio website to showcase my skills and projects I have been working on to upskill my knowledge and expertise.",
-    skillsTwo: [
-      "NextJS Architecture",
-      "React Hooks & Props",
-      "Semantic HTML",
-      "Chakra UI",
-      "Next Router",
-      "Framer Motion",
-      "Higher Order Functions",
-      "Git",
-    ],
-    imageOne: "/images/alpha-male.webp",
-    demoLinkOne: "#",
-    sourceLinkOne: "https://github.com/zeetaengrg/e-commerce-clothing-shop",
-    imageTwo: "/images/portfolio.webp",
-    demoLinkTwo: "https://jitendragurung.com.np/",
-    sourceLinkTwo: "https://github.com/zeetaengrg/portfolio",
-    technologyOne: [
+    technologyTwo: [
       {
         id: 1,
         name: "ReactJS",
@@ -211,33 +161,6 @@ export const projects = [
         id: 5,
         name: "MongoDB",
         image: "/images/mongodb.svg",
-      },
-      {
-        id: 6,
-        name: "Postman",
-        image: "/images/postman.png",
-      },
-    ],
-    technologyTwo: [
-      {
-        id: 1,
-        name: "NextJS",
-        image: "/images/nextjs.svg",
-      },
-      {
-        id: 2,
-        name: "Chakra UI",
-        image: "/images/chakraui.svg",
-      },
-      {
-        id: 3,
-        name: "Framer Motion",
-        image: "/images/framer-motion.png",
-      },
-      {
-        id: 4,
-        name: "Figma",
-        image: "/images/figma.svg",
       },
     ],
   },

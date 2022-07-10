@@ -98,11 +98,6 @@ export const tools = [
   },
   {
     id: 7,
-    name: "Figma",
-    image: "/images/figma.svg",
-  },
-  {
-    id: 8,
     name: "Framer Motion",
     image: "/images/framer-motion.png",
   },
