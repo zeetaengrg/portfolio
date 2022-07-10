@@ -17,12 +17,12 @@ export const projects = [
       "Semantic HTML",
       "CSS Selectors",
       "Pseudo Class Selectors",
-      "CSS Grid/Flexbox",
+      "CSS Grid",
+      "CSS Flexbox",
       "CSS Custom Properties",
       "Media Queries",
       "DOM Traversing",
       "DOM Manipulation",
-      "JS Functions",
     ],
     technologyOne: [
       {
