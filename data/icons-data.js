@@ -68,36 +68,26 @@ export const library = [
 export const tools = [
   {
     id: 1,
-    name: "NPM",
-    image: "/images/npm.svg",
-  },
-  {
-    id: 2,
     name: "Yarn",
     image: "/images/yarn.svg",
   },
   {
-    id: 3,
+    id: 2,
     name: "Redux Toolkit",
     image: "/images/redux.svg",
   },
   {
-    id: 4,
+    id: 3,
     name: "Git",
     image: "/images/git.svg",
   },
   {
-    id: 5,
+    id: 4,
     name: "GitHub",
     image: "/images/github.svg",
   },
   {
-    id: 6,
-    name: "VS Code",
-    image: "/images/vscode.svg",
-  },
-  {
-    id: 7,
+    id: 5,
     name: "Framer Motion",
     image: "/images/framer-motion.png",
   },
