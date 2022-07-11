@@ -29,7 +29,12 @@ const ProjectSourceSection = ({ project, isReverse }) => {
         <Tooltip
           hasArrow
           as="figcaption"
-          label="Live Demo"
+          label={
+            project.titleOne === "Pizzaland" ||
+            project.titleTwo === "Alpha Male"
+              ? "Coming Soon..."
+              : "Live Demo"
+          }
           placement="bottom"
           closeOnClick={false}
         >
