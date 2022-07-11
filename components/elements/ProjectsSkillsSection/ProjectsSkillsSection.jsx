@@ -17,7 +17,10 @@ const ProjectsSkillsSection = ({ project, isReverse }) => {
           lg: isReverse ? "left" : "right",
         }}
       >
-        Skills Learned
+        Skills&nbsp;
+        {project.titleOne === "Pizzaland" || project.titleTwo === "Alpha Male"
+          ? "Learning"
+          : "Learned"}
       </Heading>
       <SkillsTable project={project} isReverse={isReverse} />
     </Box>
