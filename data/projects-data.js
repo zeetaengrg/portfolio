@@ -85,7 +85,7 @@ export const projects = [
     descriptionOne:
       "An online pizza delivery platform with features like Admin Panel for CRUD operations and PayPal payment. This project is under final stages of completion with features like adding admin/user authentications.",
     descriptionTwo:
-      "An e-commerce clothing store built with features like JWT authentication and admin panel dashboard. This project is under final stages of completion with features like of CRUD operations.",
+      "An e-commerce clothing store built with features like JWT authentication with admin panel dashboard for CRUD operations. This project is under final stages of completion with features like CRUD operations.",
     skillsOne: [
       "NextJS Architecture",
       "React Hooks & Props",
