@@ -63,32 +63,6 @@ const AboutMeText = () => {
       <Box as="figure" display={{ base: "block", md: "none" }}>
         <CurriculumTable />
       </Box>
-      {/* <Text>
-        Right now I am upskilling myself by learning ReactJS and NextJS and have
-        completed few projects using them which can be found in my&nbsp;
-        <Link
-          href="https://bit.ly/3LmRDue"
-          sx={specialLinkStyle}
-          rel="noopener noreferrer nofollow"
-          target="_blank"
-          aria-label="Link to my GitHub profile"
-        >
-          GitHub
-        </Link>
-        &nbsp;profile and&nbsp;
-        <Link
-          href="#projects"
-          sx={specialLinkStyle}
-          aria-label="Link to Projects section"
-        >
-          Projects
-        </Link>
-        &nbsp;section.
-      </Text>
-      <Text m="0.5rem 0rem 0rem">
-        As per my hobby, I am a football fanatic and secretly dream about being
-        a Rock &apos;n&apos; Roll guitarist.
-      </Text> */}
     </MotionBox>
   );
 };
