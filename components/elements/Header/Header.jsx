@@ -22,7 +22,7 @@ const Header = ({ heading, id }) => {
     bgClip: "text",
     fontSize: { base: "3rem", md: "4rem" },
     fontFamily: "inherit",
-    marginTop: { base: "2rem", md: "3rem" },
+    marginTop: { base: "2rem", md: "0rem" },
   };
 
   return (

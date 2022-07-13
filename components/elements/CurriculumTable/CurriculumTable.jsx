@@ -30,7 +30,7 @@ const CurriculumTable = () => {
   return (
     <table style={tableStyle}>
       <caption style={{ fontSize: "1.1rem", fontWeight: "600" }}>
-        Curriculums:
+        Web Development Curriculums:
       </caption>
       <thead>
         <tr>

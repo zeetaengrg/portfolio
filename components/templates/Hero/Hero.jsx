@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <Box
       as="section"
-      height={{ base: "87vh", md: "93vh", xl: "80vh" }}
+      height={{ base: "87vh", md: "93vh", xl: "89vh" }}
       display="flex"
       flexDirection="column"
       justifyContent="center"
