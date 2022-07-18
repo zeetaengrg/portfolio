@@ -96,3 +96,7 @@ export const linkStyle = {
     },
   },
 };
+
+export const iconStyle = {
+  fontSize: "0.8rem",
+};
