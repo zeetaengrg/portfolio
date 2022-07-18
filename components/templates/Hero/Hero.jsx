@@ -16,6 +16,7 @@ import {
   profileImgVariants,
   parentVariants,
   childVariants,
+  iconStyle,
 } from "./HeroStyle";
 
 const Hero = () => {
@@ -111,15 +112,9 @@ const Hero = () => {
             }}
           >
             <Text fontWeight="bold" casing="uppercase">
-              I&apos;m
+              I&apos;m&nbsp;
             </Text>
-            <FaQuoteLeft
-              style={{
-                marginLeft: "0.5rem",
-                fontSize: "0.8rem",
-              }}
-              aria-label="Left Quote Icon"
-            />
+            <FaQuoteLeft style={iconStyle} aria-label="Left Quote Icon" />
             <Text
               casing="uppercase"
               color="#fff"
@@ -129,13 +124,7 @@ const Hero = () => {
             >
               Jiten
             </Text>
-            <FaQuoteRight
-              style={{
-                marginLeft: "0.5rem",
-                fontSize: "0.8rem",
-              }}
-              aria-label="Right Quote Icon"
-            />
+            <FaQuoteRight style={iconStyle} aria-label="Right Quote Icon" />
           </Flex>
           <Text
             as={motion.p}
