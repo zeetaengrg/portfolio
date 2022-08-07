@@ -1,10 +1,10 @@
-import { Flex, Box } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import {
-  Header,
-  ContactMeBtn,
   AboutMeWrapper,
-  SubHeader,
+  ContactMeBtn,
+  Header,
   LineDivider,
+  SubHeader,
 } from "@components/elements";
 import { AboutMeText } from "@components/modules";
 

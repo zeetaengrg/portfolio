@@ -1,8 +1,9 @@
 import NextLink from "next/link";
-import { motion } from "framer-motion";
 import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+
 import { LogoImage, MobileNavbar } from "@components/elements";
-import { linkVariants, linkItem, linkStyle } from "./NavbarStyles";
+import { linkItem, linkStyle, linkVariants } from "./NavbarStyles";
 
 const MotionLink = motion(Link);
 

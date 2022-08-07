@@ -1,7 +1,7 @@
-import { Center, Flex, Image, Box, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Image, Text } from "@chakra-ui/react";
 import { FaCopyright } from "react-icons/fa";
 import { SocialIconLinks } from "@components/elements";
-import { boxStyle, imgTag, imageStyle } from "./FooterStyles";
+import { boxStyle, imageStyle, imgTag } from "./FooterStyles";
 
 const Footer = () => {
   const today = new Date();

@@ -1,22 +1,22 @@
 import NextImage from "next/image";
 import { motion } from "framer-motion";
-import { Flex, Text, Link, Box, Image } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, Text } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import {
-  ResumeBtn,
   HireMeBtn,
+  ResumeBtn,
   SidebarMailLink,
   SidebarSocialIcons,
 } from "@components/elements";
 import {
-  flexStyle,
-  linkStyle,
-  boxStyle,
   bgImgVariants,
-  profileImgVariants,
-  parentVariants,
+  boxStyle,
   childVariants,
+  flexStyle,
   iconStyle,
+  linkStyle,
+  parentVariants,
+  profileImgVariants,
 } from "./HeroStyle";
 
 const Hero = () => {

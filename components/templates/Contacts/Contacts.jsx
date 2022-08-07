@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { Center, Flex, Image, Box } from "@chakra-ui/react";
-import { ContactForm, ContactInfo } from "@components/modules";
+import { Box, Center, Flex, Image } from "@chakra-ui/react";
 import { Header, LineDivider, SubHeader } from "@components/elements";
-import { imgVariants, imgStyle, flexStyle } from "./ContactsStyles";
+import { ContactForm, ContactInfo } from "@components/modules";
+import { flexStyle, imgStyle, imgVariants } from "./ContactsStyles";
 
 const MotionImage = motion(Image);
 
