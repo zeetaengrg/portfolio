@@ -4,6 +4,7 @@ export const tabStyle = {
   margin: { base: "0.5rem", md: "1.3rem " },
   fontSize: { base: "1rem", md: "1.2rem" },
   color: "#a5abbd",
+  border: "1px solid transparent",
   _hover: { color: "white" },
   _focus: { outline: "none" },
   _active: { bg: "none" },
