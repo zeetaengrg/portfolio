@@ -16,10 +16,13 @@ export const theme = extendTheme({
         fontWeight: "500",
         position: "relative",
         _hover: {
+          "&::after": {
+            transform: "scaleX(1)",
+            transformOrigin: "center",
+          },
           textDecoration: "none",
           color: "#fff",
         },
-
         "&::after": {
           content: '" "',
           position: "absolute",
@@ -31,11 +34,6 @@ export const theme = extendTheme({
           transform: "scaleX(0)",
           transformOrigin: "center",
           transition: "transform 0.2s ease-in-out",
-        },
-
-        "&:hover::after": {
-          transform: "scaleX(1)",
-          transformOrigin: "center",
         },
       },
     },
