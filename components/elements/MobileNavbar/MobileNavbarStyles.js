@@ -12,7 +12,7 @@ export const menuStyle = {
     backgroundColor: "none",
     opacity: "0",
   },
-  _focus: "none",
+  _focus: { outline: "none" },
   opacity: {
     base: "1",
     md: "0",

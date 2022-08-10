@@ -3,7 +3,7 @@ import { btnStyle } from "../Btn/Btn";
 export const btn = {
   ...btnStyle,
   transition: "all 0.3s ease",
-  "&:hover": {
+  _hover: {
     transform: "scale(1.1)",
   },
   borderRadius: "50%",

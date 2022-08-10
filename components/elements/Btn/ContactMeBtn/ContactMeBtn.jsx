@@ -30,10 +30,14 @@ const ContactMeBtn = () => {
           delay: 0.5,
           duration: 0.5,
         }}
-        aria-label="Link To Contact Me section"
+        aria-label="Link To Contacts Section"
+        aria-describedby="contact-me-btn-title"
       >
-        <Text>Contact Me</Text>
-        <MdAccountCircle style={{ fontSize: "1.5rem" }} aria-label="Contact Icon" />
+        <Text id="contact-me-btn-title">Contact Me</Text>
+        <MdAccountCircle
+          style={{ fontSize: "1.5rem" }}
+          aria-label="Contact Icon"
+        />
       </MotionLink>
     </NextLink>
   );

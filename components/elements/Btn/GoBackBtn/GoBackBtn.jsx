@@ -33,8 +33,9 @@ const GoBackBtn = () => {
         initial="start"
         animate="end"
         aria-label="Link To Home Page"
+        aria-describedby="go-back-btn-title"
       >
-        <Text>Go Back</Text>
+        <Text id="go-back-btn-title">Go Back</Text>
         <RiArrowGoBackLine aria-label="Go Back Icon" />
       </MotionLink>
     </NextLink>

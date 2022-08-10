@@ -42,8 +42,8 @@ const CurriculumList = ({ curriculum }) => {
         rel="noopener noreferrer nofollow"
         sx={linkStyle}
         href="https://www.freecodecamp.org/"
-        aria-label="Link To Free Code Camp Website"
         fontStyle="italic"
+        aria-label="Link To Free Code Camp Website"
       >
         ({curriculum.platform})
       </Link>

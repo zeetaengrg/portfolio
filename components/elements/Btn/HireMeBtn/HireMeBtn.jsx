@@ -27,12 +27,13 @@ const HireMeBtn = () => {
       <MotionLink
         sx={linkStyle}
         href="#contacts"
-        aria-label="Link To Contact Me Section"
         variants={btnVariants}
         initial="hidden"
         animate="visible"
+        aria-label="Link To Contact Me Section"
+        aria-describedby="hire-me-btn-title"
       >
-        <Text>Hire Me</Text>
+        <Text id="hire-me-btn-title">Hire Me</Text>
         <FaHandshake
           style={{ fontSize: "1.5rem" }}
           aria-label="Handshake Icon"
