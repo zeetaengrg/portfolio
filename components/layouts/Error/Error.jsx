@@ -39,6 +39,7 @@ const Error = () => {
       height={{ base: "62vh", md: "72.5vh", lg: "76vh" }}
       gap={{ base: "0rem", md: "1rem" }}
       aria-labelledby="error"
+      aria-describedby="error-text"
     >
       <Flex
         as={motion.article}
@@ -65,7 +66,11 @@ const Error = () => {
             draggable="false"
           />
         </Box>
-        <Text sx={textStyle} fontSize={{ base: "1.2rem", md: "1.3rem" }}>
+        <Text
+          sx={textStyle}
+          fontSize={{ base: "1.2rem", md: "1.3rem" }}
+          id="error-text"
+        >
           Sorry, but the page you requested was not found!
         </Text>
       </Flex>

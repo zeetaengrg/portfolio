@@ -19,16 +19,20 @@ const ThankYou = () => {
         variants={boxVariants}
         initial="start"
         animate="end"
+        aria-describedby="thankyou-text"
       >
         <Heading as="h1" id="thankyou" sx={headingStyle}>
           Thank You!!!
         </Heading>
         <Divider width="60%" />
-        <Text sx={textStyle}>
+        <Text sx={textStyle} id="thankyou-text">
           Your message has been sent successfully. I will get back to you
           shortly.
         </Text>
-        <FaPrayingHands style={{ fontSize: "2rem" }} />
+        <FaPrayingHands
+          style={{ fontSize: "2rem" }}
+          aria-label="Thank You Icon"
+        />
       </Box>
       <GoBackBtn />
     </Flex>
