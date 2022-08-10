@@ -8,7 +8,7 @@ import {
   ListItem,
   Box,
 } from "@chakra-ui/react";
-import { FaMobileAlt, FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { MdLocationPin, MdMailOutline } from "react-icons/md";
 import { linkStyle } from "@components/elements/LinkStyle";
 import {
@@ -26,7 +26,7 @@ const MotionFlex = motion(Flex);
 const ContactInfo = () => {
   return (
     <MotionFlex
-      as="article"
+      as="section"
       display={{ base: "block", md: "none" }}
       flexDirection="column"
       justifyContent="center"
@@ -43,7 +43,7 @@ const ContactInfo = () => {
       }}
     >
       <Flex
-        as="section"
+        as="article"
         direction="column"
         justifyContent="center"
         gap={{ base: "1rem", md: "2rem" }}

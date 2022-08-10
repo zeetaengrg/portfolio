@@ -82,7 +82,7 @@ export const imgStyle = {
   transition: "all 0.25s ease-in-out",
   boxShadow: "0 0.5rem 1.5rem 1rem rgba(0,0,0,0.5)",
   _hover: {
-    base: "none",
+    base: { transform: "none" },
     md: {
       transform: "translate(-1rem, -1rem)",
     },
