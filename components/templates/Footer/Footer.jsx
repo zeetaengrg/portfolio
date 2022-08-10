@@ -45,8 +45,9 @@ const Footer = () => {
           align="center"
           direction="column"
           gap={{ base: "0rem", lg: "0.5rem" }}
+          aria-describedby="designer-credit"
         >
-          <Text>Designed & Built By Jiten Gurung</Text>
+          <Text id="designer-credit">Designed & Built By Jiten Gurung</Text>
           <Flex align="center">
             {today.getFullYear()}{" "}
             <FaCopyright
