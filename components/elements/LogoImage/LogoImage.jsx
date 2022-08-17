@@ -24,9 +24,9 @@ const LogoImage = () => {
     <NextLink href="/" passHref>
       <MotionImage
         src="/images/logo.svg"
-        alt="Logo"
+        alt="Navbar Logo"
         width="60px"
-        height="45px"
+        height="60px"
         variants={imageVariants}
         initial="hidden"
         animate="visible"
