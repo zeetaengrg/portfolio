@@ -28,7 +28,7 @@ const Footer = () => {
         <Center as="figure">
           <Image
             src="/images/logo.svg"
-            alt="Logo"
+            alt="Footer Logo"
             sx={imageStyle}
             draggable="false"
             userSelect="none"
