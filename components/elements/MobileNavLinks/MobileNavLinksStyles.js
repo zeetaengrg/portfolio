@@ -1,3 +1,31 @@
+export const boxVariants = {
+  hidden: {
+    opacity: 0,
+    y: "-100vh",
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+export const linkVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+    },
+  },
+};
+
 export const boxStyle = {
   position: "absolute",
   top: "4.5rem",

@@ -6,38 +6,16 @@ import {
   MdContactPhone,
   MdDesignServices,
 } from "react-icons/md";
-import { boxStyle, mobileLinkStyle } from "./MobileNavLinksStyles";
+import {
+  boxVariants,
+  linkVariants,
+  boxStyle,
+  mobileLinkStyle,
+} from "./MobileNavLinksStyles";
+import Image from "next/image";
 
 const MotionBox = motion(Box);
 const MotionLink = motion(Link);
-
-const boxVariants = {
-  hidden: {
-    opacity: 0,
-    y: "-100vh",
-  },
-  visible: {
-    opacity: 0.97,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      staggerChildren: 0.3,
-    },
-  },
-};
-
-const linkVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-    },
-  },
-};
 
 const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
   const linkItem = [
@@ -72,6 +50,17 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
       animate="visible"
       aria-label="Mobile navigation links"
     >
+      <Box
+        as="figure"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        position="absolute"
+        zIndex="0"
+        opacity="0.1"
+      >
+        <Image src="/images/logo.svg" alt="Logo" height={400} width={400} />
+      </Box>
       <UnorderedList
         listStyleType="none"
         display="flex"
