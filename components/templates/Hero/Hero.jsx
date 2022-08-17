@@ -15,21 +15,14 @@ import {
   flexStyle,
   iconStyle,
   linkStyle,
+  parentBox,
   parentVariants,
   profileImgVariants,
 } from "./HeroStyle";
 
 const Hero = () => {
   return (
-    <Box
-      as="section"
-      height={{ base: "87vh", md: "93vh", xl: "82.5vh" }}
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      position="relative"
-    >
+    <Box as="section" aria-labelledby="hero-section" sx={parentBox}>
       <Box
         as={motion.figure}
         sx={boxStyle}
@@ -121,6 +114,7 @@ const Hero = () => {
               fontSize={{ base: "3rem", md: "4rem" }}
               fontWeight="extrabold"
               lineHeight="1.2"
+              id="hero-section"
             >
               Jiten
             </Text>

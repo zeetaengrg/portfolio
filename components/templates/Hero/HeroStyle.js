@@ -57,6 +57,19 @@ export const childVariants = {
   },
 };
 
+export const parentBox = {
+  height: {
+    base: "95vh",
+    md: "85vh",
+    xl: "calc(100vh - 6.75rem)",
+  },
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  position: "relative",
+};
+
 export const boxStyle = {
   position: "absolute",
   display: {
