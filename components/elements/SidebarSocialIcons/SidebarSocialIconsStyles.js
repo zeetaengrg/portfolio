@@ -22,27 +22,27 @@ export const links = [
   },
   {
     id: 3,
+    title: "CodePen",
+    url: "https://codepen.io/zeetaen/",
+    icon: <FaCodepen aria-label="Codepen Icon" />,
+  },
+  {
+    id: 4,
     title: "Facebook",
     url: "https://www.facebook.com/zeetaen/",
     icon: <FaFacebook aria-label="Facebook Icon" />,
   },
   {
-    id: 4,
+    id: 5,
     title: "Instagram",
     url: "https://www.instagram.com/zeetaen/",
     icon: <FaInstagram aria-label="Instagram Icon" />,
   },
   {
-    id: 5,
+    id: 6,
     title: "Twitter",
     url: "https://twitter.com/zeetaen/",
     icon: <FaTwitter aria-label="Twitter Icon" />,
-  },
-  {
-    id: 6,
-    title: "CodePen",
-    url: "https://codepen.io/zeetaen/",
-    icon: <FaCodepen aria-label="Codepen Icon" />,
   },
 ];
 
