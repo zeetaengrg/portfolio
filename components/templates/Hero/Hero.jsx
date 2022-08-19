@@ -14,7 +14,6 @@ import {
   childVariants,
   flexStyle,
   iconStyle,
-  linkStyle,
   parentBox,
   parentVariants,
   profileImgVariants,
@@ -157,7 +156,7 @@ const Hero = () => {
           >
             <Link
               href="/cv/Resume.pdf"
-              sx={linkStyle}
+              _hover={{ textDecoration: "none" }}
               target="_blank"
               rel="noopener noreferrer nofollow"
               aria-label="Link to Resume page"

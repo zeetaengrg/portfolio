@@ -16,9 +16,17 @@ export const linkVariants = {
 };
 
 export const linkStyle = {
+  textTransform: "uppercase",
   _hover: {
+    "&::after": {
+      transform: "scaleX(1)",
+      transformOrigin: "center",
+    },
     textDecoration: "none",
+    color: "#fff",
   },
+  fontWeight: "500",
+  position: "relative",
   fontSize: {
     base: "0.72rem",
     md: "0.9rem",
@@ -28,5 +36,17 @@ export const linkStyle = {
     base: "none",
     md: "block",
     lg: "block",
+  },
+  "&::after": {
+    content: '" "',
+    position: "absolute",
+    left: "0",
+    bottom: "0",
+    width: "100%",
+    height: "1px",
+    background: "white",
+    transform: "scaleX(0)",
+    transformOrigin: "center",
+    transition: "transform 0.2s ease-in-out",
   },
 };

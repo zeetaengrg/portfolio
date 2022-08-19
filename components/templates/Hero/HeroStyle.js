@@ -102,14 +102,6 @@ export const flexStyle = {
   },
 };
 
-export const linkStyle = {
-  _hover: {
-    "&::after": {
-      content: "none",
-    },
-  },
-};
-
 export const iconStyle = {
   fontSize: "0.8rem",
 };
