@@ -6,7 +6,7 @@ export const theme = extendTheme({
       "html, body": {
         backgroundColor: "#0B111E",
         color: "#a5abbd",
-        fontFamily: '"Poppins", sans-serif',
+        fontFamily: '"Exo 2", sans-serif',
         scrollBehavior: "smooth",
       },
 
