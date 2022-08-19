@@ -21,8 +21,14 @@ export default class Document extends NextDocument {
           <meta name="copyright" content="Jitendra Gurung" />
           <meta name="robots" content="index, follow" />
           <meta name="theme-color" content="#0b111e" />
+          <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin
+          ></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
           ></link>
           <link
