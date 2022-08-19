@@ -111,7 +111,7 @@ const Hero = () => {
               casing="uppercase"
               color="#fff"
               fontSize={{ base: "3rem", md: "4rem" }}
-              fontWeight="extrabold"
+              fontWeight="900"
               lineHeight="1.2"
               id="hero-section"
             >

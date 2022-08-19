@@ -25,7 +25,7 @@ export const linkStyle = {
     textDecoration: "none",
     color: "#fff",
   },
-  fontWeight: "500",
+  fontWeight: "700",
   position: "relative",
   fontSize: {
     base: "0.72rem",
