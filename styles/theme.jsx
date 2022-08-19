@@ -11,29 +11,8 @@ export const theme = extendTheme({
       },
 
       a: {
-        textTransform: "uppercase",
-        fontSize: "0.9rem",
-        fontWeight: "500",
-        position: "relative",
         _hover: {
-          "&::after": {
-            transform: "scaleX(1)",
-            transformOrigin: "center",
-          },
-          textDecoration: "none",
           color: "#fff",
-        },
-        "&::after": {
-          content: '" "',
-          position: "absolute",
-          left: "0",
-          bottom: "0",
-          width: "100%",
-          height: "1px",
-          background: "white",
-          transform: "scaleX(0)",
-          transformOrigin: "center",
-          transition: "transform 0.2s ease-in-out",
         },
       },
     },
