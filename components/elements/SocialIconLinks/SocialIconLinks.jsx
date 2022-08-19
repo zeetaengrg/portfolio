@@ -1,6 +1,5 @@
 import { Box, Link, List, ListItem } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import { linkStyle } from "../LinkStyle";
 import { links, iconStyle } from "./SocialIconsLinksStyles";
 
 const SocialIconLinks = () => {
@@ -11,7 +10,9 @@ const SocialIconLinks = () => {
           <Link
             href={link.url}
             aria-label={`Link to ${link.name} page`}
-            {...linkStyle}
+            _focus={{ outline: "none" }}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
           >
             <Box as="figure" {...iconStyle}>
               {link.name === "Facebook" ? (

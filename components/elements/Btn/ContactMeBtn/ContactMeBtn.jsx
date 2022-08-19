@@ -2,7 +2,7 @@ import NextLink from "next/link";
 import { Link, Text } from "@chakra-ui/react";
 import { MdAccountCircle } from "react-icons/md";
 import { motion } from "framer-motion";
-import { linkStyle } from "../Link";
+import { btnLinkStyle } from "../BtnLinkStyle";
 
 const MotionLink = motion(Link);
 
@@ -21,7 +21,7 @@ const ContactMeBtn = () => {
   return (
     <NextLink href="#contacts" passHref>
       <MotionLink
-        sx={linkStyle}
+        sx={btnLinkStyle}
         variants={commonVariants}
         initial="hidden"
         whileInView="visible"

@@ -2,7 +2,7 @@ import NextLink from "next/link";
 import { motion } from "framer-motion";
 import { Link, Text } from "@chakra-ui/react";
 import { RiArrowGoBackLine } from "react-icons/ri";
-import { linkStyle } from "../Link";
+import { btnLinkStyle } from "../BtnLinkStyle";
 
 const MotionLink = motion(Link);
 
@@ -26,7 +26,7 @@ const GoBackBtn = () => {
   return (
     <NextLink href="/" passHref>
       <MotionLink
-        sx={linkStyle}
+        sx={btnLinkStyle}
         m={{ base: "1rem 0", md: "1rem 0rem", lg: "0rem" }}
         position="relative"
         variants={btnVariant}

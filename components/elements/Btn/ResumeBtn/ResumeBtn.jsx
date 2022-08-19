@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import { btnStyle } from "../Btn";
+import { btnStyle } from "../BtnStyle";
 
 const MotionBtn = motion(Button);
 

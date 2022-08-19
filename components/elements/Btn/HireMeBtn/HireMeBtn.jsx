@@ -2,7 +2,7 @@ import NextLink from "next/link";
 import { Link, Text } from "@chakra-ui/react";
 import { FaHandshake } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { linkStyle } from "../Link";
+import { btnLinkStyle } from "../BtnLinkStyle";
 
 const MotionLink = motion(Link);
 
@@ -25,7 +25,7 @@ const HireMeBtn = () => {
   return (
     <NextLink href="#contacts" passHref>
       <MotionLink
-        sx={linkStyle}
+        sx={btnLinkStyle}
         href="#contacts"
         variants={btnVariants}
         initial="hidden"

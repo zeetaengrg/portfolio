@@ -1,5 +1,6 @@
 import { Link } from "@chakra-ui/react";
 import { curriculums } from "@data/about-data";
+import { externalLinkStyle } from "../ExternalLinkStyle";
 
 const CurriculumTable = () => {
   const tableStyle = {
@@ -11,20 +12,6 @@ const CurriculumTable = () => {
   const tableHeadStyle = {
     border: "0.25px groove rgba(165,171,189,0.3)",
     padding: "8px",
-  };
-
-  const linkStyle = {
-    color: "#3892f9",
-    _hover: {
-      "&::after": { content: "none" },
-    },
-    _focus: { outline: "none" },
-    _active: { outline: "none" },
-    textTransform: "none",
-    textDecoration: "underline",
-    fontWeight: "normal",
-    fontSize: "1rem",
-    fontStyle: "italic",
   };
 
   return (
@@ -46,7 +33,8 @@ const CurriculumTable = () => {
               <Link
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                sx={linkStyle}
+                sx={externalLinkStyle}
+                fontStyle="italic"
                 href={curriculum.link}
                 aria-label="Link To Curriculum Title"
               >
@@ -57,7 +45,7 @@ const CurriculumTable = () => {
               <Link
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                sx={linkStyle}
+                sx={externalLinkStyle}
                 href="https://www.freecodecamp.org/"
                 aria-label="Link To Free Code Camp Website"
               >
@@ -67,7 +55,7 @@ const CurriculumTable = () => {
             <td style={tableHeadStyle}>
               <Link
                 href={curriculum.certificateUrl}
-                sx={linkStyle}
+                sx={externalLinkStyle}
                 aria-label={`Link to ${curriculum.title} Certificate`}
               >
                 {curriculum.title === "Front End Development Libraries" &&

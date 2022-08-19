@@ -1,4 +1,4 @@
-import { btnStyle } from "../Btn/Btn";
+import { btnStyle } from "../Btn/BtnStyle";
 
 export const btn = {
   ...btnStyle,

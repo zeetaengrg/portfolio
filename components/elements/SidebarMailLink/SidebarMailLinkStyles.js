@@ -51,6 +51,7 @@ export const mailStyle = {
   _hover: {
     "&::after": { content: "none" },
     transform: "scale(1.1)",
+    color: "#fff",
   },
   _focus: { outline: "none" },
 };
