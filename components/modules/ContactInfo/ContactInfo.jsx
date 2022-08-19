@@ -10,7 +10,6 @@ import {
 } from "@chakra-ui/react";
 import { FaLinkedinIn, FaGithub, FaCodepen } from "react-icons/fa";
 import { MdLocationPin, MdMailOutline } from "react-icons/md";
-import { linkStyle } from "@components/elements/LinkStyle";
 import {
   commonVariants,
   links,
@@ -71,7 +70,9 @@ const ContactInfo = () => {
             <Link
               href={link.url}
               aria-label={`Link to ${link.name} page`}
-              {...linkStyle}
+              _focus={{ outline: "none" }}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
             >
               <Box as="figure" {...socialIconStyle}>
                 {link.name === "LinkedIn" ? (

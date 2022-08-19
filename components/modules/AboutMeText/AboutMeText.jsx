@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import { Link, Box, Text, UnorderedList } from "@chakra-ui/react";
 import { CurriculumList, CurriculumTable } from "@components/elements";
 import { curriculums } from "@data/about-data";
-import { commonVariants, specialLinkStyle } from "./AboutMeTextStyles";
+import { commonVariants } from "./AboutMeTextStyles";
+import { externalLinkStyle } from "@components/elements/ExternalLinkStyle";
 
 const MotionBox = motion(Box);
 
@@ -34,7 +35,7 @@ const AboutMeText = () => {
         Best Software Project Award by&nbsp;
         <Link
           href="https://nta.gov.np"
-          sx={specialLinkStyle}
+          sx={externalLinkStyle}
           rel="noreferrer noopener nofollow"
           target="_blank"
           aria-label="Link to Nepal Telecommunication Authority(NTA) website"

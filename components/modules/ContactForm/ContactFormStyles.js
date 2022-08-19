@@ -1,4 +1,4 @@
-import { btnStyle } from "../../elements/Btn/Btn";
+import { btnStyle } from "../../elements/Btn/BtnStyle";
 
 export const commonVariants = {
   hidden: {
