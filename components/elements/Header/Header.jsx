@@ -21,6 +21,7 @@ const Header = ({ heading, id }) => {
     bgGradient: "linear(to-r, #fff, #a5abbd, #384765, #152641, #0B111E)",
     bgClip: "text",
     fontSize: { base: "3rem", md: "4rem" },
+    fontWeight: "900",
     fontFamily: "inherit",
     marginTop: { base: "2rem", md: "0rem" },
   };
