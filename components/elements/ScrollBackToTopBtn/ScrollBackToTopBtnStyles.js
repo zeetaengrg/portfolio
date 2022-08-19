@@ -5,6 +5,8 @@ export const btn = {
   transition: "all 0.3s ease",
   _hover: {
     transform: "scale(1.1)",
+    bg: "#a5abbd",
+    color: "#0b111e",
   },
   borderRadius: "50%",
   fontSize: "1.7rem",

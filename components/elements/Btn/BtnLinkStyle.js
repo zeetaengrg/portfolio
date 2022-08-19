@@ -3,7 +3,7 @@ export const btnLinkStyle = {
   padding: "0.6rem 1rem",
   backgroundColor: "#141E39",
   fontSize: "1.2rem",
-  fontWeight: "600",
+  fontWeight: "700",
   transition: "all 0.3s ease",
   textTransform: "none",
   _hover: {

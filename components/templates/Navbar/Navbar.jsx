@@ -14,7 +14,7 @@ const Navbar = () => {
       display="flex"
       alignItems="center"
       justifyContent="space-between"
-      p={{ base: "0.8rem 2rem", md: "1.5rem 4rem", lg: "1.5rem 6rem" }}
+      p={{ base: "0.8rem 2rem", md: "1rem 4rem", lg: "1rem 6rem" }}
       position="relative"
       zIndex="999"
     >

@@ -2,6 +2,7 @@ export const btnStyle = {
   padding: "0rem 1rem",
   backgroundColor: "#141E39",
   fontSize: "1.2rem",
+  fontWeight: "700",
   transition: "all 0.3s ease",
   _hover: {
     bg: "#a5abbd",

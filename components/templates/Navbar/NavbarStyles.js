@@ -29,7 +29,7 @@ export const linkStyle = {
   position: "relative",
   fontSize: {
     base: "0.72rem",
-    md: "0.9rem",
+    md: "1rem",
   },
   _focus: { outline: "none" },
   display: {

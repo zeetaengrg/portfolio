@@ -8,6 +8,7 @@ export const theme = extendTheme({
         color: "#a5abbd",
         fontFamily: '"Exo 2", sans-serif',
         scrollBehavior: "smooth",
+        fontSize: "1rem",
       },
 
       a: {
