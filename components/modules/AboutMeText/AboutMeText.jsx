@@ -13,6 +13,7 @@ const AboutMeText = () => {
       as="article"
       p={{ base: "1.5rem 1rem", md: "1.5rem 5rem" }}
       textAlign="center"
+      fontSize={{ base: "1rem", md: "1.1rem" }}
       variants={commonVariants}
       initial="hidden"
       whileInView="visible"

@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { VStack, FormLabel, Input, Textarea, Button } from "@chakra-ui/react";
 import { commonVariants, inputStyle, btn } from "./ContactFormStyles";
+import { formData } from "@data/contact-form-data";
 
 const MotionVStack = motion(VStack);
 
@@ -17,9 +18,12 @@ const ContactForm = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleFullNameChange = (e) => setFullName(e.target.value);
-  const handleEmailChange = (e) => setEmail(e.target.value);
-  const handleSubjectChange = (e) => setSubject(e.target.value);
+  const handleChange = (e) => {
+    setFullName(e.target.value);
+    setEmail(e.target.value);
+    setSubject(e.target.value);
+  };
+
   const handleMessageChange = (e) => setMessage(e.target.value);
 
   const canSend =
@@ -62,35 +66,26 @@ const ContactForm = () => {
           duration: 0.5,
         }}
       >
-        <FormLabel htmlFor="fullName" mb="0rem">
-          Full Name
-        </FormLabel>
-        <Input
-          sx={inputStyle}
-          type="text"
-          placeholder="Insert Your Full Name..."
-          id="fullName"
-          name="fullName"
-          onChange={handleFullNameChange}
-        />
-        <FormLabel htmlFor="email">Email Address</FormLabel>
-        <Input
-          sx={inputStyle}
-          placeholder="Insert Your Email..."
-          name="email"
-          id="email"
-          type="email"
-          onChange={handleEmailChange}
-        />
-        <FormLabel htmlFor="subject">Subject</FormLabel>
-        <Input
-          sx={inputStyle}
-          placeholder="Insert Your Subject..."
-          name="subject"
-          id="subject"
-          type="text"
-          onChange={handleSubjectChange}
-        />
+        {formData.map((form) => (
+          <>
+            <FormLabel
+              htmlFor={form.ID}
+              key={form.id}
+              mb="0rem"
+              fontSize={{ base: "1rem", md: "1.1rem" }}
+            >
+              {form.labelName}
+            </FormLabel>
+            <Input
+              sx={inputStyle}
+              type={form.type}
+              placeholder={form.placeholder}
+              id={form.ID}
+              name={form.ID}
+              onChange={handleChange}
+            />
+          </>
+        ))}
         <FormLabel htmlFor="message">Message</FormLabel>
         <Textarea
           sx={inputStyle}
