@@ -140,6 +140,7 @@ const Hero = () => {
             }}
             p={{ base: "0rem 2rem", md: "0rem 7rem", lg: "0rem" }}
             width={{ lg: "30rem" }}
+            fontSize={{ base: "1.1rem" }}
           >
             A Front-End aficionado with a dignified passion for creating
             beautiful and functional UI with a modest designing aspiration.
