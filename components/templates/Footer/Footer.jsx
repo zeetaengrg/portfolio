@@ -41,7 +41,7 @@ const Footer = () => {
           as="article"
           justify="center"
           mb={{ base: "0.5rem", lg: "1.5rem" }}
-          fontSize="0.8rem"
+          fontSize="0.9rem"
           align="center"
           direction="column"
           gap={{ base: "0rem", lg: "0.5rem" }}
