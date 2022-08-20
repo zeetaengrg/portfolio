@@ -4,6 +4,9 @@ export const externalLinkStyle = {
   _focus: { outline: "none" },
   textTransform: "none",
   textDecoration: "underline",
-  fontSize: "1rem",
+  fontSize: {
+    base: "1rem",
+    md: "1.1rem",
+  },
   fontWeight: "normal",
 };

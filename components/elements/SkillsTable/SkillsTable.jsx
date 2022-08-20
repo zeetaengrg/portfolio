@@ -20,12 +20,22 @@ const SkillsTable = ({ project, isReverse }) => {
           {isReverse
             ? project.skillsTwo.map((skill) => (
                 <td key={skill} style={dataStyle}>
-                  <Box textAlign={{ base: "center", lg: "left" }}>{skill}</Box>
+                  <Box
+                    textAlign={{ base: "center", lg: "left" }}
+                    fontSize={{ base: "1rem", md: "1.1rem" }}
+                  >
+                    {skill}
+                  </Box>
                 </td>
               ))
             : project.skillsOne.map((skill) => (
                 <td key={skill} style={dataStyle}>
-                  <Box textAlign={{ base: "center", lg: "right" }}>{skill}</Box>
+                  <Box
+                    textAlign={{ base: "center", lg: "right" }}
+                    fontSize={{ base: "1rem", md: "1.1rem" }}
+                  >
+                    {skill}
+                  </Box>
                 </td>
               ))}
         </tr>

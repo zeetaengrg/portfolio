@@ -44,10 +44,10 @@ export const iconStyle = {
 
 export const titleStyle = {
   color: "#a5abbd",
-  fontSize: "0.8rem",
+  fontSize: "0.9rem",
 };
 
 export const subTitleStyle = {
   color: "#3892f9",
-  fontSize: "0.7rem",
+  fontSize: "0.8rem",
 };
