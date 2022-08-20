@@ -35,7 +35,7 @@ const ContactInfo = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      fontSize={{ base: "1rem", md: "1.1rem" }}
+      fontSize={{ base: "1.1rem" }}
       transition={{
         delay: 0.2,
         duration: 0.5,
