@@ -19,7 +19,7 @@ const SubHeader = ({ subHeading }) => {
     <MotionHeading
       as="h2"
       fontWeight="bold"
-      fontSize="1.2rem"
+      fontSize="1.3rem"
       variants={commonVariants}
       initial="hidden"
       whileInView="visible"
