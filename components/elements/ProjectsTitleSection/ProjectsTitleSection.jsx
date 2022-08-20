@@ -53,7 +53,7 @@ const ProjectsTitleSection = ({ project, isReverse }) => {
       />
       <Text
         p={{ base: "0rem", md: "0rem 3rem", lg: "0rem" }}
-        fontSize={{ base: "1rem", md: "1.1rem" }}
+        fontSize={{ base: "1.1rem" }}
         textAlign={{
           base: "center",
           md: "center",

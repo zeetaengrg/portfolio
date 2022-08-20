@@ -59,13 +59,13 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
         zIndex="0"
         opacity="0.1"
       >
-        <Image src="/images/logo.svg" alt="Logo" height={400} width={400} />
+        <Image src="/images/logo.svg" alt="Logo" height={350} width={350} />
       </Box>
       <UnorderedList
         listStyleType="none"
         display="flex"
         flexDirection="column"
-        gap="3rem"
+        gap="1.5rem"
       >
         {linkItem.map((link) => (
           <ListItem key={link.id}>

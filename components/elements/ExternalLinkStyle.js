@@ -5,8 +5,7 @@ export const externalLinkStyle = {
   textTransform: "none",
   textDecoration: "underline",
   fontSize: {
-    base: "1rem",
-    md: "1.1rem",
+    base: "1.1rem",
   },
   fontWeight: "normal",
 };

@@ -22,7 +22,7 @@ const SkillsTable = ({ project, isReverse }) => {
                 <td key={skill} style={dataStyle}>
                   <Box
                     textAlign={{ base: "center", lg: "left" }}
-                    fontSize={{ base: "1rem", md: "1.1rem" }}
+                    fontSize={{ base: "1.1rem" }}
                   >
                     {skill}
                   </Box>
@@ -32,7 +32,7 @@ const SkillsTable = ({ project, isReverse }) => {
                 <td key={skill} style={dataStyle}>
                   <Box
                     textAlign={{ base: "center", lg: "right" }}
-                    fontSize={{ base: "1rem", md: "1.1rem" }}
+                    fontSize={{ base: "1.1rem" }}
                   >
                     {skill}
                   </Box>

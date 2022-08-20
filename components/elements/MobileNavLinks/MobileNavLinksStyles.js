@@ -60,5 +60,7 @@ export const mobileLinkStyle = {
   },
   alignItems: "center",
   gap: "1rem",
+  textTransform: "uppercase",
+  fontWeight: "700",
   transition: "all 0.25s ease-in-out",
 };
