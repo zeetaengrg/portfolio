@@ -63,7 +63,7 @@ const Skills = () => {
       <SubHeader subHeading="Languages, Frameworks and Tools" />
       <MotionTabs
         as="section"
-        m={{ base: "1.5rem 0", md: "1.5rem 0" }}
+        m={{ base: "1.5rem 0" }}
         size="sm"
         variant="solid-rounded"
         align="center"

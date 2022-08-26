@@ -1,7 +1,7 @@
 export const tabList = ["Language", "UI Design", "Tools"];
 
 export const tabStyle = {
-  margin: { base: "0.5rem", md: "1.3rem " },
+  margin: { base: "0.25rem", md: "1.3rem " },
   fontSize: "1.1rem",
   color: "#a5abbd",
   border: "1px solid transparent",
