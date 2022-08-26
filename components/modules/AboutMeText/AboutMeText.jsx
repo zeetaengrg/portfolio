@@ -11,7 +11,7 @@ const AboutMeText = () => {
   return (
     <MotionBox
       as="article"
-      p={{ base: "1.5rem 1rem", md: "1.5rem 5rem" }}
+      p={{ base: "1.5rem 2rem", md: "1.5rem 5rem" }}
       textAlign="center"
       fontSize={{ base: "1.1rem" }}
       variants={commonVariants}
@@ -26,9 +26,9 @@ const AboutMeText = () => {
       <Text>
         My interest in technologies started when I got my hands on a Toshiba
         laptop in grade five. The curiosity of how things actually work has led
-        me to work on a network/systems engineering space configuring the
-        network/system infrastructures. As a huge proponent of advancing
-        technologies and exploring it, I have a passion for building things.
+        me to work on networks & systems engineering space. As a huge proponent
+        of evolving techonologies and exploring it, I have a passion for
+        learning and building things.
       </Text>
       <Text m="0.5rem 0rem">
         Without being ostentacious, to further prove my hardworking habitude,
@@ -45,7 +45,7 @@ const AboutMeText = () => {
         </Link>
         &nbsp;for building Class Routine Management System.
       </Text>
-      <Text
+      {/* <Text
         fontSize="1.1rem"
         fontWeight="600"
         display={{ base: "none", md: "block" }}
@@ -64,7 +64,7 @@ const AboutMeText = () => {
       </UnorderedList>
       <Box as="figure" display={{ base: "block", md: "none" }}>
         <CurriculumTable />
-      </Box>
+      </Box> */}
     </MotionBox>
   );
 };
