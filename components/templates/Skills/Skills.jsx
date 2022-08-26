@@ -60,7 +60,7 @@ const Skills = () => {
       </Box>
       <Header id="skills-title" heading="Tools And Technologies" />
       <LineDivider width={{ base: "70%", md: "50%", lg: "40%" }} />
-      <SubHeader subHeading="Libraries, Frameworks and Tools" />
+      <SubHeader subHeading="Languages, Frameworks and Tools" />
       <MotionTabs
         as="section"
         m={{ base: "1.5rem 0", md: "1.5rem 0" }}
