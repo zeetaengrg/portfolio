@@ -11,7 +11,7 @@ const AboutMeText = () => {
   return (
     <MotionBox
       as="article"
-      p={{ base: "1.5rem 2rem", md: "1.5rem 5rem" }}
+      p={{ base: "1.5rem 2rem", md: "1.5rem 5rem", lg: "1.5rem 15rem" }}
       textAlign="center"
       fontSize={{ base: "1.1rem" }}
       variants={commonVariants}
