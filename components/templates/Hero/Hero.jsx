@@ -86,7 +86,7 @@ const Hero = () => {
           <Text
             as={motion.p}
             casing="uppercase"
-            fontSize={{ base: "1rem", md: "1.5rem" }}
+            fontSize={{ base: "1.1rem", md: "1.5rem" }}
             variants={childVariants}
           >
             Hi!
