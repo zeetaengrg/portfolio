@@ -14,21 +14,21 @@ const AboutMe = () => {
       as="section"
       display="flex"
       justifyContent="center"
-      alignItems="center"
       flexDirection="column"
-      height={{ base: "100%", md: "70vh", lg: "100vh" }}
+      height={{ base: "110vh", md: "70vh", xl: "100vh" }}
       id="aboutme"
-      mt={{ base: "2rem", md: "0rem" }}
       aria-labelledby="aboutme-title"
     >
       <Header id="aboutme-title" heading="About Me" />
       <LineDivider width={{ base: "50%", md: "35%", lg: "18%" }} />
       <SubHeader subHeading="Introduction" />
-      <Flex mt="2rem" as="article" gap={{ base: "0.5rem", md: "1rem" }}>
+      <Flex m="1.5rem auto 0" as="article" gap={{ base: "0.5rem", md: "1rem" }}>
         <AboutMeWrapper />
       </Flex>
       <AboutMeText />
-      <ContactMeBtn />
+      <Box m="0 auto">
+        <ContactMeBtn />
+      </Box>
     </Box>
   );
 };
