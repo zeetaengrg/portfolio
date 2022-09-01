@@ -28,14 +28,15 @@ export const linkVariants = {
 
 export const boxStyle = {
   position: "absolute",
-  top: "4.5rem",
-  right: "0",
+  top: "5.5rem",
+  right: "1.25rem",
   zIndex: "999",
+  borderRadius: "0.5rem",
   background: "#141E39",
   color: "#a5abbd",
   fontSize: "1.5rem",
-  width: "100vw",
-  height: "91vh",
+  width: "90vw",
+  height: "86vh",
   display: {
     base: "flex",
     md: "none",
@@ -43,6 +44,7 @@ export const boxStyle = {
   },
   justifyContent: "center",
   alignItems: "center",
+  boxShadow: "0 0 0.75rem rgb(0 0 0 / 0.5)",
 };
 
 export const mobileLinkStyle = {
