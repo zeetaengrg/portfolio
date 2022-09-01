@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 import { FaProjectDiagram } from "react-icons/fa";
@@ -12,7 +13,6 @@ import {
   boxStyle,
   mobileLinkStyle,
 } from "./MobileNavLinksStyles";
-import Image from "next/image";
 
 const MotionBox = motion(Box);
 const MotionLink = motion(Link);
@@ -59,7 +59,7 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
         zIndex="0"
         opacity="0.1"
       >
-        <Image src="/images/logo.svg" alt="Logo" height={350} width={350} />
+        <Image src="/images/logo.svg" alt="Logo" height={325} width={325} />
       </Box>
       <UnorderedList
         listStyleType="none"
