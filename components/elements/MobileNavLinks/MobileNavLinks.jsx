@@ -56,7 +56,7 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
         alignItems="center"
         justifyContent="center"
         position="absolute"
-        zIndex="0"
+        zIndex="-1"
         opacity="0.1"
       >
         <Image src="/images/logo.svg" alt="Logo" height={325} width={325} />
