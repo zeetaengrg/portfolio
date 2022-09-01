@@ -1,7 +1,7 @@
 export const menuStyle = {
   position: "absolute",
   right: "1rem",
-  top: "0.8rem",
+  top: "1.2rem",
   background: "transparent",
   fontSize: "3rem",
   _hover: {
