@@ -36,7 +36,7 @@ export const boxStyle = {
   color: "#a5abbd",
   fontSize: "1.5rem",
   width: "90vw",
-  height: "86vh",
+  height: "87vh",
   display: {
     base: "flex",
     md: "none",
