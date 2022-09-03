@@ -28,7 +28,7 @@ export const linkVariants = {
 
 export const boxStyle = {
   position: "absolute",
-  top: "5.5rem",
+  top: "5rem",
   right: "1.25rem",
   zIndex: "999",
   borderRadius: "0.5rem",
