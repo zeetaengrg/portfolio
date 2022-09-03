@@ -61,7 +61,7 @@ export const parentBox = {
   height: {
     base: "89vh",
     md: "85vh",
-    xl: "calc(100vh - 6.75rem)",
+    xl: "calc(100vh - 4.75rem)",
   },
   display: "flex",
   flexDirection: "column",
