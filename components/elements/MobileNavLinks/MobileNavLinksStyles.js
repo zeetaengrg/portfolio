@@ -53,7 +53,7 @@ export const mobileLinkStyle = {
     color: "white",
   },
   _focus: { boxShadow: "none" },
-  fontSize: "1.5rem",
+  fontSize: "1.2rem",
   margin: "2rem auto",
   display: {
     base: "flex",
