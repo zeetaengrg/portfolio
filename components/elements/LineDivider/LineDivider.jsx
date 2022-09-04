@@ -1,5 +1,6 @@
 import { Divider } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const MotionDivider = motion(Divider);
 
@@ -29,3 +30,7 @@ const LineDivider = ({ width }) => {
 };
 
 export default LineDivider;
+
+LineDivider.propTypes = {
+  width: PropTypes.objectOf(PropTypes.string),
+};

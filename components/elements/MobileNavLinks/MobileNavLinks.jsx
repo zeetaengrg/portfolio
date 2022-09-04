@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 import { Box, Link, ListItem, UnorderedList } from "@chakra-ui/react";
 import { FaProjectDiagram } from "react-icons/fa";
 import {
@@ -87,3 +88,8 @@ const MobileNavLinks = ({ isMobile, closeMobileMenu }) => {
 };
 
 export default MobileNavLinks;
+
+MobileNavLinks.propTypes = {
+  isMobile: PropTypes.bool,
+  closeMobileMenu: PropTypes.func,
+};
