@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 import { Heading } from "@chakra-ui/react";
 
 const MotionHeading = motion(Heading);
@@ -43,3 +44,8 @@ const Header = ({ heading, id }) => {
 };
 
 export default Header;
+
+Header.propTypes = {
+  heading: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
+};
