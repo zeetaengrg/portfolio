@@ -11,6 +11,7 @@ export const imgTag = {
     base: "0",
     xl: "-8rem",
   },
+  zIndex: "0",
   width: "100vw",
   display: {
     base: "none",
