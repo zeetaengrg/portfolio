@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { Box, Divider, Flex, Heading, Text } from "@chakra-ui/react";
-import { FaPrayingHands } from "react-icons/fa";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { GoBackBtn } from "@components/elements";
 import {
   flexStyle,
@@ -9,6 +8,7 @@ import {
   boxStyle,
   boxVariants,
 } from "./ThankYouStyles";
+import NextImage from "next/image";
 
 const ThankYou = () => {
   return (
@@ -21,18 +21,22 @@ const ThankYou = () => {
         animate="end"
         aria-describedby="thankyou-text"
       >
-        <Heading as="h1" id="thankyou" sx={headingStyle}>
-          Thank You!!!
-        </Heading>
-        <Divider width="60%" />
-        <Text sx={textStyle} id="thankyou-text">
-          Your message has been sent successfully. I will get back to you
-          shortly.
-        </Text>
-        <FaPrayingHands
-          style={{ fontSize: "2rem" }}
-          aria-label="Thank You Icon"
-        />
+        <Box as="figure" position="relative">
+          <Heading as="h1" id="thankyou" sx={headingStyle}>
+            Thank You!!!
+          </Heading>
+          <NextImage
+            src="/images/thanks3.svg"
+            alt="Thank You Illustration"
+            height={600}
+            width={600}
+            draggable="false"
+          />
+          <Text as="figcaption" sx={textStyle} id="thankyou-text">
+            Your message has been sent successfully. I will get back to you
+            shortly.
+          </Text>
+        </Box>
       </Box>
       <GoBackBtn />
     </Flex>
