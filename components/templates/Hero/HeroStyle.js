@@ -59,7 +59,7 @@ export const childVariants = {
 
 export const parentBox = {
   height: {
-    base: "100vh",
+    base: "95vh",
     md: "90vh",
     xl: "calc(100vh - 4.75rem)",
   },
