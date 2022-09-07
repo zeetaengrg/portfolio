@@ -15,7 +15,7 @@ const AboutMe = () => {
       display="flex"
       justifyContent="center"
       flexDirection="column"
-      height={{ base: "115vh", md: "70vh", xl: "100vh" }}
+      height={{ base: "fit-content", md: "fit-content", xl: "100vh" }}
       id="aboutme"
       aria-labelledby="aboutme-title"
     >
