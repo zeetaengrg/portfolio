@@ -1,3 +1,4 @@
+import NextImage from "next/image";
 import { motion } from "framer-motion";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import { GoBackBtn } from "@components/elements";
@@ -7,10 +8,9 @@ import {
   textStyle,
   boxStyle,
   boxVariants,
-} from "./ThankYouStyles";
-import NextImage from "next/image";
+} from "./MessageSentStyles";
 
-const ThankYou = () => {
+const MessageSent = () => {
   return (
     <Flex as="section" aria-labelledby="thankyou" sx={flexStyle}>
       <Box
@@ -26,7 +26,7 @@ const ThankYou = () => {
             Thank You!!!
           </Heading>
           <NextImage
-            src="/images/thanks.svg"
+            src="/images/message-sent.svg"
             alt="Thank You Illustration"
             height={600}
             width={600}
@@ -43,4 +43,4 @@ const ThankYou = () => {
   );
 };
 
-export default ThankYou;
+export default MessageSent;

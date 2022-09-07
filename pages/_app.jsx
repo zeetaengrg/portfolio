@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "@styles/theme";
 import { Layout, LoadingAnimation } from "@components/layouts";
-import ThankYouPage from "./thankyou";
+import MessageSentPage from "./message-sent";
 
 // const Loader = () => {
 //   const router = useRouter();
@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }) => {
     <ChakraProvider theme={theme}>
       {router.asPath === "/thankyou" ? (
         <Layout>
-          <ThankYouPage />
+          <MessageSentPage />
         </Layout>
       ) : (
         <>
