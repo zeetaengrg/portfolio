@@ -52,7 +52,7 @@ export const boxStyle = {
   width: {
     base: "80%",
     md: "60%",
-    lg: "40%",
+    lg: "55%",
   },
   padding: {
     base: "0.5rem",
