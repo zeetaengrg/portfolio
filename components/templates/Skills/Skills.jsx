@@ -41,7 +41,7 @@ const Skills = () => {
     <Box
       as="section"
       id="skills"
-      height={{ base: "70vh", md: "60vh", lg: "45vh", xl: "100vh" }}
+      height={{ base: "fit-content", md: "fit-content", xl: "100vh" }}
       display="flex"
       flexDirection="column"
       justifyContent="center"
