@@ -12,8 +12,6 @@ const Contacts = () => {
       as="section"
       id="contacts"
       position="relative"
-      mb={{ base: "0rem", lg: "4rem" }}
-      mt={{ base: "3rem", md: "6rem" }}
       zIndex="10"
       aria-labelledby="contacts-title"
     >
