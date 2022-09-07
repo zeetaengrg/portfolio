@@ -26,7 +26,7 @@ const ThankYou = () => {
             Thank You!!!
           </Heading>
           <NextImage
-            src="/images/thanks3.svg"
+            src="/images/thanks.svg"
             alt="Thank You Illustration"
             height={600}
             width={600}
