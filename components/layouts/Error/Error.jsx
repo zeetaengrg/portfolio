@@ -21,6 +21,21 @@ const flexVariants = {
 };
 
 const Error = () => {
+  const boxStyle = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: { base: "60.25vh", md: "72.25vh", lg: "76.25vh" },
+    gap: { base: "2rem", md: "3rem", xl: "2rem" },
+    position: "relative",
+    "&>a": {
+      position: "absolute",
+      bottom: "-1rem",
+      zIndex: "1",
+    },
+  };
+
   const textStyle = {
     textAlign: "center",
     color: "#fff",
@@ -31,13 +46,7 @@ const Error = () => {
   return (
     <Box
       as="section"
-      m={{ base: "1.5rem 0rem", md: "0rem 0rem 5rem" }}
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      height={{ base: "60.25vh", md: "72.25vh", lg: "76.25vh" }}
-      gap={{ base: "2rem", md: "5rem" }}
+      sx={boxStyle}
       aria-labelledby="error"
       aria-describedby="error-text"
     >
@@ -48,14 +57,14 @@ const Error = () => {
         animate="end"
         direction="column"
         alignItems="center"
-        gap={{ base: "0rem", md: "1rem" }}
+        gap={{ base: "0rem", md: "0.5rem" }}
       >
         <Text
           id="error"
           fontSize={{ base: "1.1rem", md: "1.3rem" }}
           sx={textStyle}
         >
-          Oops!!! Page Not Found
+          Oops, Page Not Found!!!
         </Text>
         <Box as="figure" p={{ base: "0rem 3rem", md: "0rem" }}>
           <NextImage
