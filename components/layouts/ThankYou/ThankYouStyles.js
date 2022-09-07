@@ -31,8 +31,8 @@ export const flexStyle = {
   },
   height: {
     base: "68.5vh",
-    md: "79vh",
-    lg: "81vh",
+    md: "80vh",
+    lg: "82vh",
     xl: "55vh",
   },
 };
