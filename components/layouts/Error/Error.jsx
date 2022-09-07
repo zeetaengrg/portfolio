@@ -36,8 +36,8 @@ const Error = () => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      height={{ base: "62vh", md: "72.5vh", lg: "76vh" }}
-      gap={{ base: "0rem", md: "1rem" }}
+      height={{ base: "60.25vh", md: "72.25vh", lg: "76.25vh" }}
+      gap={{ base: "2rem", md: "5rem" }}
       aria-labelledby="error"
       aria-describedby="error-text"
     >
