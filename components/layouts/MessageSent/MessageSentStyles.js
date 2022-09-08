@@ -19,26 +19,22 @@ export const flexStyle = {
   alignItems: "center",
   justifyContent: "center",
   flexDirection: "column",
-  gap: {
-    base: "1rem",
-    md: "4rem",
-    xl: "0rem",
-  },
   height: {
-    base: "62.5vh",
-    md: "77vh",
-    lg: "80vh",
+    base: "69vh",
+    md: "80vh",
+    lg: "82.5vh",
     xl: "90vh",
   },
   marginBottom: {
-    base: "6rem",
-    xl: "2rem",
+    base: "5rem",
+    md: "0",
+    xl: "1rem",
   },
   position: "relative",
   "&>a": {
     position: "absolute",
     bottom: {
-      base: "-5rem",
+      base: "-4rem",
       md: "1rem",
       lg: "10rem",
       xl: "-2.5rem",
