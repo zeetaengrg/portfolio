@@ -23,15 +23,18 @@ const flexVariants = {
 const Error = () => {
   const boxStyle = {
     display: "flex",
-    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: { base: "60.25vh", md: "72.25vh", lg: "76.25vh" },
-    gap: { base: "2rem", md: "3rem", xl: "2rem" },
+    height: { base: "67vh", md: "80vh", lg: "83vh" },
     position: "relative",
     "&>a": {
       position: "absolute",
-      bottom: "-1rem",
+      bottom: {
+        base: "2rem",
+        md: "5rem",
+        lg: "15rem",
+        xl: "0",
+      },
       zIndex: "1",
     },
   };
@@ -41,6 +44,9 @@ const Error = () => {
     color: "#fff",
     fontWeight: "bold",
     textTransform: "uppercase",
+    padding: {
+      base: "0 1rem",
+    },
   };
 
   return (
@@ -66,7 +72,7 @@ const Error = () => {
         >
           Oops, Page Not Found!!!
         </Text>
-        <Box as="figure" p={{ base: "0rem 3rem", md: "0rem" }}>
+        <Box as="figure" p={{ base: "0 2rem", md: "0" }}>
           <NextImage
             src="/images/error.svg"
             alt="404 Error"
