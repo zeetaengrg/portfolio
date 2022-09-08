@@ -26,15 +26,16 @@ const ServerError = () => {
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    height: { base: "66.85vh", md: "80.15vh", lg: "82vh", xl: "100vh" },
-    gap: {
-      base: "4rem",
-      md: "3rem",
-      xl: "0rem",
-    },
+    height: { base: "69vh", md: "80.15vh", lg: "82vh", xl: "90vh" },
+    position: "relative",
     "&>a": {
       position: "absolute",
-      bottom: "12rem",
+      bottom: {
+        base: "1rem",
+        md: "5rem",
+        lg: "15rem",
+        xl: "0",
+      },
       zIndex: "1",
     },
   };
@@ -67,7 +68,6 @@ const ServerError = () => {
         variants={boxVariants}
         initial="start"
         animate="end"
-        mb={{ base: "-5rem", md: "0rem" }}
         position="relative"
       >
         <Box
