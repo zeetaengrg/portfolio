@@ -10,8 +10,8 @@ const TabContent = ({ item }) => {
       <Image
         src={item.image}
         alt={item.name}
-        height={{ base: "3rem", md: "4.5rem" }}
-        width={{ base: "3rem", md: "4.5rem" }}
+        height={{ base: "3.5rem", md: "4.5rem" }}
+        width={{ base: "3.5rem", md: "4.5rem" }}
         objectFit="contain"
         draggable="false"
         userSelect="none"
