@@ -35,7 +35,7 @@ const ContactMeBtn = () => {
       >
         <Text id="contact-me-btn-title">Contact Me</Text>
         <MdAccountCircle
-          style={{ fontSize: "1.5rem" }}
+          fontSize="1.5rem"
           aria-label="Contact Icon"
         />
       </MotionLink>
