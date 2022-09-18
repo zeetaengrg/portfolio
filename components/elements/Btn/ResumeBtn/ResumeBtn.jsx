@@ -36,7 +36,7 @@ const ResumeBtn = () => {
     <MotionBtn
       size="lg"
       sx={btn}
-      rightIcon={<FaCloudDownloadAlt style={{ fontSize: "1.5rem" }} />}
+      rightIcon={<FaCloudDownloadAlt fontSize="1.5rem" />}
       variants={btnVariants}
       initial="hidden"
       animate="visible"

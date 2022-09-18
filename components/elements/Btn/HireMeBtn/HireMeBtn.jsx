@@ -35,7 +35,7 @@ const HireMeBtn = () => {
       >
         <Text id="hire-me-btn-title">Hire Me</Text>
         <FaHandshake
-          style={{ fontSize: "1.5rem" }}
+          fontSize="1.5rem"
           aria-label="Handshake Icon"
         />
       </MotionLink>
