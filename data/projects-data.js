@@ -10,9 +10,9 @@ export const projects = [
     sourceLinkOne: "https://github.com/zeetaengrg/growth-agency-reactjs",
     sourceLinkTwo: "https://github.com/zeetaengrg/mamas-joint",
     descriptionOne:
-      "A fully responsive growth agency landing page built from scratch with pixel perfect Figma design provided by AR Shakir.",
+      "A fully responsive growth agency landing page built from scratch with pixel perfect Figma design provided by <a href='https://www.arshakir.com/project/freebie-landing-page-design-concept-for-growth-agency'>AR Shakir</a>.",
     descriptionTwo:
-      "A restaurant's landing page with responsive feature. Built from scratch with pixel perfect Figma design provided by AR Shakir.",
+      "A restaurant's landing page with responsive feature. Built from scratch with pixel perfect Figma design provided by <a href='https://www.arshakir.com/project/restaurant-landing-page'>AR Shakir</a>.",
     skillsOne: [
       "React Architecture",
       "React Hooks & Props",
