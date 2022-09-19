@@ -1,26 +1,57 @@
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import emailjs from "@emailjs/browser";
 import { RiSendPlaneFill } from "react-icons/ri";
-import { VStack, FormLabel, Input, Textarea, Button } from "@chakra-ui/react";
+import {
+  VStack,
+  FormLabel,
+  Input,
+  Textarea,
+  Button,
+  Text,
+  FormControl,
+} from "@chakra-ui/react";
 import { commonVariants, inputStyle, btn } from "./ContactFormStyles";
+import { FaInfoCircle } from "react-icons/fa";
 
 const MotionVStack = motion(VStack);
 
+const USER_REGEX = /^[a-zA-Z ][a-zA-Z ]{3,23}$/;
+const EMAIL_REGEX =
+  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
 const ContactForm = () => {
-  const formRef = useRef();
   const router = useRouter();
 
-  const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const formRef = useRef();
+  const userRef = useRef();
+  const emailRef = useRef();
+  const subjectRef = useRef();
 
-  const handleFullName = (e) => setFullName(e.target.value);
-  const handleEmail = (e) => setEmail(e.target.value);
-  const handleSubject = (e) => setSubject(e.target.value);
-  const handleMessage = (e) => setMessage(e.target.value);
+  const [fullName, setFullName] = useState("");
+  const [validFullName, setValidFullName] = useState(false);
+  const [fullNameFocus, setFullNameFocus] = useState(false);
+
+  const [email, setEmail] = useState("");
+  const [validEmail, setValidEmail] = useState(false);
+  const [emailFocus, setEmailFocus] = useState(false);
+
+  const [subject, setSubject] = useState("");
+  const [subjectFocus, setSubjectFocus] = useState(false);
+
+  const [message, setMessage] = useState("");
+  const [messageFocus, setMessageFocus] = useState(false);
+
+  useEffect(() => {
+    const result = USER_REGEX.test(fullName);
+    setValidFullName(result);
+  }, [fullName]);
+
+  useEffect(() => {
+    const result = EMAIL_REGEX.test(email);
+    setValidEmail(result);
+  }, [email]);
 
   const canSend =
     Boolean(fullName) && Boolean(email) && Boolean(subject) && Boolean(message);
