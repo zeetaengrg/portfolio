@@ -93,51 +93,127 @@ const ContactForm = () => {
           duration: 0.5,
         }}
       >
-        <FormLabel htmlFor="fullName" mb="0rem" fontSize={{ base: "1.1rem" }}>
-          Full Name
-        </FormLabel>
-        <Input
-          sx={inputStyle}
-          type="text"
-          placeholder="Insert Your Full Name..."
-          id="fullName"
-          name="fullName"
-          onChange={handleFullName}
-        />
-        <FormLabel htmlFor="email" fontSize={{ base: "1.1rem" }}>
-          Email Address
-        </FormLabel>
-        <Input
-          sx={inputStyle}
-          type="email"
-          placeholder="Insert Your Email Address..."
-          id="email"
-          name="email"
-          onChange={handleEmail}
-        />
-        <FormLabel htmlFor="subject" fontSize={{ base: "1.1rem" }}>
-          Subject
-        </FormLabel>
-        <Input
-          sx={inputStyle}
-          type="text"
-          placeholder="Insert Your Subject..."
-          id="subject"
-          name="subject"
-          onChange={handleSubject}
-        />
-        <FormLabel htmlFor="message" mb="0rem" fontSize={{ base: "1.1rem" }}>
-          Message
-        </FormLabel>
-        <Textarea
-          sx={inputStyle}
-          placeholder="Insert Your Message..."
-          name="message"
-          id="message"
-          height="10rem"
-          aria-label="Write your message here"
-          onChange={handleMessage}
-        />
+        <FormControl>
+          <FormLabel htmlFor="fullName" fontSize={{ base: "1.1rem" }}>
+            Full Name
+          </FormLabel>
+          <Input
+            sx={inputStyle}
+            ref={userRef}
+            type="text"
+            id="fullName"
+            name="fullName"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
+            autoComplete="off"
+            placeholder="Insert Your Full Name..."
+            aria-describedby="fullNameNote"
+            aria-invalid={validFullName ? "false" : "true"}
+            onFocus={() => setFullNameFocus(true)}
+            onBlur={() => setFullNameFocus(false)}
+          />
+          {fullNameFocus && fullName && !validFullName ? (
+            <Text
+              id="fullNameNote"
+              position="relative"
+              padding="0.25rem 0.5rem"
+              borderRadius="0.5rem"
+              fontSize="0.75rem"
+              color="red"
+              backgroundColor="black"
+              mt="0.5rem"
+            >
+              <FaInfoCircle
+                style={{
+                  position: "absolute",
+                  top: "0.25rem",
+                  right: "0.25rem",
+                }}
+              />
+              4 to 24 characters.
+              <br />
+              Numbers & Special characters not allowed.
+            </Text>
+          ) : null}
+        </FormControl>
+        <FormControl>
+          <FormLabel htmlFor="email" fontSize={{ base: "1.1rem" }}>
+            Email Address
+          </FormLabel>
+          <Input
+            sx={inputStyle}
+            ref={emailRef}
+            type="email"
+            id="email"
+            name="email"
+            autoComplete="off"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+            aria-invalid={validEmail ? "false" : "true"}
+            aria-describedby="emailNote"
+            onFocus={() => setEmailFocus(true)}
+            onBlur={() => setEmailFocus(false)}
+            placeholder="Insert Your Email Address..."
+          />
+          {emailFocus && email && !validEmail ? (
+            <Text
+              id="emailNote"
+              position="relative"
+              padding="0.25rem 0.5rem"
+              borderRadius="0.5rem"
+              fontSize="0.75rem"
+              color="red"
+              backgroundColor="black"
+              mt="0.5rem"
+            >
+              <FaInfoCircle
+                style={{
+                  position: "absolute",
+                  top: "0.25rem",
+                  right: "0.25rem",
+                }}
+              />
+              Please Insert Valid Email!
+            </Text>
+          ) : null}
+        </FormControl>
+        <FormControl>
+          <FormLabel htmlFor="subject" fontSize={{ base: "1.1rem" }}>
+            Subject
+          </FormLabel>
+          <Input
+            sx={inputStyle}
+            ref={subjectRef}
+            type="text"
+            id="subject"
+            name="subject"
+            autoComplete="off"
+            required
+            onChange={(e) => setSubject(e.target.value)}
+            aria-describedby="subjectNote"
+            onFocus={() => setSubjectFocus(true)}
+            onBlur={() => setSubjectFocus(false)}
+            placeholder="Insert Your Subject..."
+          />
+        </FormControl>
+        <FormControl>
+          <FormLabel htmlFor="message" fontSize={{ base: "1.1rem" }}>
+            Message
+          </FormLabel>
+          <Textarea
+            sx={inputStyle}
+            name="message"
+            id="message"
+            height="10rem"
+            required
+            onChange={(e) => setMessage(e.target.value)}
+            aria-describedby="messageNote"
+            onFocus={() => setMessageFocus(true)}
+            onBlur={() => setMessageFocus(false)}
+            placeholder="Insert Your Message..."
+          />
+        </FormControl>
         <Button
           mt="1rem"
           sx={btn}
