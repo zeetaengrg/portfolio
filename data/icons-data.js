@@ -83,22 +83,22 @@ export const tools = [
   },
   {
     id: 3,
+    name: "Framer Motion",
+    image: "/images/framer-motion.png",
+  },
+  {
+    id: 4,
     name: "Git",
     image: "/images/git.svg",
   },
   {
-    id: 4,
+    id: 5,
     name: "GitHub",
     image: "/images/github.svg",
   },
   {
-    id: 5,
+    id: 6,
     name: "VS Code",
     image: "/images/vscode.svg",
-  },
-  {
-    id: 6,
-    name: "Framer Motion",
-    image: "/images/framer-motion.png",
   },
 ];
