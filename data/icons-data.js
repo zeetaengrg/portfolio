@@ -93,7 +93,7 @@ export const tools = [
   },
   {
     id: 5,
-    name: "VS Code,",
+    name: "VS Code",
     image: "/images/vscode.svg",
   },
   {
