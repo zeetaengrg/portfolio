@@ -1,3 +1,15 @@
+const linkOne = (
+  <a href="https://www.arshakir.com/project/freebie-landing-page-design-concept-for-growth-agency">
+    Ar Shakir
+  </a>
+);
+
+const linkTwo = (
+  <a href="https://www.arshakir.com/project/restaurant-landing-page">
+    Ar Shakir
+  </a>
+);
+
 export const projects = [
   {
     id: 1,
