@@ -63,6 +63,11 @@ export const library = [
     name: "Chakra-UI",
     image: "/images/chakraui.svg",
   },
+  // {
+  //   id: 6,
+  //   name: "Tailwind CSS",
+  //   image: "/images/tailwind.svg",
+  // },
 ];
 
 export const tools = [
@@ -88,6 +93,11 @@ export const tools = [
   },
   {
     id: 5,
+    name: "VS Code,",
+    image: "/images/vscode.svg",
+  },
+  {
+    id: 6,
     name: "Framer Motion",
     image: "/images/framer-motion.png",
   },
