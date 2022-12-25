@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Text, List, ListItem, ListIcon, Link } from "@chakra-ui/react";
+import { Text, List, ListItem, ListIcon } from "@chakra-ui/react";
 import {
   wrapperList,
   listItemStyle,
